@@ -1,0 +1,8 @@
+preset conditions, condition values, 
+
+assert class present unless single type?
+
+unexpected class
+unmatched item
+warning unique hide without base types
+warning bad unique bases to hide!

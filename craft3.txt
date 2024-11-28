@@ -1,0 +1,102 @@
+Item Class: Two Hand Axes
+Rarity: Rare
+Woe Hunger
+Despot Axe
+--------
+Two Handed Axe
+Quality: +25% (augmented)
+Physical Damage: 304-450 (augmented)
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.40
+Weapon Range: 1.3 metres
+--------
+Requirements:
+Level: 66
+Str: 140
+Dex: 86
+--------
+Sockets: R-R-R 
+--------
+Item Level: 85
+--------
+{ Prefix Modifier "Dictator's" (Tier: 1) — Damage, Physical, Attack }
+79(75-79)% increased Physical Damage
++200(175-200) to Accuracy Rating
+{ Prefix Modifier "Flaring" (Tier: 1) — Damage, Physical, Attack }
+Adds 46(34-47) to 79(72-84) Physical Damage
+{ Master Crafted Prefix Modifier "Catarina's" — Gem }
++1 to Level of Socketed Support Gems (crafted)
+{ Suffix Modifier "of Farrul" }
+Grants Level 20 Aspect of the Cat Skill — Unscalable Value
+{ Master Crafted Suffix Modifier "of Crafting" }
+Can have up to 3 Crafted Modifiers — Unscalable Value (crafted)
+{ Master Crafted Suffix Modifier "of the Order" — Attack, Caster, Speed, Minion }
+Minions have 20(19-21)% increased Attack Speed (crafted)
+Minions have 20(19-21)% increased Cast Speed (crafted)
+
+
+Item Class: Two Hand Axes
+Rarity: Rare
+Soul Edge
+Despot Axe
+--------
+Two Handed Axe
+Quality: +20% (augmented)
+Physical Damage: 301-408 (augmented)
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.78 (augmented)
+Weapon Range: 1.3 metres
+--------
+Requirements:
+Level: 66
+Str: 140
+Dex: 86
+--------
+Sockets: R-B R 
+--------
+Item Level: 83
+--------
+{ Prefix Modifier "Merciless" (Tier: 1) — Damage, Physical, Attack }
+179(170-179)% increased Physical Damage
+{ Master Crafted Prefix Modifier "It's" — Damage, Elemental, Fire, Chaos }
+Gain 11(11-13)% of Fire Damage as Extra Chaos Damage (crafted)
+{ Master Crafted Prefix Modifier "Chosen" — Damage, Elemental, Lightning, Ailment }
+63(60-64)% increased Lightning Damage (crafted)
+22(21-24)% chance to Shock (crafted)
+(Shock increases Damage taken by up to 50%, depending on the amount of Lightning Damage in the hit, for 2 seconds) (crafted)
+{ Suffix Modifier "of Celebration" (Tier: 1) — Attack, Speed }
+27(26-27)% increased Attack Speed
+{ Master Crafted Suffix Modifier "of Crafting" }
+Can have up to 3 Crafted Modifiers — Unscalable Value (crafted)
+
+
+Item Class: Two Hand Axes
+Rarity: Rare
+Sorrow Mangler
+Despot Axe
+--------
+Two Handed Axe
+Quality: +20% (augmented)
+Physical Damage: 455-673 (augmented)
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.78 (augmented)
+Weapon Range: 1.3 metres
+--------
+Requirements:
+Level: 66
+Str: 140
+Dex: 86
+--------
+Sockets: R-B R 
+--------
+Item Level: 85
+--------
+{ Prefix Modifier "Flaring" (Tier: 1) — Damage, Physical, Attack }
+Adds 46(34-47) to 79(72-84) Physical Damage
+{ Prefix Modifier "Merciless" (Tier: 1) — Damage, Physical, Attack }
+179(170-179)% increased Physical Damage
+{ Master Crafted Prefix Modifier "Catarina's" — Gem }
++1 to Level of Socketed Support Gems (crafted)
+{ Suffix Modifier "of Celebration" (Tier: 1) — Attack, Speed }
+27(26-27)% increased Attack Speed
+

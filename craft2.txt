@@ -1,0 +1,81 @@
+Item Class: Two Hand Axes
+Rarity: Rare
+Bramble Edge
+Despot Axe
+--------
+Two Handed Axe
+Quality: +25% (augmented)
+Physical Damage: 170-251 (augmented)
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.40
+Weapon Range: 1.3 metres
+--------
+Requirements:
+Level: 66
+Str: 140
+Dex: 86
+--------
+Sockets: R-R R 
+--------
+Item Level: 84
+--------
+Adds 46 to 79 Physical Damage
+Damage Penetrates 11% Fire Resistance
+Can have up to 3 Crafted Modifiers (crafted)
+Gain 13% of Fire Damage as Extra Chaos Damage (crafted)
+
+
+Item Class: Two Hand Axes
+Rarity: Rare
+Bramble Bane
+Despot Axe
+--------
+Two Handed Axe
+Quality: +25% (augmented)
+Physical Damage: 294-398 (augmented)
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.40
+Weapon Range: 1.3 metres
+--------
+Requirements:
+Level: 66
+Str: 140
+Dex: 86
+--------
+Sockets: R-R-R 
+--------
+Item Level: 85
+--------
+79% increased Physical Damage
+Adds 5 to 165 Lightning Damage to Spells
++200 to Accuracy Rating
+Can have up to 3 Crafted Modifiers (crafted)
+82% increased Physical Damage (crafted)
+13% chance to Impale Enemies on Hit with Attacks (crafted)
+
+
+Item Class: Two Hand Axes
+Rarity: Rare
+Woe Hunger
+Despot Axe
+--------
+Two Handed Axe
+Quality: +25% (augmented)
+Physical Damage: 304-450 (augmented)
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.40
+Weapon Range: 1.3 metres
+--------
+Requirements:
+Level: 66
+Str: 140
+Dex: 86
+--------
+Sockets: R-R-R 
+--------
+Item Level: 85
+--------
+79% increased Physical Damage
+Adds 46 to 79 Physical Damage
++200 to Accuracy Rating
+Can have up to 3 Crafted Modifiers (crafted)

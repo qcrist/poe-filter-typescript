@@ -1,0 +1,84 @@
+Currency:
+Stackable Currency
+
+Jewels:
+Abyss Jewels
+Jewels
+
+Equipment:
+Amulets
+Belts
+Body Armours
+Boots
+Bows
+Claws
+Daggers
+Gloves
+Helmets
+One Hand Axes
+One Hand Maces
+One Hand Swords
+Quivers
+Rings
+Rune Daggers
+Sceptres
+Shields
+Staves
+Thrusting One Hand Swords
+Two Hand Axes
+Two Hand Maces
+Two Hand Swords
+Wands
+Warstaves
+
+Flasks:
+Hybrid Flasks
+Life Flasks
+Mana Flasks
+Utility Flasks
+Tinctures
+
+MapLike:
+Blueprints
+Breachstones
+Contracts
+Expedition Logbooks
+Map Fragments
+Maps
+Misc Map Items
+Sanctum Research
+Memories
+Vault Keys
+
+
+QuestLike:
+Atlas Upgrade Items
+Incursion Items
+Labyrinth Items
+Labyrinth Trinkets
+Quest Items
+
+cards:
+Divination Cards
+
+heist:
+Heist Brooches
+Heist Cloaks
+Heist Gear
+Heist Targets
+Heist Tools
+
+gems:
+Skill Gems
+Support Gems
+
+exotic:
+Relics
+Pieces
+Fishing Rods
+
+OldLeague:
+Corpses
+Charms
+Embers of the Allflame
+Sanctified Relics
