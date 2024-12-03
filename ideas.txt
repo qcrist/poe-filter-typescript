@@ -1,4 +1,7 @@
-preset conditions, condition values, 
+actions preview (maybe sounds?)
+
+OLD:
+preset conditions, condition values,
 
 assert class present unless single type?
 

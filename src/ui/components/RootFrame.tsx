@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {RulePanelComponent} from "#src/ui/components/RuleComponet";
 import {RuleEditorComponent} from "#src/ui/components/RuleEditor";
+// import {RuleEditorComponent} from "#src/ui/components/RuleEditor";
 
 
 const MainLayoutContainer = styled.div`
