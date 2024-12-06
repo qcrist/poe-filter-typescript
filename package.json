@@ -1,25 +1,29 @@
 {
-  "name": "poe-filter-tool",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "pack-development": "ts-node-transpile-only esbuild/build.ts --project esbuild"
-  },
-  "dependencies": {
-    "@fortawesome/free-regular-svg-icons": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "electron": "^31.2.1",
-    "immer": "^10.1.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "styled-components": "^6.1.11",
-    "ts-node": "^10.9.2",
-    "zustand": "^4.5.4"
-  },
-  "devDependencies": {
-    "@types/react-dom": "^18.3.0",
-    "esbuild": "^0.23.0",
-    "typescript": "^5.5.3"
-  }
+    "name": "poe-filter-tool",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "pack-development": "ts-node-transpile-only esbuild/build.ts --project esbuild",
+        "run-scripted": "tsx --tsconfig src/tsconfig.json src/scripted/scripted.ts",
+        "run-scripted-watch": "tsx watch --tsconfig src/tsconfig.json src/scripted/scripted.ts"
+    },
+    "dependencies": {
+        "@fortawesome/free-regular-svg-icons": "^6.5.2",
+        "@fortawesome/free-solid-svg-icons": "^6.5.2",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "electron": "^31.2.1",
+        "immer": "^10.1.1",
+        "parse-css-color": "^0.2.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "styled-components": "^6.1.11",
+        "ts-node": "^10.9.2",
+        "zustand": "^4.5.4"
+    },
+    "devDependencies": {
+        "@types/react-dom": "^18.3.0",
+        "esbuild": "^0.23.0",
+        "tsx": "^4.19.2",
+        "typescript": "^5.5.3"
+    }
 }
