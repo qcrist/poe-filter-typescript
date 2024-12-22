@@ -1,5 +1,6 @@
 import {BASE_TYPES_RAW} from "#src/scripted/base_types_export";
 import parseCSSColor from 'parse-css-color';
+import {Immutable} from "immer";
 
 type FilterOperator = "==" | "<" | "<=" | ">" | ">="
 
@@ -127,10 +128,12 @@ type IconDef = {
     size: IconSize,
     color: ColorList,
     shape: "Circle" | "Diamond" | "Hexagon" | "Square" | "Star" | "Triangle" | "Cross" | "Moon" | "Raindrop" | "Kite" | "Pentagon" | "UpsideDownHouse"
-}
+} | -1;
 
 class IconParam extends ParamImpl<IconDef, never, false> {
     valueToString(value: IconDef): string {
+        if (value === -1)
+            return "-1";
         return `${value.size} ${value.color} ${value.shape}`;
     }
 }
@@ -162,6 +165,7 @@ const CONDITION_DEF = {
     //count
     corruptedModCount: new IntParam("CorruptedMods", 0, 2),
     stackSize: new IntParam("StackSize", 0, 100),
+    sockets: new IntParam("Sockets", 0, 100),
 
     //level
     areaLevel: new IntParam("AreaLevel", 1, 100),
@@ -227,11 +231,15 @@ type FilterRuleActionMap = { [K in ActionName]?: ActionValue<K> };
 type FilterRuleOpConditionMap = {
     readonly [K in OpConditionNames]: FilterRuleOpConditionMapInner<K>
 };
-type FilterRuleOpConditionMapInner<K extends OpConditionNames> = {
+type FilterRuleOpConditionMapInner<K extends ConditionName> = {
     add(op: ConditionOp<K>, ...values: ConditionValue<K>[]): void
 };
-type FilterRuleNopConditionMap = { [K in NoOpConditionNames]?: ConditionValue<K> };
+type FilterRuleNopConditionMap = { [K in NoOpConditionNames]?: Immutable<ConditionValue<K>> };
 type FilterRuleConditionMap = FilterRuleNopConditionMap & FilterRuleOpConditionMap;
+
+// type FilterRuleConditionMap = {
+//     [K in ConditionName]?: Immutable<ConditionValue<K>> | FilterRuleOpConditionMapInner<K> };
+
 
 export enum FilterPriority {
     HIGHEST,
@@ -299,6 +307,9 @@ function build_condition_map(cd: RuleConditionData): FilterRuleConditionMap {
                     h.put_op(op, values);
                 }
             } satisfies FilterRuleOpConditionMapInner<any>;
+        },
+        deleteProperty(target: FilterRuleConditionMap, p: string | symbol): boolean {
+            throw new Error("todo");
         }
     });
 }
@@ -315,24 +326,24 @@ export type FilterTemplate = FilterRuleWithType<FilterRuleType.TEMPLATE>;
 
 class FilterRuleImpl {
     constructor(
-        public readonly rule_type: FilterRuleType
+        public readonly rule_type: FilterRuleType,
+        private mode = FilterModes.SHOW
     ) {
     }
 
     private condition_data: RuleConditionData = {};
 
-    private mode = FilterModes.SHOW;
     // public priority = FilterPriority.NORMAL;
     private actions: FilterRuleActionMap = {};
     private cond: FilterRuleConditionMap = build_condition_map(this.condition_data);
     private inherit: FilterRuleImpl[] = [];
 
 
-    private genFilterText(is_parent: boolean): string[] {
-        this.validate(is_parent);
+    private genFilterText(child_type?: FilterRuleType): string[] {
+        this.validate(child_type);
         const lines: string[] = [];
         for (let p of wrap_mv(this.inherit)) {
-            lines.push(...p.genFilterText(true));
+            lines.push(...p.genFilterText(this.rule_type));
         }
         for (const [name, val] of Object.entries(this.condition_data)) {
             const cdef = CONDITION_DEF[name as ConditionName] as ParamImpl<any, any, any>;
@@ -344,18 +355,19 @@ class FilterRuleImpl {
         return lines;
     }
 
-    validate(is_parent: boolean) {
+    validate(child_type?: FilterRuleType) {
+        // if (child_type === undefined) return;
         switch (this.rule_type) {
             case FilterRuleType.NORMAL: {
                 break;
             }
             case FilterRuleType.TEMPLATE: {
-                if (!is_parent)
+                if (child_type === undefined)
                     throw new Error("dont use templates directly!");
                 break;
             }
             case FilterRuleType.DECORATOR: {
-                if (is_parent)
+                if (child_type !== FilterRuleType.DECORATOR)
                     throw new Error("decorators should not be extended");
                 break;
             }
@@ -364,7 +376,7 @@ class FilterRuleImpl {
 
     getFilterText(): string {
         const lines: string[] = [this.mode];
-        lines.push(...this.genFilterText(false));
+        lines.push(...this.genFilterText(this.rule_type));
         if (this.rule_type === FilterRuleType.DECORATOR)
             lines.push(FILTER_INDENT + "Continue");
         return lines.join("\n");
@@ -392,22 +404,16 @@ export type FilterItemRarity = "Normal" | "Magic" | "Rare" | "Unique";
 type BaseTypeCleanType = {
     readonly [K in BaseTypeClass]: ReadonlyArray<{
         readonly stats?: {
-            ward_min: number,
             evasion_min: number,
-            ms: number,
-            evasion_max: number,
             armour_min: number,
             energy_shield_min: number,
-            energy_shield_max: number,
-            armour_max: number,
-            ward_max: number
         },
         readonly name: string
     }>
 }
 
 export const BASE_TYPES_MAP: BaseTypeCleanType = BASE_TYPES_RAW;
-export const BASE_TYPE_CLASSES: BaseTypeClass[] = Object.keys(BASE_TYPES_RAW) as any[];
+export const BASE_TYPE_CLASSES: BaseTypeClass[] = Object.keys(BASE_TYPES_RAW).filter(x => x[0] !== "#") as any[];
 
 //
 //
@@ -441,7 +447,7 @@ export const BASE_TYPE_CLASSES: BaseTypeClass[] = Object.keys(BASE_TYPES_RAW) as
 type rule_fn = (rule: FilterRuleEdit) => void;
 type ruleImplArgs = [extending: MaybeArray<FilterRuleImpl>, rule_fn] | [rule_fn];
 
-function ruleImpl<T extends FilterRuleType>(type: T, args: ruleImplArgs): FilterRuleWithType<T> {
+function ruleImpl<T extends FilterRuleType>(type: T, mode: FilterModes, args: ruleImplArgs): FilterRuleWithType<T> {
     let fn: rule_fn;
     let ext: MaybeArray<FilterRuleImpl> = [];
     if (args.length === 2) {
@@ -449,20 +455,24 @@ function ruleImpl<T extends FilterRuleType>(type: T, args: ruleImplArgs): Filter
     } else {
         [fn] = args;
     }
-    const r: FilterRuleImpl = new FilterRuleImpl(type).extends(...wrap_mv(ext)).edit(fn);
+    const r: FilterRuleImpl = new FilterRuleImpl(type, mode).extends(...wrap_mv(ext)).edit(fn);
     return r as FilterRuleWithType<T>;
 }
 
 export function rule(...args: ruleImplArgs) {
-    return ruleImpl(FilterRuleType.NORMAL, args);
+    return ruleImpl(FilterRuleType.NORMAL, FilterModes.SHOW, args);
+}
+
+export function hide(...args: ruleImplArgs) {
+    return ruleImpl(FilterRuleType.NORMAL, FilterModes.HIDE, args);
 }
 
 export function template(...args: ruleImplArgs) {
-    return ruleImpl(FilterRuleType.TEMPLATE, args);
+    return ruleImpl(FilterRuleType.TEMPLATE, FilterModes.SHOW, args);
 }
 
 export function decorator(...args: ruleImplArgs) {
-    return ruleImpl(FilterRuleType.DECORATOR, args);
+    return ruleImpl(FilterRuleType.DECORATOR, FilterModes.SHOW, args);
 }
 
 export function generate_filter(rules: FilterRuleImpl[]) {
@@ -497,18 +507,14 @@ export const CLASS_CATEGORIES_MAP = {
     EQUIPMENT: [
         "Daggers",
         "Sceptres",
-        "Abyss Jewels",
-        "Utility Flasks",
         "Gloves",
         "Bows",
         "Staves",
         "Rings",
         "One Hand Swords",
         "Shields",
-        "Thrusting One Hand Swords",
         "Wands",
         "Quivers",
-        "Warstaves",
         "Two Hand Axes",
         "Claws",
         "Helmets",
@@ -518,79 +524,130 @@ export const CLASS_CATEGORIES_MAP = {
         "One Hand Maces",
         "Body Armours",
         "Mana Flasks",
-        "Rune Daggers",
         "One Hand Axes",
-        "Tinctures",
         "Boots",
-        "Hybrid Flasks",
         "Amulets",
         "Belts",
         "Life Flasks",
+        "Charms",
+
+        //guessing
+        "Flails",
+        "Traps",
+        "Spears",
+        "Foci",
+        "Quarterstaves",
+        "Crossbows"
     ],
     SPECIAL_PICKUP: [
         "Fishing Rods",
         "Vault Keys",
         "Pieces",
-        "Labyrinth Map Items",
         "Microtransactions",
         "Relics",
-        "Corpses",
+        "Pinnacle Keys",
+        "Trial Coins"
     ],
     NOT_IN_GAME: [
         "Hidden Items",
-        "Charms",
-        "Embers of the Allflame",
         "Sanctified Relics",
         "Sentinels",
-        "Leaguestones",
         "Archnemesis Mods",
-        "Metamorph Samples",
+        "Heist Cloaks",
+        "Heist Brooches",
+        "Heist Gear",
+        "Heist Tools",
     ],
     QUEST_LIKE: [
         "Atlas Upgrade Items",
-        "Labyrinth Trinkets",
         "Incursion Items",
         "Memories",
         "Pantheon Souls",
-        "Labyrinth Items",
         "Heist Targets",
         "Quest Items",
+        "Instance Local Items",
     ],
     CURRENCY_LIKE: [
         "Delve Stackable Socketable Currency",
         "Delve Socketable Currency",
         "Currency",
         "Incubators",
-        "Gold",
         "Stackable Currency",
         "Map Fragments",
+        "Omen",
+        "Socketable"
     ],
     MAP_LIKE: [
-        "Maps",
+        "Waystones",
         "Breachstones",
-        "Instance Local Items",
         "Expedition Logbooks",
         "Blueprints",
-        "Sanctum Research",
         "Contracts",
         "Misc Map Items",
+        "Inscribed Ultimatum",
+        "Tablet",
     ],
     GEMS: [
         "Skill Gems",
         "Support Gems",
     ],
-    HEIST_EQUIP: [
-        "Heist Cloaks",
-        "Trinkets",
-        "Heist Brooches",
-        "Heist Gear",
-        "Heist Tools",
-    ],
-    DIV_CARD: [
-        "Divination Cards",
+    NO_NAME: [
+        "#GiftBox",
+        "#UncutReservationGem",
+        "#UncutSupportGem",
+        "#UncutSkillGem",
+        "#ConventionTreasure",
+        "#Meta Skill Gem"
     ]
+    // DIV_CARD: [
+    //      "Divination Cards",
+    // ]
 } as const satisfies { [k: string]: BaseTypeClass[] };
 export const CLASS_CATEGORIES = Object.keys(CLASS_CATEGORIES_MAP) as BaseTypeClassCategory[];
+
+export const EQUIPMENT_CATEGORIES = {
+    WEAPON: [
+        "Daggers",
+        "Sceptres",
+        "Bows",
+        "Staves",
+        "One Hand Swords",
+        "Wands",
+        "Quivers",
+        "Two Hand Axes",
+        "Claws",
+        "Two Hand Swords",
+        "Two Hand Maces",
+        "One Hand Maces",
+        "One Hand Axes",
+        "Flails",
+        "Traps",
+        "Spears",
+        "Quarterstaves",
+        "Crossbows"
+    ],
+    ARMOUR: [
+        "Gloves",
+        "Shields",
+        "Helmets",
+        "Body Armours",
+        "Boots",
+        "Foci",
+    ],
+    JEWELRY: [
+        "Rings",
+        "Amulets",
+        "Belts",
+        "Charms"
+    ],
+    JEWELS: [
+        "Jewels",
+    ],
+    FLASK: [
+        "Mana Flasks",
+        "Life Flasks",
+    ],
+} as const satisfies { [k: string]: (typeof CLASS_CATEGORIES_MAP)["EQUIPMENT"][number][] };
 
 function test_class_categories() {
     const counts: { [k: string]: number | undefined } = {};

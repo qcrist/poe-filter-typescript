@@ -1,10996 +1,12716 @@
 export const BASE_TYPES_RAW = {
     Daggers: [
-        {name: "Glass Shank"},
-        {name: "Skinning Knife"},
-        {name: "Stiletto"},
-        {name: "Prong Dagger"},
-        {name: "Flaying Knife"},
-        {name: "Poignard"},
-        {name: "Trisula"},
-        {name: "Gutting Knife"},
-        {name: "Ambusher"},
-        {name: "Sai"},
-        {name: "Hollowpoint Dagger"},
-        {name: "Pressurised Dagger"},
-        {name: "Pneumatic Dagger"},
-        {name: "Ethereal Blade"}
+        {
+            dropLevel: 1,
+            name: "Ethereal Blade"
+        },
+        {
+            dropLevel: 1,
+            name: "Glass Shank"
+        },
+        {
+            dropLevel: 6,
+            name: "Crone Knife"
+        },
+        {
+            dropLevel: 12,
+            name: "Simple Dagger"
+        },
+        {
+            dropLevel: 16,
+            name: "Skinning Knife"
+        },
+        {
+            dropLevel: 20,
+            name: "Moon Dagger"
+        },
+        {
+            dropLevel: 27,
+            name: "Engraved Knife"
+        },
+        {
+            dropLevel: 33,
+            name: "Obsidian Dagger"
+        },
+        {
+            dropLevel: 39,
+            name: "Bloodletting Dagger"
+        },
+        {
+            dropLevel: 45,
+            name: "Mail Breaker"
+        },
+        {
+            dropLevel: 49,
+            name: "Kris Knife"
+        },
+        {
+            dropLevel: 52,
+            name: "Parrying Dagger"
+        },
+        {
+            dropLevel: 56,
+            name: "Arcane Dirk"
+        },
+        {
+            dropLevel: 65,
+            name: "Cinquedea"
+        }
     ],
-    ["Fishing Rods"]: [{name: "Fishing Rod"}],
+    Omen: [
+        {
+            dropLevel: 1,
+            name: "Omen of Refreshment"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Resurgence"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Amelioration"
+        },
+        {
+            dropLevel: 75,
+            name: "Omen of Whittling"
+        },
+        {
+            dropLevel: 80,
+            name: "Omen of Sinistral Erasure"
+        },
+        {
+            dropLevel: 80,
+            name: "Omen of Dextral Erasure"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Sinistral Alchemy"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Dextral Alchemy"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Sinistral Coronation"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Dextral Coronation"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Corruption"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Greater Exaltation"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Sinistral Exaltation"
+        },
+        {
+            dropLevel: 1,
+            name: "Omen of Dextral Exaltation"
+        },
+        {
+            dropLevel: 75,
+            name: "Omen of Greater Annulment"
+        },
+        {
+            dropLevel: 80,
+            name: "Omen of Sinistral Annulment"
+        },
+        {
+            dropLevel: 80,
+            name: "Omen of Dextral Annulment"
+        }
+    ],
+    ["Fishing Rods"]: [{
+        dropLevel: 1,
+        name: "Fishing Rod"
+    }],
     ["Hidden Items"]: [
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Hidden Item"},
-        {name: "Random One Hand Sword"},
-        {name: "Random Rapier"},
-        {name: "Random Two Hand Sword"},
-        {name: "Random One Hand Axe"},
-        {name: "Random Two Hand Axe"},
-        {name: "Random One Hand Mace"},
-        {name: "Random Two Hand Mace"},
-        {name: "Random Claw"},
-        {name: "Random Dagger"},
-        {name: "Random Rune Dagger"},
-        {name: "Random Warstaff"},
-        {name: "Random Wand"},
-        {name: "Random Staff"},
-        {name: "Random Bow"},
-        {name: "Random Sceptre"},
-        {name: "Random Armour Body"},
-        {name: "Random Evasion Body"},
-        {name: "Random Energy Shield Body"},
-        {name: "Random Armour and Evasion Body"},
-        {name: "Random Armour and Energy Shield Body"},
-        {name: "Random Evasion and Energy Shield Body"},
-        {name: "Random Armour Helmet"},
-        {name: "Random Evasion Helmet"},
-        {name: "Random Energy Shield Helmet"},
-        {name: "Random Armour and Evasion Helmet"},
-        {name: "Random Armour and Energy Shield Helmet"},
-        {name: "Random Evasion and Energy Shield Helmet"},
-        {name: "Random Armour Gloves"},
-        {name: "Random Evasion Gloves"},
-        {name: "Random Energy Shield Gloves"},
-        {name: "Random Armour and Evasion Gloves"},
-        {name: "Random Armour and Energy Shield Gloves"},
-        {name: "Random Evasion and Energy Shield Gloves"},
-        {name: "Random Armour Boots"},
-        {name: "Random Evasion Boots"},
-        {name: "Random Energy Shield Boots"},
-        {name: "Random Armour and Evasion Boots"},
-        {name: "Random Armour and Energy Shield Boots"},
-        {name: "Random Evasion and Energy Shield Boots"},
-        {name: "Random Armour Shield"},
-        {name: "Random Evasion Shield"},
-        {name: "Random Energy Shield Shield"},
-        {name: "Random Armour and Evasion Shield"},
-        {name: "Random Armour and Energy Shield Shield"},
-        {name: "Random Evasion and Energy Shield Shield"},
-        {name: "Random Quiver"},
-        {name: "Random Amulet"},
-        {name: "Random Ring"},
-        {name: "Random Belt"}
+        {
+            dropLevel: 1,
+            name: "Hidden Item"
+        },
+        {
+            dropLevel: 1,
+            name: "Random One Handed Sword"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Two Handed Sword"
+        },
+        {
+            dropLevel: 1,
+            name: "Random One Handed Axe"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Two Handed Axe"
+        },
+        {
+            dropLevel: 1,
+            name: "Random One Handed Mace"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Two Handed Mace"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Spear"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Claw"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Dagger"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Quarterstaff"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Flail"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Wand"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Staff"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Bow"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Crossbow"
+        },
+        {
+            dropLevel: 2,
+            name: "Random Sceptre"
+        },
+        {
+            dropLevel: 2,
+            name: "Random Trap"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Body Armour"
+        },
+        {
+            dropLevel: 4,
+            name: "Random Body Armour"
+        },
+        {
+            dropLevel: 5,
+            name: "Random Body Armour"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Helmet"
+        },
+        {
+            dropLevel: 6,
+            name: "Random Helmet"
+        },
+        {
+            dropLevel: 5,
+            name: "Random Helmet"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Gloves"
+        },
+        {
+            dropLevel: 6,
+            name: "Random Gloves"
+        },
+        {
+            dropLevel: 5,
+            name: "Random Gloves"
+        },
+        {
+            dropLevel: 4,
+            name: "Random Gloves"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Boots"
+        },
+        {
+            dropLevel: 6,
+            name: "Random Boots"
+        },
+        {
+            dropLevel: 5,
+            name: "Random Boots"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Shield"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Buckler"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Focus"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Quiver"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Amulet"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Ring"
+        },
+        {
+            dropLevel: 1,
+            name: "Random Belt"
+        }
     ],
     Sceptres: [
-        {name: "Driftwood Sceptre"},
-        {name: "Darkwood Sceptre"},
-        {name: "Bronze Sceptre"},
-        {name: "Quartz Sceptre"},
-        {name: "Iron Sceptre"},
-        {name: "Ochre Sceptre"},
-        {name: "Ritual Sceptre"},
-        {name: "Shadow Sceptre"},
-        {name: "Horned Sceptre"},
-        {name: "Grinning Fetish"},
-        {name: "Sekhem"},
-        {name: "Crystal Sceptre"},
-        {name: "Lead Sceptre"},
-        {name: "Blood Sceptre"},
-        {name: "Royal Sceptre"},
-        {name: "Abyssal Sceptre"},
-        {name: "Stag Sceptre"},
-        {name: "Karui Sceptre"},
-        {name: "Tyrant's Sekhem"},
-        {name: "Opal Sceptre"},
-        {name: "Platinum Sceptre"},
-        {name: "Vaal Sceptre"},
-        {name: "Carnal Sceptre"},
-        {name: "Void Sceptre"},
-        {name: "Sambar Sceptre"},
-        {name: "Oscillating Sceptre"},
-        {name: "Stabilising Sceptre"},
-        {name: "Alternating Sceptre"}
+        {
+            dropLevel: 1,
+            name: "Rattling Sceptre"
+        },
+        {
+            dropLevel: 6,
+            name: "Stoic Sceptre"
+        },
+        {
+            dropLevel: 12,
+            name: "Lupine Sceptre"
+        },
+        {
+            dropLevel: 16,
+            name: "Omen Sceptre"
+        },
+        {
+            dropLevel: 21,
+            name: "Ochre Sceptre"
+        },
+        {
+            dropLevel: 26,
+            name: "Shrine Sceptre"
+        },
+        {
+            dropLevel: 33,
+            name: "Devouring Sceptre"
+        },
+        {
+            dropLevel: 36,
+            name: "Clasped Sceptre"
+        },
+        {
+            dropLevel: 45,
+            name: "Devotional Sceptre"
+        },
+        {
+            dropLevel: 49,
+            name: "Wrath Sceptre"
+        },
+        {
+            dropLevel: 52,
+            name: "Aromatic Sceptre"
+        },
+        {
+            dropLevel: 58,
+            name: "Pious Sceptre"
+        },
+        {
+            dropLevel: 65,
+            name: "Hallowed Sceptre"
+        }
     ],
-    ["Abyss Jewels"]: [
-        {name: "Murderous Eye Jewel"},
-        {name: "Searching Eye Jewel"},
-        {name: "Hypnotic Eye Jewel"},
-        {name: "Ghastly Eye Jewel"}
+    Waystones: [
+        {
+            dropLevel: 58,
+            name: "Waystone (Tier 1)"
+        },
+        {
+            dropLevel: 66,
+            name: "Waystone (Tier 2)"
+        },
+        {
+            dropLevel: 67,
+            name: "Waystone (Tier 3)"
+        },
+        {
+            dropLevel: 68,
+            name: "Waystone (Tier 4)"
+        },
+        {
+            dropLevel: 69,
+            name: "Waystone (Tier 5)"
+        },
+        {
+            dropLevel: 70,
+            name: "Waystone (Tier 6)"
+        },
+        {
+            dropLevel: 71,
+            name: "Waystone (Tier 7)"
+        },
+        {
+            dropLevel: 72,
+            name: "Waystone (Tier 8)"
+        },
+        {
+            dropLevel: 73,
+            name: "Waystone (Tier 9)"
+        },
+        {
+            dropLevel: 74,
+            name: "Waystone (Tier 10)"
+        },
+        {
+            dropLevel: 75,
+            name: "Waystone (Tier 11)"
+        },
+        {
+            dropLevel: 76,
+            name: "Waystone (Tier 12)"
+        },
+        {
+            dropLevel: 77,
+            name: "Waystone (Tier 13)"
+        },
+        {
+            dropLevel: 78,
+            name: "Waystone (Tier 14)"
+        },
+        {
+            dropLevel: 79,
+            name: "Waystone (Tier 15)"
+        },
+        {
+            dropLevel: 80,
+            name: "Waystone (Tier 16)"
+        }
     ],
+    ["Pinnacle Keys"]: [
+        {
+            dropLevel: 1,
+            name: "Ancient Crisis Fragment"
+        },
+        {
+            dropLevel: 1,
+            name: "Faded Crisis Fragment"
+        },
+        {
+            dropLevel: 1,
+            name: "Weathered Crisis Fragment"
+        }
+    ],
+    Flails: [
+        {
+            dropLevel: 1,
+            name: "Splintered Flail"
+        },
+        {
+            dropLevel: 6,
+            name: "Chain Flail"
+        },
+        {
+            dropLevel: 11,
+            name: "Holy Flail"
+        },
+        {
+            dropLevel: 16,
+            name: "Iron Flail"
+        },
+        {
+            dropLevel: 20,
+            name: "Twin Flail"
+        },
+        {
+            dropLevel: 26,
+            name: "Slender Flail"
+        },
+        {
+            dropLevel: 33,
+            name: "Stone Flail"
+        },
+        {
+            dropLevel: 38,
+            name: "Ring Flail"
+        },
+        {
+            dropLevel: 45,
+            name: "Guarded Flail"
+        },
+        {
+            dropLevel: 47,
+            name: "Icicle Flail"
+        },
+        {
+            dropLevel: 52,
+            name: "Tearing Flail"
+        },
+        {
+            dropLevel: 58,
+            name: "Great Flail"
+        },
+        {
+            dropLevel: 65,
+            name: "Abyssal Flail"
+        }
+    ],
+    ["#UncutSupportGem"]: [{
+        dropLevel: 4,
+        name: "Uncut Support Gem"
+    }],
     ["Atlas Upgrade Items"]: [
-        {name: "Ivory Watchstone"},
-        {name: "Crimson Watchstone"},
-        {name: "Crimson Watchstone"},
-        {name: "Crimson Watchstone"},
-        {name: "Crimson Watchstone"},
-        {name: "Crimson Watchstone"},
-        {name: "Crimson Watchstone"},
-        {name: "Crimson Watchstone"},
-        {name: "Crimson Watchstone"},
-        {name: "Cobalt Watchstone"},
-        {name: "Cobalt Watchstone"},
-        {name: "Cobalt Watchstone"},
-        {name: "Cobalt Watchstone"},
-        {name: "Cobalt Watchstone"},
-        {name: "Cobalt Watchstone"},
-        {name: "Cobalt Watchstone"},
-        {name: "Cobalt Watchstone"},
-        {name: "Viridian Watchstone"},
-        {name: "Viridian Watchstone"},
-        {name: "Viridian Watchstone"},
-        {name: "Viridian Watchstone"},
-        {name: "Viridian Watchstone"},
-        {name: "Viridian Watchstone"},
-        {name: "Viridian Watchstone"},
-        {name: "Viridian Watchstone"},
-        {name: "Golden Watchstone"},
-        {name: "Golden Watchstone"},
-        {name: "Golden Watchstone"},
-        {name: "Golden Watchstone"},
-        {name: "Golden Watchstone"},
-        {name: "Golden Watchstone"},
-        {name: "Golden Watchstone"},
-        {name: "Golden Watchstone"},
-        {name: "Ceremonial Voidstone"},
-        {name: "Decayed Voidstone"},
-        {name: "Grasping Voidstone"},
-        {name: "Omniscient Voidstone"},
-        {name: "Chromium Haewark Hamlet Watchstone"},
-        {name: "Chromium Tirn's End Watchstone"},
-        {name: "Chromium Lex Proxima Watchstone"},
-        {name: "Chromium Lex Ejoris Watchstone"},
-        {name: "Chromium New Vastir Watchstone"},
-        {name: "Chromium Glennach Cairns Watchstone"},
-        {name: "Chromium Valdo's Rest Watchstone"},
-        {name: "Chromium Lira Arthain Watchstone"},
-        {name: "Platinum Haewark Hamlet Watchstone"},
-        {name: "Platinum Tirn's End Watchstone"},
-        {name: "Platinum Lex Proxima Watchstone"},
-        {name: "Platinum Lex Ejoris Watchstone"},
-        {name: "Platinum New Vastir Watchstone"},
-        {name: "Platinum Glennach Cairns Watchstone"},
-        {name: "Platinum Valdo's Rest Watchstone"},
-        {name: "Platinum Lira Arthain Watchstone"},
-        {name: "Titanium Haewark Hamlet Watchstone"},
-        {name: "Titanium Tirn's End Watchstone"},
-        {name: "Titanium Lex Proxima Watchstone"},
-        {name: "Titanium Lex Ejoris Watchstone"},
-        {name: "Titanium New Vastir Watchstone"},
-        {name: "Titanium Glennach Cairns Watchstone"},
-        {name: "Titanium Valdo's Rest Watchstone"},
-        {name: "Titanium Lira Arthain Watchstone"}
-    ],
-    ["Utility Flasks"]: [
-        {name: "Diamond Flask"},
-        {name: "Ruby Flask"},
-        {name: "Sapphire Flask"},
-        {name: "Topaz Flask"},
-        {name: "Granite Flask"},
-        {name: "Quicksilver Flask"},
-        {name: "Amethyst Flask"},
-        {name: "Quartz Flask"},
-        {name: "Jade Flask"},
-        {name: "Basalt Flask"},
-        {name: "Aquamarine Flask"},
-        {name: "Stibnite Flask"},
-        {name: "Sulphur Flask"},
-        {name: "Silver Flask"},
-        {name: "Bismuth Flask"},
-        {name: "Gold Flask"},
-        {name: "Corundum Flask"},
-        {name: "Iron Flask"}
+        {
+            dropLevel: 1,
+            name: "Ivory Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Crimson Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Cobalt Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Viridian Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Ceremonial Voidstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Decayed Voidstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Grasping Voidstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Omniscient Voidstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Chromium Haewark Hamlet Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Chromium Tirn's End Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Chromium Lex Proxima Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Chromium Lex Ejoris Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Chromium New Vastir Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Chromium Glennach Cairns Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Chromium Valdo's Rest Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Chromium Lira Arthain Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Platinum Haewark Hamlet Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Platinum Tirn's End Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Platinum Lex Proxima Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Platinum Lex Ejoris Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Platinum New Vastir Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Platinum Glennach Cairns Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Platinum Valdo's Rest Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Platinum Lira Arthain Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Titanium Haewark Hamlet Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Titanium Tirn's End Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Titanium Lex Proxima Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Titanium Lex Ejoris Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Titanium New Vastir Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Titanium Glennach Cairns Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Titanium Valdo's Rest Watchstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Titanium Lira Arthain Watchstone"
+        }
     ],
     ["Delve Stackable Socketable Currency"]: [
-        {name: "Primitive Alchemical Resonator"},
-        {name: "Potent Alchemical Resonator"},
-        {name: "Powerful Alchemical Resonator"},
-        {name: "Prime Alchemical Resonator"},
-        {name: "Primitive Chaotic Resonator"},
-        {name: "Potent Chaotic Resonator"},
-        {name: "Powerful Chaotic Resonator"},
-        {name: "Prime Chaotic Resonator"}
+        {
+            dropLevel: 1,
+            name: "Primitive Alchemical Resonator"
+        },
+        {
+            dropLevel: 1,
+            name: "Potent Alchemical Resonator"
+        },
+        {
+            dropLevel: 34,
+            name: "Powerful Alchemical Resonator"
+        },
+        {
+            dropLevel: 68,
+            name: "Prime Alchemical Resonator"
+        },
+        {
+            dropLevel: 34,
+            name: "Primitive Chaotic Resonator"
+        },
+        {
+            dropLevel: 34,
+            name: "Potent Chaotic Resonator"
+        },
+        {
+            dropLevel: 34,
+            name: "Powerful Chaotic Resonator"
+        },
+        {
+            dropLevel: 68,
+            name: "Prime Chaotic Resonator"
+        }
     ],
-    Maps: [
-        {name: "Cursed Crypt Map"},
-        {name: "Dungeon Map"},
-        {name: "Grotto Map"},
-        {name: "Overgrown Ruin Map"},
-        {name: "Dunes Map"},
-        {name: "Arid Lake Map"},
-        {name: "Tropical Island Map"},
-        {name: "Orchard Map"},
-        {name: "Wharf Map"},
-        {name: "Arsenal Map"},
-        {name: "Thicket Map"},
-        {name: "Atoll Map"},
-        {name: "Cemetery Map"},
-        {name: "Toxic Sewer Map"},
-        {name: "Arcade Map"},
-        {name: "Ghetto Map"},
-        {name: "Spider Lair Map"},
-        {name: "Vaal Pyramid Map"},
-        {name: "Reef Map"},
-        {name: "Fungal Hollow Map"},
-        {name: "Mud Geyser Map"},
-        {name: "Museum Map"},
-        {name: "Bone Crypt Map"},
-        {name: "Overgrown Shrine Map"},
-        {name: "Crystal Ore Map"},
-        {name: "Shore Map"},
-        {name: "Spider Forest Map"},
-        {name: "Promenade Map"},
-        {name: "Underground River Map"},
-        {name: "Pier Map"},
-        {name: "Bog Map"},
-        {name: "Graveyard Map"},
-        {name: "Coves Map"},
-        {name: "Villa Map"},
-        {name: "Temple Map"},
-        {name: "Arachnid Nest Map"},
-        {name: "Strand Map"},
-        {name: "Ashen Wood Map"},
-        {name: "Colonnade Map"},
-        {name: "Primordial Blocks Map"},
-        {name: "Waste Pool Map"},
-        {name: "Flooded Mine Map"},
-        {name: "Jungle Valley Map"},
-        {name: "Gardens Map"},
-        {name: "Cells Map"},
-        {name: "Canyon Map"},
-        {name: "Dark Forest Map"},
-        {name: "Peninsula Map"},
-        {name: "Underground Sea Map"},
-        {name: "Maze Map"},
-        {name: "Glacier Map"},
-        {name: "Residence Map"},
-        {name: "Necropolis Map"},
-        {name: "Plateau Map"},
-        {name: "Bazaar Map"},
-        {name: "Lava Chamber Map"},
-        {name: "Precinct Map"},
-        {name: "Academy Map"},
-        {name: "Shipyard Map"},
-        {name: "Shrine Map"},
-        {name: "Palace Map"},
-        {name: "Courtyard Map"},
-        {name: "Vaal Temple Map"},
-        {name: "Cursed Crypt Map"},
-        {name: "Dungeon Map"},
-        {name: "Grotto Map"},
-        {name: "Dunes Map"},
-        {name: "Pit Map"},
-        {name: "Tropical Island Map"},
-        {name: "Desert Map"},
-        {name: "Toxic Sewer Map"},
-        {name: "Channel Map"},
-        {name: "Thicket Map"},
-        {name: "Atoll Map"},
-        {name: "Cemetery Map"},
-        {name: "Arcade Map"},
-        {name: "Wharf Map"},
-        {name: "Ghetto Map"},
-        {name: "Spider Lair Map"},
-        {name: "Vaal Pyramid Map"},
-        {name: "Reef Map"},
-        {name: "Geode Map"},
-        {name: "Mud Geyser Map"},
-        {name: "Museum Map"},
-        {name: "Arena Map"},
-        {name: "Overgrown Shrine Map"},
-        {name: "Crystal Ore Map"},
-        {name: "Shore Map"},
-        {name: "Spider Forest Map"},
-        {name: "Promenade Map"},
-        {name: "Phantasmagoria Map"},
-        {name: "Underground River Map"},
-        {name: "Pier Map"},
-        {name: "Bog Map"},
-        {name: "Graveyard Map"},
-        {name: "Coves Map"},
-        {name: "Villa Map"},
-        {name: "Temple Map"},
-        {name: "Arachnid Nest Map"},
-        {name: "Strand Map"},
-        {name: "Ashen Wood Map"},
-        {name: "Colonnade Map"},
-        {name: "Bone Crypt Map"},
-        {name: "Primordial Blocks Map"},
-        {name: "Waste Pool Map"},
-        {name: "Flooded Mine Map"},
-        {name: "Jungle Valley Map"},
-        {name: "Gardens Map"},
-        {name: "Cells Map"},
-        {name: "Canyon Map"},
-        {name: "Dark Forest Map"},
-        {name: "Peninsula Map"},
-        {name: "Orchard Map"},
-        {name: "Underground Sea Map"},
-        {name: "Arid Lake Map"},
-        {name: "Glacier Map"},
-        {name: "Residence Map"},
-        {name: "Malformation Map"},
-        {name: "Necropolis Map"},
-        {name: "Plateau Map"},
-        {name: "Bazaar Map"},
-        {name: "Volcano Map"},
-        {name: "Chateau Map"},
-        {name: "Lava Chamber Map"},
-        {name: "Precinct Map"},
-        {name: "Academy Map"},
-        {name: "Fungal Hollow Map"},
-        {name: "Shipyard Map"},
-        {name: "Overgrown Ruin Map"},
-        {name: "Castle Ruins Map"},
-        {name: "Arsenal Map"},
-        {name: "Wasteland Map"},
-        {name: "Courtyard Map"},
-        {name: "Excavation Map"},
-        {name: "Waterways Map"},
-        {name: "Palace Map"},
-        {name: "Shrine Map"},
-        {name: "Maze Map"},
-        {name: "Vaal Temple Map"},
-        {name: "Plaza Map"},
-        {name: "Core Map"},
-        {name: "Caldera Map"},
-        {name: "Colosseum Map"},
-        {name: "Arcade Map"},
-        {name: "Shaped Arcade Map"},
-        {name: "Crystal Ore Map"},
-        {name: "Shaped Crystal Ore Map"},
-        {name: "Desert Map"},
-        {name: "Shaped Desert Map"},
-        {name: "Jungle Valley Map"},
-        {name: "Shaped Jungle Valley Map"},
-        {name: "Beach Map"},
-        {name: "Shaped Beach Map"},
-        {name: "Factory Map"},
-        {name: "Shaped Factory Map"},
-        {name: "Ghetto Map"},
-        {name: "Shaped Ghetto Map"},
-        {name: "Desert Spring Map"},
-        {name: "Shaped Desert Spring Map"},
-        {name: "Arid Lake Map"},
-        {name: "Shaped Arid Lake Map"},
-        {name: "Flooded Mine Map"},
-        {name: "Shaped Flooded Mine Map"},
-        {name: "Channel Map"},
-        {name: "Shaped Channel Map"},
-        {name: "Grotto Map"},
-        {name: "Shaped Grotto Map"},
-        {name: "Marshes Map"},
-        {name: "Shaped Marshes Map"},
-        {name: "Toxic Sewer Map"},
-        {name: "Shaped Toxic Sewer Map"},
-        {name: "Vaal Pyramid Map"},
-        {name: "Shaped Vaal Pyramid Map"},
-        {name: "Academy Map"},
-        {name: "Shaped Academy Map"},
-        {name: "Acid Caverns Map"},
-        {name: "Shaped Acid Caverns Map"},
-        {name: "Dungeon Map"},
-        {name: "Shaped Dungeon Map"},
-        {name: "Graveyard Map"},
-        {name: "Shaped Graveyard Map"},
-        {name: "Phantasmagoria Map"},
-        {name: "Shaped Phantasmagoria Map"},
-        {name: "Villa Map"},
-        {name: "Shaped Villa Map"},
-        {name: "Waste Pool Map"},
-        {name: "Shaped Waste Pool Map"},
-        {name: "Burial Chambers Map"},
-        {name: "Shaped Burial Chambers Map"},
-        {name: "Peninsula Map"},
-        {name: "Shaped Peninsula Map"},
-        {name: "Dunes Map"},
-        {name: "Shaped Dunes Map"},
-        {name: "Mesa Map"},
-        {name: "Shaped Mesa Map"},
-        {name: "Pit Map"},
-        {name: "Shaped Pit Map"},
-        {name: "Primordial Pool Map"},
-        {name: "Shaped Primordial Pool Map"},
-        {name: "Spider Lair Map"},
-        {name: "Shaped Spider Lair Map"},
-        {name: "Tower Map"},
-        {name: "Shaped Tower Map"},
-        {name: "Canyon Map"},
-        {name: "Shaped Canyon Map"},
-        {name: "Geode Map"},
-        {name: "Shaped Geode Map"},
-        {name: "Racecourse Map"},
-        {name: "Shaped Racecourse Map"},
-        {name: "Ramparts Map"},
-        {name: "Shaped Ramparts Map"},
-        {name: "Spider Forest Map"},
-        {name: "Shaped Spider Forest Map"},
-        {name: "Strand Map"},
-        {name: "Shaped Strand Map"},
-        {name: "Thicket Map"},
-        {name: "Shaped Thicket Map"},
-        {name: "Ancient City Map"},
-        {name: "Shaped Ancient City Map"},
-        {name: "Wharf Map"},
-        {name: "Shaped Wharf Map"},
-        {name: "Arachnid Tomb Map"},
-        {name: "Shaped Arachnid Tomb Map"},
-        {name: "Castle Ruins Map"},
-        {name: "Shaped Castle Ruins Map"},
-        {name: "Bone Crypt Map"},
-        {name: "Shaped Bone Crypt Map"},
-        {name: "Cells Map"},
-        {name: "Shaped Cells Map"},
-        {name: "Armoury Map"},
-        {name: "Shaped Armoury Map"},
-        {name: "Ashen Wood Map"},
-        {name: "Shaped Ashen Wood Map"},
-        {name: "Mud Geyser Map"},
-        {name: "Shaped Mud Geyser Map"},
-        {name: "Arachnid Nest Map"},
-        {name: "Shaped Arachnid Nest Map"},
-        {name: "Arena Map"},
-        {name: "Shaped Arena Map"},
-        {name: "Bog Map"},
-        {name: "Shaped Bog Map"},
-        {name: "Cemetery Map"},
-        {name: "Shaped Cemetery Map"},
-        {name: "Barrows Map"},
-        {name: "Shaped Barrows Map"},
-        {name: "Atoll Map"},
-        {name: "Shaped Atoll Map"},
-        {name: "Pier Map"},
-        {name: "Shaped Pier Map"},
-        {name: "Shore Map"},
-        {name: "Shaped Shore Map"},
-        {name: "Tropical Island Map"},
-        {name: "Shaped Tropical Island Map"},
-        {name: "Coves Map"},
-        {name: "Shaped Coves Map"},
-        {name: "Cursed Crypt Map"},
-        {name: "Shaped Cursed Crypt Map"},
-        {name: "Museum Map"},
-        {name: "Shaped Museum Map"},
-        {name: "Orchard Map"},
-        {name: "Shaped Orchard Map"},
-        {name: "Overgrown Shrine Map"},
-        {name: "Shaped Overgrown Shrine Map"},
-        {name: "Promenade Map"},
-        {name: "Shaped Promenade Map"},
-        {name: "Reef Map"},
-        {name: "Shaped Reef Map"},
-        {name: "Temple Map"},
-        {name: "Shaped Temple Map"},
-        {name: "Colonnade Map"},
-        {name: "Shaped Colonnade Map"},
-        {name: "Arsenal Map"},
-        {name: "Shaped Arsenal Map"},
-        {name: "Courtyard Map"},
-        {name: "Shaped Courtyard Map"},
-        {name: "Malformation Map"},
-        {name: "Shaped Malformation Map"},
-        {name: "Port Map"},
-        {name: "Shaped Port Map"},
-        {name: "Gardens Map"},
-        {name: "Shaped Gardens Map"},
-        {name: "Underground River Map"},
-        {name: "Shaped Underground River Map"},
-        {name: "Bazaar Map"},
-        {name: "Chateau Map"},
-        {name: "Excavation Map"},
-        {name: "Precinct Map"},
-        {name: "Primordial Blocks Map"},
-        {name: "Underground Sea Map"},
-        {name: "Wasteland Map"},
-        {name: "Lava Chamber Map"},
-        {name: "Estuary Map"},
-        {name: "Necropolis Map"},
-        {name: "Plateau Map"},
-        {name: "Ivory Temple Map"},
-        {name: "Residence Map"},
-        {name: "Shipyard Map"},
-        {name: "Vault Map"},
-        {name: "Lair Map"},
-        {name: "Lighthouse Map"},
-        {name: "Glacier Map"},
-        {name: "Terrace Map"},
-        {name: "Plaza Map"},
-        {name: "Scriptorium Map"},
-        {name: "Leyline Map"},
-        {name: "Waterways Map"},
-        {name: "Maze Map"},
-        {name: "Mineral Pools Map"},
-        {name: "Palace Map"},
-        {name: "Shrine Map"},
-        {name: "Fungal Hollow Map"},
-        {name: "Volcano Map"},
-        {name: "Caldera Map"},
-        {name: "Colosseum Map"},
-        {name: "Core Map"},
-        {name: "Dark Forest Map"},
-        {name: "Overgrown Ruin Map"},
-        {name: "Pit of the Chimera Map"},
-        {name: "Lair of the Hydra Map"},
-        {name: "Maze of the Minotaur Map"},
-        {name: "Forge of the Phoenix Map"},
-        {name: "The Shaper's Realm"},
-        {name: "Vaal Temple Map"},
-        {name: "Harbinger Map"},
-        {name: "Harbinger Map"},
-        {name: "Harbinger Map"},
-        {name: "Lookout Map"},
-        {name: "Beach Map"},
-        {name: "Graveyard Map"},
-        {name: "Dungeon Map"},
-        {name: "Foundry Map"},
-        {name: "Alleyways Map"},
-        {name: "Pen Map"},
-        {name: "Desert Map"},
-        {name: "Arid Lake Map"},
-        {name: "Flooded Mine Map"},
-        {name: "Marshes Map"},
-        {name: "Iceberg Map"},
-        {name: "Cage Map"},
-        {name: "Fungal Hollow Map"},
-        {name: "Excavation Map"},
-        {name: "Leyline Map"},
-        {name: "Peninsula Map"},
-        {name: "Port Map"},
-        {name: "Burial Chambers Map"},
-        {name: "Cells Map"},
-        {name: "Arcade Map"},
-        {name: "City Square Map"},
-        {name: "Relic Chambers Map"},
-        {name: "Courthouse Map"},
-        {name: "Strand Map"},
-        {name: "Chateau Map"},
-        {name: "Grotto Map"},
-        {name: "Glacier Map"},
-        {name: "Volcano Map"},
-        {name: "Lighthouse Map"},
-        {name: "Canyon Map"},
-        {name: "Frozen Cabins Map"},
-        {name: "Grave Trough Map"},
-        {name: "Crimson Township Map"},
-        {name: "Forking River Map"},
-        {name: "Cold River Map"},
-        {name: "Forbidden Woods Map"},
-        {name: "Conservatory Map"},
-        {name: "Sulphur Vents Map"},
-        {name: "Haunted Mansion Map"},
-        {name: "Maze Map"},
-        {name: "Channel Map"},
-        {name: "Toxic Sewer Map"},
-        {name: "Ancient City Map"},
-        {name: "Ivory Temple Map"},
-        {name: "Spider Lair Map"},
-        {name: "Barrows Map"},
-        {name: "Mausoleum Map"},
-        {name: "Fields Map"},
-        {name: "Jungle Valley Map"},
-        {name: "Phantasmagoria Map"},
-        {name: "Academy Map"},
-        {name: "Thicket Map"},
-        {name: "Wharf Map"},
-        {name: "Ashen Wood Map"},
-        {name: "Atoll Map"},
-        {name: "Cemetery Map"},
-        {name: "Underground Sea Map"},
-        {name: "Crater Map"},
-        {name: "Coral Ruins Map"},
-        {name: "Lava Chamber Map"},
-        {name: "Residence Map"},
-        {name: "Ramparts Map"},
-        {name: "Dunes Map"},
-        {name: "Bone Crypt Map"},
-        {name: "Underground River Map"},
-        {name: "Gardens Map"},
-        {name: "Arachnid Nest Map"},
-        {name: "Bazaar Map"},
-        {name: "Laboratory Map"},
-        {name: "Infested Valley Map"},
-        {name: "Overgrown Ruin Map"},
-        {name: "Vaal Pyramid Map"},
-        {name: "Geode Map"},
-        {name: "Armoury Map"},
-        {name: "Courtyard Map"},
-        {name: "Mud Geyser Map"},
-        {name: "Shore Map"},
-        {name: "Tropical Island Map"},
-        {name: "Mineral Pools Map"},
-        {name: "Moon Temple Map"},
-        {name: "Sepulchre Map"},
-        {name: "Tower Map"},
-        {name: "Waste Pool Map"},
-        {name: "Plateau Map"},
-        {name: "Estuary Map"},
-        {name: "Vault Map"},
-        {name: "Temple Map"},
-        {name: "Arena Map"},
-        {name: "Museum Map"},
-        {name: "Scriptorium Map"},
-        {name: "Siege Map"},
-        {name: "Synthesised Map"},
-        {name: "Shipyard Map"},
-        {name: "Belfry Map"},
-        {name: "Arachnid Tomb Map"},
-        {name: "Wasteland Map"},
-        {name: "Precinct Map"},
-        {name: "Bog Map"},
-        {name: "Pier Map"},
-        {name: "Cursed Crypt Map"},
-        {name: "Orchard Map"},
-        {name: "Promenade Map"},
-        {name: "Lair Map"},
-        {name: "Colonnade Map"},
-        {name: "Primordial Pool Map"},
-        {name: "Spider Forest Map"},
-        {name: "Coves Map"},
-        {name: "Waterways Map"},
-        {name: "Factory Map"},
-        {name: "Mesa Map"},
-        {name: "Pit Map"},
-        {name: "Dry Sea Map"},
-        {name: "Defiled Cathedral Map"},
-        {name: "Summit Map"},
-        {name: "Overgrown Shrine Map"},
-        {name: "Castle Ruins Map"},
-        {name: "Crystal Ore Map"},
-        {name: "Villa Map"},
-        {name: "Primordial Blocks Map"},
-        {name: "Necropolis Map"},
-        {name: "Racecourse Map"},
-        {name: "Caldera Map"},
-        {name: "Ghetto Map"},
-        {name: "Park Map"},
-        {name: "Malformation Map"},
-        {name: "Terrace Map"},
-        {name: "Shrine Map"},
-        {name: "Arsenal Map"},
-        {name: "Desert Spring Map"},
-        {name: "Core Map"},
-        {name: "Colosseum Map"},
-        {name: "Acid Caverns Map"},
-        {name: "Dark Forest Map"},
-        {name: "Crimson Temple Map"},
-        {name: "Plaza Map"},
-        {name: "Dig Map"},
-        {name: "Palace Map"},
-        {name: "Lava Lake Map"},
-        {name: "Basilica Map"},
-        {name: "Sunken City Map"},
-        {name: "Reef Map"},
-        {name: "Carcass Map"},
-        {name: "Stagnation Map"},
-        {name: "Bramble Valley Map"},
-        {name: "Silo Map"},
-        {name: "Pit of the Chimera Map"},
-        {name: "Lair of the Hydra Map"},
-        {name: "Maze of the Minotaur Map"},
-        {name: "Forge of the Phoenix Map"},
-        {name: "The Shaper's Realm"},
-        {name: "Vaal Temple Map"},
-        {name: "Harbinger Map"},
-        {name: "Harbinger Map"},
-        {name: "Harbinger Map"},
-        {name: "Harbinger Map"},
-        {name: "Engraved Ultimatum"},
-        {name: "Sanctuary Map"},
-        {name: "Citadel Map"},
-        {name: "Fortress Map"},
-        {name: "Abomination Map"},
-        {name: "Ziggurat Map"}
+    Traps: [
+        {
+            dropLevel: 2,
+            name: "Clay Trap"
+        },
+        {
+            dropLevel: 6,
+            name: "Clamping Trap"
+        },
+        {
+            dropLevel: 10,
+            name: "Shrapnel Trap"
+        },
+        {
+            dropLevel: 16,
+            name: "Urn Trap"
+        },
+        {
+            dropLevel: 22,
+            name: "Incense Trap"
+        },
+        {
+            dropLevel: 27,
+            name: "Bladed Trap"
+        },
+        {
+            dropLevel: 33,
+            name: "Dart Trap"
+        },
+        {
+            dropLevel: 38,
+            name: "Spike Trap"
+        },
+        {
+            dropLevel: 45,
+            name: "Coiled Trap"
+        },
+        {
+            dropLevel: 49,
+            name: "Lead Trap"
+        },
+        {
+            dropLevel: 52,
+            name: "Medallion Trap"
+        },
+        {
+            dropLevel: 56,
+            name: "Intricate Trap"
+        },
+        {
+            dropLevel: 65,
+            name: "Refined Trap"
+        }
     ],
     Gloves: [
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 6,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 9,
-                ward_max: 0
-            },
-            name: "Iron Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 39,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 50,
-                ward_max: 0
-            },
-            name: "Plated Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 77,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 96,
-                ward_max: 0
-            },
-            name: "Bronze Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 116,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 127,
-                ward_max: 0
-            },
-            name: "Steel Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 129,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 154,
-                ward_max: 0
-            },
-            name: "Antique Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 154,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 173,
-                ward_max: 0
-            },
-            name: "Ancient Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 174,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 200,
-                ward_max: 0
-            },
-            name: "Goliath Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 232,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 266,
-                ward_max: 0
-            },
-            name: "Vaal Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 242,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 278,
-                ward_max: 0
-            },
-            name: "Titan Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 307,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 353,
-                ward_max: 0
-            },
-            name: "Precursor Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 359,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 413,
-                ward_max: 0
-            },
-            name: "Leviathan Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 35,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 41,
-                ward_max: 0
-            },
-            name: "Preserving Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 132,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 152,
-                ward_max: 0
-            },
-            name: "Guarding Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 236,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 271,
-                ward_max: 0
-            },
-            name: "Thwarting Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 13,
-                ms: 0,
-                evasion_max: 18,
                 armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
+                energy_shield_min: 0
             },
-            name: "Rawhide Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 32,
-                ms: 0,
-                evasion_max: 42,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Goathide Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 71,
-                ms: 0,
-                evasion_max: 88,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Deerskin Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 109,
-                ms: 0,
-                evasion_max: 122,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Nubuck Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 125,
-                ms: 0,
-                evasion_max: 148,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Eelskin Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 148,
-                ms: 0,
-                evasion_max: 163,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sharkskin Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 177,
-                ms: 0,
-                evasion_max: 212,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Shagreen Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 231,
-                ms: 0,
-                evasion_max: 265,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Stealth Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 242,
-                ms: 0,
-                evasion_max: 278,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Slink Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 307,
-                ms: 0,
-                evasion_max: 353,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Harpyskin Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 359,
-                ms: 0,
-                evasion_max: 413,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Velour Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 35,
-                ms: 0,
-                evasion_max: 41,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Tinker Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 132,
-                ms: 0,
-                evasion_max: 152,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Apprentice Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 236,
-                ms: 0,
-                evasion_max: 271,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Trapsetter Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 5,
-                energy_shield_max: 7,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Wool Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 10,
-                energy_shield_max: 13,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Velvet Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 18,
-                energy_shield_max: 23,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Silk Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 25,
-                energy_shield_max: 28,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Embroidered Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 28,
-                energy_shield_max: 33,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Satin Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 32,
-                energy_shield_max: 37,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Samite Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 37,
-                energy_shield_max: 44,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Conjurer Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 45,
-                energy_shield_max: 52,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Arcanist Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 49,
-                energy_shield_max: 57,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sorcerer Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 62,
-                energy_shield_max: 71,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sage Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 72,
-                energy_shield_max: 83,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Warlock Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 9,
-                energy_shield_max: 10,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Leyline Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 28,
-                energy_shield_max: 32,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Aetherwind Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 47,
-                energy_shield_max: 54,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Nexus Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 9,
-                ms: 0,
-                evasion_max: 12,
-                armour_min: 9,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 12,
-                ward_max: 0
-            },
-            name: "Fishscale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 28,
-                ms: 0,
-                evasion_max: 37,
-                armour_min: 28,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 37,
-                ward_max: 0
-            },
-            name: "Ironscale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 50,
-                ms: 0,
-                evasion_max: 62,
-                armour_min: 50,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 62,
-                ward_max: 0
-            },
-            name: "Bronzescale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 65,
-                ms: 0,
-                evasion_max: 75,
-                armour_min: 65,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 75,
-                ward_max: 0
-            },
-            name: "Steelscale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 78,
-                ms: 0,
-                evasion_max: 87,
-                armour_min: 78,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 87,
-                ward_max: 0
-            },
-            name: "Serpentscale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 88,
-                ms: 0,
-                evasion_max: 104,
-                armour_min: 88,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 104,
-                ward_max: 0
-            },
-            name: "Wyrmscale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 106,
-                ms: 0,
-                evasion_max: 122,
-                armour_min: 106,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 122,
-                ward_max: 0
-            },
-            name: "Hydrascale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 121,
-                ms: 0,
-                evasion_max: 139,
-                armour_min: 121,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 139,
-                ward_max: 0
-            },
-            name: "Dragonscale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 176,
-                ms: 0,
-                evasion_max: 203,
-                armour_min: 176,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 203,
-                ward_max: 0
-            },
-            name: "Chimerascale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 205,
-                ms: 0,
-                evasion_max: 236,
-                armour_min: 205,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 236,
-                ward_max: 0
-            },
-            name: "Wyvernscale Gauntlets"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 14,
-                energy_shield_min: 4,
-                energy_shield_max: 6,
-                armour_max: 20,
-                ward_max: 0
-            },
-            name: "Chain Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 35,
-                energy_shield_min: 8,
-                energy_shield_max: 10,
-                armour_max: 46,
-                ward_max: 0
-            },
-            name: "Ringmail Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 58,
-                energy_shield_min: 12,
-                energy_shield_max: 14,
-                armour_max: 67,
-                ward_max: 0
-            },
-            name: "Mesh Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 67,
-                energy_shield_min: 14,
-                energy_shield_max: 16,
-                armour_max: 77,
-                ward_max: 0
-            },
-            name: "Riveted Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 78,
-                energy_shield_min: 16,
-                energy_shield_max: 19,
-                armour_max: 92,
-                ward_max: 0
-            },
-            name: "Zealot Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 92,
-                energy_shield_min: 19,
-                energy_shield_max: 21,
-                armour_max: 103,
-                ward_max: 0
-            },
-            name: "Soldier Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 103,
-                energy_shield_min: 21,
-                energy_shield_max: 25,
-                armour_max: 121,
-                ward_max: 0
-            },
-            name: "Legion Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 121,
-                energy_shield_min: 25,
-                energy_shield_max: 28,
-                armour_max: 139,
-                ward_max: 0
-            },
-            name: "Crusader Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 176,
-                energy_shield_min: 35,
-                energy_shield_max: 41,
-                armour_max: 203,
-                ward_max: 0
-            },
-            name: "Martyr Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 205,
-                energy_shield_min: 41,
-                energy_shield_max: 47,
-                armour_max: 236,
-                ward_max: 0
-            },
-            name: "Paladin Gloves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 11,
-                ms: 0,
-                evasion_max: 15,
-                armour_min: 0,
-                energy_shield_min: 3,
-                energy_shield_max: 5,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Wrapped Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 30,
-                ms: 0,
-                evasion_max: 39,
-                armour_min: 0,
-                energy_shield_min: 7,
-                energy_shield_max: 9,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Strapped Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 57,
-                ms: 0,
-                evasion_max: 65,
-                armour_min: 0,
-                energy_shield_min: 12,
-                energy_shield_max: 14,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Clasped Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 65,
-                ms: 0,
-                evasion_max: 77,
-                armour_min: 0,
-                energy_shield_min: 14,
-                energy_shield_max: 16,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Trapper Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 81,
-                ms: 0,
-                evasion_max: 91,
-                armour_min: 0,
-                energy_shield_min: 17,
-                energy_shield_max: 19,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Ambush Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 90,
-                ms: 0,
-                evasion_max: 101,
-                armour_min: 0,
-                energy_shield_min: 19,
-                energy_shield_max: 21,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Carnal Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 104,
-                ms: 0,
-                evasion_max: 123,
-                armour_min: 0,
-                energy_shield_min: 21,
-                energy_shield_max: 25,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Assassin's Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 121,
-                ms: 0,
-                evasion_max: 139,
-                armour_min: 0,
-                energy_shield_min: 25,
-                energy_shield_max: 28,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Murder Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 176,
-                ms: 0,
-                evasion_max: 203,
-                armour_min: 0,
-                energy_shield_min: 35,
-                energy_shield_max: 41,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Infiltrator Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 205,
-                ms: 0,
-                evasion_max: 236,
-                armour_min: 0,
-                energy_shield_min: 41,
-                energy_shield_max: 47,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Phantom Mitts"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
+            dropLevel: 12,
             name: "Golden Bracers"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 220,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 253,
-                ward_max: 0
+                armour_min: 15,
+                energy_shield_min: 0
             },
-            name: "Spiked Gloves"
+            dropLevel: 1,
+            name: "Stocky Mitts"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 220,
-                ms: 0,
-                evasion_max: 253,
+                evasion_min: 0,
+                armour_min: 31,
+                energy_shield_min: 0
+            },
+            dropLevel: 11,
+            name: "Riveted Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 40,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Tempered Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 58,
+                energy_shield_min: 0
+            },
+            dropLevel: 27,
+            name: "Bolstered Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 68,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Moulded Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 88,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Detailed Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 100,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Titan Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 122,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Grand Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 10,
                 armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
+                energy_shield_min: 0
             },
-            name: "Gripped Gloves"
+            dropLevel: 1,
+            name: "Suede Bracers"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
+                evasion_min: 26,
                 armour_min: 0,
-                energy_shield_min: 45,
-                energy_shield_max: 52,
-                armour_max: 0,
-                ward_max: 0
+                energy_shield_min: 0
             },
-            name: "Fingerless Silk Gloves"
+            dropLevel: 11,
+            name: "Firm Bracers"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 108,
-                energy_shield_min: 29,
-                energy_shield_max: 33,
-                armour_max: 124,
-                ward_max: 0
-            },
-            name: "Apothecary's Gloves"
-        },
-        {
-            stats: {
-                ward_min: 24,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
+                evasion_min: 33,
                 armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 28
+                energy_shield_min: 0
             },
-            name: "Runic Gloves"
+            dropLevel: 16,
+            name: "Bound Bracers"
         },
         {
             stats: {
-                ward_min: 62,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
+                evasion_min: 52,
                 armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 71
+                energy_shield_min: 0
             },
-            name: "Runic Gages"
+            dropLevel: 28,
+            name: "Sectioned Bracers"
         },
         {
             stats: {
-                ward_min: 102,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
+                evasion_min: 60,
                 armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 117
+                energy_shield_min: 0
             },
-            name: "Runic Gauntlets"
+            dropLevel: 33,
+            name: "Spined Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 79,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Fine Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 90,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Hardened Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 111,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Engraved Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 9
+            },
+            dropLevel: 1,
+            name: "Torn Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 15
+            },
+            dropLevel: 12,
+            name: "Sombre Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 17
+            },
+            dropLevel: 16,
+            name: "Stitched Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 22
+            },
+            dropLevel: 26,
+            name: "Jewelled Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 26
+            },
+            dropLevel: 33,
+            name: "Intricate Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 32
+            },
+            dropLevel: 45,
+            name: "Pauascale Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 35
+            },
+            dropLevel: 52,
+            name: "Embroidered Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 42
+            },
+            dropLevel: 65,
+            name: "Adorned Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 10,
+                armour_min: 13,
+                energy_shield_min: 0
+            },
+            dropLevel: 6,
+            name: "Ringmail Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 18,
+                armour_min: 22,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Layered Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 33,
+                armour_min: 37,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Doubled Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 44,
+                armour_min: 48,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Plate Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 50,
+                armour_min: 55,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Burnished Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 61,
+                armour_min: 67,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Ornate Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 12,
+                energy_shield_min: 6
+            },
+            dropLevel: 5,
+            name: "Rope Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 22,
+                energy_shield_min: 9
+            },
+            dropLevel: 16,
+            name: "Aged Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 37,
+                energy_shield_min: 14
+            },
+            dropLevel: 33,
+            name: "Goldcast Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 48,
+                energy_shield_min: 17
+            },
+            dropLevel: 45,
+            name: "Diviner Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 55,
+                energy_shield_min: 19
+            },
+            dropLevel: 52,
+            name: "Righteous Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 67,
+                energy_shield_min: 23
+            },
+            dropLevel: 65,
+            name: "Signet Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 8,
+                armour_min: 0,
+                energy_shield_min: 6
+            },
+            dropLevel: 4,
+            name: "Gauze Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 18,
+                armour_min: 0,
+                energy_shield_min: 9
+            },
+            dropLevel: 16,
+            name: "Linen Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 33,
+                armour_min: 0,
+                energy_shield_min: 14
+            },
+            dropLevel: 33,
+            name: "Spiral Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 44,
+                armour_min: 0,
+                energy_shield_min: 17
+            },
+            dropLevel: 45,
+            name: "Buckled Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 50,
+                armour_min: 0,
+                energy_shield_min: 19
+            },
+            dropLevel: 52,
+            name: "Furtive Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 61,
+                armour_min: 0,
+                energy_shield_min: 23
+            },
+            dropLevel: 65,
+            name: "Utility Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 40,
+                armour_min: 44,
+                energy_shield_min: 15
+            },
+            dropLevel: 65,
+            name: "Grand Manchettes"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 88,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Riveted Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 98,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Tempered Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 105,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Bolstered Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 111,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Moulded Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 79,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Firm Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 89,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Bound Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 95,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Sectioned Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 101,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Spined Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 32
+            },
+            dropLevel: 45,
+            name: "Advanced Sombre Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 35
+            },
+            dropLevel: 51,
+            name: "Advanced Stitched Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 37
+            },
+            dropLevel: 55,
+            name: "Advanced Jewelled Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 39
+            },
+            dropLevel: 59,
+            name: "Advanced Intricate Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 44,
+                armour_min: 48,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Ringmail Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 49,
+                armour_min: 54,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Layered Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 56,
+                armour_min: 61,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Doubled Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 48,
+                energy_shield_min: 17
+            },
+            dropLevel: 45,
+            name: "Advanced Rope Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 54,
+                energy_shield_min: 19
+            },
+            dropLevel: 51,
+            name: "Advanced Aged Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 61,
+                energy_shield_min: 21
+            },
+            dropLevel: 59,
+            name: "Advanced Goldcast Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 44,
+                armour_min: 0,
+                energy_shield_min: 17
+            },
+            dropLevel: 45,
+            name: "Advanced Gauze Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 49,
+                armour_min: 0,
+                energy_shield_min: 19
+            },
+            dropLevel: 51,
+            name: "Advanced Linen Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 56,
+                armour_min: 0,
+                energy_shield_min: 21
+            },
+            dropLevel: 59,
+            name: "Advanced Spiral Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 122,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Riveted Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 134,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Bolstered Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 146,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Moulded Mitts"
+        },
+        {
+            stats: {
+                evasion_min: 111,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Firm Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 122,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Sectioned Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 133,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Spined Bracers"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 42
+            },
+            dropLevel: 65,
+            name: "Expert Sombre Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 46
+            },
+            dropLevel: 70,
+            name: "Expert Jewelled Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 50
+            },
+            dropLevel: 75,
+            name: "Expert Intricate Gloves"
+        },
+        {
+            stats: {
+                evasion_min: 61,
+                armour_min: 67,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Ringmail Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 67,
+                armour_min: 74,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Layered Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 73,
+                armour_min: 80,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Doubled Gauntlets"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 67,
+                energy_shield_min: 23
+            },
+            dropLevel: 65,
+            name: "Expert Rope Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 74,
+                energy_shield_min: 25
+            },
+            dropLevel: 70,
+            name: "Expert Aged Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 80,
+                energy_shield_min: 28
+            },
+            dropLevel: 75,
+            name: "Expert Goldcast Cuffs"
+        },
+        {
+            stats: {
+                evasion_min: 61,
+                armour_min: 0,
+                energy_shield_min: 23
+            },
+            dropLevel: 65,
+            name: "Expert Gauze Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 67,
+                armour_min: 0,
+                energy_shield_min: 25
+            },
+            dropLevel: 70,
+            name: "Expert Linen Wraps"
+        },
+        {
+            stats: {
+                evasion_min: 73,
+                armour_min: 0,
+                energy_shield_min: 28
+            },
+            dropLevel: 75,
+            name: "Expert Spiral Wraps"
         }
     ],
-    ["Labyrinth Trinkets"]: [
-        {name: "Bane of the Loyal"},
-        {name: "Heart of the Gargoyle"},
-        {name: "Cube Of Absorption"},
-        {name: "Orb of Elemental Dispersion"},
-        {name: "Rod of Detonation"},
-        {name: "Vial Of Power"},
-        {name: "Sand of Eternity"},
-        {name: "Cogs of Disruption"},
-        {name: "Black Rose of Anarchy"},
-        {name: "Portal Shredder"}
-    ],
     Bows: [
-        {name: "Crude Bow"},
-        {name: "Short Bow"},
-        {name: "Long Bow"},
-        {name: "Composite Bow"},
-        {name: "Recurve Bow"},
-        {name: "Bone Bow"},
-        {name: "Royal Bow"},
-        {name: "Death Bow"},
-        {name: "Reflex Bow"},
-        {name: "Grove Bow"},
-        {name: "Decurve Bow"},
-        {name: "Compound Bow"},
-        {name: "Sniper Bow"},
-        {name: "Ivory Bow"},
-        {name: "Highborn Bow"},
-        {name: "Decimation Bow"},
-        {name: "Steelwood Bow"},
-        {name: "Thicket Bow"},
-        {name: "Citadel Bow"},
-        {name: "Ranger Bow"},
-        {name: "Assassin Bow"},
-        {name: "Spine Bow"},
-        {name: "Imperial Bow"},
-        {name: "Harbinger Bow"},
-        {name: "Maraketh Bow"},
-        {name: "Hedron Bow"},
-        {name: "Foundry Bow"},
-        {name: "Solarine Bow"},
-        {name: "Crude Bow"},
-        {name: "Ethereal Bow"}
+        {
+            dropLevel: 1,
+            name: "Crude Bow"
+        },
+        {
+            dropLevel: 5,
+            name: "Shortbow"
+        },
+        {
+            dropLevel: 11,
+            name: "Warden Bow"
+        },
+        {
+            dropLevel: 16,
+            name: "Recurve Bow"
+        },
+        {
+            dropLevel: 22,
+            name: "Composite Bow"
+        },
+        {
+            dropLevel: 28,
+            name: "Dualstring Bow"
+        },
+        {
+            dropLevel: 33,
+            name: "Cultist Bow"
+        },
+        {
+            dropLevel: 39,
+            name: "Zealot Bow"
+        },
+        {
+            dropLevel: 45,
+            name: "Artillery Bow"
+        },
+        {
+            dropLevel: 50,
+            name: "Tribal Bow"
+        },
+        {
+            dropLevel: 52,
+            name: "Greatbow"
+        },
+        {
+            dropLevel: 56,
+            name: "Double Limb Bow"
+        },
+        {
+            dropLevel: 65,
+            name: "Heavy Bow"
+        },
+        {
+            dropLevel: 45,
+            name: "Advanced Shortbow"
+        },
+        {
+            dropLevel: 48,
+            name: "Advanced Warden Bow"
+        },
+        {
+            dropLevel: 51,
+            name: "Advanced Composite Bow"
+        },
+        {
+            dropLevel: 55,
+            name: "Advanced Dualstring Bow"
+        },
+        {
+            dropLevel: 59,
+            name: "Advanced Cultist Bow"
+        },
+        {
+            dropLevel: 62,
+            name: "Advanced Zealot Bow"
+        },
+        {
+            dropLevel: 67,
+            name: "Expert Shortbow"
+        },
+        {
+            dropLevel: 72,
+            name: "Expert Composite Bow"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Warden Bow"
+        },
+        {
+            dropLevel: 78,
+            name: "Expert Dualstring Bow"
+        },
+        {
+            dropLevel: 79,
+            name: "Expert Cultist Bow"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Zealot Bow"
+        }
     ],
     ["Incursion Items"]: [
-        {name: "Stone of Passage"},
-        {name: "Flashpowder Keg"}
+        {
+            dropLevel: 1,
+            name: "Stone of Passage"
+        },
+        {
+            dropLevel: 1,
+            name: "Flashpowder Keg"
+        }
     ],
     Staves: [
-        {name: "Gnarled Branch"},
-        {name: "Primitive Staff"},
-        {name: "Long Staff"},
-        {name: "Royal Staff"},
-        {name: "Crescent Staff"},
-        {name: "Woodful Staff"},
-        {name: "Quarterstaff"},
-        {name: "Highborn Staff"},
-        {name: "Moon Staff"},
-        {name: "Primordial Staff"},
-        {name: "Lathi"},
-        {name: "Imperial Staff"},
-        {name: "Eclipse Staff"},
-        {name: "Transformer Staff"},
-        {name: "Reciprocation Staff"},
-        {name: "Battery Staff"}
+        {
+            dropLevel: 1,
+            name: "Ashen Staff"
+        },
+        {
+            dropLevel: 2,
+            name: "Gelid Staff"
+        },
+        {
+            dropLevel: 2,
+            name: "Voltaic Staff"
+        },
+        {
+            dropLevel: 11,
+            name: "Spriggan Staff"
+        },
+        {
+            dropLevel: 16,
+            name: "Pyrophyte Staff"
+        },
+        {
+            dropLevel: 25,
+            name: "Chiming Staff"
+        },
+        {
+            dropLevel: 33,
+            name: "Rending Staff"
+        },
+        {
+            dropLevel: 38,
+            name: "Reaping Staff"
+        },
+        {
+            dropLevel: 45,
+            name: "Icicle Staff"
+        },
+        {
+            dropLevel: 49,
+            name: "Roaring Staff"
+        },
+        {
+            dropLevel: 52,
+            name: "Paralysing Staff"
+        },
+        {
+            dropLevel: 56,
+            name: "Cleric Staff"
+        },
+        {
+            dropLevel: 65,
+            name: "Dark Staff"
+        }
     ],
-    Currency: [{name: "Mystery Leaguestone"}],
+    Currency: [
+        {
+            dropLevel: 1,
+            name: "Mystery Leaguestone"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Bind Spectre Token"
+        }
+    ],
     Rings: [
-        {name: "Golden Hoop"},
-        {name: "Iron Ring"},
-        {name: "Coral Ring"},
-        {name: "Paua Ring"},
-        {name: "Gold Ring"},
-        {name: "Topaz Ring"},
-        {name: "Sapphire Ring"},
-        {name: "Ruby Ring"},
-        {name: "Prismatic Ring"},
-        {name: "Moonstone Ring"},
-        {name: "Amethyst Ring"},
-        {name: "Diamond Ring"},
-        {name: "Two-Stone Ring"},
-        {name: "Two-Stone Ring"},
-        {name: "Two-Stone Ring"},
-        {name: "Unset Ring"},
-        {name: "Bone Ring"},
-        {name: "Cogwork Ring"},
-        {name: "Geodesic Ring"},
-        {name: "Composite Ring"},
-        {name: "Manifold Ring"},
-        {name: "Ratcheting Ring"},
-        {name: "Helical Ring"},
-        {name: "Dusk Ring"},
-        {name: "Penumbra Ring"},
-        {name: "Gloam Ring"},
-        {name: "Tenebrous Ring"},
-        {name: "Shadowed Ring"},
-        {name: "Shadowed Ring"},
-        {name: "Shadowed Ring"},
-        {name: "Nameless Ring"},
-        {name: "Jet Ring"},
-        {name: "Steel Ring"},
-        {name: "Opal Ring"},
-        {name: "Vermillion Ring"},
-        {name: "Cerulean Ring"},
-        {name: "Iolite Ring"},
-        {name: "Ring"},
-        {name: "Breach Ring"},
-        {name: "Opal Ring"},
-        {name: "Prismatic Ring"},
-        {name: "Diamond Ring"},
-        {name: "Paua Ring"}
+        {
+            dropLevel: 12,
+            name: "Golden Hoop"
+        },
+        {
+            dropLevel: 1,
+            name: "Iron Ring"
+        },
+        {
+            dropLevel: 1,
+            name: "Lazuli Ring"
+        },
+        {
+            dropLevel: 8,
+            name: "Ruby Ring"
+        },
+        {
+            dropLevel: 12,
+            name: "Sapphire Ring"
+        },
+        {
+            dropLevel: 16,
+            name: "Topaz Ring"
+        },
+        {
+            dropLevel: 20,
+            name: "Amethyst Ring"
+        },
+        {
+            dropLevel: 26,
+            name: "Emerald Ring"
+        },
+        {
+            dropLevel: 32,
+            name: "Pearl Ring"
+        },
+        {
+            dropLevel: 35,
+            name: "Prismatic Ring"
+        },
+        {
+            dropLevel: 40,
+            name: "Gold Ring"
+        },
+        {
+            dropLevel: 44,
+            name: "Unset Ring"
+        },
+        {
+            dropLevel: 1,
+            name: "Ring"
+        },
+        {
+            dropLevel: 40,
+            name: "Breach Ring"
+        }
     ],
     ["One Hand Swords"]: [
-        {name: "Charan's Sword"},
-        {name: "Golden Blade"},
-        {name: "Rusted Sword"},
-        {name: "Copper Sword"},
-        {name: "Sabre"},
-        {name: "Broad Sword"},
-        {name: "War Sword"},
-        {name: "Ancient Sword"},
-        {name: "Elegant Sword"},
-        {name: "Dusk Blade"},
-        {name: "Hook Sword"},
-        {name: "Variscite Blade"},
-        {name: "Cutlass"},
-        {name: "Baselard"},
-        {name: "Battle Sword"},
-        {name: "Elder Sword"},
-        {name: "Graceful Sword"},
-        {name: "Twilight Blade"},
-        {name: "Grappler"},
-        {name: "Gemstone Sword"},
-        {name: "Corsair Sword"},
-        {name: "Gladius"},
-        {name: "Legion Sword"},
-        {name: "Vaal Blade"},
-        {name: "Eternal Sword"},
-        {name: "Midnight Blade"},
-        {name: "Tiger Hook"},
-        {name: "Fickle Spiritblade"},
-        {name: "Capricious Spiritblade"},
-        {name: "Anarchic Spiritblade"},
-        {name: "Energy Blade"}
+        {
+            dropLevel: 1,
+            name: "Golden Blade"
+        },
+        {
+            dropLevel: 1,
+            name: "Energy Blade"
+        },
+        {
+            dropLevel: 1,
+            name: "Shortsword"
+        },
+        {
+            dropLevel: 6,
+            name: "Broadsword"
+        },
+        {
+            dropLevel: 11,
+            name: "Vampiric Blade"
+        },
+        {
+            dropLevel: 16,
+            name: "Scimitar"
+        },
+        {
+            dropLevel: 21,
+            name: "Charred Shortsword"
+        },
+        {
+            dropLevel: 28,
+            name: "Sickle Sword"
+        },
+        {
+            dropLevel: 33,
+            name: "Falchion"
+        },
+        {
+            dropLevel: 40,
+            name: "Treasured Blade"
+        },
+        {
+            dropLevel: 45,
+            name: "Cutlass"
+        },
+        {
+            dropLevel: 50,
+            name: "Runic Shortsword"
+        },
+        {
+            dropLevel: 52,
+            name: "Messer"
+        },
+        {
+            dropLevel: 54,
+            name: "Commander Sword"
+        },
+        {
+            dropLevel: 65,
+            name: "Dark Blade"
+        }
     ],
     Incubators: [
-        {name: "Whispering Incubator"},
-        {name: "Fine Incubator"},
-        {name: "Singular Incubator"},
-        {name: "Cartographer's Incubator"},
-        {name: "Otherworldly Incubator"},
-        {name: "Abyssal Incubator"},
-        {name: "Fragmented Incubator"},
-        {name: "Skittering Incubator"},
-        {name: "Infused Incubator"},
-        {name: "Fossilised Incubator"},
-        {name: "Kalguuran Incubator"},
-        {name: "Diviner's Incubator"},
-        {name: "Primal Incubator"},
-        {name: "Enchanted Incubator"},
-        {name: "Geomancer's Incubator"},
-        {name: "Ornate Incubator"},
-        {name: "Time-Lost Incubator"},
-        {name: "Celestial Armoursmith's Incubator"},
-        {name: "Celestial Blacksmith's Incubator"},
-        {name: "Celestial Jeweller's Incubator"},
-        {name: "Eldritch Incubator"},
-        {name: "Obscured Incubator"},
-        {name: "Foreboding Incubator"},
-        {name: "Thaumaturge's Incubator"},
-        {name: "Mysterious Incubator"},
-        {name: "Gemcutter's Incubator"},
-        {name: "Feral Incubator"},
-        {name: "Blighted Incubator"},
-        {name: "Challenging Incubator"},
-        {name: "Maddening Incubator"},
-        {name: "Whispering Incubator"},
-        {name: "Fine Incubator"},
-        {name: "Singular Incubator"},
-        {name: "Cartographer's Incubator"},
-        {name: "Otherworldly Incubator"},
-        {name: "Abyssal Incubator"},
-        {name: "Fragmented Incubator"},
-        {name: "Skittering Incubator"},
-        {name: "Infused Incubator"},
-        {name: "Fossilised Incubator"},
-        {name: "Kalguuran Incubator"},
-        {name: "Diviner's Incubator"},
-        {name: "Primal Incubator"},
-        {name: "Enchanted Incubator"},
-        {name: "Geomancer's Incubator"},
-        {name: "Ornate Incubator"},
-        {name: "Time-Lost Incubator"},
-        {name: "Celestial Armoursmith's Incubator"},
-        {name: "Celestial Blacksmith's Incubator"},
-        {name: "Celestial Jeweller's Incubator"},
-        {name: "Eldritch Incubator"},
-        {name: "Obscured Incubator"},
-        {name: "Foreboding Incubator"},
-        {name: "Thaumaturge's Incubator"},
-        {name: "Mysterious Incubator"},
-        {name: "Gemcutter's Incubator"},
-        {name: "Feral Incubator"},
-        {name: "Blighted Incubator"},
-        {name: "Challenging Incubator"},
-        {name: "Maddening Incubator"}
+        {
+            dropLevel: 1,
+            name: "Whispering Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Fine Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Singular Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Cartographer's Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Otherworldly Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Abyssal Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Fragmented Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Skittering Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Infused Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Fossilised Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Kalguuran Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Diviner's Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Primal Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Enchanted Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Geomancer's Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Ornate Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Time-Lost Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Celestial Armoursmith's Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Celestial Blacksmith's Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Celestial Jeweller's Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Eldritch Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Obscured Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Foreboding Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Thaumaturge's Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Mysterious Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Gemcutter's Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Feral Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Blighted Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Morphing Incubator"
+        },
+        {
+            dropLevel: 1,
+            name: "Maddening Incubator"
+        }
     ],
     Memories: [
-        {name: "Kirac's Memory"},
-        {name: "Alva's Memory"},
-        {name: "Niko's Memory"},
-        {name: "Einhar's Memory"}
+        {
+            dropLevel: 81,
+            name: "Kirac's Memory"
+        },
+        {
+            dropLevel: 81,
+            name: "Alva's Memory"
+        },
+        {
+            dropLevel: 81,
+            name: "Niko's Memory"
+        },
+        {
+            dropLevel: 81,
+            name: "Einhar's Memory"
+        }
     ],
     Shields: [
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 9,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 12,
-                ward_max: 0
+                armour_min: 0,
+                energy_shield_min: 0
             },
+            dropLevel: 15,
+            name: "Golden Flame"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 18,
+                energy_shield_min: 0
+            },
+            dropLevel: 1,
             name: "Splintered Tower Shield"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 36,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 47,
-                ward_max: 0
+                armour_min: 29,
+                energy_shield_min: 0
             },
-            name: "Corroded Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 53,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 66,
-                ward_max: 0
-            },
-            name: "Rawhide Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 94,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 113,
-                ward_max: 0
-            },
-            name: "Cedar Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 151,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 173,
-                ward_max: 0
-            },
-            name: "Copper Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 237,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 260,
-                ward_max: 0
-            },
-            name: "Reinforced Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 188,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 216,
-                ward_max: 0
-            },
+            dropLevel: 6,
             name: "Painted Tower Shield"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 177,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 209,
-                ward_max: 0
+                armour_min: 41,
+                energy_shield_min: 0
             },
-            name: "Buckskin Tower Shield"
+            dropLevel: 12,
+            name: "Braced Tower Shield"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 230,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 265,
-                ward_max: 0
+                armour_min: 50,
+                energy_shield_min: 0
             },
-            name: "Mahogany Tower Shield"
+            dropLevel: 16,
+            name: "Barricade Tower Shield"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 290,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 324,
-                ward_max: 0
+                armour_min: 60,
+                energy_shield_min: 0
             },
-            name: "Bronze Tower Shield"
+            dropLevel: 21,
+            name: "Effigial Tower Shield"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 397,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 437,
-                ward_max: 0
-            },
-            name: "Girded Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 293,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 337,
-                ward_max: 0
-            },
-            name: "Crested Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 261,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 308,
-                ward_max: 0
-            },
-            name: "Shagreen Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 357,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 411,
-                ward_max: 0
-            },
-            name: "Ebony Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 412,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 474,
-                ward_max: 0
-            },
-            name: "Ezomyte Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 522,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 601,
-                ward_max: 0
-            },
-            name: "Colossal Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 467,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 537,
-                ward_max: 0
-            },
-            name: "Pinnacle Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 87,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 100,
-                ward_max: 0
-            },
-            name: "Exothermic Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 144,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 165,
-                ward_max: 0
-            },
-            name: "Magmatic Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 220,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 253,
-                ward_max: 0
-            },
-            name: "Heat-attuned Tower Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 14,
-                ms: -3,
-                evasion_max: 20,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Goathide Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 51,
-                ms: -3,
-                evasion_max: 66,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Pine Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 123,
-                ms: -3,
-                evasion_max: 154,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Painted Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 116,
-                ms: -3,
-                evasion_max: 139,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Hammered Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 169,
-                ms: -3,
-                evasion_max: 194,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "War Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 225,
-                ms: -3,
-                evasion_max: 259,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Gilded Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 220,
-                ms: -3,
-                evasion_max: 259,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Oak Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 311,
-                ms: -3,
-                evasion_max: 349,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Enameled Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 227,
-                ms: -3,
-                evasion_max: 272,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Corrugated Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 287,
-                ms: -3,
-                evasion_max: 330,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Battle Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 354,
-                ms: -3,
-                evasion_max: 407,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Golden Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 327,
-                ms: -3,
-                evasion_max: 385,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Ironwood Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 477,
-                ms: -3,
-                evasion_max: 549,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Lacquered Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 330,
-                ms: -3,
-                evasion_max: 379,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Vaal Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 385,
-                ms: -3,
-                evasion_max: 442,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Crusader Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 440,
-                ms: -3,
-                evasion_max: 506,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Imperial Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 75,
-                ms: -3,
-                evasion_max: 86,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Endothermic Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 123,
-                ms: -3,
-                evasion_max: 142,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Polar Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 206,
-                ms: -3,
-                evasion_max: 237,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Cold-attuned Buckler"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 6,
-                energy_shield_max: 8,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Twig Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 11,
-                energy_shield_max: 14,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Yew Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 15,
-                energy_shield_max: 19,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Bone Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 21,
-                energy_shield_max: 25,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Tarnished Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 25,
-                energy_shield_max: 29,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Jingling Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 35,
-                energy_shield_max: 40,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Brass Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 32,
-                energy_shield_max: 38,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Walnut Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 35,
-                energy_shield_max: 40,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Ivory Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 38,
-                energy_shield_max: 45,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Ancient Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 42,
-                energy_shield_max: 48,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Chiming Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 54,
-                energy_shield_max: 62,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Thorium Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 47,
-                energy_shield_max: 55,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Lacewood Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 49,
-                energy_shield_max: 55,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Fossilised Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 56,
-                energy_shield_max: 64,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Vaal Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 58,
-                energy_shield_max: 66,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Harmonic Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 67,
-                energy_shield_max: 77,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Titanium Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 16,
-                energy_shield_max: 19,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Exhausting Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 25,
-                energy_shield_max: 29,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Subsuming Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 39,
-                energy_shield_max: 45,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Transfer-attuned Spirit Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 13,
-                ms: -3,
-                evasion_max: 18,
-                armour_min: 13,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 18,
-                ward_max: 0
-            },
-            name: "Rotted Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 29,
-                ms: -3,
-                evasion_max: 37,
-                armour_min: 29,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 37,
-                ward_max: 0
-            },
-            name: "Fir Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 46,
-                ms: -3,
-                evasion_max: 58,
-                armour_min: 46,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 58,
-                ward_max: 0
-            },
-            name: "Studded Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 87,
-                ms: -3,
-                evasion_max: 100,
-                armour_min: 87,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 100,
-                ward_max: 0
-            },
-            name: "Scarlet Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 75,
-                ms: -3,
-                evasion_max: 86,
                 armour_min: 75,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 86,
-                ward_max: 0
+                energy_shield_min: 0
             },
-            name: "Splendid Round Shield"
+            dropLevel: 28,
+            name: "Rampart Tower Shield"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 88,
-                ms: -3,
-                evasion_max: 99,
-                armour_min: 88,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 99,
-                ward_max: 0
-            },
-            name: "Maple Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 102,
-                ms: -3,
-                evasion_max: 120,
-                armour_min: 102,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 120,
-                ward_max: 0
-            },
-            name: "Spiked Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 155,
-                ms: -3,
-                evasion_max: 178,
-                armour_min: 155,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 178,
-                ward_max: 0
-            },
-            name: "Crimson Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 122,
-                ms: -3,
-                evasion_max: 140,
-                armour_min: 122,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 140,
-                ward_max: 0
-            },
-            name: "Baroque Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 131,
-                ms: -3,
-                evasion_max: 146,
-                armour_min: 131,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 146,
-                ward_max: 0
-            },
-            name: "Teak Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 154,
-                ms: -3,
-                evasion_max: 177,
-                armour_min: 154,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 177,
-                ward_max: 0
-            },
-            name: "Spiny Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 209,
-                ms: -3,
-                evasion_max: 240,
-                armour_min: 209,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 240,
-                ward_max: 0
-            },
-            name: "Cardinal Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 148,
-                ms: -3,
-                evasion_max: 170,
-                armour_min: 148,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 170,
-                ward_max: 0
-            },
-            name: "Elegant Round Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
+                armour_min: 85,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Heraldric Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 91,
+                energy_shield_min: 0
+            },
+            dropLevel: 36,
+            name: "Stone Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 110,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Crucible Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 121,
+                energy_shield_min: 0
+            },
+            dropLevel: 50,
+            name: "Ancestor Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 125,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Phalanx Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 137,
+                energy_shield_min: 0
+            },
+            dropLevel: 58,
+            name: "Defiant Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 152,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Blacksteel Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 7,
+                armour_min: 10,
+                energy_shield_min: 0
+            },
+            dropLevel: 1,
+            name: "Hardwood Targe"
+        },
+        {
+            stats: {
+                evasion_min: 14,
                 armour_min: 18,
-                energy_shield_min: 5,
-                energy_shield_max: 7,
-                armour_max: 25,
-                ward_max: 0
+                energy_shield_min: 0
             },
-            name: "Plank Kite Shield"
+            dropLevel: 8,
+            name: "Pelage Targe"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 43,
-                energy_shield_min: 11,
-                energy_shield_max: 14,
-                armour_max: 56,
-                ward_max: 0
+                evasion_min: 23,
+                armour_min: 27,
+                energy_shield_min: 0
             },
-            name: "Linden Kite Shield"
+            dropLevel: 16,
+            name: "Studded Targe"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 65,
-                energy_shield_min: 15,
-                energy_shield_max: 18,
-                armour_max: 81,
-                ward_max: 0
+                evasion_min: 34,
+                armour_min: 39,
+                energy_shield_min: 0
             },
-            name: "Reinforced Kite Shield"
+            dropLevel: 26,
+            name: "Crescent Targe"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 62,
-                energy_shield_min: 13,
-                energy_shield_max: 16,
-                armour_max: 73,
-                ward_max: 0
+                evasion_min: 41,
+                armour_min: 47,
+                energy_shield_min: 0
             },
-            name: "Layered Kite Shield"
+            dropLevel: 33,
+            name: "Chiseled Targe"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 77,
-                energy_shield_min: 16,
-                energy_shield_max: 19,
-                armour_max: 89,
-                ward_max: 0
-            },
-            name: "Ceremonial Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 127,
-                energy_shield_min: 27,
-                energy_shield_max: 30,
-                armour_max: 142,
-                ward_max: 0
-            },
-            name: "Etched Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 146,
-                energy_shield_min: 30,
-                energy_shield_max: 35,
-                armour_max: 167,
-                ward_max: 0
-            },
-            name: "Steel Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 113,
-                energy_shield_min: 23,
-                energy_shield_max: 27,
-                armour_max: 133,
-                ward_max: 0
-            },
-            name: "Laminated Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 124,
-                energy_shield_min: 25,
-                energy_shield_max: 29,
-                armour_max: 142,
-                ward_max: 0
-            },
-            name: "Angelic Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 186,
-                energy_shield_min: 38,
-                energy_shield_max: 43,
-                armour_max: 208,
-                ward_max: 0
-            },
-            name: "Branded Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 215,
-                energy_shield_min: 44,
-                energy_shield_max: 50,
-                armour_max: 247,
-                ward_max: 0
-            },
-            name: "Champion Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 147,
-                energy_shield_min: 30,
-                energy_shield_max: 34,
-                armour_max: 169,
-                ward_max: 0
-            },
-            name: "Mosaic Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 156,
-                energy_shield_min: 32,
-                energy_shield_max: 37,
-                armour_max: 179,
-                ward_max: 0
-            },
-            name: "Archon Kite Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 13,
-                ms: -3,
-                evasion_max: 18,
-                armour_min: 0,
-                energy_shield_min: 4,
-                energy_shield_max: 6,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Spiked Bundle"
-        },
-        {
-            stats: {
-                ward_min: 0,
                 evasion_min: 46,
-                ms: -3,
-                evasion_max: 60,
-                armour_min: 0,
-                energy_shield_min: 11,
-                energy_shield_max: 15,
-                armour_max: 0,
-                ward_max: 0
+                armour_min: 51,
+                energy_shield_min: 0
             },
-            name: "Driftwood Spiked Shield"
+            dropLevel: 37,
+            name: "Feathered Targe"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 56,
-                ms: -3,
-                evasion_max: 70,
-                armour_min: 0,
-                energy_shield_min: 13,
-                energy_shield_max: 16,
-                armour_max: 0,
-                ward_max: 0
+                evasion_min: 54,
+                armour_min: 61,
+                energy_shield_min: 0
             },
-            name: "Alloyed Spiked Shield"
+            dropLevel: 45,
+            name: "Stratified Targe"
         },
         {
             stats: {
-                ward_min: 0,
+                evasion_min: 57,
+                armour_min: 63,
+                energy_shield_min: 0
+            },
+            dropLevel: 47,
+            name: "Carved Targe"
+        },
+        {
+            stats: {
                 evasion_min: 62,
-                ms: -3,
-                evasion_max: 73,
-                armour_min: 0,
-                energy_shield_min: 13,
-                energy_shield_max: 16,
-                armour_max: 0,
-                ward_max: 0
+                armour_min: 69,
+                energy_shield_min: 0
             },
-            name: "Burnished Spiked Shield"
+            dropLevel: 52,
+            name: "Mosaic Targe"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 120,
-                ms: -3,
-                evasion_max: 135,
-                armour_min: 0,
-                energy_shield_min: 26,
-                energy_shield_max: 29,
-                armour_max: 0,
-                ward_max: 0
+                evasion_min: 68,
+                armour_min: 74,
+                energy_shield_min: 0
             },
-            name: "Ornate Spiked Shield"
+            dropLevel: 57,
+            name: "Aureate Targe"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 142,
-                ms: -3,
-                evasion_max: 163,
-                armour_min: 0,
-                energy_shield_min: 30,
-                energy_shield_max: 34,
-                armour_max: 0,
-                ward_max: 0
+                evasion_min: 76,
+                armour_min: 84,
+                energy_shield_min: 0
             },
-            name: "Redwood Spiked Shield"
+            dropLevel: 65,
+            name: "Grand Targe"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 122,
-                ms: -3,
-                evasion_max: 144,
-                armour_min: 0,
-                energy_shield_min: 25,
-                energy_shield_max: 30,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Compound Spiked Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 111,
-                ms: -3,
-                evasion_max: 131,
-                armour_min: 0,
-                energy_shield_min: 23,
-                energy_shield_max: 27,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Polished Spiked Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 195,
-                ms: -3,
-                evasion_max: 218,
-                armour_min: 0,
-                energy_shield_min: 40,
-                energy_shield_max: 45,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sovereign Spiked Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 209,
-                ms: -3,
-                evasion_max: 240,
-                armour_min: 0,
-                energy_shield_min: 43,
-                energy_shield_max: 49,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Alder Spiked Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 181,
-                ms: -3,
-                evasion_max: 209,
-                armour_min: 0,
-                energy_shield_min: 37,
-                energy_shield_max: 43,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Ezomyte Spiked Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 151,
-                ms: -3,
-                evasion_max: 174,
-                armour_min: 0,
-                energy_shield_min: 31,
-                energy_shield_max: 35,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Mirrored Spiked Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 242,
-                ms: -3,
-                evasion_max: 278,
-                armour_min: 0,
-                energy_shield_min: 49,
-                energy_shield_max: 57,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Supreme Spiked Shield"
-        },
-        {
-            stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
+                armour_min: 10,
+                energy_shield_min: 6
             },
-            name: "Golden Flame"
+            dropLevel: 1,
+            name: "Blazon Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 17,
+                energy_shield_min: 8
+            },
+            dropLevel: 7,
+            name: "Sigil Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 27,
+                energy_shield_min: 12
+            },
+            dropLevel: 16,
+            name: "Emblem Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 41,
+                energy_shield_min: 16
+            },
+            dropLevel: 28,
+            name: "Jingling Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 47,
+                energy_shield_min: 18
+            },
+            dropLevel: 33,
+            name: "Sectarian Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 50,
+                energy_shield_min: 19
+            },
+            dropLevel: 36,
+            name: "Omen Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 61,
+                energy_shield_min: 22
+            },
+            dropLevel: 45,
+            name: "Wayward Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 65,
+                energy_shield_min: 23
+            },
+            dropLevel: 49,
+            name: "Seer Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 69,
+                energy_shield_min: 24
+            },
+            dropLevel: 52,
+            name: "Stoic Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 74,
+                energy_shield_min: 26
+            },
+            dropLevel: 57,
+            name: "Empyreal Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 84,
+                energy_shield_min: 29
+            },
+            dropLevel: 65,
+            name: "Deified Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 12,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 1,
+            name: "Leather Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 20,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 5,
+            name: "Wooden Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 32,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 11,
+            name: "Plated Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 42,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Iron Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 54,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 22,
+            name: "Ridged Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 62,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 26,
+            name: "Spiked Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 75,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Ringed Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 87,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 39,
+            name: "Edged Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 99,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Laminate Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 105,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Pearl Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 113,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Ornate Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 119,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Array Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 139,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Aegis Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 110,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Painted Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 116,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Braced Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 123,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Effigial Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 131,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Rampart Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 139,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Heraldric Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 144,
+                energy_shield_min: 0
+            },
+            dropLevel: 61,
+            name: "Advanced Stone Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 54,
+                armour_min: 61,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Hardwood Targe"
+        },
+        {
+            stats: {
+                evasion_min: 58,
+                armour_min: 64,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Pelage Targe"
+        },
+        {
+            stats: {
+                evasion_min: 61,
+                armour_min: 67,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Studded Targe"
+        },
+        {
+            stats: {
+                evasion_min: 65,
+                armour_min: 72,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Crescent Targe"
+        },
+        {
+            stats: {
+                evasion_min: 70,
+                armour_min: 77,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Chiseled Targe"
+        },
+        {
+            stats: {
+                evasion_min: 73,
+                armour_min: 80,
+                energy_shield_min: 0
+            },
+            dropLevel: 62,
+            name: "Advanced Feathered Targe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 61,
+                energy_shield_min: 22
+            },
+            dropLevel: 45,
+            name: "Advanced Blazon Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 64,
+                energy_shield_min: 23
+            },
+            dropLevel: 48,
+            name: "Advanced Sigil Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 67,
+                energy_shield_min: 24
+            },
+            dropLevel: 51,
+            name: "Advanced Emblem Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 72,
+                energy_shield_min: 25
+            },
+            dropLevel: 55,
+            name: "Advanced Jingling Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 77,
+                energy_shield_min: 27
+            },
+            dropLevel: 59,
+            name: "Advanced Sectarian Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 80,
+                energy_shield_min: 28
+            },
+            dropLevel: 62,
+            name: "Advanced Omen Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 99,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Wooden Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 105,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Plated Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 111,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Ridged Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 119,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Spiked Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 127,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Ringed Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 131,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 61,
+            name: "Advanced Edged Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 152,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Braced Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 167,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Rampart Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 182,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Stone Tower Shield"
+        },
+        {
+            stats: {
+                evasion_min: 76,
+                armour_min: 84,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Pelage Targe"
+        },
+        {
+            stats: {
+                evasion_min: 84,
+                armour_min: 92,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Crescent Targe"
+        },
+        {
+            stats: {
+                evasion_min: 91,
+                armour_min: 100,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Feathered Targe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 84,
+                energy_shield_min: 29
+            },
+            dropLevel: 65,
+            name: "Expert Sigil Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 92,
+                energy_shield_min: 32
+            },
+            dropLevel: 70,
+            name: "Expert Jingling Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 100,
+                energy_shield_min: 35
+            },
+            dropLevel: 75,
+            name: "Expert Omen Crest Shield"
+        },
+        {
+            stats: {
+                evasion_min: 139,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Plated Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 152,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Spiked Buckler"
+        },
+        {
+            stats: {
+                evasion_min: 166,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Edged Buckler"
         }
     ],
     Pieces: [
-        {name: "Archon Kite Shield Piece"},
-        {name: "Archon Kite Shield Piece"},
-        {name: "Archon Kite Shield Piece"},
-        {name: "Archon Kite Shield Piece"},
-        {name: "Legion Sword Piece"},
-        {name: "Legion Sword Piece"},
-        {name: "Legion Sword Piece"},
-        {name: "Imperial Staff Piece"},
-        {name: "Imperial Staff Piece"},
-        {name: "Imperial Staff Piece"},
-        {name: "Cloth Belt Piece"},
-        {name: "Cloth Belt Piece"},
-        {name: "Blunt Arrow Quiver Piece"},
-        {name: "Blunt Arrow Quiver Piece"},
-        {name: "Blunt Arrow Quiver Piece"},
-        {name: "Callous Mask Piece"},
-        {name: "Callous Mask Piece"},
-        {name: "Callous Mask Piece"},
-        {name: "Vaal Aspect"},
-        {name: "Vaal Aspect"},
-        {name: "Vaal Aspect"},
-        {name: "Vaal Aspect"},
-        {name: "Primordial Fragment"},
-        {name: "Primordial Fragment"},
-        {name: "Primordial Fragment"},
-        {name: "Primordial Fragment"}
+        {
+            dropLevel: 1,
+            name: "Archon Kite Shield Piece"
+        },
+        {
+            dropLevel: 1,
+            name: "Legion Sword Piece"
+        },
+        {
+            dropLevel: 1,
+            name: "Imperial Staff Piece"
+        },
+        {
+            dropLevel: 1,
+            name: "Cloth Belt Piece"
+        },
+        {
+            dropLevel: 1,
+            name: "Blunt Arrow Quiver Piece"
+        },
+        {
+            dropLevel: 1,
+            name: "Callous Mask Piece"
+        },
+        {
+            dropLevel: 1,
+            name: "Ultimatum Aspect"
+        }
     ],
     ["Vault Keys"]: [
-        {name: "Ancient Reliquary Key"},
-        {name: "Timeworn Reliquary Key"},
-        {name: "Vaal Reliquary Key"},
-        {name: "Forgotten Reliquary Key"},
-        {name: "Visceral Reliquary Key"},
-        {name: "Shiny Reliquary Key"},
-        {name: "Archive Reliquary Key"},
-        {name: "Oubliette Reliquary Key"},
-        {name: "Cosmic Reliquary Key"},
-        {name: "Decaying Reliquary Key"},
-        {name: "Voidborn Reliquary Key"},
-        {name: "Voidborn Reliquary Key"}
+        {
+            dropLevel: 35,
+            name: "Ancient Reliquary Key"
+        },
+        {
+            dropLevel: 50,
+            name: "Timeworn Reliquary Key"
+        },
+        {
+            dropLevel: 68,
+            name: "Vaal Reliquary Key"
+        },
+        {
+            dropLevel: 68,
+            name: "Forgotten Reliquary Key"
+        },
+        {
+            dropLevel: 68,
+            name: "Visceral Reliquary Key"
+        },
+        {
+            dropLevel: 68,
+            name: "Shiny Reliquary Key"
+        },
+        {
+            dropLevel: 68,
+            name: "Archive Reliquary Key"
+        },
+        {
+            dropLevel: 68,
+            name: "Oubliette Reliquary Key"
+        },
+        {
+            dropLevel: 68,
+            name: "Cosmic Reliquary Key"
+        },
+        {
+            dropLevel: 68,
+            name: "Decaying Reliquary Key"
+        },
+        {
+            dropLevel: 35,
+            name: "Voidborn Reliquary Key"
+        }
     ],
     Charms: [
-        {name: "Ursine Charm"},
-        {name: "Lupine Charm"},
-        {name: "Corvine Charm"}
+        {
+            dropLevel: 12,
+            name: "Thawing Charm"
+        },
+        {
+            dropLevel: 18,
+            name: "Staunching Charm"
+        },
+        {
+            dropLevel: 24,
+            name: "Antidote Charm"
+        },
+        {
+            dropLevel: 32,
+            name: "Dousing Charm"
+        },
+        {
+            dropLevel: 32,
+            name: "Grounding Charm"
+        },
+        {
+            dropLevel: 8,
+            name: "Stone Charm"
+        },
+        {
+            dropLevel: 10,
+            name: "Silver Charm"
+        },
+        {
+            dropLevel: 5,
+            name: "Ruby Charm"
+        },
+        {
+            dropLevel: 5,
+            name: "Sapphire Charm"
+        },
+        {
+            dropLevel: 5,
+            name: "Topaz Charm"
+        },
+        {
+            dropLevel: 40,
+            name: "Amethyst Charm"
+        },
+        {
+            dropLevel: 50,
+            name: "Golden Charm"
+        }
     ],
-    ["Labyrinth Map Items"]: [{name: "Offering to the Goddess"}],
-    ["Thrusting One Hand Swords"]: [
-        {name: "Rusted Spike"},
-        {name: "Whalebone Rapier"},
-        {name: "Battered Foil"},
-        {name: "Basket Rapier"},
-        {name: "Jagged Foil"},
-        {name: "Antique Rapier"},
-        {name: "Elegant Foil"},
-        {name: "Thorn Rapier"},
-        {name: "Smallsword"},
-        {name: "Wyrmbone Rapier"},
-        {name: "Burnished Foil"},
-        {name: "Estoc"},
-        {name: "Serrated Foil"},
-        {name: "Primeval Rapier"},
-        {name: "Fancy Foil"},
-        {name: "Apex Rapier"},
-        {name: "Courtesan Sword"},
-        {name: "Dragonbone Rapier"},
-        {name: "Tempered Foil"},
-        {name: "Pecoraro"},
-        {name: "Spiraled Foil"},
-        {name: "Vaal Rapier"},
-        {name: "Jewelled Foil"},
-        {name: "Harpy Rapier"},
-        {name: "Dragoon Sword"}
+    Spears: [
+        {
+            dropLevel: 1,
+            name: "Hardwood Spear"
+        },
+        {
+            dropLevel: 5,
+            name: "Ironhead Spear"
+        },
+        {
+            dropLevel: 10,
+            name: "Hunting Spear"
+        },
+        {
+            dropLevel: 16,
+            name: "Winged Spear"
+        },
+        {
+            dropLevel: 21,
+            name: "War Spear"
+        },
+        {
+            dropLevel: 26,
+            name: "Forked Spear"
+        },
+        {
+            dropLevel: 33,
+            name: "Barbed Spear"
+        },
+        {
+            dropLevel: 40,
+            name: "Broad Spear"
+        },
+        {
+            dropLevel: 45,
+            name: "Crossblade Spear"
+        },
+        {
+            dropLevel: 51,
+            name: "Seaglass Spear"
+        },
+        {
+            dropLevel: 52,
+            name: "Sword Spear"
+        },
+        {
+            dropLevel: 55,
+            name: "Striking Spear"
+        },
+        {
+            dropLevel: 65,
+            name: "Helix Spear"
+        }
     ],
-    Gold: [{name: "Gold"}],
     ["Pantheon Souls"]: [
-        {name: "Captured Soul of Puruna, the Challenger"},
-        {name: "Captured Soul of Captain Tanner Lightfoot"},
-        {name: "Captured Soul of Glace"},
-        {name: "Captured Soul of Maligaro the Mutilator"},
-        {name: "Captured Soul of Hybrid Widow"},
-        {name: "Captured Soul of Shadow of the Vaal"},
-        {name: "Captured Soul of Kitava, The Destroyer"},
-        {name: "Captured Soul of The Gorgon"},
-        {name: "Captured Soul of Jorus, Sky's Edge"},
-        {name: "Captured Soul of Sebbert, Crescent's Point"},
-        {name: "Captured Soul of Khor, Sister of Shadows"},
-        {name: "Captured Soul of It That Fell"},
-        {name: "Captured Soul of Mephod, the Earth Scorcher"},
-        {name: "Captured Soul of Erebix, Light's Bane"},
-        {name: "Captured Soul of Varhesh, Shimmering Aberration"},
-        {name: "Captured Soul of Terror of the Infinite Drifts"},
-        {name: "Captured Soul of Tahsin, Warmaker"},
-        {name: "Captured Soul of Drek, Apex Hunter"},
-        {name: "Captured Soul of Stalker of the Endless Dunes"},
-        {name: "Captured Soul of Gorulis, Will-Thief"}
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Puruna, the Challenger"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Captain Tanner Lightfoot"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Pirate Treasure"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Maligaro the Mutilator"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Hybrid Widow"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Queen of the Great Tangle"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of a Redblade Warlord"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of The Infernal King"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Jorus, Sky's Edge"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Sebbert, Crescent's Point"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Khor, Sister of Shadows"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Captain Clayborne, The Accursed"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Megaera"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Erebix, Light's Bane"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Varhesh, Shimmering Aberration"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Terror of the Infinite Drifts"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Tahsin, Warmaker"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Drek, Apex Hunter"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Stalker of the Endless Dunes"
+        },
+        {
+            dropLevel: 1,
+            name: "Captured Soul of Gorulis, Will-Thief"
+        }
     ],
     Breachstones: [
-        {name: "Xoph's Breachstone"},
-        {name: "Tul's Breachstone"},
-        {name: "Esh's Breachstone"},
-        {name: "Uul-Netol's Breachstone"},
-        {name: "Chayula's Breachstone"},
-        {name: "Xoph's Charged Breachstone"},
-        {name: "Tul's Charged Breachstone"},
-        {name: "Esh's Charged Breachstone"},
-        {name: "Uul-Netol's Charged Breachstone"},
-        {name: "Chayula's Charged Breachstone"},
-        {name: "Xoph's Enriched Breachstone"},
-        {name: "Tul's Enriched Breachstone"},
-        {name: "Esh's Enriched Breachstone"},
-        {name: "Uul-Netol's Enriched Breachstone"},
-        {name: "Chayula's Enriched Breachstone"},
-        {name: "Xoph's Pure Breachstone"},
-        {name: "Tul's Pure Breachstone"},
-        {name: "Esh's Pure Breachstone"},
-        {name: "Uul-Netol's Pure Breachstone"},
-        {name: "Chayula's Pure Breachstone"},
-        {name: "Xoph's Flawless Breachstone"},
-        {name: "Tul's Flawless Breachstone"},
-        {name: "Esh's Flawless Breachstone"},
-        {name: "Uul-Netol's Flawless Breachstone"},
-        {name: "Chayula's Flawless Breachstone"}
+        {
+            dropLevel: 68,
+            name: "Breachstone"
+        },
+        {
+            dropLevel: 68,
+            name: "Xoph's Breachstone"
+        },
+        {
+            dropLevel: 70,
+            name: "Tul's Breachstone"
+        },
+        {
+            dropLevel: 72,
+            name: "Esh's Breachstone"
+        },
+        {
+            dropLevel: 76,
+            name: "Uul-Netol's Breachstone"
+        },
+        {
+            dropLevel: 80,
+            name: "Chayula's Breachstone"
+        },
+        {
+            dropLevel: 68,
+            name: "Xoph's Charged Breachstone"
+        },
+        {
+            dropLevel: 70,
+            name: "Tul's Charged Breachstone"
+        },
+        {
+            dropLevel: 72,
+            name: "Esh's Charged Breachstone"
+        },
+        {
+            dropLevel: 76,
+            name: "Uul-Netol's Charged Breachstone"
+        },
+        {
+            dropLevel: 80,
+            name: "Chayula's Charged Breachstone"
+        },
+        {
+            dropLevel: 68,
+            name: "Xoph's Enriched Breachstone"
+        },
+        {
+            dropLevel: 70,
+            name: "Tul's Enriched Breachstone"
+        },
+        {
+            dropLevel: 72,
+            name: "Esh's Enriched Breachstone"
+        },
+        {
+            dropLevel: 76,
+            name: "Uul-Netol's Enriched Breachstone"
+        },
+        {
+            dropLevel: 80,
+            name: "Chayula's Enriched Breachstone"
+        },
+        {
+            dropLevel: 68,
+            name: "Xoph's Pure Breachstone"
+        },
+        {
+            dropLevel: 70,
+            name: "Tul's Pure Breachstone"
+        },
+        {
+            dropLevel: 72,
+            name: "Esh's Pure Breachstone"
+        },
+        {
+            dropLevel: 76,
+            name: "Uul-Netol's Pure Breachstone"
+        },
+        {
+            dropLevel: 80,
+            name: "Chayula's Pure Breachstone"
+        },
+        {
+            dropLevel: 68,
+            name: "Xoph's Flawless Breachstone"
+        },
+        {
+            dropLevel: 70,
+            name: "Tul's Flawless Breachstone"
+        },
+        {
+            dropLevel: 72,
+            name: "Esh's Flawless Breachstone"
+        },
+        {
+            dropLevel: 76,
+            name: "Uul-Netol's Flawless Breachstone"
+        },
+        {
+            dropLevel: 80,
+            name: "Chayula's Flawless Breachstone"
+        }
     ],
     ["Delve Socketable Currency"]: [
-        {name: "Primitive Alchemical Resonator"},
-        {name: "Potent Alchemical Resonator"},
-        {name: "Powerful Alchemical Resonator"},
-        {name: "Prime Alchemical Resonator"},
-        {name: "Primitive Chaotic Resonator"},
-        {name: "Potent Chaotic Resonator"},
-        {name: "Powerful Chaotic Resonator"},
-        {name: "Prime Chaotic Resonator"}
+        {
+            dropLevel: 1,
+            name: "Primitive Alchemical Resonator"
+        },
+        {
+            dropLevel: 1,
+            name: "Potent Alchemical Resonator"
+        },
+        {
+            dropLevel: 34,
+            name: "Powerful Alchemical Resonator"
+        },
+        {
+            dropLevel: 68,
+            name: "Prime Alchemical Resonator"
+        },
+        {
+            dropLevel: 34,
+            name: "Primitive Chaotic Resonator"
+        },
+        {
+            dropLevel: 34,
+            name: "Potent Chaotic Resonator"
+        },
+        {
+            dropLevel: 34,
+            name: "Powerful Chaotic Resonator"
+        },
+        {
+            dropLevel: 68,
+            name: "Prime Chaotic Resonator"
+        }
     ],
     Wands: [
-        {name: "Driftwood Wand"},
-        {name: "Goat's Horn"},
-        {name: "Carved Wand"},
-        {name: "Quartz Wand"},
-        {name: "Spiraled Wand"},
-        {name: "Sage Wand"},
-        {name: "Pagan Wand"},
-        {name: "Faun's Horn"},
-        {name: "Engraved Wand"},
-        {name: "Crystal Wand"},
-        {name: "Coiled Wand"},
-        {name: "Omen Wand"},
-        {name: "Heathen Wand"},
-        {name: "Demon's Horn"},
-        {name: "Imbued Wand"},
-        {name: "Opal Wand"},
-        {name: "Tornado Wand"},
-        {name: "Prophecy Wand"},
-        {name: "Profane Wand"},
-        {name: "Assembler Wand"},
-        {name: "Congregator Wand"},
-        {name: "Accumulator Wand"},
-        {name: "Calling Wand"},
-        {name: "Convening Wand"},
-        {name: "Convoking Wand"},
-        {name: "Driftwood Wand"}
-    ],
-    ["Embers of the Allflame"]: [
-        {name: "Allflame Ember of Frogs"},
-        {name: "Allflame Ember of Rats"},
-        {name: "Allflame Ember of Xoph"},
-        {name: "Allflame Ember of Tul"},
-        {name: "Allflame Ember of Esh"},
-        {name: "Allflame Ember of Uul-Netol"},
-        {name: "Allflame Ember of Chayula"},
-        {name: "Allflame Ember of Sulphite"},
-        {name: "Allflame Ember of Valako"},
-        {name: "Allflame Ember of Tukohama"},
-        {name: "Allflame Ember of Tawhoa"},
-        {name: "Allflame Ember of Tasalio"},
-        {name: "Allflame Ember of Rongokurai"},
-        {name: "Allflame Ember of Ramako"},
-        {name: "Allflame Ember of Ngamahu"},
-        {name: "Allflame Ember of Kitava"},
-        {name: "Allflame Ember of Hinekora"},
-        {name: "Allflame Ember of Arohongui"},
-        {name: "Allflame Ember of Abyss"},
-        {name: "Allflame Ember of Beidat"},
-        {name: "Allflame Ember of Ghorr"},
-        {name: "Allflame Ember of K'tash"},
-        {name: "Allflame Ember of Brawling Gemlings"},
-        {name: "Allflame Ember of Berserking Gemlings"},
-        {name: "Allflame Ember of Frostmage Gemlings"},
-        {name: "Allflame Ember of Artillery Gemlings"},
-        {name: "Allflame Ember of Corpsemage Gemlings"},
-        {name: "Allflame Ember of The Broken Circle"},
-        {name: "Allflame Ember of The Order of the Chalice"},
-        {name: "Allflame Ember of The Black Scythe"},
-        {name: "Allflame Ember of The Knights of the Sun"},
-        {name: "Allflame Ember of Meatsacks"},
-        {name: "Allflame Ember of Untainted Beasts"},
-        {name: "Allflame Ember of Untainted Apes"},
-        {name: "Allflame Ember of Untainted Rhoas"},
-        {name: "Allflame Ember of Untainted Spitters"},
-        {name: "Allflame Ember of Untainted Maws"},
-        {name: "Allflame Ember of Untainted Chimerals"},
-        {name: "Allflame Ember of Untainted Devourers"},
-        {name: "Allflame Ember of Wildwood Cultists"},
-        {name: "Allflame Ember of Wildwood Treants"},
-        {name: "Allflame Ember of Wildwood Beasts"},
-        {name: "Allflame Ember of The Karui Legion"},
-        {name: "Allflame Ember of The Eternal Legion"},
-        {name: "Allflame Ember of The Maraketh Legion"},
-        {name: "Allflame Ember of The Templar Legion"},
-        {name: "Allflame Ember of The Vaal Legion"},
-        {name: "Flaring Allflame Ember of Scientists"},
-        {name: "Allflame Ember of The Shaper"},
-        {name: "Allflame Ember of The Elder"},
-        {name: "Allflame Ember of The Warlord"},
-        {name: "Allflame Ember of The Redeemer"},
-        {name: "Allflame Ember of The Crusader"},
-        {name: "Allflame Ember of The Hunter"},
-        {name: "Flaring Allflame Ember of Wildwood Cultists"},
-        {name: "Flaring Allflame Ember of Kalguurans"},
-        {name: "Flaring Allflame Ember of Abyss"},
-        {name: "Flaring Allflame Ember of The First Ones"},
-        {name: "Allflame Ember of Trial Cores"},
-        {name: "Allflame Ember of Trial Guards"},
-        {name: "Allflame Ember of Manifested Wealth"},
-        {name: "Allflame Ember of the False God"},
-        {name: "Allflame Ember of Anarchy"},
-        {name: "Allflame Ember of Syndicate Guards"},
-        {name: "Allflame Ember of Syndicate Escorts"},
-        {name: "Allflame Ember of Syndicate Assassins"},
-        {name: "Allflame Ember of Syndicate Researchers"},
-        {name: "Allflame Ember of Synthetic Fury"},
-        {name: "Flaring Allflame Ember of the Vaal"},
-        {name: "Flaring Allflame Ember of Breachlords"}
+        {
+            dropLevel: 1,
+            name: "Withered Wand"
+        },
+        {
+            dropLevel: 2,
+            name: "Bone Wand"
+        },
+        {
+            dropLevel: 2,
+            name: "Attuned Wand"
+        },
+        {
+            dropLevel: 11,
+            name: "Siphoning Wand"
+        },
+        {
+            dropLevel: 16,
+            name: "Volatile Wand"
+        },
+        {
+            dropLevel: 25,
+            name: "Galvanic Wand"
+        },
+        {
+            dropLevel: 33,
+            name: "Acrid Wand"
+        },
+        {
+            dropLevel: 38,
+            name: "Offering Wand"
+        },
+        {
+            dropLevel: 45,
+            name: "Frigid Wand"
+        },
+        {
+            dropLevel: 49,
+            name: "Torture Wand"
+        },
+        {
+            dropLevel: 52,
+            name: "Critical Wand"
+        },
+        {
+            dropLevel: 56,
+            name: "Primordial Wand"
+        },
+        {
+            dropLevel: 65,
+            name: "Dueling Wand"
+        }
     ],
     ["Skill Gems"]: [
-        {name: "Spectral Shield Throw"},
-        {name: "Fireball"},
-        {name: "Ice Nova"},
-        {name: "Leap Slam"},
-        {name: "Charged Dash"},
-        {name: "Blade Flurry"},
-        {name: "Sweep"},
-        {name: "Discorectangle Slam"},
-        {name: "Ground Slam"},
-        {name: "Cleave"},
-        {name: "Shield Charge"},
-        {name: "Enduring Cry"},
-        {name: "Double Strike"},
-        {name: "Lacerate"},
-        {name: "Elemental Hit"},
-        {name: "Immortal Call"},
-        {name: "Dual Strike"},
-        {name: "Whirling Blades"},
-        {name: "Frenzy"},
-        {name: "Cold Snap"},
-        {name: "Raise Zombie"},
-        {name: "Detonate Dead"},
-        {name: "Volatile Dead"},
-        {name: "Unearth"},
-        {name: "Caustic Arrow"},
-        {name: "Creeping Frost"},
-        {name: "Ice Shot"},
-        {name: "Static Strike"},
-        {name: "Split Arrow"},
-        {name: "Damage Infusion"},
-        {name: "Blood Rage"},
-        {name: "Icefire"},
-        {name: "Ignite"},
-        {name: "Righteous Fire"},
-        {name: "Fire Weapon"},
-        {name: "Discharge"},
-        {name: "Portal"},
-        {name: "Riptide"},
-        {name: "Backstab"},
-        {name: "Flicker Strike"},
-        {name: "Spark"},
-        {name: "Ice Spear"},
-        {name: "Raise Spectre"},
-        {name: "Infernal Blow"},
-        {name: "Glacial Hammer"},
-        {name: "Frost Wall"},
-        {name: "Freezing Pulse"},
-        {name: "Shock Nova"},
-        {name: "New Shock Nova"},
-        {name: "Viper Strike"},
-        {name: "Phase Run"},
-        {name: "Phase Run"},
-        {name: "Explosive Arrow"},
-        {name: "Temporal Chains"},
-        {name: "Elemental Weakness"},
-        {name: "Warlord's Mark"},
-        {name: "Punishment"},
-        {name: "NewPunishment"},
-        {name: "Enfeeble"},
-        {name: "Assassin's Mark"},
-        {name: "Sniper's Mark"},
-        {name: "Despair"},
-        {name: "Lightning Warp"},
-        {name: "Summon Skeletons"},
-        {name: "Summon Skeletons Channelled"},
-        {name: "Glacial Shield Swipe"},
-        {name: "Crushing Fist"},
-        {name: "Swordstorm"},
-        {name: "Eviscerate"},
-        {name: "Divine Retribution"},
-        {name: "Vengeful Cry"},
-        {name: "Heavy Strike"},
-        {name: "Dominating Blow"},
-        {name: "Rain of Arrows"},
-        {name: "Firestorm"},
-        {name: "Lightning Strike"},
-        {name: "Tempest Shield"},
-        {name: "Molten Shell"},
-        {name: "Power Siphon"},
-        {name: "Puncture"},
-        {name: "Lightning Arrow"},
-        {name: "Arc"},
-        {name: "Haste"},
-        {name: "Purity of Elements"},
-        {name: "Vitality"},
-        {name: "Discipline"},
-        {name: "Grace"},
-        {name: "Determination"},
-        {name: "Anger"},
-        {name: "Hatred"},
-        {name: "Wrath"},
-        {name: "Burning Arrow"},
-        {name: "Clarity"},
-        {name: "Shockwave Totem"},
-        {name: "Rejuvenation Totem"},
-        {name: "Icicle Mine"},
-        {name: "Conversion Trap"},
-        {name: "Bear Trap"},
-        {name: "Fire Trap"},
-        {name: "Decoy Totem"},
-        {name: "Devouring Totem"},
-        {name: "Ethereal Knives"},
-        {name: "Arctic Armour"},
-        {name: "Arctic Armour"},
-        {name: "Vaal Arctic Armour"},
-        {name: "Holy Flame Totem"},
-        {name: "Flammability"},
-        {name: "Frostbite"},
-        {name: "Conductivity"},
-        {name: "Incinerate"},
-        {name: "Cyclone"},
-        {name: "Searing Bond"},
-        {name: "Reave"},
-        {name: "Lightning Trap"},
-        {name: "Smoke Mine"},
-        {name: "Animate Guardian"},
-        {name: "Spectral Throw"},
-        {name: "Animate Weapon"},
-        {name: "Purity of Fire"},
-        {name: "Vaal Impurity of Fire"},
-        {name: "Purity of Ice"},
-        {name: "Vaal Impurity of Ice"},
-        {name: "Purity of Lightning"},
-        {name: "Vaal Impurity of Lightning"},
-        {name: "Storm Call"},
-        {name: "Flameblast"},
-        {name: "Barrage"},
-        {name: "Ball Lightning"},
-        {name: "Vortex Mine"},
-        {name: "Wildfire"},
-        {name: "Summon Raging Spirit"},
-        {name: "Flame Surge"},
-        {name: "Desecrate"},
-        {name: "Flesh Offering"},
-        {name: "Bone Offering"},
-        {name: "Spirit Offering"},
-        {name: "Glacial Cascade"},
-        {name: "Convocation"},
-        {name: "Convocation"},
-        {name: "Vaal Fireball"},
-        {name: "Vaal Arc"},
-        {name: "Vaal Spark"},
-        {name: "Vaal Burning Arrow"},
-        {name: "Vaal Molten Shell"},
-        {name: "Vaal Lightning Warp"},
-        {name: "Vaal Immortal Call"},
-        {name: "Vaal Power Siphon"},
-        {name: "Vaal Cyclone"},
-        {name: "Vaal Ice Nova"},
-        {name: "Wand Teleport"},
-        {name: "Vaal Detonate Dead"},
-        {name: "Vaal Ground Slam"},
-        {name: "Vaal Rain of Arrows"},
-        {name: "Vaal Cold Snap"},
-        {name: "Vaal Spectral Throw"},
-        {name: "Vaal Lightning Strike"},
-        {name: "Vaal Heavy Strike"},
-        {name: "Vaal Double Strike"},
-        {name: "Vaal Glacial Hammer"},
-        {name: "Vaal Summon Skeletons"},
-        {name: "Vaal Storm Call"},
-        {name: "Vaal Reave"},
-        {name: "Molten Strike"},
-        {name: "Vaal Clarity"},
-        {name: "Vaal Grace"},
-        {name: "Vaal Discipline"},
-        {name: "Vaal Haste"},
-        {name: "Vaal FireTrap"},
-        {name: "Vaal Sweep"},
-        {name: "Vaal Righteous Fire"},
-        {name: "Vaal Breach"},
-        {name: "..."},
-        {name: "Vaal Flameblast"},
-        {name: "Pyroclast Mine"},
-        {name: "Tornado Shot"},
-        {name: "Vaal Lightning Trap"},
-        {name: "Herald of Ash"},
-        {name: "Herald of Ice"},
-        {name: "Herald of Thunder"},
-        {name: "Herald of Agony"},
-        {name: "Herald of Purity"},
-        {name: "Poacher's Mark"},
-        {name: "Lightning Tendrils"},
-        {name: "Lightning Tendrils"},
-        {name: "Lightning Circle"},
-        {name: "Lightning Channel"},
-        {name: "Mirror Arrow"},
-        {name: "Blink Arrow"},
-        {name: "Kinetic Blast"},
-        {name: "Touch of God"},
-        {name: "Summon Chaos Golem"},
-        {name: "Summon Ice Golem"},
-        {name: "Summon Flame Golem"},
-        {name: "Summon Lightning Golem"},
-        {name: "Ice Crash"},
-        {name: "Rallying Cry"},
-        {name: "Infernal Cry"},
-        {name: "Seismic Cry"},
-        {name: "Detonate Mines"},
-        {name: "Flame Dash"},
-        {name: "Frost Blades"},
-        {name: "Vigilant Strike"},
-        {name: "Rolling Magma"},
-        {name: "Ice Trap"},
-        {name: "Wild Strike"},
-        {name: "Galvanic Arrow"},
-        {name: "Blast Rain"},
-        {name: "Bladefall"},
-        {name: "Siege Ballista"},
-        {name: "Static Tether"},
-        {name: "Blade Vortex"},
-        {name: "New Blade Vortex"},
-        {name: "Vaal Blade Vortex"},
-        {name: "Frost Bomb"},
-        {name: "Orb of Storms"},
-        {name: "Summon Stone Golem"},
-        {name: "Righteous Lightning"},
-        {name: "Earthquake"},
-        {name: "Contagion"},
-        {name: "Wither"},
-        {name: "Blight"},
-        {name: "Essence Drain"},
-        {name: "Shadow Blades"},
-        {name: "Sunder"},
-        {name: "Frostbolt"},
-        {name: "Vortex"},
-        {name: "Ancestral Protector"},
-        {name: "Ancestral Blademaster"},
-        {name: "Ancestral Warchief"},
-        {name: "Scorching Ray"},
-        {name: "Dark Pact"},
-        {name: "Storm Burst"},
-        {name: "Infernal Sweep"},
-        {name: "Cremation"},
-        {name: "Bodyswap"},
-        {name: "Spectral Spinning Weapon"},
-        {name: "Tectonic Slam"},
-        {name: "Vulnerability"},
-        {name: "Capture Monster"},
-        {name: "Explosive Trap"},
-        {name: "Siphoning Trap"},
-        {name: "Flamethrower Trap"},
-        {name: "Lightning Spire Trap"},
-        {name: "Seismic Trap"},
-        {name: "Vaal Flesh Offering"},
-        {name: "Vaal Earthquake"},
-        {name: "Vaal Blight"},
-        {name: "Vaal Ancestral Warchief"},
-        {name: "Consecrated Path"},
-        {name: "Smite"},
-        {name: "Scourge Arrow"},
-        {name: "Toxic Rain"},
-        {name: "Summon Holy Relic"},
-        {name: "Winter Orb"},
-        {name: "Rending Steel"},
-        {name: "Lancing Steel"},
-        {name: "Storm Brand"},
-        {name: "War Banner"},
-        {name: "Dread Banner"},
-        {name: "Shattering Steel"},
-        {name: "Armageddon Brand"},
-        {name: "Brand Recall"},
-        {name: "Purifying Flame"},
-        {name: "Soulrend"},
-        {name: "Bane"},
-        {name: "Stormbind"},
-        {name: "Divine Ire"},
-        {name: "Wave of Conviction"},
-        {name: "Zealotry"},
-        {name: "Malevolence"},
-        {name: "Steelskin"},
-        {name: "[UNUSED] Bone Armour"},
-        {name: "Dash"},
-        {name: "[UNUSED] Quick Block"},
-        {name: "[UNUSED] Replicate"},
-        {name: "Bladestorm"},
-        {name: "Blood and Sand"},
-        {name: "Berserk"},
-        {name: "Perforate"},
-        {name: "Chain Hook"},
-        {name: "[UNUSED] Blitz"},
-        {name: "Frostblink"},
-        {name: "Precision"},
-        {name: "Flesh and Stone"},
-        {name: "[UNUSED] Slice And Dice"},
-        {name: "Pride"},
-        {name: "Cobra Lash"},
-        {name: "Summon Carrion Golem"},
-        {name: "Withering Step"},
-        {name: "Plague Bearer"},
-        {name: "[UNUSED] Serpent Strike"},
-        {name: "Stormblast Mine"},
-        {name: "Summon Skitterbots"},
-        {name: "Pestilent Strike"},
-        {name: "Venom Gyre"},
-        {name: "Shrapnel Ballista"},
-        {name: "Ensnaring Arrow"},
-        {name: "Artillery Ballista"},
-        {name: "[UNUSED] Projectile Portal"},
-        {name: "Spellslinger"},
-        {name: "Arcane Cloak"},
-        {name: "Kinetic Bolt"},
-        {name: "Blade Blast"},
-        {name: "[UNUSED] Blood Whirl"},
-        {name: "[UNUSED] Coiling Assault"},
-        {name: "Elemental Projectiles"},
-        {name: "Arcanist Brand"},
-        {name: "Intimidating Cry"},
-        {name: "Ancestral Cry"},
-        {name: "Penance Brand"},
-        {name: "Wintertide Brand"},
-        {name: "Earthshatter"},
-        {name: "General's Cry"},
-        {name: "Blazing Salvo"},
-        {name: "Void Sphere"},
-        {name: "Crackling Lance"},
-        {name: "Frost Shield"},
-        {name: "Splitting Steel"},
-        {name: "Sigil of Power"},
-        {name: "Flame Wall"},
-        {name: "Hexblast"},
-        {name: "Flammable Shot"},
-        {name: "Hydrosphere"},
-        {name: "Death Aura"},
-        {name: "Envy"},
-        {name: "Gluttony of Elements"},
-        {name: "Blinding Aura"},
-        {name: "Exsanguinate"},
-        {name: "Corrupting Fever"},
-        {name: "Reap"},
-        {name: "Petrified Blood"},
-        {name: "Defiance Banner"},
-        {name: "Voltaxic Burst"},
-        {name: "Rage Vortex"},
-        {name: "Spectral Helix"},
-        {name: "Battlemage's Cry"},
-        {name: "Absolution"},
-        {name: "Ambush"},
-        {name: "Forbidden Rite"},
-        {name: "Manabond"},
-        {name: "Blade Trap"},
-        {name: "Storm Rain"},
-        {name: "Shield Crush"},
-        {name: "Blood Offering"},
-        {name: "Boneshatter"},
-        {name: "Summon Reaper"},
-        {name: "Explosive Concoction"},
-        {name: "Eye of Winter"},
-        {name: "Poisonous Concoction"},
-        {name: "[DNT] Call of the Wild"},
-        {name: "Temporal Rift"},
-        {name: "Tornado"},
-        {name: "Energy Blade"},
-        {name: "Soul Link"},
-        {name: "Flame Link"},
-        {name: "Vampiric Link"},
-        {name: "Protective Link"},
-        {name: "Intuitive Link"},
-        {name: "Destructive Link"},
-        {name: "Blade Flurry"},
-        {name: "Cyclone"},
-        {name: "Dual Strike"},
-        {name: "Lacerate"},
-        {name: "Bladestorm"},
-        {name: "Chain Hook"},
-        {name: "Earthquake"},
-        {name: "Ancestral Protector"},
-        {name: "Ancestral Warchief"},
-        {name: "General's Cry"},
-        {name: "Leap Slam"},
-        {name: "Shield Charge"},
-        {name: "Charged Dash"},
-        {name: "Glacial Hammer"},
-        {name: "Ice Crash"},
-        {name: "Molten Strike"},
-        {name: "Smite"},
-        {name: "Spectral Shield Throw"},
-        {name: "Spectral Throw"},
-        {name: "Venom Gyre"},
-        {name: "Whirling Blades"},
-        {name: "Puncture"},
-        {name: "Rain of Arrows"},
-        {name: "Scourge Arrow"},
-        {name: "Toxic Rain"},
-        {name: "Blink Arrow"},
-        {name: "Ensnaring Arrow"},
-        {name: "Blast Rain"},
-        {name: "Elemental Hit"},
-        {name: "Blade Blast"},
-        {name: "Blade Vortex"},
-        {name: "Bladefall"},
-        {name: "Reap"},
-        {name: "Void Sphere"},
-        {name: "Divine Ire"},
-        {name: "Firestorm"},
-        {name: "Frostbolt"},
-        {name: "Ice Nova"},
-        {name: "Lightning Tendrils"},
-        {name: "Purifying Flame"},
-        {name: "Rolling Magma"},
-        {name: "Storm Call"},
-        {name: "Cremation"},
-        {name: "Frost Bomb"},
-        {name: "Hydrosphere"},
-        {name: "Wave of Conviction"},
-        {name: "Blight"},
-        {name: "Essence Drain"},
-        {name: "Creeping Frost"},
-        {name: "Vortex"},
-        {name: "Holy Flame Totem"},
-        {name: "Artillery Ballista"},
-        {name: "Siege Ballista"},
-        {name: "Fire Trap"},
-        {name: "Ice Trap"},
-        {name: "Lightning Trap"},
-        {name: "Siphoning Trap"},
-        {name: "Flamethrower Trap"},
-        {name: "Lightning Spire Trap"},
-        {name: "Precision"},
-        {name: "Vitality"},
-        {name: "Clarity"},
-        {name: "Blood and Sand"},
-        {name: "Dash"},
-        {name: "Desecrate"},
-        {name: "Phase Run"},
-        {name: "Poacher's Mark"},
-        {name: "Assassin's Mark"},
-        {name: "Warlord's Mark"},
-        {name: "Elemental Weakness"},
-        {name: "Vulnerability"},
-        {name: "Despair"},
-        {name: "Enduring Cry"},
-        {name: "Rejuvenation Totem"},
-        {name: "Lightning Warp"},
-        {name: "Flame Dash"},
-        {name: "Frostblink"},
-        {name: "Smoke Mine"},
-        {name: "Searing Bond"},
-        {name: "Shockwave Totem"},
-        {name: "Burning Arrow"},
-        {name: "Caustic Arrow"},
-        {name: "Galvanic Arrow"},
-        {name: "Summon Skeletons"},
-        {name: "Summon Raging Spirit"},
-        {name: "Detonate Dead"},
-        {name: "Ethereal Knives"},
-        {name: "Unearth"},
-        {name: "Ball Lightning"},
-        {name: "Blazing Salvo"},
-        {name: "Cold Snap"},
-        {name: "Dark Pact"},
-        {name: "Fireball"},
-        {name: "Glacial Cascade"},
-        {name: "Frost Blades"},
-        {name: "Shattering Steel"},
-        {name: "Wild Strike"},
-        {name: "Cleave"},
-        {name: "Dominating Blow"},
-        {name: "Infernal Blow"},
-        {name: "Sunder"},
-        {name: "Lightning Arrow"},
-        {name: "Explosive Arrow"},
-        {name: "Viper Strike"},
-        {name: "Sweep"},
-        {name: "Incinerate"},
-        {name: "Shock Nova"},
-        {name: "Ice Shot"},
-        {name: "Freezing Pulse"},
-        {name: "Ground Slam"},
-        {name: "Bear Trap"},
-        {name: "Heavy Strike"},
-        {name: "Cobra Lash"},
-        {name: "Ice Spear"},
-        {name: "Lightning Conduit"},
-        {name: "Galvanic Field"},
-        {name: "Alchemist's Mark"},
-        {name: "Volcanic Fissure"},
-        {name: "Vaal Flicker Strike"},
-        {name: "Vaal Molten Strike"},
-        {name: "Frozen Legion"},
-        {name: "Vaal Cleave"},
-        {name: "Vaal Volcanic Fissure"},
-        {name: "Vaal Caustic Arrow"},
-        {name: "Vaal Venom Gyre"},
-        {name: "Vaal Smite"},
-        {name: "Vaal Blade Flurry"},
-        {name: "Vaal Reap"},
-        {name: "Vaal Animate Weapon"},
-        {name: "Vaal Lightning Arrow"},
-        {name: "Vaal Absolution"},
-        {name: "Vaal Domination"},
-        {name: "Vaal Ice Shot"},
-        {name: "Vaal Firestorm"},
-        {name: "Vaal Rejuvenation Totem"},
-        {name: "Vaal Split Arrow"},
-        {name: "Snipe"},
-        {name: "Automation"},
-        {name: "Autoexertion"},
-        {name: "Playtest Attack"},
-        {name: "Playtest Spell"},
-        {name: "Playtest Slam"},
-        {name: "Quickstep"}
+        {
+            dropLevel: 1,
+            name: "Ice Nova"
+        },
+        {
+            dropLevel: 23,
+            name: "Leap Slam"
+        },
+        {
+            dropLevel: 7,
+            name: "Shield Charge"
+        },
+        {
+            dropLevel: 15,
+            name: "Raise Zombie"
+        },
+        {
+            dropLevel: 23,
+            name: "Detonate Dead"
+        },
+        {
+            dropLevel: 1,
+            name: "Volatile Dead"
+        },
+        {
+            dropLevel: 53,
+            name: "Flicker Strike"
+        },
+        {
+            dropLevel: 1,
+            name: "Spark"
+        },
+        {
+            dropLevel: 15,
+            name: "Ice Spear"
+        },
+        {
+            dropLevel: 23,
+            name: "Spectre: {0}"
+        },
+        {
+            dropLevel: 32,
+            name: "Frost Wall"
+        },
+        {
+            dropLevel: 1,
+            name: "Shock Nova"
+        },
+        {
+            dropLevel: 53,
+            name: "Temporal Chains"
+        },
+        {
+            dropLevel: 7,
+            name: "Enfeeble"
+        },
+        {
+            dropLevel: 23,
+            name: "Sniper's Mark"
+        },
+        {
+            dropLevel: 32,
+            name: "Despair"
+        },
+        {
+            dropLevel: 32,
+            name: "Lightning Warp"
+        },
+        {
+            dropLevel: 1,
+            name: "Skeletal Warrior"
+        },
+        {
+            dropLevel: 32,
+            name: "Skeletal Reaver"
+        },
+        {
+            dropLevel: 53,
+            name: "Skeletal Brute"
+        },
+        {
+            dropLevel: 1,
+            name: "Skeletal Sniper"
+        },
+        {
+            dropLevel: 15,
+            name: "Skeletal Frost Mage"
+        },
+        {
+            dropLevel: 42,
+            name: "Skeletal Storm Mage"
+        },
+        {
+            dropLevel: 7,
+            name: "Skeletal Arsonist"
+        },
+        {
+            dropLevel: 53,
+            name: "Skeletal Cleric"
+        },
+        {
+            dropLevel: 7,
+            name: "Armour Breaker"
+        },
+        {
+            dropLevel: 32,
+            name: "Rain of Arrows"
+        },
+        {
+            dropLevel: 42,
+            name: "Firestorm"
+        },
+        {
+            dropLevel: 1,
+            name: "Falling Thunder"
+        },
+        {
+            dropLevel: 1,
+            name: "Power Siphon"
+        },
+        {
+            dropLevel: 1,
+            name: "Lightning Arrow"
+        },
+        {
+            dropLevel: 15,
+            name: "Arc"
+        },
+        {
+            dropLevel: 1,
+            name: "Discipline"
+        },
+        {
+            dropLevel: 7,
+            name: "Shockwave Totem"
+        },
+        {
+            dropLevel: 11,
+            name: "Arctic Armour"
+        },
+        {
+            dropLevel: 23,
+            name: "Flammability"
+        },
+        {
+            dropLevel: 23,
+            name: "Hypothermia"
+        },
+        {
+            dropLevel: 23,
+            name: "Conductivity"
+        },
+        {
+            dropLevel: 15,
+            name: "Incinerate"
+        },
+        {
+            dropLevel: 1,
+            name: "Purity of Fire"
+        },
+        {
+            dropLevel: 1,
+            name: "Purity of Ice"
+        },
+        {
+            dropLevel: 1,
+            name: "Purity of Lightning"
+        },
+        {
+            dropLevel: 53,
+            name: "Flameblast"
+        },
+        {
+            dropLevel: 15,
+            name: "Barrage"
+        },
+        {
+            dropLevel: 42,
+            name: "Ball Lightning"
+        },
+        {
+            dropLevel: 42,
+            name: "Bone Offering"
+        },
+        {
+            dropLevel: 11,
+            name: "Herald of Ash"
+        },
+        {
+            dropLevel: 11,
+            name: "Herald of Ice"
+        },
+        {
+            dropLevel: 11,
+            name: "Herald of Thunder"
+        },
+        {
+            dropLevel: 7,
+            name: "Infernal Cry"
+        },
+        {
+            dropLevel: 42,
+            name: "Seismic Cry"
+        },
+        {
+            dropLevel: 1,
+            name: "Rolling Magma"
+        },
+        {
+            dropLevel: 1,
+            name: "Frost Bomb"
+        },
+        {
+            dropLevel: 7,
+            name: "Orb of Storms"
+        },
+        {
+            dropLevel: 1,
+            name: "Earthquake"
+        },
+        {
+            dropLevel: 1,
+            name: "Contagion"
+        },
+        {
+            dropLevel: 1,
+            name: "Wither"
+        },
+        {
+            dropLevel: 7,
+            name: "Essence Drain"
+        },
+        {
+            dropLevel: 32,
+            name: "Sunder"
+        },
+        {
+            dropLevel: 7,
+            name: "Frostbolt"
+        },
+        {
+            dropLevel: 1,
+            name: "Dark Pact"
+        },
+        {
+            dropLevel: 23,
+            name: "Vulnerability"
+        },
+        {
+            dropLevel: 1,
+            name: "Soulrend"
+        },
+        {
+            dropLevel: 11,
+            name: "Plague Bearer"
+        },
+        {
+            dropLevel: 32,
+            name: "Artillery Ballista"
+        },
+        {
+            dropLevel: 23,
+            name: "Earthshatter"
+        },
+        {
+            dropLevel: 1,
+            name: "Sigil of Power"
+        },
+        {
+            dropLevel: 1,
+            name: "Flame Wall"
+        },
+        {
+            dropLevel: 42,
+            name: "Hexblast"
+        },
+        {
+            dropLevel: 1,
+            name: "Exsanguinate"
+        },
+        {
+            dropLevel: 1,
+            name: "Reap"
+        },
+        {
+            dropLevel: 1,
+            name: "Boneshatter"
+        },
+        {
+            dropLevel: 53,
+            name: "Eye of Winter"
+        },
+        {
+            dropLevel: 1,
+            name: "Tornado"
+        },
+        {
+            dropLevel: 53,
+            name: "Lightning Conduit"
+        },
+        {
+            dropLevel: 1,
+            name: "Galvanic Field"
+        },
+        {
+            dropLevel: 32,
+            name: "Volcanic Fissure"
+        },
+        {
+            dropLevel: 15,
+            name: "Rapid Assault"
+        },
+        {
+            dropLevel: 7,
+            name: "Impale"
+        },
+        {
+            dropLevel: 7,
+            name: "Puncture"
+        },
+        {
+            dropLevel: 1,
+            name: "Whirling Slash"
+        },
+        {
+            dropLevel: 53,
+            name: "Spearfield"
+        },
+        {
+            dropLevel: 1,
+            name: "Storm Spear"
+        },
+        {
+            dropLevel: 53,
+            name: "Blazing Lance"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Axe Chop"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Axe Slash"
+        },
+        {
+            dropLevel: 42,
+            name: "Whirling Assault"
+        },
+        {
+            dropLevel: 1,
+            name: "Rolling Slam"
+        },
+        {
+            dropLevel: 1,
+            name: "Escape Shot"
+        },
+        {
+            dropLevel: 42,
+            name: "Supercharged Slam"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Evasive Strike"
+        },
+        {
+            dropLevel: 15,
+            name: "Wind Blast"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Blade Dance"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Claw Rake"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Spinning Flail"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Axe Execute"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Axe Leaping Chop"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Axe Whirling Slash"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Axe Raised Chop"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Axe Heavy Cleave"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Knife Flip"
+        },
+        {
+            dropLevel: 23,
+            name: "Wave of Frost"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Sword Lunge"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Sword Leap Slash"
+        },
+        {
+            dropLevel: 15,
+            name: "Ice Strike"
+        },
+        {
+            dropLevel: 1,
+            name: "Maul"
+        },
+        {
+            dropLevel: 1,
+            name: "Chaos Bolt"
+        },
+        {
+            dropLevel: 1,
+            name: "Firebolt"
+        },
+        {
+            dropLevel: 1,
+            name: "Glacial Cascade"
+        },
+        {
+            dropLevel: 42,
+            name: "Comet"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Blade Nova"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Flame Slice"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] RingOfBlades"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Combo Knife Throw"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Triple Slash Combo"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Hyper Slash"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Shadow Dash"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Shadow Ambush"
+        },
+        {
+            dropLevel: 1,
+            name: "Consecrate"
+        },
+        {
+            dropLevel: 23,
+            name: "Ripwire Ballista"
+        },
+        {
+            dropLevel: 32,
+            name: "Mana Tempest"
+        },
+        {
+            dropLevel: 1,
+            name: "Killing Palm"
+        },
+        {
+            dropLevel: 42,
+            name: "Shattering Palm"
+        },
+        {
+            dropLevel: 1,
+            name: "Volcano"
+        },
+        {
+            dropLevel: 1,
+            name: "Summon Wolf"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Spinning Throw"
+        },
+        {
+            dropLevel: 53,
+            name: "Spiral Volley"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Dodge Roll"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Shadow Thief Slash"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Leaping Axe Catch"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Storm Blade"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Plunging Blade"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Howl"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Spiral Throw"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Leaping Claw"
+        },
+        {
+            dropLevel: 1,
+            name: "Lightning Bolt"
+        },
+        {
+            dropLevel: 1,
+            name: "Rampage"
+        },
+        {
+            dropLevel: 1,
+            name: "Unleash"
+        },
+        {
+            dropLevel: 1,
+            name: "Lightning Storm"
+        },
+        {
+            dropLevel: 1,
+            name: "Furious Slam"
+        },
+        {
+            dropLevel: 1,
+            name: "Coming Soon"
+        },
+        {
+            dropLevel: 7,
+            name: "Coming Soon"
+        },
+        {
+            dropLevel: 15,
+            name: "Coming Soon"
+        },
+        {
+            dropLevel: 23,
+            name: "Coming Soon"
+        },
+        {
+            dropLevel: 32,
+            name: "Coming Soon"
+        },
+        {
+            dropLevel: 42,
+            name: "Coming Soon"
+        },
+        {
+            dropLevel: 53,
+            name: "Coming Soon"
+        },
+        {
+            dropLevel: 27,
+            name: "Lingering Illusion"
+        },
+        {
+            dropLevel: 11,
+            name: "Ghost Dance"
+        },
+        {
+            dropLevel: 23,
+            name: "Bind Spectre"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Dominating Aura"
+        },
+        {
+            dropLevel: 1,
+            name: "Shroud"
+        },
+        {
+            dropLevel: 15,
+            name: "Pain Offering"
+        },
+        {
+            dropLevel: 15,
+            name: "Tempest Flurry"
+        },
+        {
+            dropLevel: 7,
+            name: "Staggering Palm"
+        },
+        {
+            dropLevel: 32,
+            name: "Charged Staff"
+        },
+        {
+            dropLevel: 23,
+            name: "Siphoning Strike"
+        },
+        {
+            dropLevel: 7,
+            name: "Tempest Bell"
+        },
+        {
+            dropLevel: 1,
+            name: "Frozen Locus"
+        },
+        {
+            dropLevel: 15,
+            name: "Bonestorm"
+        },
+        {
+            dropLevel: 7,
+            name: "Bone Cage"
+        },
+        {
+            dropLevel: 1,
+            name: "Unearth"
+        },
+        {
+            dropLevel: 32,
+            name: "Detonating Arrow"
+        },
+        {
+            dropLevel: 1,
+            name: "Poisonburst Arrow"
+        },
+        {
+            dropLevel: 15,
+            name: "Toxic Growth"
+        },
+        {
+            dropLevel: 7,
+            name: "Stormcaller Arrow"
+        },
+        {
+            dropLevel: 1,
+            name: "Lightning Rod"
+        },
+        {
+            dropLevel: 7,
+            name: "Snipe"
+        },
+        {
+            dropLevel: 23,
+            name: "Gas Arrow"
+        },
+        {
+            dropLevel: 15,
+            name: "Solar Orb"
+        },
+        {
+            dropLevel: 32,
+            name: "Fireball"
+        },
+        {
+            dropLevel: 15,
+            name: "Electrocuting Arrow"
+        },
+        {
+            dropLevel: 15,
+            name: "Cold Snap"
+        },
+        {
+            dropLevel: 15,
+            name: "Perfect Strike"
+        },
+        {
+            dropLevel: 1,
+            name: "Raise Shield"
+        },
+        {
+            dropLevel: 15,
+            name: "Resonating Shield"
+        },
+        {
+            dropLevel: 11,
+            name: "Mana Remnants"
+        },
+        {
+            dropLevel: 11,
+            name: "Magma Barrier"
+        },
+        {
+            dropLevel: 1,
+            name: "Freezing Shards"
+        },
+        {
+            dropLevel: 7,
+            name: "Vine Arrow"
+        },
+        {
+            dropLevel: 1,
+            name: "Summon Rhoa Mount"
+        },
+        {
+            dropLevel: 1,
+            name: "Decompose"
+        },
+        {
+            dropLevel: 11,
+            name: "Raging Spirits"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Sandstorm Swipe"
+        },
+        {
+            dropLevel: 1,
+            name: "Detonate Minion"
+        },
+        {
+            dropLevel: 15,
+            name: "[DNT] Spear Mine"
+        },
+        {
+            dropLevel: 23,
+            name: "[DNT] Spear Vortex"
+        },
+        {
+            dropLevel: 23,
+            name: "[DNT] Infusing Strike"
+        },
+        {
+            dropLevel: 42,
+            name: "Storm Surge"
+        },
+        {
+            dropLevel: 11,
+            name: "Wind Dancer"
+        },
+        {
+            dropLevel: 23,
+            name: "Profane Ritual"
+        },
+        {
+            dropLevel: 53,
+            name: "Soul Offering"
+        },
+        {
+            dropLevel: 32,
+            name: "Dark Effigy"
+        },
+        {
+            dropLevel: 11,
+            name: "Grim Feast"
+        },
+        {
+            dropLevel: 11,
+            name: "Scavenged Plating"
+        },
+        {
+            dropLevel: 32,
+            name: "Spinning Inferno"
+        },
+        {
+            dropLevel: 1,
+            name: "Mana Drain"
+        },
+        {
+            dropLevel: 1,
+            name: "Bone Blast"
+        },
+        {
+            dropLevel: 59,
+            name: "Blink"
+        },
+        {
+            dropLevel: 15,
+            name: "Molten Blast"
+        },
+        {
+            dropLevel: 1,
+            name: "Malice"
+        },
+        {
+            dropLevel: 53,
+            name: "Hammer of the Gods"
+        },
+        {
+            dropLevel: 1,
+            name: "Living Bomb"
+        },
+        {
+            dropLevel: 42,
+            name: "Stampede"
+        },
+        {
+            dropLevel: 23,
+            name: "Shield Wall"
+        },
+        {
+            dropLevel: 15,
+            name: "Shielding Cry"
+        },
+        {
+            dropLevel: 7,
+            name: "Ember Fusillade"
+        },
+        {
+            dropLevel: 7,
+            name: "High Velocity Rounds"
+        },
+        {
+            dropLevel: 1,
+            name: "Fragmentation Rounds"
+        },
+        {
+            dropLevel: 53,
+            name: "Siege Cascade"
+        },
+        {
+            dropLevel: 1,
+            name: "Armour Piercing Rounds"
+        },
+        {
+            dropLevel: 23,
+            name: "Explosive Shot"
+        },
+        {
+            dropLevel: 7,
+            name: "Incendiary Shot"
+        },
+        {
+            dropLevel: 15,
+            name: "Rapid Shot"
+        },
+        {
+            dropLevel: 23,
+            name: "Glacial Bolt"
+        },
+        {
+            dropLevel: 1,
+            name: "Permafrost Bolts"
+        },
+        {
+            dropLevel: 42,
+            name: "Hailstorm Rounds"
+        },
+        {
+            dropLevel: 15,
+            name: "Ice Shards"
+        },
+        {
+            dropLevel: 53,
+            name: "Plasma Blast"
+        },
+        {
+            dropLevel: 15,
+            name: "Galvanic Shards"
+        },
+        {
+            dropLevel: 32,
+            name: "Stormblast Bolts"
+        },
+        {
+            dropLevel: 42,
+            name: "Shockburst Rounds"
+        },
+        {
+            dropLevel: 1,
+            name: "Punch"
+        },
+        {
+            dropLevel: 1,
+            name: "Quarterstaff Strike"
+        },
+        {
+            dropLevel: 1,
+            name: "Flail Strike"
+        },
+        {
+            dropLevel: 1,
+            name: "Sword Slash"
+        },
+        {
+            dropLevel: 1,
+            name: "Axe Slash"
+        },
+        {
+            dropLevel: 1,
+            name: "Mace Strike"
+        },
+        {
+            dropLevel: 1,
+            name: "Claw Stab"
+        },
+        {
+            dropLevel: 1,
+            name: "Dagger Stab"
+        },
+        {
+            dropLevel: 1,
+            name: "Spear Stab"
+        },
+        {
+            dropLevel: 1,
+            name: "Bow Shot"
+        },
+        {
+            dropLevel: 1,
+            name: "Crossbow Shot"
+        },
+        {
+            dropLevel: 1,
+            name: "Playtest Attack"
+        },
+        {
+            dropLevel: 1,
+            name: "Playtest Slam"
+        },
+        {
+            dropLevel: 1,
+            name: "Playtest Spell"
+        },
+        {
+            dropLevel: 42,
+            name: "Shockchain Arrow"
+        },
+        {
+            dropLevel: 7,
+            name: "Vaulting Impact"
+        },
+        {
+            dropLevel: 23,
+            name: "Storm Wave"
+        },
+        {
+            dropLevel: 32,
+            name: "Mantra of Destruction"
+        },
+        {
+            dropLevel: 1,
+            name: "Life Remnants"
+        },
+        {
+            dropLevel: 1,
+            name: "Explosive Concoction"
+        },
+        {
+            dropLevel: 1,
+            name: "Fulminating Concoction"
+        },
+        {
+            dropLevel: 1,
+            name: "Shattering Concoction"
+        },
+        {
+            dropLevel: 1,
+            name: "Poisonous Concoction"
+        },
+        {
+            dropLevel: 1,
+            name: "Bleeding Concoction"
+        },
+        {
+            dropLevel: 1,
+            name: "Meditate"
+        },
+        {
+            dropLevel: 1,
+            name: "Elemental Storm"
+        },
+        {
+            dropLevel: 1,
+            name: "Unbound Avatar"
+        },
+        {
+            dropLevel: 1,
+            name: "Summon Infernal Hound"
+        },
+        {
+            dropLevel: 1,
+            name: "Time Freeze"
+        },
+        {
+            dropLevel: 1,
+            name: "Time Snap"
+        },
+        {
+            dropLevel: 1,
+            name: "Encase in Jade"
+        },
+        {
+            dropLevel: 1,
+            name: "Sorcery Ward"
+        },
+        {
+            dropLevel: 1,
+            name: "Elemental Expression"
+        },
+        {
+            dropLevel: 32,
+            name: "Ice Shot"
+        },
+        {
+            dropLevel: 11,
+            name: "War Banner"
+        },
+        {
+            dropLevel: 27,
+            name: "Defiance Banner"
+        },
+        {
+            dropLevel: 23,
+            name: "Freezing Mark"
+        },
+        {
+            dropLevel: 23,
+            name: "Voltaic Mark"
+        },
+        {
+            dropLevel: 1,
+            name: "Temporal Rift"
+        },
+        {
+            dropLevel: 1,
+            name: "Demon Form"
+        },
+        {
+            dropLevel: 37,
+            name: "Time of Need"
+        },
+        {
+            dropLevel: 1,
+            name: "Explosive Grenade"
+        },
+        {
+            dropLevel: 7,
+            name: "Flash Grenade"
+        },
+        {
+            dropLevel: 32,
+            name: "Oil Grenade"
+        },
+        {
+            dropLevel: 15,
+            name: "Gas Grenade"
+        },
+        {
+            dropLevel: 23,
+            name: "Voltaic Grenade"
+        },
+        {
+            dropLevel: 59,
+            name: "Attrition"
+        },
+        {
+            dropLevel: 59,
+            name: "Elemental Conflux"
+        },
+        {
+            dropLevel: 1,
+            name: "Into the Breach"
+        },
+        {
+            dropLevel: 1,
+            name: "Ancestral Spirits"
+        },
+        {
+            dropLevel: 42,
+            name: "Emergency Reload"
+        },
+        {
+            dropLevel: 53,
+            name: "Cluster Grenade"
+        },
+        {
+            dropLevel: 59,
+            name: "Dread Banner"
+        },
+        {
+            dropLevel: 42,
+            name: "Tornado Shot"
+        },
+        {
+            dropLevel: 1,
+            name: "Blink"
+        },
+        {
+            dropLevel: 59,
+            name: "Charge Infusion"
+        },
+        {
+            dropLevel: 27,
+            name: "Shard Scavenger"
+        },
+        {
+            dropLevel: 27,
+            name: "Overwhelming Presence"
+        },
+        {
+            dropLevel: 59,
+            name: "Alchemist's Boon"
+        },
+        {
+            dropLevel: 59,
+            name: "Sacrifice"
+        },
+        {
+            dropLevel: 59,
+            name: "Archmage"
+        },
+        {
+            dropLevel: 53,
+            name: "Magnetic Salvo"
+        },
+        {
+            dropLevel: 15,
+            name: "Freezing Salvo"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Gas Cloud"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Detonation"
+        },
+        {
+            dropLevel: 59,
+            name: "Berserk"
+        },
+        {
+            dropLevel: 27,
+            name: "Herald of Plague"
+        },
+        {
+            dropLevel: 10,
+            name: "Withering Presence"
+        },
+        {
+            dropLevel: 27,
+            name: "Combat Frenzy"
+        },
+        {
+            dropLevel: 53,
+            name: "Gathering Storm"
+        }
     ],
     ["Stackable Currency"]: [
-        {name: "Blacksmith's Whetstone"},
-        {name: "Scroll of Wisdom"},
-        {name: "Chaos Orb"},
-        {name: "Veiled Orb"},
-        {name: "Armourer's Scrap"},
-        {name: "Mirror of Kalandra"},
-        {name: "Orb of Alchemy"},
-        {name: "Orb of Chance"},
-        {name: "Orb of Regret"},
-        {name: "Orb of Unmaking"},
-        {name: "Orb of Transmutation"},
-        {name: "Orb of Alteration"},
-        {name: "Orb of Scouring"},
-        {name: "Exalted Orb"},
-        {name: "Regal Orb"},
-        {name: "Orb of Augmentation"},
-        {name: "Portal Scroll"},
-        {name: "Glassblower's Bauble"},
-        {name: "Gemcutter's Prism"},
-        {name: "Chromatic Orb"},
-        {name: "Orb of Fusing"},
-        {name: "Jeweller's Orb"},
-        {name: "Divine Orb"},
-        {name: "Blessed Orb"},
-        {name: "Sacred Orb"},
-        {name: "Cartographer's Chisel"},
-        {name: "Maven's Chisel of Procurement"},
-        {name: "Maven's Chisel of Proliferation"},
-        {name: "Maven's Chisel of Divination"},
-        {name: "Maven's Chisel of Scarabs"},
-        {name: "Maven's Chisel of Avarice"},
-        {name: "Scroll Fragment"},
-        {name: "Transmutation Shard"},
-        {name: "Alteration Shard"},
-        {name: "Alchemy Shard"},
-        {name: "Albino Rhoa Feather"},
-        {name: "Eternal Orb"},
-        {name: "Imprint"},
-        {name: "Vaal Orb"},
-        {name: "Enchant"},
-        {name: "Tainted Blessing"},
-        {name: "Corrupt"},
-        {name: "Corrupt"},
-        {name: "Corrupt"},
-        {name: "Perandus Coin"},
-        {name: "Silver Coin"},
-        {name: "Prophecy"},
-        {name: "Bestiary Orb"},
-        {name: "Imprinted Bestiary Orb"},
-        {name: "Empty Coffin"},
-        {name: "Filled Coffin"},
-        {name: "Surveyor's Compass"},
-        {name: "Charged Compass"},
-        {name: "Prime Regrading Lens"},
-        {name: "Secondary Regrading Lens"},
-        {name: "Tempering Orb"},
-        {name: "Tailoring Orb"},
-        {name: "Fine Delirium Orb"},
-        {name: "Singular Delirium Orb"},
-        {name: "Thaumaturge's Delirium Orb"},
-        {name: "Blacksmith's Delirium Orb"},
-        {name: "Armoursmith's Delirium Orb"},
-        {name: "Cartographer's Delirium Orb"},
-        {name: "Jeweller's Delirium Orb"},
-        {name: "Abyssal Delirium Orb"},
-        {name: "Kalguuran Delirium Orb"},
-        {name: "Foreboding Delirium Orb"},
-        {name: "Obscured Delirium Orb"},
-        {name: "Whispering Delirium Orb"},
-        {name: "Fragmented Delirium Orb"},
-        {name: "Skittering Delirium Orb"},
-        {name: "Fossilised Delirium Orb"},
-        {name: "Fine Delirium Orb"},
-        {name: "Diviner's Delirium Orb"},
-        {name: "Delirium Orb"},
-        {name: "Primal Delirium Orb"},
-        {name: "Imperial Delirium Orb"},
-        {name: "Timeless Delirium Orb"},
-        {name: "Blighted Delirium Orb"},
-        {name: "Challenging Delirium Orb"},
-        {name: "Delirium Orb"},
-        {name: "Whispering Essence of Hatred"},
-        {name: "Muttering Essence of Hatred"},
-        {name: "Weeping Essence of Hatred"},
-        {name: "Wailing Essence of Hatred"},
-        {name: "Screaming Essence of Hatred"},
-        {name: "Shrieking Essence of Hatred"},
-        {name: "Deafening Essence of Hatred"},
-        {name: "Whispering Essence of Woe"},
-        {name: "Muttering Essence of Woe"},
-        {name: "Weeping Essence of Woe"},
-        {name: "Wailing Essence of Woe"},
-        {name: "Screaming Essence of Woe"},
-        {name: "Shrieking Essence of Woe"},
-        {name: "Deafening Essence of Woe"},
-        {name: "Whispering Essence of Greed"},
-        {name: "Muttering Essence of Greed"},
-        {name: "Weeping Essence of Greed"},
-        {name: "Wailing Essence of Greed"},
-        {name: "Screaming Essence of Greed"},
-        {name: "Shrieking Essence of Greed"},
-        {name: "Deafening Essence of Greed"},
-        {name: "Whispering Essence of Contempt"},
-        {name: "Muttering Essence of Contempt"},
-        {name: "Weeping Essence of Contempt"},
-        {name: "Wailing Essence of Contempt"},
-        {name: "Screaming Essence of Contempt"},
-        {name: "Shrieking Essence of Contempt"},
-        {name: "Deafening Essence of Contempt"},
-        {name: "Muttering Essence of Sorrow"},
-        {name: "Weeping Essence of Sorrow"},
-        {name: "Wailing Essence of Sorrow"},
-        {name: "Screaming Essence of Sorrow"},
-        {name: "Shrieking Essence of Sorrow"},
-        {name: "Deafening Essence of Sorrow"},
-        {name: "Muttering Essence of Anger"},
-        {name: "Weeping Essence of Anger"},
-        {name: "Wailing Essence of Anger"},
-        {name: "Screaming Essence of Anger"},
-        {name: "Shrieking Essence of Anger"},
-        {name: "Deafening Essence of Anger"},
-        {name: "Muttering Essence of Torment"},
-        {name: "Weeping Essence of Torment"},
-        {name: "Wailing Essence of Torment"},
-        {name: "Screaming Essence of Torment"},
-        {name: "Shrieking Essence of Torment"},
-        {name: "Deafening Essence of Torment"},
-        {name: "Muttering Essence of Fear"},
-        {name: "Weeping Essence of Fear"},
-        {name: "Wailing Essence of Fear"},
-        {name: "Screaming Essence of Fear"},
-        {name: "Shrieking Essence of Fear"},
-        {name: "Deafening Essence of Fear"},
-        {name: "Weeping Essence of Suffering"},
-        {name: "Wailing Essence of Suffering"},
-        {name: "Screaming Essence of Suffering"},
-        {name: "Shrieking Essence of Suffering"},
-        {name: "Deafening Essence of Suffering"},
-        {name: "Weeping Essence of Rage"},
-        {name: "Wailing Essence of Rage"},
-        {name: "Screaming Essence of Rage"},
-        {name: "Shrieking Essence of Rage"},
-        {name: "Deafening Essence of Rage"},
-        {name: "Weeping Essence of Wrath"},
-        {name: "Wailing Essence of Wrath"},
-        {name: "Screaming Essence of Wrath"},
-        {name: "Shrieking Essence of Wrath"},
-        {name: "Deafening Essence of Wrath"},
-        {name: "Weeping Essence of Doubt"},
-        {name: "Wailing Essence of Doubt"},
-        {name: "Screaming Essence of Doubt"},
-        {name: "Shrieking Essence of Doubt"},
-        {name: "Deafening Essence of Doubt"},
-        {name: "Wailing Essence of Anguish"},
-        {name: "Screaming Essence of Anguish"},
-        {name: "Shrieking Essence of Anguish"},
-        {name: "Deafening Essence of Anguish"},
-        {name: "Wailing Essence of Loathing"},
-        {name: "Screaming Essence of Loathing"},
-        {name: "Shrieking Essence of Loathing"},
-        {name: "Deafening Essence of Loathing"},
-        {name: "Wailing Essence of Spite"},
-        {name: "Screaming Essence of Spite"},
-        {name: "Shrieking Essence of Spite"},
-        {name: "Deafening Essence of Spite"},
-        {name: "Wailing Essence of Zeal"},
-        {name: "Screaming Essence of Zeal"},
-        {name: "Shrieking Essence of Zeal"},
-        {name: "Deafening Essence of Zeal"},
-        {name: "Screaming Essence of Misery"},
-        {name: "Shrieking Essence of Misery"},
-        {name: "Deafening Essence of Misery"},
-        {name: "Screaming Essence of Dread"},
-        {name: "Shrieking Essence of Dread"},
-        {name: "Deafening Essence of Dread"},
-        {name: "Screaming Essence of Scorn"},
-        {name: "Shrieking Essence of Scorn"},
-        {name: "Deafening Essence of Scorn"},
-        {name: "Screaming Essence of Envy"},
-        {name: "Shrieking Essence of Envy"},
-        {name: "Deafening Essence of Envy"},
-        {name: "Essence of Hysteria"},
-        {name: "Essence of Insanity"},
-        {name: "Essence of Horror"},
-        {name: "Essence of Delirium"},
-        {name: "Remnant of Corruption"},
-        {name: "Simple Sextant"},
-        {name: "Prime Sextant"},
-        {name: "Awakened Sextant"},
-        {name: "Elevated Sextant"},
-        {name: "Veiled Scarab"},
-        {name: "Apprentice Cartographer's Seal"},
-        {name: "Journeyman Cartographer's Seal"},
-        {name: "Master Cartographer's Seal"},
-        {name: "Unshaping Orb"},
-        {name: "Splinter of Xoph"},
-        {name: "Splinter of Tul"},
-        {name: "Splinter of Esh"},
-        {name: "Splinter of Uul-Netol"},
-        {name: "Splinter of Chayula"},
-        {name: "Blessing of Xoph"},
-        {name: "Blessing of Tul"},
-        {name: "Blessing of Esh"},
-        {name: "Blessing of Uul-Netol"},
-        {name: "Blessing of Chayula"},
-        {name: "Timeless Karui Splinter"},
-        {name: "Timeless Maraketh Splinter"},
-        {name: "Timeless Eternal Empire Splinter"},
-        {name: "Timeless Templar Splinter"},
-        {name: "Timeless Vaal Splinter"},
-        {name: "Simulacrum Splinter"},
-        {name: "Orb of Annulment"},
-        {name: "Orb of Binding"},
-        {name: "Orb of Horizons"},
-        {name: "Harbinger's Orb"},
-        {name: "Engineer's Orb"},
-        {name: "Infused Engineer's Orb"},
-        {name: "Ancient Orb"},
-        {name: "Fracturing Orb"},
-        {name: "Annulment Shard"},
-        {name: "Binding Shard"},
-        {name: "Horizon Shard"},
-        {name: "Harbinger's Shard"},
-        {name: "Engineer's Shard"},
-        {name: "Ancient Shard"},
-        {name: "Chaos Shard"},
-        {name: "Mirror Shard"},
-        {name: "Exalted Shard"},
-        {name: "Regal Shard"},
-        {name: "Fracturing Shard"},
-        {name: "Simple Rope Net"},
-        {name: "Reinforced Rope Net"},
-        {name: "Strong Rope Net"},
-        {name: "Simple Iron Net"},
-        {name: "Reinforced Iron Net"},
-        {name: "Strong Iron Net"},
-        {name: "Simple Steel Net"},
-        {name: "Reinforced Steel Net"},
-        {name: "Strong Steel Net"},
-        {name: "Thaumaturgical Net"},
-        {name: "Necromancy Net"},
-        {name: "Vial of Dominance"},
-        {name: "Vial of Summoning"},
-        {name: "Vial of Awakening"},
-        {name: "Vial of the Ritual"},
-        {name: "Vial of Fate"},
-        {name: "Vial of Consequence"},
-        {name: "Vial of the Ghost"},
-        {name: "Vial of Transcendence"},
-        {name: "Vial of Sacrifice"},
-        {name: "Scorched Fossil"},
-        {name: "Frigid Fossil"},
-        {name: "Metallic Fossil"},
-        {name: "Jagged Fossil"},
-        {name: "Aberrant Fossil"},
-        {name: "Pristine Fossil"},
-        {name: "Dense Fossil"},
-        {name: "Corroded Fossil"},
-        {name: "Prismatic Fossil"},
-        {name: "Aetheric Fossil"},
-        {name: "Serrated Fossil"},
-        {name: "Lucent Fossil"},
-        {name: "Shuddering Fossil"},
-        {name: "Bound Fossil"},
-        {name: "Opulent Fossil"},
-        {name: "Deft Fossil"},
-        {name: "Fundamental Fossil"},
-        {name: "Faceted Fossil"},
-        {name: "Bloodstained Fossil"},
-        {name: "Hollow Fossil"},
-        {name: "Fractured Fossil"},
-        {name: "Glyphic Fossil"},
-        {name: "Tangled Fossil"},
-        {name: "Sanctified Fossil"},
-        {name: "Gilded Fossil"},
-        {name: "Turbulent Catalyst"},
-        {name: "Imbued Catalyst"},
-        {name: "Abrasive Catalyst"},
-        {name: "Tempering Catalyst"},
-        {name: "Fertile Catalyst"},
-        {name: "Prismatic Catalyst"},
-        {name: "Intrinsic Catalyst"},
-        {name: "Noxious Catalyst"},
-        {name: "Accelerating Catalyst"},
-        {name: "Unstable Catalyst"},
-        {name: "Tainted Catalyst"},
-        {name: "Time-light Scroll"},
-        {name: "Fragmentation Scroll"},
-        {name: "Deregulation Scroll"},
-        {name: "Electroshock Scroll"},
-        {name: "Haemocombustion Scroll"},
-        {name: "Specularity Scroll"},
-        {name: "Facetor's Lens"},
-        {name: "Magmatic Ore"},
-        {name: "Ritual Splinter"},
-        {name: "Ritual Vessel"},
-        {name: "Lesser Eldritch Ember"},
-        {name: "Greater Eldritch Ember"},
-        {name: "Grand Eldritch Ember"},
-        {name: "Exceptional Eldritch Ember"},
-        {name: "Lesser Eldritch Ichor"},
-        {name: "Greater Eldritch Ichor"},
-        {name: "Grand Eldritch Ichor"},
-        {name: "Exceptional Eldritch Ichor"},
-        {name: "Orb of Conflict"},
-        {name: "Uncarved Gemstone"},
-        {name: "Valdo's Puzzle Box"},
-        {name: "Stacked Deck"},
-        {name: "Tainted Oil"},
-        {name: "Reflective Oil"},
-        {name: "Prismatic Oil"},
-        {name: "Clear Oil"},
-        {name: "Sepia Oil"},
-        {name: "Amber Oil"},
-        {name: "Verdant Oil"},
-        {name: "Teal Oil"},
-        {name: "Azure Oil"},
-        {name: "Indigo Oil"},
-        {name: "Violet Oil"},
-        {name: "Crimson Oil"},
-        {name: "Black Oil"},
-        {name: "Opalescent Oil"},
-        {name: "Silver Oil"},
-        {name: "Golden Oil"},
-        {name: "Crusader's Exalted Orb"},
-        {name: "Redeemer's Exalted Orb"},
-        {name: "Hunter's Exalted Orb"},
-        {name: "Warlord's Exalted Orb"},
-        {name: "Awakener's Orb"},
-        {name: "Rogue's Marker"},
-        {name: "Orb of Dominance"},
-        {name: "Crescent Splinter"},
-        {name: "Enkindling Orb"},
-        {name: "Instilling Orb"},
-        {name: "Exotic Coinage"},
-        {name: "Scrap Metal"},
-        {name: "Astragali"},
-        {name: "Burial Medallion"},
-        {name: "Lesser Broken Circle Artifact"},
-        {name: "Greater Broken Circle Artifact"},
-        {name: "Grand Broken Circle Artifact"},
-        {name: "Exceptional Broken Circle Artifact"},
-        {name: "Lesser Black Scythe Artifact"},
-        {name: "Greater Black Scythe Artifact"},
-        {name: "Grand Black Scythe Artifact"},
-        {name: "Exceptional Black Scythe Artifact"},
-        {name: "Lesser Order Artifact"},
-        {name: "Greater Order Artifact"},
-        {name: "Grand Order Artifact"},
-        {name: "Exceptional Order Artifact"},
-        {name: "Lesser Sun Artifact"},
-        {name: "Greater Sun Artifact"},
-        {name: "Grand Sun Artifact"},
-        {name: "Exceptional Sun Artifact"},
-        {name: "Tainted Chromatic Orb"},
-        {name: "Tainted Orb of Fusing"},
-        {name: "Tainted Jeweller's Orb"},
-        {name: "Tainted Chaos Orb"},
-        {name: "Tainted Exalted Orb"},
-        {name: "Tainted Mythic Orb"},
-        {name: "Tainted Armourer's Scrap"},
-        {name: "Tainted Blacksmith's Whetstone"},
-        {name: "Tainted Divine Teardrop"},
-        {name: "Eldritch Chaos Orb"},
-        {name: "Eldritch Exalted Orb"},
-        {name: "Eldritch Orb of Annulment"},
-        {name: "Singular Scouting Report"},
-        {name: "Otherworldly Scouting Report"},
-        {name: "Comprehensive Scouting Report"},
-        {name: "Vaal Scouting Report"},
-        {name: "Delirious Scouting Report"},
-        {name: "Operative's Scouting Report"},
-        {name: "Blighted Scouting Report"},
-        {name: "Influenced Scouting Report"},
-        {name: "Explorer's Scouting Report"},
-        {name: "Oil Extractor"},
-        {name: "Power Core"},
-        {name: "Transforming Power Core"},
-        {name: "Amplifying Power Core"},
-        {name: "Augmenting Power Core"},
-        {name: "Armour Recombinator"},
-        {name: "Weapon Recombinator"},
-        {name: "Jewellery Recombinator"},
-        {name: "Wild Crystallised Lifeforce"},
-        {name: "Vivid Crystallised Lifeforce"},
-        {name: "Primal Crystallised Lifeforce"},
-        {name: "Sacred Crystallised Lifeforce"},
-        {name: "Lycia's Invocation of Minion Instability"},
-        {name: "Lycia's Invocation of Resolute Technique"},
-        {name: "Lycia's Invocation of Blood Magic"},
-        {name: "Lycia's Invocation of Pain Attunement"},
-        {name: "Lycia's Invocation of Elemental Equilibrium"},
-        {name: "Lycia's Invocation of Iron Grip"},
-        {name: "Lycia's Invocation of Point Blank"},
-        {name: "Lycia's Invocation of Acrobatics"},
-        {name: "Lycia's Invocation of Ghost Reaver"},
-        {name: "Lycia's Invocation of Vaal Pact"},
-        {name: "Lycia's Invocation of Elemental Overload"},
-        {name: "Lycia's Invocation of Avatar of Fire"},
-        {name: "Lycia's Invocation of Eldritch Battery"},
-        {name: "Lycia's Invocation of Ancestral Bond"},
-        {name: "Lycia's Invocation of Crimson Dance"},
-        {name: "Lycia's Invocation of Perfect Agony"},
-        {name: "Lycia's Invocation of Runebinder"},
-        {name: "Lycia's Invocation of Glancing Blows"},
-        {name: "Lycia's Invocation of Call to Arms"},
-        {name: "Lycia's Invocation of the Agnostic"},
-        {name: "Lycia's Invocation of Supreme Ego"},
-        {name: "Lycia's Invocation of the Impaler"},
-        {name: "Lycia's Invocation of Hex Master"},
-        {name: "Lycia's Invocation of Lethe Shade"},
-        {name: "Lycia's Invocation of Ghost Dance"},
-        {name: "Lycia's Invocation of Versatile Combatant"},
-        {name: "Lycia's Invocation of Magebane"},
-        {name: "Lycia's Invocation of Solipsism"},
-        {name: "Lycia's Invocation of Divine Shield"},
-        {name: "Lycia's Invocation of Iron Will"},
-        {name: "Lycia's Invocation of Wicked Ward"},
-        {name: "Lycia's Invocation of Wind Dancer"},
-        {name: "Lycia's Invocation of Conduit"},
-        {name: "Lycia's Invocation of Arrow Dancing"},
-        {name: "Lycia's Invocation of Precise Technique"},
-        {name: "Lycia's Invocation of Iron Reflexes"},
-        {name: "Lycia's Invocation of Unwavering Stance"},
-        {name: "Lycia's Invocation of Imbalanced Guard"},
-        {name: "Lycia's Invocation of Eternal Youth"},
-        {name: "Lycia's Invocation of Mind over Matter"},
-        {name: "Lycia's Invocation of Zealot's Oath"},
-        {name: "Igneous Geode"},
-        {name: "Crystalline Geode"},
-        {name: "Silver Coin"},
-        {name: "Hinekora's Lock"},
-        {name: "Omen of Amelioration"},
-        {name: "Omen of Return"},
-        {name: "Omen of Death-dancing"},
-        {name: "Omen of Refreshment"},
-        {name: "Omen of the Soul Devourer"},
-        {name: "Omen of Acceleration"},
-        {name: "Omen of Fortune"},
-        {name: "Omen of the Jeweller"},
-        {name: "Omen of Connections"},
-        {name: "Omen of Blanching"},
-        {name: "Omen of Revenge"},
-        {name: "Omen of Bequeathal"},
-        {name: "Omen of Resurgence"},
-        {name: "Omen of Adrenaline"},
-        {name: "Omen of Death's Door"},
-        {name: "Omen of Brilliance"},
-        {name: "Tattoo of the Ngamahu Firewalker"},
-        {name: "Tattoo of the Ngamahu Shaman"},
-        {name: "Tattoo of the Ngamahu Warrior"},
-        {name: "Tattoo of the Ngamahu Warmonger"},
-        {name: "Tattoo of the Ngamahu Woodcarver"},
-        {name: "Loyalty Tattoo of Kaom"},
-        {name: "Tattoo of the Ngamahu Makanga"},
-        {name: "Tattoo of the Kitava Blood Drinker"},
-        {name: "Tattoo of the Kitava Rebel"},
-        {name: "Tattoo of the Kitava Warrior"},
-        {name: "Tattoo of the Kitava Heart Eater"},
-        {name: "Tattoo of the Kitava Shaman"},
-        {name: "Loyalty Tattoo of Utula"},
-        {name: "Tattoo of the Kitava Makanga"},
-        {name: "Tattoo of the Tukohama Shaman"},
-        {name: "Tattoo of the Tukohama Warrior"},
-        {name: "Tattoo of the Tukohama Brawler"},
-        {name: "Tattoo of the Tukohama Warmonger"},
-        {name: "Tattoo of the Tukohama Warcaller"},
-        {name: "Loyalty Tattoo of Akoya"},
-        {name: "Tattoo of the Tukohama Makanga"},
-        {name: "Tattoo of the Rongokurai Warrior"},
-        {name: "Tattoo of the Rongokurai Brute"},
-        {name: "Tattoo of the Rongokurai Goliath"},
-        {name: "Tattoo of the Rongokurai Turtle"},
-        {name: "Tattoo of the Rongokurai Guard"},
-        {name: "Loyalty Tattoo of Kahuturoa"},
-        {name: "Tattoo of the Rongokurai Makanga"},
-        {name: "Tattoo of the Tasalio Bladedancer"},
-        {name: "Tattoo of the Tasalio Tideshifter"},
-        {name: "Tattoo of the Tasalio Shaman"},
-        {name: "Tattoo of the Tasalio Warrior"},
-        {name: "Tattoo of the Tasalio Scout"},
-        {name: "Loyalty Tattoo of Rakiata"},
-        {name: "Tattoo of the Tasalio Makanga"},
-        {name: "Tattoo of the Arohongui Moonwarden"},
-        {name: "Tattoo of the Arohongui Scout"},
-        {name: "Tattoo of the Arohongui Warrior"},
-        {name: "Tattoo of the Arohongui Warmonger"},
-        {name: "Tattoo of the Arohongui Shaman"},
-        {name: "Loyalty Tattoo of Ikiaho"},
-        {name: "Tattoo of the Arohongui Makanga"},
-        {name: "Tattoo of the Ramako Scout"},
-        {name: "Tattoo of the Ramako Archer"},
-        {name: "Tattoo of the Ramako Sniper"},
-        {name: "Tattoo of the Ramako Fleetfoot"},
-        {name: "Tattoo of the Ramako Shaman"},
-        {name: "Loyalty Tattoo of Ahuana"},
-        {name: "Tattoo of the Ramako Makanga"},
-        {name: "Tattoo of the Hinekora Warrior"},
-        {name: "Tattoo of the Hinekora Deathwarden"},
-        {name: "Tattoo of the Hinekora Shaman"},
-        {name: "Tattoo of the Hinekora Storyteller"},
-        {name: "Tattoo of the Hinekora Warmonger"},
-        {name: "Loyalty Tattoo of Tawhanuku"},
-        {name: "Tattoo of the Hinekora Makanga"},
-        {name: "Tattoo of the Tawhoa Naturalist"},
-        {name: "Tattoo of the Tawhoa Scout"},
-        {name: "Tattoo of the Tawhoa Warrior"},
-        {name: "Tattoo of the Tawhoa Herbalist"},
-        {name: "Tattoo of the Tawhoa Shaman"},
-        {name: "Loyalty Tattoo of Maata"},
-        {name: "Tattoo of the Tawhoa Makanga"},
-        {name: "Tattoo of the Valako Stormrider"},
-        {name: "Tattoo of the Valako Scout"},
-        {name: "Tattoo of the Valako Warrior"},
-        {name: "Tattoo of the Valako Shieldbearer"},
-        {name: "Tattoo of the Valako Shaman"},
-        {name: "Loyalty Tattoo of Kiloava"},
-        {name: "Tattoo of the Valako Makanga"},
-        {name: "Honoured Tattoo of the Dove"},
-        {name: "Honoured Tattoo of the Sky"},
-        {name: "Honoured Tattoo of the Tuatara"},
-        {name: "Honoured Tattoo of the Pillager"},
-        {name: "Honoured Tattoo of the Turtle"},
-        {name: "Honoured Tattoo of the Oak"},
-        {name: "Honoured Tattoo of the Hatungo"},
-        {name: "Honoured Tattoo of the Flock"},
-        {name: "Honoured Tattoo of the Warlord"},
-        {name: "Honoured Tattoo of the Mountain"},
-        {name: "Honoured Tattoo of the Pa"},
-        {name: "Honoured Tattoo of the Hunter"},
-        {name: "Honoured Tattoo of the Barbarian"},
-        {name: "Honoured Tattoo of the Berserker"},
-        {name: "Honoured Tattoo of the Wise"},
-        {name: "Honoured Tattoo of the Storm"},
-        {name: "Honoured Tattoo of the Flood"},
-        {name: "Ancestral Tattoo of Bloodlines"},
-        {name: "Honoured Tattoo of the Makanga"},
-        {name: "Journey Tattoo of the Body"},
-        {name: "Journey Tattoo of the Mind"},
-        {name: "Journey Tattoo of the Soul"},
-        {name: "Journey Tattoo of Makanui"},
-        {name: "Vivid Wisps"},
-        {name: "Wild Wisps"},
-        {name: "Primal Wisps"},
-        {name: "Sun Rune"},
-        {name: "Bound Rune"},
-        {name: "Life Rune"},
-        {name: "War Rune"},
-        {name: "River Rune"},
-        {name: "Bounty Rune"},
-        {name: "Journey Rune"},
-        {name: "Mountain Rune"},
-        {name: "Time Rune"},
-        {name: "Power Rune"},
-        {name: "Reflecting Mist"}
+        {
+            dropLevel: 5,
+            name: "Blacksmith's Whetstone"
+        },
+        {
+            dropLevel: 5,
+            name: "Arcanist's Etcher"
+        },
+        {
+            dropLevel: 1,
+            name: "Scroll of Wisdom"
+        },
+        {
+            dropLevel: 12,
+            name: "Chaos Orb"
+        },
+        {
+            dropLevel: 61,
+            name: "Veiled Chaos Orb"
+        },
+        {
+            dropLevel: 5,
+            name: "Armourer's Scrap"
+        },
+        {
+            dropLevel: 35,
+            name: "Mirror of Kalandra"
+        },
+        {
+            dropLevel: 5,
+            name: "Orb of Alchemy"
+        },
+        {
+            dropLevel: 12,
+            name: "Orb of Chance"
+        },
+        {
+            dropLevel: 12,
+            name: "Orb of Regret"
+        },
+        {
+            dropLevel: 70,
+            name: "Orb of Unmaking"
+        },
+        {
+            dropLevel: 1,
+            name: "Orb of Transmutation"
+        },
+        {
+            dropLevel: 2,
+            name: "Orb of Alteration"
+        },
+        {
+            dropLevel: 12,
+            name: "Orb of Scouring"
+        },
+        {
+            dropLevel: 5,
+            name: "Exalted Orb"
+        },
+        {
+            dropLevel: 5,
+            name: "Regal Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Orb of Augmentation"
+        },
+        {
+            dropLevel: 2,
+            name: "Portal Scroll"
+        },
+        {
+            dropLevel: 12,
+            name: "Glassblower's Bauble"
+        },
+        {
+            dropLevel: 12,
+            name: "Gemcutter's Prism"
+        },
+        {
+            dropLevel: 5,
+            name: "Chromatic Orb"
+        },
+        {
+            dropLevel: 8,
+            name: "Orb of Fusing"
+        },
+        {
+            dropLevel: 25,
+            name: "Lesser Jeweller's Orb"
+        },
+        {
+            dropLevel: 45,
+            name: "Greater Jeweller's Orb"
+        },
+        {
+            dropLevel: 65,
+            name: "Perfect Jeweller's Orb"
+        },
+        {
+            dropLevel: 5,
+            name: "Artificer's Orb"
+        },
+        {
+            dropLevel: 35,
+            name: "Divine Orb"
+        },
+        {
+            dropLevel: 35,
+            name: "Blessed Orb"
+        },
+        {
+            dropLevel: 35,
+            name: "Sacred Orb"
+        },
+        {
+            dropLevel: 52,
+            name: "Cartographer's Chisel"
+        },
+        {
+            dropLevel: 1,
+            name: "Scroll Fragment"
+        },
+        {
+            dropLevel: 1,
+            name: "Transmutation Shard"
+        },
+        {
+            dropLevel: 1,
+            name: "Alteration Shard"
+        },
+        {
+            dropLevel: 1,
+            name: "Alchemy Shard"
+        },
+        {
+            dropLevel: 1,
+            name: "Chance Shard"
+        },
+        {
+            dropLevel: 1,
+            name: "Albino Rhoa Feather"
+        },
+        {
+            dropLevel: 40,
+            name: "Eternal Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Imprint"
+        },
+        {
+            dropLevel: 35,
+            name: "Vaal Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Corrupt"
+        },
+        {
+            dropLevel: 1,
+            name: "Perandus Coin"
+        },
+        {
+            dropLevel: 1,
+            name: "Silver Coin"
+        },
+        {
+            dropLevel: 1,
+            name: "Prophecy"
+        },
+        {
+            dropLevel: 15,
+            name: "Bestiary Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Imprinted Bestiary Orb"
+        },
+        {
+            dropLevel: 81,
+            name: "Surveyor's Compass"
+        },
+        {
+            dropLevel: 1,
+            name: "Charged Compass"
+        },
+        {
+            dropLevel: 1,
+            name: "Prime Regrading Lens"
+        },
+        {
+            dropLevel: 1,
+            name: "Secondary Regrading Lens"
+        },
+        {
+            dropLevel: 1,
+            name: "Tempering Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Tailoring Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of the Body"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of the Mind"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Enhancement"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Torment"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Flames"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Ice"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Electricity"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Ruin"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Battle"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Sorcery"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of Haste"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence of the Infinite"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of the Body"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of the Mind"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Enhancement"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Torment"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Flames"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Ice"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Electricity"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Ruin"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Battle"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Sorcery"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of Haste"
+        },
+        {
+            dropLevel: 1,
+            name: "Greater Essence of the Infinite"
+        },
+        {
+            dropLevel: 68,
+            name: "Simple Sextant"
+        },
+        {
+            dropLevel: 73,
+            name: "Prime Sextant"
+        },
+        {
+            dropLevel: 81,
+            name: "Awakened Sextant"
+        },
+        {
+            dropLevel: 83,
+            name: "Elevated Sextant"
+        },
+        {
+            dropLevel: 1,
+            name: "Apprentice Cartographer's Seal"
+        },
+        {
+            dropLevel: 1,
+            name: "Journeyman Cartographer's Seal"
+        },
+        {
+            dropLevel: 1,
+            name: "Master Cartographer's Seal"
+        },
+        {
+            dropLevel: 1,
+            name: "Unshaping Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Breach Splinter"
+        },
+        {
+            dropLevel: 1,
+            name: "Splinter of Xoph"
+        },
+        {
+            dropLevel: 1,
+            name: "Splinter of Tul"
+        },
+        {
+            dropLevel: 1,
+            name: "Splinter of Esh"
+        },
+        {
+            dropLevel: 1,
+            name: "Splinter of Uul-Netol"
+        },
+        {
+            dropLevel: 1,
+            name: "Splinter of Chayula"
+        },
+        {
+            dropLevel: 1,
+            name: "Blessing of Xoph"
+        },
+        {
+            dropLevel: 1,
+            name: "Blessing of Tul"
+        },
+        {
+            dropLevel: 1,
+            name: "Blessing of Esh"
+        },
+        {
+            dropLevel: 1,
+            name: "Blessing of Uul-Netol"
+        },
+        {
+            dropLevel: 1,
+            name: "Blessing of Chayula"
+        },
+        {
+            dropLevel: 1,
+            name: "Timeless Karui Splinter"
+        },
+        {
+            dropLevel: 1,
+            name: "Timeless Maraketh Splinter"
+        },
+        {
+            dropLevel: 1,
+            name: "Timeless Eternal Empire Splinter"
+        },
+        {
+            dropLevel: 1,
+            name: "Timeless Templar Splinter"
+        },
+        {
+            dropLevel: 1,
+            name: "Timeless Vaal Splinter"
+        },
+        {
+            dropLevel: 1,
+            name: "Simulacrum Splinter"
+        },
+        {
+            dropLevel: 35,
+            name: "Orb of Annulment"
+        },
+        {
+            dropLevel: 25,
+            name: "Orb of Binding"
+        },
+        {
+            dropLevel: 68,
+            name: "Orb of Horizons"
+        },
+        {
+            dropLevel: 1,
+            name: "Harbinger's Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Engineer's Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Infused Engineer's Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Ancient Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Fracturing Orb"
+        },
+        {
+            dropLevel: 35,
+            name: "Annulment Shard"
+        },
+        {
+            dropLevel: 25,
+            name: "Binding Shard"
+        },
+        {
+            dropLevel: 52,
+            name: "Horizon Shard"
+        },
+        {
+            dropLevel: 52,
+            name: "Harbinger's Shard"
+        },
+        {
+            dropLevel: 8,
+            name: "Engineer's Shard"
+        },
+        {
+            dropLevel: 35,
+            name: "Ancient Shard"
+        },
+        {
+            dropLevel: 8,
+            name: "Chaos Shard"
+        },
+        {
+            dropLevel: 35,
+            name: "Mirror Shard"
+        },
+        {
+            dropLevel: 35,
+            name: "Exalted Shard"
+        },
+        {
+            dropLevel: 5,
+            name: "Regal Shard"
+        },
+        {
+            dropLevel: 35,
+            name: "Fracturing Shard"
+        },
+        {
+            dropLevel: 5,
+            name: "Artificer's Shard"
+        },
+        {
+            dropLevel: 2,
+            name: "Simple Rope Net"
+        },
+        {
+            dropLevel: 7,
+            name: "Reinforced Rope Net"
+        },
+        {
+            dropLevel: 15,
+            name: "Strong Rope Net"
+        },
+        {
+            dropLevel: 25,
+            name: "Simple Iron Net"
+        },
+        {
+            dropLevel: 37,
+            name: "Reinforced Iron Net"
+        },
+        {
+            dropLevel: 48,
+            name: "Strong Iron Net"
+        },
+        {
+            dropLevel: 58,
+            name: "Simple Steel Net"
+        },
+        {
+            dropLevel: 60,
+            name: "Reinforced Steel Net"
+        },
+        {
+            dropLevel: 64,
+            name: "Strong Steel Net"
+        },
+        {
+            dropLevel: 68,
+            name: "Thaumaturgical Net"
+        },
+        {
+            dropLevel: 68,
+            name: "Necromancy Net"
+        },
+        {
+            dropLevel: 50,
+            name: "Vial of Dominance"
+        },
+        {
+            dropLevel: 50,
+            name: "Vial of Summoning"
+        },
+        {
+            dropLevel: 50,
+            name: "Vial of Awakening"
+        },
+        {
+            dropLevel: 50,
+            name: "Vial of the Ritual"
+        },
+        {
+            dropLevel: 50,
+            name: "Vial of Fate"
+        },
+        {
+            dropLevel: 50,
+            name: "Vial of Consequence"
+        },
+        {
+            dropLevel: 68,
+            name: "Vial of the Ghost"
+        },
+        {
+            dropLevel: 50,
+            name: "Vial of Transcendence"
+        },
+        {
+            dropLevel: 68,
+            name: "Vial of Sacrifice"
+        },
+        {
+            dropLevel: 1,
+            name: "Scorched Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Frigid Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Metallic Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Jagged Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Aberrant Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Pristine Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Dense Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Corroded Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Prismatic Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Aetheric Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Serrated Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Lucent Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Shuddering Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Bound Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Perfect Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Deft Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Fundamental Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Faceted Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Bloodstained Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Hollow Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Fractured Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Glyphic Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Tangled Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Sanctified Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Gilded Fossil"
+        },
+        {
+            dropLevel: 1,
+            name: "Flesh Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Neural Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Carapace Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Uul-Netol's Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Xoph's Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Tul's Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Esh's Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Chayula's Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Reaver Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Sibilant Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Skittering Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Adaptive Catalyst"
+        },
+        {
+            dropLevel: 1,
+            name: "Time-light Scroll"
+        },
+        {
+            dropLevel: 1,
+            name: "Fragmentation Scroll"
+        },
+        {
+            dropLevel: 1,
+            name: "Deregulation Scroll"
+        },
+        {
+            dropLevel: 1,
+            name: "Electroshock Scroll"
+        },
+        {
+            dropLevel: 1,
+            name: "Haemocombustion Scroll"
+        },
+        {
+            dropLevel: 1,
+            name: "Specularity Scroll"
+        },
+        {
+            dropLevel: 1,
+            name: "Facetor's Lens"
+        },
+        {
+            dropLevel: 1,
+            name: "Ritual Splinter"
+        },
+        {
+            dropLevel: 1,
+            name: "Ritual Vessel"
+        },
+        {
+            dropLevel: 68,
+            name: "Lesser Eldritch Ember"
+        },
+        {
+            dropLevel: 73,
+            name: "Greater Eldritch Ember"
+        },
+        {
+            dropLevel: 78,
+            name: "Grand Eldritch Ember"
+        },
+        {
+            dropLevel: 81,
+            name: "Exceptional Eldritch Ember"
+        },
+        {
+            dropLevel: 68,
+            name: "Lesser Eldritch Ichor"
+        },
+        {
+            dropLevel: 73,
+            name: "Greater Eldritch Ichor"
+        },
+        {
+            dropLevel: 78,
+            name: "Grand Eldritch Ichor"
+        },
+        {
+            dropLevel: 81,
+            name: "Exceptional Eldritch Ichor"
+        },
+        {
+            dropLevel: 1,
+            name: "Orb of Conflict"
+        },
+        {
+            dropLevel: 1,
+            name: "Uncarved Gemstone"
+        },
+        {
+            dropLevel: 1,
+            name: "Distilled Ire"
+        },
+        {
+            dropLevel: 1,
+            name: "Distilled Guilt"
+        },
+        {
+            dropLevel: 1,
+            name: "Distilled Greed"
+        },
+        {
+            dropLevel: 1,
+            name: "Distilled Paranoia"
+        },
+        {
+            dropLevel: 1,
+            name: "Distilled Envy"
+        },
+        {
+            dropLevel: 1,
+            name: "Distilled Disgust"
+        },
+        {
+            dropLevel: 1,
+            name: "Distilled Despair"
+        },
+        {
+            dropLevel: 70,
+            name: "Distilled Fear"
+        },
+        {
+            dropLevel: 75,
+            name: "Distilled Suffering"
+        },
+        {
+            dropLevel: 80,
+            name: "Distilled Isolation"
+        },
+        {
+            dropLevel: 1,
+            name: "Crusader's Exalted Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Redeemer's Exalted Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Hunter's Exalted Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Warlord's Exalted Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Awakener's Orb"
+        },
+        {
+            dropLevel: 48,
+            name: "Rogue's Marker"
+        },
+        {
+            dropLevel: 1,
+            name: "Orb of Dominance"
+        },
+        {
+            dropLevel: 83,
+            name: "Crescent Splinter"
+        },
+        {
+            dropLevel: 40,
+            name: "Enkindling Orb"
+        },
+        {
+            dropLevel: 40,
+            name: "Instilling Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Exotic Coinage"
+        },
+        {
+            dropLevel: 1,
+            name: "Broken Circle Artifact"
+        },
+        {
+            dropLevel: 1,
+            name: "Black Scythe Artifact"
+        },
+        {
+            dropLevel: 1,
+            name: "Order Artifact"
+        },
+        {
+            dropLevel: 1,
+            name: "Sun Artifact"
+        },
+        {
+            dropLevel: 2,
+            name: "Tainted Chromatic Orb"
+        },
+        {
+            dropLevel: 50,
+            name: "Tainted Orb of Fusing"
+        },
+        {
+            dropLevel: 8,
+            name: "Tainted Jeweller's Orb"
+        },
+        {
+            dropLevel: 12,
+            name: "Tainted Chaos Orb"
+        },
+        {
+            dropLevel: 35,
+            name: "Tainted Exalted Orb"
+        },
+        {
+            dropLevel: 2,
+            name: "Tainted Mythic Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "Tainted Armourer's Scrap"
+        },
+        {
+            dropLevel: 1,
+            name: "Tainted Blacksmith's Whetstone"
+        },
+        {
+            dropLevel: 68,
+            name: "Tainted Divine Teardrop"
+        },
+        {
+            dropLevel: 78,
+            name: "Eldritch Chaos Orb"
+        },
+        {
+            dropLevel: 78,
+            name: "Eldritch Exalted Orb"
+        },
+        {
+            dropLevel: 78,
+            name: "Eldritch Orb of Annulment"
+        },
+        {
+            dropLevel: 69,
+            name: "Singular Scouting Report"
+        },
+        {
+            dropLevel: 81,
+            name: "Otherworldly Scouting Report"
+        },
+        {
+            dropLevel: 69,
+            name: "Comprehensive Scouting Report"
+        },
+        {
+            dropLevel: 69,
+            name: "Vaal Scouting Report"
+        },
+        {
+            dropLevel: 69,
+            name: "Delirious Scouting Report"
+        },
+        {
+            dropLevel: 69,
+            name: "Operative's Scouting Report"
+        },
+        {
+            dropLevel: 69,
+            name: "Blighted Scouting Report"
+        },
+        {
+            dropLevel: 81,
+            name: "Influenced Scouting Report"
+        },
+        {
+            dropLevel: 69,
+            name: "Explorer's Scouting Report"
+        },
+        {
+            dropLevel: 1,
+            name: "Oil Extractor"
+        },
+        {
+            dropLevel: 1,
+            name: "Power Core"
+        },
+        {
+            dropLevel: 45,
+            name: "Transforming Power Core"
+        },
+        {
+            dropLevel: 60,
+            name: "Amplifying Power Core"
+        },
+        {
+            dropLevel: 60,
+            name: "Augmenting Power Core"
+        },
+        {
+            dropLevel: 68,
+            name: "Armour Recombinator"
+        },
+        {
+            dropLevel: 68,
+            name: "Weapon Recombinator"
+        },
+        {
+            dropLevel: 68,
+            name: "Jewellery Recombinator"
+        },
+        {
+            dropLevel: 1,
+            name: "Wild Crystallised Lifeforce"
+        },
+        {
+            dropLevel: 1,
+            name: "Vivid Crystallised Lifeforce"
+        },
+        {
+            dropLevel: 1,
+            name: "Primal Crystallised Lifeforce"
+        },
+        {
+            dropLevel: 1,
+            name: "Sacred Crystallised Lifeforce"
+        },
+        {
+            dropLevel: 1,
+            name: "Gold"
+        },
+        {
+            dropLevel: 1,
+            name: "Bronze Key"
+        },
+        {
+            dropLevel: 1,
+            name: "Silver Key"
+        },
+        {
+            dropLevel: 1,
+            name: "Gold Key"
+        }
     ],
     Microtransactions: [
-        {name: "MTX Wrapper"},
-        {name: "MTX Wrapper"},
-        {name: "MTX Wrapper"},
-        {name: "MTX Wrapper"},
-        {name: "MTX Wrapper"},
-        {name: "Mystery Box"}
+        {
+            dropLevel: 1,
+            name: "MTX Wrapper"
+        },
+        {
+            dropLevel: 1,
+            name: "Mystery Box"
+        },
+        {
+            dropLevel: 1,
+            name: "Dance - Duelist"
+        },
+        {
+            dropLevel: 1,
+            name: "Dance - Marauder"
+        },
+        {
+            dropLevel: 1,
+            name: "Dance - Ranger"
+        },
+        {
+            dropLevel: 1,
+            name: "Dance - Shadow"
+        },
+        {
+            dropLevel: 1,
+            name: "Dance - Templar"
+        },
+        {
+            dropLevel: 1,
+            name: "Dance - Witch"
+        },
+        {
+            dropLevel: 1,
+            name: "Dance - Scion"
+        }
     ],
     Quivers: [
-        {name: "Cured Quiver"},
-        {name: "Rugged Quiver"},
-        {name: "Conductive Quiver"},
-        {name: "Heavy Quiver"},
-        {name: "Light Quiver"},
-        {name: "Serrated Arrow Quiver"},
-        {name: "Two-Point Arrow Quiver"},
-        {name: "Sharktooth Arrow Quiver"},
-        {name: "Blunt Arrow Quiver"},
-        {name: "Fire Arrow Quiver"},
-        {name: "Broadhead Arrow Quiver"},
-        {name: "Penetrating Arrow Quiver"},
-        {name: "Spike-Point Arrow Quiver"},
-        {name: "Ornate Quiver"},
-        {name: "Serrated Arrow Quiver"},
-        {name: "Fire Arrow Quiver"},
-        {name: "Sharktooth Arrow Quiver"},
-        {name: "Feathered Arrow Quiver"},
-        {name: "Penetrating Arrow Quiver"},
-        {name: "Blunt Arrow Quiver"},
-        {name: "Two-Point Arrow Quiver"},
-        {name: "Spike-Point Arrow Quiver"},
-        {name: "Blazing Arrow Quiver"},
-        {name: "Broadhead Arrow Quiver"},
-        {name: "Vile Arrow Quiver"},
-        {name: "Heavy Arrow Quiver"},
-        {name: "Primal Arrow Quiver"},
-        {name: "Serrated Arrow Quiver"},
-        {name: "Artillery Quiver"}
+        {
+            dropLevel: 1,
+            name: "Broadhead Quiver"
+        },
+        {
+            dropLevel: 8,
+            name: "Fire Quiver"
+        },
+        {
+            dropLevel: 16,
+            name: "Sacral Quiver"
+        },
+        {
+            dropLevel: 24,
+            name: "Two-Point Quiver"
+        },
+        {
+            dropLevel: 33,
+            name: "Blunt Quiver"
+        },
+        {
+            dropLevel: 39,
+            name: "Toxic Quiver"
+        },
+        {
+            dropLevel: 44,
+            name: "Serrated Quiver"
+        },
+        {
+            dropLevel: 51,
+            name: "Primed Quiver"
+        },
+        {
+            dropLevel: 55,
+            name: "Penetrating Quiver"
+        },
+        {
+            dropLevel: 61,
+            name: "Volant Quiver"
+        },
+        {
+            dropLevel: 65,
+            name: "Visceral Quiver"
+        }
     ],
-    Warstaves: [
-        {name: "Iron Staff"},
-        {name: "Coiled Staff"},
-        {name: "Vile Staff"},
-        {name: "Military Staff"},
-        {name: "Serpentine Staff"},
-        {name: "Foul Staff"},
-        {name: "Ezomyte Staff"},
-        {name: "Maelström Staff"},
-        {name: "Judgement Staff"},
-        {name: "Capacity Rod"},
-        {name: "Potentiality Rod"},
-        {name: "Eventuality Rod"}
+    ["#Meta Skill Gem"]: [
+        {
+            dropLevel: 27,
+            name: "Blasphemy"
+        },
+        {
+            dropLevel: 51,
+            name: "Demon Magus"
+        },
+        {
+            dropLevel: 18,
+            name: "Ferocious Roar"
+        },
+        {
+            dropLevel: 27,
+            name: "Cast on Shock"
+        },
+        {
+            dropLevel: 27,
+            name: "Cast on Freeze"
+        },
+        {
+            dropLevel: 27,
+            name: "Cast on Ignite"
+        },
+        {
+            dropLevel: 27,
+            name: "Cast on Melee Kill"
+        },
+        {
+            dropLevel: 59,
+            name: "Cast on Death"
+        },
+        {
+            dropLevel: 59,
+            name: "Cast on Critical"
+        },
+        {
+            dropLevel: 61,
+            name: "Cast when Stunned"
+        },
+        {
+            dropLevel: 61,
+            name: "Cast when Damage Taken"
+        },
+        {
+            dropLevel: 27,
+            name: "Barrier Invocation"
+        },
+        {
+            dropLevel: 59,
+            name: "Cast on Dodge"
+        },
+        {
+            dropLevel: 61,
+            name: "Cast while Channelling"
+        },
+        {
+            dropLevel: 27,
+            name: "Cast on Melee Stun"
+        },
+        {
+            dropLevel: 1,
+            name: "Summon Companion"
+        },
+        {
+            dropLevel: 53,
+            name: "Ancestral Warrior Totem"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Meta Spell Totem"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Meta Bow Totem"
+        },
+        {
+            dropLevel: 27,
+            name: "Cast on Minion Death"
+        },
+        {
+            dropLevel: 27,
+            name: "Hydra Familiar"
+        },
+        {
+            dropLevel: 32,
+            name: "Hand of Chayula"
+        },
+        {
+            dropLevel: 27,
+            name: "Elemental Invocation"
+        },
+        {
+            dropLevel: 59,
+            name: "Reaper's Invocation"
+        },
+        {
+            dropLevel: 59,
+            name: "Cast on Block"
+        }
     ],
-    ["Sanctified Relics"]: [
-        {name: "Sanctified Relic"},
-        {name: "Sanctified Relic"},
-        {name: "Sanctified Relic"}
-    ],
+    ["Sanctified Relics"]: [{
+        dropLevel: 75,
+        name: "Sanctified Relic"
+    }],
     ["Two Hand Axes"]: [
-        {name: "Stone Axe"},
-        {name: "Jade Chopper"},
-        {name: "Woodsplitter"},
-        {name: "Poleaxe"},
-        {name: "Double Axe"},
-        {name: "Gilded Axe"},
-        {name: "Shadow Axe"},
-        {name: "Dagger Axe"},
-        {name: "Jasper Chopper"},
-        {name: "Timber Axe"},
-        {name: "Headsman Axe"},
-        {name: "Labrys"},
-        {name: "Noble Axe"},
-        {name: "Abyssal Axe"},
-        {name: "Talon Axe"},
-        {name: "Karui Chopper"},
-        {name: "Sundering Axe"},
-        {name: "Ezomyte Axe"},
-        {name: "Vaal Axe"},
-        {name: "Despot Axe"},
-        {name: "Void Axe"},
-        {name: "Fleshripper"},
-        {name: "Prime Cleaver"},
-        {name: "Honed Cleaver"},
-        {name: "Apex Cleaver"}
+        {
+            dropLevel: 1,
+            name: "Splitting Greataxe"
+        },
+        {
+            dropLevel: 4,
+            name: "Light Halberd"
+        },
+        {
+            dropLevel: 10,
+            name: "Executioner Greataxe"
+        },
+        {
+            dropLevel: 16,
+            name: "Arched Greataxe"
+        },
+        {
+            dropLevel: 20,
+            name: "Elegant Glaive"
+        },
+        {
+            dropLevel: 27,
+            name: "Savage Greataxe"
+        },
+        {
+            dropLevel: 33,
+            name: "Rending Halberd"
+        },
+        {
+            dropLevel: 40,
+            name: "Jagged Greataxe"
+        },
+        {
+            dropLevel: 45,
+            name: "Reaver Glaive"
+        },
+        {
+            dropLevel: 50,
+            name: "Ember Greataxe"
+        },
+        {
+            dropLevel: 52,
+            name: "Ceremonial Halberd"
+        },
+        {
+            dropLevel: 57,
+            name: "Monument Greataxe"
+        },
+        {
+            dropLevel: 65,
+            name: "Vile Greataxe"
+        }
+    ],
+    Foci: [
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 12
+            },
+            dropLevel: 1,
+            name: "Twig Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 15
+            },
+            dropLevel: 6,
+            name: "Woven Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 17
+            },
+            dropLevel: 10,
+            name: "Antler Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 21
+            },
+            dropLevel: 16,
+            name: "Engraved Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 25
+            },
+            dropLevel: 22,
+            name: "Tonal Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 28
+            },
+            dropLevel: 26,
+            name: "Crystal Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 32
+            },
+            dropLevel: 33,
+            name: "Voodoo Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 34
+            },
+            dropLevel: 36,
+            name: "Plumed Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 40
+            },
+            dropLevel: 45,
+            name: "Jade Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 43
+            },
+            dropLevel: 51,
+            name: "Paua Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 44
+            },
+            dropLevel: 52,
+            name: "Elegant Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 47
+            },
+            dropLevel: 57,
+            name: "Attuned Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 52
+            },
+            dropLevel: 65,
+            name: "Magus Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 40
+            },
+            dropLevel: 45,
+            name: "Advanced Woven Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 42
+            },
+            dropLevel: 48,
+            name: "Advanced Antler Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 43
+            },
+            dropLevel: 51,
+            name: "Advanced Tonal Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 46
+            },
+            dropLevel: 55,
+            name: "Advanced Crystal Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 49
+            },
+            dropLevel: 59,
+            name: "Advanced Voodoo Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 50
+            },
+            dropLevel: 61,
+            name: "Advanced Plumed Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 52
+            },
+            dropLevel: 65,
+            name: "Expert Antler Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 58
+            },
+            dropLevel: 70,
+            name: "Expert Crystal Focus"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 63
+            },
+            dropLevel: 75,
+            name: "Expert Plumed Focus"
+        }
     ],
     ["Heist Cloaks"]: [
-        {name: "[UNUSED] Heist Test Utility Equipment"},
-        {name: "Torn Cloak"},
-        {name: "Tattered Cloak"},
-        {name: "Hooded Cloak"},
-        {name: "Whisper-woven Cloak"}
+        {
+            dropLevel: 1,
+            name: "[UNUSED] Heist Test Utility Equipment"
+        },
+        {
+            dropLevel: 60,
+            name: "Torn Cloak"
+        },
+        {
+            dropLevel: 75,
+            name: "Tattered Cloak"
+        },
+        {
+            dropLevel: 80,
+            name: "Hooded Cloak"
+        },
+        {
+            dropLevel: 83,
+            name: "Whisper-woven Cloak"
+        }
     ],
     Relics: [
-        {name: "[DO NOT USE] Censer Relic"},
-        {name: "[DO NOT USE] Processional Relic"},
-        {name: "[DO NOT USE] Candlestick Relic"},
-        {name: "[DO NOT USE] Urn Relic"},
-        {name: "[DO NOT USE] Coffer Relic"},
-        {name: "[DO NOT USE] Tome Relic"},
-        {name: "[DO NOT USE] Papyrus Relic"},
-        {name: "Censer Relic"},
-        {name: "Processional Relic"},
-        {name: "Candlestick Relic"},
-        {name: "Urn Relic"},
-        {name: "Coffer Relic"},
-        {name: "Tome Relic"},
-        {name: "Papyrus Relic"}
+        {
+            dropLevel: 1,
+            name: "Urn Relic"
+        },
+        {
+            dropLevel: 1,
+            name: "Amphora Relic"
+        },
+        {
+            dropLevel: 65,
+            name: "Vase Relic"
+        },
+        {
+            dropLevel: 1,
+            name: "Seal Relic"
+        },
+        {
+            dropLevel: 78,
+            name: "Coffer Relic"
+        },
+        {
+            dropLevel: 1,
+            name: "Tapestry Relic"
+        },
+        {
+            dropLevel: 65,
+            name: "Incense Relic"
+        }
     ],
+    ["Inscribed Ultimatum"]: [{
+        dropLevel: 39,
+        name: "Inscribed Ultimatum"
+    }],
     ["Instance Local Items"]: [
-        {name: "Serpent Extract"},
-        {name: "Blighted Map"},
-        {name: "Blight-ravaged Map"},
-        {name: "Al-Hezmin's Citadel Map"},
-        {name: "Baran's Citadel Map"},
-        {name: "Drox's Citadel Map"},
-        {name: "Veritania's Citadel Map"},
-        {name: "Enslaver-Occupied Map"},
-        {name: "Eradicator-Occupied Map"},
-        {name: "Constrictor-Occupied Map"},
-        {name: "Purifier-Occupied Map"},
-        {name: "Lockpicking Contract"},
-        {name: "Brute Force Contract"},
-        {name: "Perception Contract"},
-        {name: "Demolition Contract"},
-        {name: "Counter-Thaumaturgy Contract"},
-        {name: "Trap Disarmament Contract"},
-        {name: "Agility Contract"},
-        {name: "Deception Contract"},
-        {name: "Engineering Contract"},
-        {name: "Blueprint"}
+        {
+            dropLevel: 1,
+            name: "Small Soul Core"
+        },
+        {
+            dropLevel: 1,
+            name: "Medium Soul Core"
+        },
+        {
+            dropLevel: 1,
+            name: "Frost Core"
+        }
     ],
     Claws: [
-        {name: "Nailed Fist"},
-        {name: "Sharktooth Claw"},
-        {name: "Awl"},
-        {name: "Cat's Paw"},
-        {name: "Blinder"},
-        {name: "Timeworn Claw"},
-        {name: "Sparkling Claw"},
-        {name: "Fright Claw"},
-        {name: "Double Claw"},
-        {name: "Thresher Claw"},
-        {name: "Gouger"},
-        {name: "Tiger's Paw"},
-        {name: "Gut Ripper"},
-        {name: "Prehistoric Claw"},
-        {name: "Noble Claw"},
-        {name: "Eagle Claw"},
-        {name: "Twin Claw"},
-        {name: "Great White Claw"},
-        {name: "Throat Stabber"},
-        {name: "Hellion's Paw"},
-        {name: "Eye Gouger"},
-        {name: "Vaal Claw"},
-        {name: "Imperial Claw"},
-        {name: "Terror Claw"},
-        {name: "Gemini Claw"},
-        {name: "Shadow Fangs"},
-        {name: "Malign Fangs"},
-        {name: "Void Fangs"}
+        {
+            dropLevel: 1,
+            name: "Crude Claw"
+        },
+        {
+            dropLevel: 6,
+            name: "Pict Claw"
+        },
+        {
+            dropLevel: 12,
+            name: "Wolfbone Claw"
+        },
+        {
+            dropLevel: 16,
+            name: "Forked Claw"
+        },
+        {
+            dropLevel: 22,
+            name: "Plated Claw"
+        },
+        {
+            dropLevel: 28,
+            name: "Edged Claw"
+        },
+        {
+            dropLevel: 33,
+            name: "Arced Claw"
+        },
+        {
+            dropLevel: 36,
+            name: "Hooked Claw"
+        },
+        {
+            dropLevel: 45,
+            name: "Razorglass Claw"
+        },
+        {
+            dropLevel: 49,
+            name: "Sharktooth Claw"
+        },
+        {
+            dropLevel: 52,
+            name: "Armoured Claw"
+        },
+        {
+            dropLevel: 55,
+            name: "Piercing Claw"
+        },
+        {
+            dropLevel: 65,
+            name: "Talon Claw"
+        }
     ],
     Helmets: [
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 9,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 13,
-                ward_max: 0
-            },
-            name: "Iron Hat"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 38,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 50,
-                ward_max: 0
-            },
-            name: "Cone Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 92,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 115,
-                ward_max: 0
-            },
-            name: "Barbute Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 130,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 150,
-                ward_max: 0
-            },
-            name: "Close Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 174,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 195,
-                ward_max: 0
-            },
-            name: "Gladiator Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 198,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 233,
-                ward_max: 0
-            },
-            name: "Reaver Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 237,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 272,
-                ward_max: 0
-            },
-            name: "Siege Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 276,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 325,
-                ward_max: 0
-            },
-            name: "Samnite Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 346,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 381,
-                ward_max: 0
-            },
-            name: "Ezomyte Burgonet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 377,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 434,
-                ward_max: 0
-            },
-            name: "Royal Burgonet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 373,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 429,
-                ward_max: 0
-            },
-            name: "Eternal Burgonet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 431,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 496,
-                ward_max: 0
-            },
-            name: "General's Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 501,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 576,
-                ward_max: 0
-            },
-            name: "Conqueror's Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 582,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 669,
-                ward_max: 0
-            },
-            name: "Giantslayer Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 19,
-                ms: 0,
-                evasion_max: 27,
                 armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
+                energy_shield_min: 0
             },
-            name: "Leather Cap"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 53,
-                ms: 0,
-                evasion_max: 69,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Tricorne"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 101,
-                ms: 0,
-                evasion_max: 127,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Leather Hood"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 150,
-                ms: 0,
-                evasion_max: 172,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Wolf Pelt"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 203,
-                ms: 0,
-                evasion_max: 227,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Hunter Hood"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 232,
-                ms: 0,
-                evasion_max: 266,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Noble Tricorne"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 276,
-                ms: 0,
-                evasion_max: 325,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Ursine Pelt"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 346,
-                ms: 0,
-                evasion_max: 381,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Silken Hood"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 369,
-                ms: 0,
-                evasion_max: 425,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sinner Tricorne"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 380,
-                ms: 0,
-                evasion_max: 437,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Lion Pelt"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 431,
-                ms: 0,
-                evasion_max: 496,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Dire Pelt"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 501,
-                ms: 0,
-                evasion_max: 576,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Grizzly Pelt"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 582,
-                ms: 0,
-                evasion_max: 669,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Majestic Pelt"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 7,
-                energy_shield_max: 10,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Vine Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 12,
-                energy_shield_max: 15,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Iron Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 20,
-                energy_shield_max: 25,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Torture Cage"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 28,
-                energy_shield_max: 33,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Tribal Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 36,
-                energy_shield_max: 40,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Bone Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 41,
-                energy_shield_max: 48,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Lunaris Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 49,
-                energy_shield_max: 55,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Steel Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 55,
-                energy_shield_max: 64,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Necromancer Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 60,
-                energy_shield_max: 68,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Solaris Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 73,
-                energy_shield_max: 84,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Mind Cage"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 80,
-                energy_shield_max: 92,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Hubris Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 87,
-                energy_shield_max: 100,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Moonlit Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 101,
-                energy_shield_max: 116,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sunfire Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 117,
-                energy_shield_max: 134,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Lich's Circlet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 13,
-                ms: 0,
-                evasion_max: 18,
-                armour_min: 13,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 18,
-                ward_max: 0
-            },
-            name: "Battered Helm"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 37,
-                ms: 0,
-                evasion_max: 48,
-                armour_min: 37,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 48,
-                ward_max: 0
-            },
-            name: "Sallet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 64,
-                ms: 0,
-                evasion_max: 80,
-                armour_min: 64,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 80,
-                ward_max: 0
-            },
-            name: "Visored Sallet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 90,
-                ms: 0,
-                evasion_max: 97,
-                armour_min: 90,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 97,
-                ward_max: 0
-            },
-            name: "Gilded Sallet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 98,
-                ms: 0,
-                evasion_max: 116,
-                armour_min: 98,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 116,
-                ward_max: 0
-            },
-            name: "Secutor Helm"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 117,
-                ms: 0,
-                evasion_max: 134,
-                armour_min: 117,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 134,
-                ward_max: 0
-            },
-            name: "Fencer Helm"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 138,
-                ms: 0,
-                evasion_max: 155,
-                armour_min: 138,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 155,
-                ward_max: 0
-            },
-            name: "Lacquered Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 160,
-                ms: 0,
-                evasion_max: 189,
-                armour_min: 160,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 189,
-                ward_max: 0
-            },
-            name: "Fluted Bascinet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 159,
-                ms: 0,
-                evasion_max: 183,
-                armour_min: 229,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 263,
-                ward_max: 0
-            },
-            name: "Pig-Faced Bascinet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 233,
-                ms: 0,
-                evasion_max: 268,
-                armour_min: 162,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 187,
-                ward_max: 0
-            },
-            name: "Nightmare Bascinet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 268,
-                ms: 0,
-                evasion_max: 308,
-                armour_min: 268,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 308,
-                ward_max: 0
-            },
-            name: "Knight Helm"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 308,
-                ms: 0,
-                evasion_max: 355,
-                armour_min: 308,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 355,
-                ward_max: 0
-            },
-            name: "Conquest Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 355,
-                ms: 0,
-                evasion_max: 409,
-                armour_min: 355,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 409,
-                ward_max: 0
-            },
-            name: "Haunted Bascinet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 42,
-                ms: 0,
-                evasion_max: 49,
-                armour_min: 42,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 49,
-                ward_max: 0
-            },
-            name: "Sorrow Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 122,
-                ms: 0,
-                evasion_max: 140,
-                armour_min: 122,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 140,
-                ward_max: 0
-            },
-            name: "Atonement Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 185,
-                ms: 0,
-                evasion_max: 212,
-                armour_min: 185,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 212,
-                ward_max: 0
-            },
-            name: "Penitent Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 16,
-                energy_shield_min: 5,
-                energy_shield_max: 7,
-                armour_max: 22,
-                ward_max: 0
-            },
-            name: "Rusted Coif"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 34,
-                energy_shield_min: 8,
-                energy_shield_max: 11,
-                armour_max: 45,
-                ward_max: 0
-            },
-            name: "Soldier Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 61,
-                energy_shield_min: 14,
-                energy_shield_max: 17,
-                armour_max: 76,
-                ward_max: 0
-            },
-            name: "Great Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 85,
-                energy_shield_min: 18,
-                energy_shield_max: 20,
-                armour_max: 95,
-                ward_max: 0
-            },
-            name: "Crusader Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 101,
-                energy_shield_min: 21,
-                energy_shield_max: 25,
-                armour_max: 119,
-                ward_max: 0
-            },
-            name: "Aventail Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 119,
-                energy_shield_min: 25,
-                energy_shield_max: 29,
-                armour_max: 137,
-                ward_max: 0
-            },
-            name: "Zealot Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 143,
-                energy_shield_min: 29,
-                energy_shield_max: 33,
-                armour_max: 161,
-                ward_max: 0
-            },
-            name: "Great Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 160,
-                energy_shield_min: 33,
-                energy_shield_max: 39,
-                armour_max: 189,
-                ward_max: 0
-            },
-            name: "Magistrate Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 224,
-                energy_shield_min: 32,
-                energy_shield_max: 37,
-                armour_max: 258,
-                ward_max: 0
-            },
-            name: "Prophet Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 161,
-                energy_shield_min: 51,
-                energy_shield_max: 58,
-                armour_max: 185,
-                ward_max: 0
-            },
-            name: "Praetor Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 268,
-                energy_shield_min: 54,
-                energy_shield_max: 62,
-                armour_max: 308,
-                ward_max: 0
-            },
-            name: "Faithful Helmet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 308,
-                energy_shield_min: 62,
-                energy_shield_max: 71,
-                armour_max: 355,
-                ward_max: 0
-            },
-            name: "Paladin Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 355,
-                energy_shield_min: 71,
-                energy_shield_max: 82,
-                armour_max: 409,
-                ward_max: 0
-            },
-            name: "Divine Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 42,
-                energy_shield_min: 10,
-                energy_shield_max: 12,
-                armour_max: 49,
-                ward_max: 0
-            },
-            name: "Imp Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 122,
-                energy_shield_min: 25,
-                energy_shield_max: 29,
-                armour_max: 140,
-                ward_max: 0
-            },
-            name: "Demon Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 185,
-                energy_shield_min: 38,
-                energy_shield_max: 43,
-                armour_max: 212,
-                ward_max: 0
-            },
-            name: "Archdemon Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 13,
-                ms: 0,
-                evasion_max: 18,
-                armour_min: 0,
-                energy_shield_min: 4,
-                energy_shield_max: 6,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Scare Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 29,
-                ms: 0,
-                evasion_max: 38,
-                armour_min: 0,
-                energy_shield_min: 7,
-                energy_shield_max: 10,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Plague Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 48,
-                ms: 0,
-                evasion_max: 60,
-                armour_min: 0,
-                energy_shield_min: 11,
-                energy_shield_max: 14,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Iron Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 77,
-                ms: 0,
-                evasion_max: 88,
-                armour_min: 0,
-                energy_shield_min: 17,
-                energy_shield_max: 19,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Festival Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 96,
-                ms: 0,
-                evasion_max: 103,
-                armour_min: 0,
-                energy_shield_min: 20,
-                energy_shield_max: 22,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Golden Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 104,
-                ms: 0,
-                evasion_max: 119,
-                armour_min: 0,
-                energy_shield_min: 22,
-                energy_shield_max: 25,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Raven Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 122,
-                ms: 0,
-                evasion_max: 137,
-                armour_min: 0,
-                energy_shield_min: 25,
-                energy_shield_max: 28,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Callous Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 141,
-                ms: 0,
-                evasion_max: 158,
-                armour_min: 0,
-                energy_shield_min: 29,
-                energy_shield_max: 32,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Regicide Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 157,
-                ms: 0,
-                evasion_max: 185,
-                armour_min: 0,
-                energy_shield_min: 32,
-                energy_shield_max: 38,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Harlequin Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 207,
-                ms: 0,
-                evasion_max: 239,
-                armour_min: 0,
-                energy_shield_min: 37,
-                energy_shield_max: 43,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Vaal Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 190,
-                ms: 0,
-                evasion_max: 219,
-                armour_min: 0,
-                energy_shield_min: 47,
-                energy_shield_max: 54,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Deicide Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 268,
-                ms: 0,
-                evasion_max: 308,
-                armour_min: 0,
-                energy_shield_min: 54,
-                energy_shield_max: 62,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Jester Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 308,
-                ms: 0,
-                evasion_max: 355,
-                armour_min: 0,
-                energy_shield_min: 62,
-                energy_shield_max: 71,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Ancient Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 355,
-                ms: 0,
-                evasion_max: 409,
-                armour_min: 0,
-                energy_shield_min: 71,
-                energy_shield_max: 82,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Torturer's Mask"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 42,
-                ms: 0,
-                evasion_max: 49,
-                armour_min: 0,
-                energy_shield_min: 10,
-                energy_shield_max: 12,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Gale Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 122,
-                ms: 0,
-                evasion_max: 140,
-                armour_min: 0,
-                energy_shield_min: 25,
-                energy_shield_max: 29,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Winter Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 185,
-                ms: 0,
-                evasion_max: 212,
-                armour_min: 0,
-                energy_shield_min: 38,
-                energy_shield_max: 43,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Blizzard Crown"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
+            dropLevel: 12,
             name: "Golden Wreath"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
                 armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
+                energy_shield_min: 0
             },
+            dropLevel: 12,
             name: "Golden Visage"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 197,
-                energy_shield_min: 40,
-                energy_shield_max: 46,
-                armour_max: 227,
-                ward_max: 0
+                armour_min: 29,
+                energy_shield_min: 0
             },
-            name: "Bone Helmet"
+            dropLevel: 1,
+            name: "Rusted Greathelm"
         },
         {
             stats: {
-                ward_min: 41,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 47
+                armour_min: 66,
+                energy_shield_min: 0
             },
-            name: "Runic Helm"
+            dropLevel: 12,
+            name: "Soldier Greathelm"
         },
         {
             stats: {
-                ward_min: 97,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 112
+                armour_min: 79,
+                energy_shield_min: 0
             },
-            name: "Runic Crest"
+            dropLevel: 16,
+            name: "Wrapped Greathelm"
         },
         {
             stats: {
-                ward_min: 164,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 189
+                armour_min: 116,
+                energy_shield_min: 0
             },
-            name: "Runic Crown"
+            dropLevel: 27,
+            name: "Spired Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 136,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Elite Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 146,
+                energy_shield_min: 0
+            },
+            dropLevel: 36,
+            name: "Warrior Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 176,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Commander Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 196,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Fierce Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 200,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Dueling Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 216,
+                energy_shield_min: 0
+            },
+            dropLevel: 57,
+            name: "Goliath Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 243,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Guardian Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 19,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 1,
+            name: "Shabby Hood"
+        },
+        {
+            stats: {
+                evasion_min: 48,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 10,
+            name: "Felt Cap"
+        },
+        {
+            stats: {
+                evasion_min: 67,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Lace Hood"
+        },
+        {
+            stats: {
+                evasion_min: 98,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 26,
+            name: "Swathed Cap"
+        },
+        {
+            stats: {
+                evasion_min: 121,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Hunter Hood"
+        },
+        {
+            stats: {
+                evasion_min: 136,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 38,
+            name: "Viper Cap"
+        },
+        {
+            stats: {
+                evasion_min: 158,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Corsair Cap"
+        },
+        {
+            stats: {
+                evasion_min: 177,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Leatherbound Hood"
+        },
+        {
+            stats: {
+                evasion_min: 181,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Velvet Cap"
+        },
+        {
+            stats: {
+                evasion_min: 193,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 56,
+            name: "Covert Hood"
+        },
+        {
+            stats: {
+                evasion_min: 222,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Armoured Cap"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 19
+            },
+            dropLevel: 1,
+            name: "Twig Circlet"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 28
+            },
+            dropLevel: 10,
+            name: "Wicker Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 34
+            },
+            dropLevel: 16,
+            name: "Beaded Circlet"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 44
+            },
+            dropLevel: 26,
+            name: "Chain Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 51
+            },
+            dropLevel: 33,
+            name: "Feathered Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 58
+            },
+            dropLevel: 40,
+            name: "Gold Circlet"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 63
+            },
+            dropLevel: 45,
+            name: "Coral Circlet"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 69
+            },
+            dropLevel: 50,
+            name: "Jade Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 71
+            },
+            dropLevel: 52,
+            name: "Noble Circlet"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 77
+            },
+            dropLevel: 58,
+            name: "Twilight Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 84
+            },
+            dropLevel: 65,
+            name: "Magus Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 18,
+                armour_min: 23,
+                energy_shield_min: 0
+            },
+            dropLevel: 5,
+            name: "Brimmed Helm"
+        },
+        {
+            stats: {
+                evasion_min: 28,
+                armour_min: 34,
+                energy_shield_min: 0
+            },
+            dropLevel: 11,
+            name: "Guarded Helm"
+        },
+        {
+            stats: {
+                evasion_min: 37,
+                armour_min: 44,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Visored Helm"
+        },
+        {
+            stats: {
+                evasion_min: 54,
+                armour_min: 62,
+                energy_shield_min: 0
+            },
+            dropLevel: 26,
+            name: "Cowled Helm"
+        },
+        {
+            stats: {
+                evasion_min: 66,
+                armour_min: 75,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Shielded Helm"
+        },
+        {
+            stats: {
+                evasion_min: 87,
+                armour_min: 97,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Closed Helm"
+        },
+        {
+            stats: {
+                evasion_min: 99,
+                armour_min: 110,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Decorated Helm"
+        },
+        {
+            stats: {
+                evasion_min: 122,
+                armour_min: 134,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Gallant Helm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 23,
+                energy_shield_min: 12
+            },
+            dropLevel: 5,
+            name: "Iron Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 33,
+                energy_shield_min: 15
+            },
+            dropLevel: 10,
+            name: "Horned Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 44,
+                energy_shield_min: 19
+            },
+            dropLevel: 16,
+            name: "Cultist Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 66,
+                energy_shield_min: 25
+            },
+            dropLevel: 28,
+            name: "Martyr Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 75,
+                energy_shield_min: 28
+            },
+            dropLevel: 33,
+            name: "Heavy Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 97,
+                energy_shield_min: 35
+            },
+            dropLevel: 45,
+            name: "Spiritbone Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 110,
+                energy_shield_min: 39
+            },
+            dropLevel: 52,
+            name: "Lavish Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 134,
+                energy_shield_min: 46
+            },
+            dropLevel: 65,
+            name: "Templar Crown"
+        },
+        {
+            stats: {
+                evasion_min: 18,
+                armour_min: 0,
+                energy_shield_min: 12
+            },
+            dropLevel: 5,
+            name: "Hewn Mask"
+        },
+        {
+            stats: {
+                evasion_min: 26,
+                armour_min: 0,
+                energy_shield_min: 15
+            },
+            dropLevel: 10,
+            name: "Face Mask"
+        },
+        {
+            stats: {
+                evasion_min: 37,
+                armour_min: 0,
+                energy_shield_min: 19
+            },
+            dropLevel: 16,
+            name: "Hooded Mask"
+        },
+        {
+            stats: {
+                evasion_min: 58,
+                armour_min: 0,
+                energy_shield_min: 25
+            },
+            dropLevel: 28,
+            name: "Veiled Mask"
+        },
+        {
+            stats: {
+                evasion_min: 66,
+                armour_min: 0,
+                energy_shield_min: 28
+            },
+            dropLevel: 33,
+            name: "Tribal Mask"
+        },
+        {
+            stats: {
+                evasion_min: 87,
+                armour_min: 0,
+                energy_shield_min: 35
+            },
+            dropLevel: 45,
+            name: "Solid Mask"
+        },
+        {
+            stats: {
+                evasion_min: 99,
+                armour_min: 0,
+                energy_shield_min: 39
+            },
+            dropLevel: 52,
+            name: "Shaded Mask"
+        },
+        {
+            stats: {
+                evasion_min: 122,
+                armour_min: 0,
+                energy_shield_min: 46
+            },
+            dropLevel: 65,
+            name: "Death Mask"
+        },
+        {
+            stats: {
+                evasion_min: 80,
+                armour_min: 88,
+                energy_shield_min: 30
+            },
+            dropLevel: 65,
+            name: "Grand Visage"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 176,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Rusted Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 186,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Soldier Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 196,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Wrapped Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 210,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Spired Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 223,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Elite Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 158,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Shabby Hood"
+        },
+        {
+            stats: {
+                evasion_min: 168,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Felt Cap"
+        },
+        {
+            stats: {
+                evasion_min: 177,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Lace Hood"
+        },
+        {
+            stats: {
+                evasion_min: 190,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Swathed Cap"
+        },
+        {
+            stats: {
+                evasion_min: 203,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Hunter Hood"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 63
+            },
+            dropLevel: 45,
+            name: "Advanced Twig Circlet"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 67
+            },
+            dropLevel: 48,
+            name: "Advanced Wicker Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 71
+            },
+            dropLevel: 52,
+            name: "Advanced Beaded Circlet"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 74
+            },
+            dropLevel: 55,
+            name: "Advanced Chain Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 78
+            },
+            dropLevel: 59,
+            name: "Advanced Feathered Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 87,
+                armour_min: 97,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Brimmed Helm"
+        },
+        {
+            stats: {
+                evasion_min: 92,
+                armour_min: 102,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Guarded Helm"
+        },
+        {
+            stats: {
+                evasion_min: 98,
+                armour_min: 108,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Visored Helm"
+        },
+        {
+            stats: {
+                evasion_min: 105,
+                armour_min: 115,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Cowled Helm"
+        },
+        {
+            stats: {
+                evasion_min: 111,
+                armour_min: 123,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Shielded Helm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 97,
+                energy_shield_min: 35
+            },
+            dropLevel: 45,
+            name: "Advanced Iron Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 102,
+                energy_shield_min: 37
+            },
+            dropLevel: 48,
+            name: "Advanced Horned Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 108,
+                energy_shield_min: 38
+            },
+            dropLevel: 51,
+            name: "Advanced Cultist Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 115,
+                energy_shield_min: 41
+            },
+            dropLevel: 55,
+            name: "Advanced Martyr Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 123,
+                energy_shield_min: 43
+            },
+            dropLevel: 59,
+            name: "Advanced Heavy Crown"
+        },
+        {
+            stats: {
+                evasion_min: 87,
+                armour_min: 0,
+                energy_shield_min: 35
+            },
+            dropLevel: 45,
+            name: "Advanced Hewn Mask"
+        },
+        {
+            stats: {
+                evasion_min: 92,
+                armour_min: 0,
+                energy_shield_min: 37
+            },
+            dropLevel: 48,
+            name: "Advanced Face Mask"
+        },
+        {
+            stats: {
+                evasion_min: 98,
+                armour_min: 0,
+                energy_shield_min: 38
+            },
+            dropLevel: 51,
+            name: "Advanced Hooded Mask"
+        },
+        {
+            stats: {
+                evasion_min: 105,
+                armour_min: 0,
+                energy_shield_min: 41
+            },
+            dropLevel: 55,
+            name: "Advanced Veiled Mask"
+        },
+        {
+            stats: {
+                evasion_min: 111,
+                armour_min: 0,
+                energy_shield_min: 43
+            },
+            dropLevel: 59,
+            name: "Advanced Tribal Mask"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 243,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Soldier Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 267,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Spired Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 292,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Elite Greathelm"
+        },
+        {
+            stats: {
+                evasion_min: 222,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Felt Cap"
+        },
+        {
+            stats: {
+                evasion_min: 244,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Swathed Cap"
+        },
+        {
+            stats: {
+                evasion_min: 266,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Hunter Hood"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 84
+            },
+            dropLevel: 65,
+            name: "Expert Wicker Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 92
+            },
+            dropLevel: 70,
+            name: "Expert Chain Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 101
+            },
+            dropLevel: 75,
+            name: "Expert Feathered Tiara"
+        },
+        {
+            stats: {
+                evasion_min: 122,
+                armour_min: 134,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Guarded Helm"
+        },
+        {
+            stats: {
+                evasion_min: 134,
+                armour_min: 147,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Cowled Helm"
+        },
+        {
+            stats: {
+                evasion_min: 146,
+                armour_min: 160,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Shielded Helm"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 134,
+                energy_shield_min: 46
+            },
+            dropLevel: 65,
+            name: "Expert Horned Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 147,
+                energy_shield_min: 51
+            },
+            dropLevel: 70,
+            name: "Expert Martyr Crown"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 160,
+                energy_shield_min: 55
+            },
+            dropLevel: 75,
+            name: "Expert Heavy Crown"
+        },
+        {
+            stats: {
+                evasion_min: 122,
+                armour_min: 0,
+                energy_shield_min: 46
+            },
+            dropLevel: 65,
+            name: "Expert Face Mask"
+        },
+        {
+            stats: {
+                evasion_min: 134,
+                armour_min: 0,
+                energy_shield_min: 51
+            },
+            dropLevel: 70,
+            name: "Expert Veiled Mask"
+        },
+        {
+            stats: {
+                evasion_min: 146,
+                armour_min: 0,
+                energy_shield_min: 55
+            },
+            dropLevel: 75,
+            name: "Expert Tribal Mask"
         }
     ],
     ["Two Hand Swords"]: [
-        {name: "Keyblade"},
-        {name: "Corroded Blade"},
-        {name: "Longsword"},
-        {name: "Bastard Sword"},
-        {name: "Two-Handed Sword"},
-        {name: "Etched Greatsword"},
-        {name: "Ornate Sword"},
-        {name: "Spectral Sword"},
-        {name: "Curved Blade"},
-        {name: "Butcher Sword"},
-        {name: "Footman Sword"},
-        {name: "Highland Blade"},
-        {name: "Engraved Greatsword"},
-        {name: "Tiger Sword"},
-        {name: "Wraith Sword"},
-        {name: "Lithe Blade"},
-        {name: "Headman's Sword"},
-        {name: "Reaver Sword"},
-        {name: "Ezomyte Blade"},
-        {name: "Vaal Greatsword"},
-        {name: "Lion Sword"},
-        {name: "Infernal Sword"},
-        {name: "Exquisite Blade"},
-        {name: "Rebuking Blade"},
-        {name: "Blasting Blade"},
-        {name: "Banishing Blade"},
-        {name: "Energy Blade"}
+        {
+            dropLevel: 1,
+            name: "Keyblade"
+        },
+        {
+            dropLevel: 1,
+            name: "Energy Blade"
+        },
+        {
+            dropLevel: 1,
+            name: "Corroded Longsword"
+        },
+        {
+            dropLevel: 6,
+            name: "Iron Greatsword"
+        },
+        {
+            dropLevel: 11,
+            name: "Blessed Claymore"
+        },
+        {
+            dropLevel: 16,
+            name: "Broad Greatsword"
+        },
+        {
+            dropLevel: 22,
+            name: "Rippled Greatsword"
+        },
+        {
+            dropLevel: 28,
+            name: "Arced Longsword"
+        },
+        {
+            dropLevel: 33,
+            name: "Stone Greatsword"
+        },
+        {
+            dropLevel: 36,
+            name: "Obsidian Greatsword"
+        },
+        {
+            dropLevel: 45,
+            name: "Keen Greatsword"
+        },
+        {
+            dropLevel: 49,
+            name: "Ancient Greatblade"
+        },
+        {
+            dropLevel: 52,
+            name: "Flanged Greatblade"
+        },
+        {
+            dropLevel: 54,
+            name: "Regalia Longsword"
+        },
+        {
+            dropLevel: 65,
+            name: "Ultra Greatsword"
+        }
     ],
     Jewels: [
-        {name: "Crimson Jewel"},
-        {name: "Viridian Jewel"},
-        {name: "Cobalt Jewel"},
-        {name: "Prismatic Jewel"},
-        {name: "Timeless Jewel"},
-        {name: "Large Cluster Jewel"},
-        {name: "Medium Cluster Jewel"},
-        {name: "Small Cluster Jewel"}
+        {
+            dropLevel: 20,
+            name: "Timeless Jewel"
+        },
+        {
+            dropLevel: 20,
+            name: "Ruby"
+        },
+        {
+            dropLevel: 20,
+            name: "Emerald"
+        },
+        {
+            dropLevel: 20,
+            name: "Sapphire"
+        },
+        {
+            dropLevel: 20,
+            name: "Diamond"
+        },
+        {
+            dropLevel: 20,
+            name: "Time-Lost Ruby"
+        },
+        {
+            dropLevel: 20,
+            name: "Time-Lost Emerald"
+        },
+        {
+            dropLevel: 20,
+            name: "Time-Lost Sapphire"
+        },
+        {
+            dropLevel: 20,
+            name: "Time-Lost Diamond"
+        }
+    ],
+    ["#UncutSkillGem"]: [
+        {
+            dropLevel: 4,
+            name: "Uncut Skill Gem"
+        },
+        {
+            dropLevel: 1,
+            name: "Uncut Skill Gem"
+        }
+    ],
+    Quarterstaves: [
+        {
+            dropLevel: 1,
+            name: "Wrapped Quarterstaff"
+        },
+        {
+            dropLevel: 4,
+            name: "Long Quarterstaff"
+        },
+        {
+            dropLevel: 11,
+            name: "Gothic Quarterstaff"
+        },
+        {
+            dropLevel: 16,
+            name: "Crackling Quarterstaff"
+        },
+        {
+            dropLevel: 20,
+            name: "Crescent Quarterstaff"
+        },
+        {
+            dropLevel: 28,
+            name: "Steelpoint Quarterstaff"
+        },
+        {
+            dropLevel: 33,
+            name: "Slicing Quarterstaff"
+        },
+        {
+            dropLevel: 37,
+            name: "Barrier Quarterstaff"
+        },
+        {
+            dropLevel: 45,
+            name: "Hefty Quarterstaff"
+        },
+        {
+            dropLevel: 47,
+            name: "Smooth Quarterstaff"
+        },
+        {
+            dropLevel: 52,
+            name: "Anima Quarterstaff"
+        },
+        {
+            dropLevel: 56,
+            name: "Graceful Quarterstaff"
+        },
+        {
+            dropLevel: 65,
+            name: "Wyrm Quarterstaff"
+        },
+        {
+            dropLevel: 45,
+            name: "Advanced Long Quarterstaff"
+        },
+        {
+            dropLevel: 48,
+            name: "Advanced Gothic Quarterstaff"
+        },
+        {
+            dropLevel: 51,
+            name: "Advanced Crackling Quarterstaff"
+        },
+        {
+            dropLevel: 55,
+            name: "Advanced Crescent Quarterstaff"
+        },
+        {
+            dropLevel: 59,
+            name: "Advanced Slicing Quarterstaff"
+        },
+        {
+            dropLevel: 62,
+            name: "Advanced Barrier Quarterstaff"
+        },
+        {
+            dropLevel: 67,
+            name: "Expert Gothic Quarterstaff"
+        },
+        {
+            dropLevel: 72,
+            name: "Expert Crescent Quarterstaff"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Long Quarterstaff"
+        },
+        {
+            dropLevel: 78,
+            name: "Expert Crackling Quarterstaff"
+        },
+        {
+            dropLevel: 79,
+            name: "Expert Barrier Quarterstaff"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Slicing Quarterstaff"
+        }
     ],
     ["Map Fragments"]: [
-        {name: "Sacrifice at Midnight"},
-        {name: "Sacrifice at Dawn"},
-        {name: "Sacrifice at Noon"},
-        {name: "Sacrifice at Dusk"},
-        {name: "Mortal Rage"},
-        {name: "Mortal Hope"},
-        {name: "Mortal Ignorance"},
-        {name: "Mortal Grief"},
-        {name: "Eber's Key"},
-        {name: "Yriel's Key"},
-        {name: "Inya's Key"},
-        {name: "Volkuur's Key"},
-        {name: "Fragment of the Phoenix"},
-        {name: "Fragment of the Minotaur"},
-        {name: "Fragment of the Chimera"},
-        {name: "Fragment of the Hydra"},
-        {name: "Divine Vessel"},
-        {name: "Sacrifice at Midnight"},
-        {name: "Sacrifice at Dawn"},
-        {name: "Sacrifice at Noon"},
-        {name: "Sacrifice at Dusk"},
-        {name: "Sacrifice Set"},
-        {name: "Mortal Rage"},
-        {name: "Mortal Hope"},
-        {name: "Mortal Ignorance"},
-        {name: "Mortal Grief"},
-        {name: "Mortal Set"},
-        {name: "Eber's Key"},
-        {name: "Yriel's Key"},
-        {name: "Inya's Key"},
-        {name: "Volkuur's Key"},
-        {name: "Pale Court Set"},
-        {name: "Fragment of the Phoenix"},
-        {name: "Fragment of the Minotaur"},
-        {name: "Fragment of the Chimera"},
-        {name: "Fragment of the Hydra"},
-        {name: "Key to the Crucible"},
-        {name: "Fragment of Enslavement"},
-        {name: "Fragment of Eradication"},
-        {name: "Fragment of Constriction"},
-        {name: "Fragment of Purification"},
-        {name: "Key to Decay"},
-        {name: "Fragment of Terror"},
-        {name: "Fragment of Emptiness"},
-        {name: "Fragment of Shape"},
-        {name: "Fragment of Knowledge"},
-        {name: "Maddening Object"},
-        {name: "Al-Hezmin's Crest"},
-        {name: "Baran's Crest"},
-        {name: "Drox's Crest"},
-        {name: "Veritania's Crest"},
-        {name: "Crest of the Elderslayers"},
-        {name: "Divine Vessel"},
-        {name: "Timeless Karui Emblem"},
-        {name: "Timeless Maraketh Emblem"},
-        {name: "Timeless Eternal Emblem"},
-        {name: "Timeless Templar Emblem"},
-        {name: "Timeless Vaal Emblem"},
-        {name: "Unrelenting Timeless Karui Emblem"},
-        {name: "Unrelenting Timeless Maraketh Emblem"},
-        {name: "Unrelenting Timeless Eternal Emblem"},
-        {name: "Unrelenting Timeless Templar Emblem"},
-        {name: "Unrelenting Timeless Vaal Emblem"},
-        {name: "Simulacrum"},
-        {name: "Offering to the Goddess"},
-        {name: "Tribute to the Goddess"},
-        {name: "Gift to the Goddess"},
-        {name: "Dedication to the Goddess"},
-        {name: "Blood-filled Vessel"},
-        {name: "Rusted Breach Scarab"},
-        {name: "Polished Breach Scarab"},
-        {name: "Gilded Breach Scarab"},
-        {name: "Winged Breach Scarab"},
-        {name: "Breach Scarab"},
-        {name: "Breach Scarab of the Dreamer"},
-        {name: "Breach Scarab of Lordship"},
-        {name: "Breach Scarab of Splintering"},
-        {name: "Breach Scarab of Snares"},
-        {name: "Breach Scarab of Resonant Cascade"},
-        {name: "Rusted Cartography Scarab"},
-        {name: "Polished Cartography Scarab"},
-        {name: "Gilded Cartography Scarab"},
-        {name: "Winged Cartography Scarab"},
-        {name: "Cartography Scarab of Escalation"},
-        {name: "Cartography Scarab of Risk"},
-        {name: "Cartography Scarab of Singularity"},
-        {name: "Cartography Scarab of Corruption"},
-        {name: "Cartography Scarab of the Multitude"},
-        {name: "Rusted Reliquary Scarab"},
-        {name: "Polished Reliquary Scarab"},
-        {name: "Gilded Reliquary Scarab"},
-        {name: "Winged Reliquary Scarab"},
-        {name: "Titanic Scarab"},
-        {name: "Titanic Scarab of Treasures"},
-        {name: "Titanic Scarab of Legend"},
-        {name: "Rusted Bestiary Scarab"},
-        {name: "Polished Bestiary Scarab"},
-        {name: "Gilded Bestiary Scarab"},
-        {name: "Winged Bestiary Scarab"},
-        {name: "Farric Lure"},
-        {name: "Saqawine Lure"},
-        {name: "Fenumal Lure"},
-        {name: "Craicic Lure"},
-        {name: "Bestiary Scarab"},
-        {name: "Bestiary Scarab of the Herd"},
-        {name: "Bestiary Scarab of Duplicating"},
-        {name: "Bestiary Scarab of the Shadowed Crow"},
-        {name: "Rusted Shaper Scarab"},
-        {name: "Polished Shaper Scarab"},
-        {name: "Gilded Shaper Scarab"},
-        {name: "Winged Shaper Scarab"},
-        {name: "Rusted Elder Scarab"},
-        {name: "Polished Elder Scarab"},
-        {name: "Gilded Elder Scarab"},
-        {name: "Winged Elder Scarab"},
-        {name: "Influencing Scarab of the Shaper"},
-        {name: "Influencing Scarab of the Elder"},
-        {name: "Influencing Scarab of Hordes"},
-        {name: "Influencing Scarab of Conversion"},
-        {name: "Rusted Sulphite Scarab"},
-        {name: "Polished Sulphite Scarab"},
-        {name: "Gilded Sulphite Scarab"},
-        {name: "Winged Sulphite Scarab"},
-        {name: "Sulphite Scarab"},
-        {name: "Sulphite Scarab of Greed"},
-        {name: "Sulphite Scarab of Fumes"},
-        {name: "Rusted Divination Scarab"},
-        {name: "Polished Divination Scarab"},
-        {name: "Gilded Divination Scarab"},
-        {name: "Winged Divination Scarab"},
-        {name: "Divination Scarab of The Cloister"},
-        {name: "Divination Scarab of Plenty"},
-        {name: "Divination Scarab of Pilfering"},
-        {name: "Rusted Torment Scarab"},
-        {name: "Polished Torment Scarab"},
-        {name: "Gilded Torment Scarab"},
-        {name: "Winged Torment Scarab"},
-        {name: "Torment Scarab"},
-        {name: "Torment Scarab of Peculiarity"},
-        {name: "Torment Scarab of Release"},
-        {name: "Torment Scarab of Possession"},
-        {name: "Rusted Ambush Scarab"},
-        {name: "Polished Ambush Scarab"},
-        {name: "Gilded Ambush Scarab"},
-        {name: "Winged Ambush Scarab"},
-        {name: "Ambush Scarab"},
-        {name: "Ambush Scarab of Hidden Compartments"},
-        {name: "Ambush Scarab of Potency"},
-        {name: "Ambush Scarab of Containment"},
-        {name: "Ambush Scarab of Discernment"},
-        {name: "Rusted Harbinger Scarab"},
-        {name: "Polished Harbinger Scarab"},
-        {name: "Gilded Harbinger Scarab"},
-        {name: "Winged Harbinger Scarab"},
-        {name: "Harbinger Scarab"},
-        {name: "Harbinger Scarab of Obelisks"},
-        {name: "Harbinger Scarab of Regency"},
-        {name: "Harbinger Scarab of Warhoards"},
-        {name: "Rusted Expedition Scarab"},
-        {name: "Polished Expedition Scarab"},
-        {name: "Gilded Expedition Scarab"},
-        {name: "Winged Expedition Scarab"},
-        {name: "Expedition Scarab"},
-        {name: "Expedition Scarab of Runefinding"},
-        {name: "Expedition Scarab of Verisium Powder"},
-        {name: "Expedition Scarab of the Skald"},
-        {name: "Expedition Scarab of Archaeology"},
-        {name: "Rusted Legion Scarab"},
-        {name: "Polished Legion Scarab"},
-        {name: "Gilded Legion Scarab"},
-        {name: "Winged Legion Scarab"},
-        {name: "Legion Scarab"},
-        {name: "Legion Scarab of Officers"},
-        {name: "Legion Scarab of Command"},
-        {name: "Legion Scarab of The Sekhema"},
-        {name: "Legion Scarab of Eternal Conflict"},
-        {name: "Rusted Ultimatum Scarab"},
-        {name: "Polished Ultimatum Scarab"},
-        {name: "Gilded Ultimatum Scarab"},
-        {name: "Winged Ultimatum Scarab"},
-        {name: "Rusted Blight Scarab"},
-        {name: "Polished Blight Scarab"},
-        {name: "Gilded Blight Scarab"},
-        {name: "Winged Blight Scarab"},
-        {name: "Rusted Abyss Scarab"},
-        {name: "Polished Abyss Scarab"},
-        {name: "Gilded Abyss Scarab"},
-        {name: "Winged Abyss Scarab"},
-        {name: "Abyss Scarab"},
-        {name: "Abyss Scarab of Multitudes"},
-        {name: "Abyss Scarab of Edifice"},
-        {name: "Abyss Scarab of Emptiness"},
-        {name: "Abyss Scarab of Profound Depth"},
-        {name: "Anarchy Scarab"},
-        {name: "Anarchy Scarab of Gigantification"},
-        {name: "Anarchy Scarab of Partnership"},
-        {name: "Essence Scarab"},
-        {name: "Essence Scarab of Ascent"},
-        {name: "Essence Scarab of Stability"},
-        {name: "Essence Scarab of Calcification"},
-        {name: "Essence Scarab of Adaptation"},
-        {name: "Domination Scarab"},
-        {name: "Domination Scarab of Apparitions"},
-        {name: "Domination Scarab of Evolution"},
-        {name: "Domination Scarab of Terrors"},
-        {name: "Ritual Scarab of Selectiveness"},
-        {name: "Ritual Scarab of Wisps"},
-        {name: "Ritual Scarab of Abundance"},
-        {name: "Harvest Scarab"},
-        {name: "Harvest Scarab of Doubling"},
-        {name: "Harvest Scarab of Cornucopia"},
-        {name: "Incursion Scarab"},
-        {name: "Incursion Scarab of Invasion"},
-        {name: "Incursion Scarab of Champions"},
-        {name: "Incursion Scarab of Timelines"},
-        {name: "Betrayal Scarab"},
-        {name: "Betrayal Scarab of Intelligence"},
-        {name: "Betrayal Scarab of Reinforcements"},
-        {name: "Betrayal Scarab of Perpetuation"},
-        {name: "Beyond Scarab"},
-        {name: "Beyond Scarab of Corruption"},
-        {name: "Beyond Scarab of Haemophilia"},
-        {name: "Beyond Scarab of Resurgence"},
-        {name: "Beyond Scarab of the Invasion"},
-        {name: "Ultimatum Scarab"},
-        {name: "Ultimatum Scarab of Bribing"},
-        {name: "Ultimatum Scarab of Dueling"},
-        {name: "Ultimatum Scarab of Catalysing"},
-        {name: "Ultimatum Scarab of Inscription"},
-        {name: "Delirium Scarab"},
-        {name: "Delirium Scarab of Mania"},
-        {name: "Delirium Scarab of Paranoia"},
-        {name: "Delirium Scarab of Neuroses"},
-        {name: "Delirium Scarab of Delusions"},
-        {name: "Blight Scarab"},
-        {name: "Blight Scarab of Bounty"},
-        {name: "Blight Scarab of the Blightheart"},
-        {name: "Blight Scarab of Blooming"},
-        {name: "Blight Scarab of Invigoration"},
-        {name: "Scarab of Monstrous Lineage"},
-        {name: "Scarab of Adversaries"},
-        {name: "Scarab of Divinity"},
-        {name: "Scarab of Hunted Traitors"},
-        {name: "Scarab of Stability"},
-        {name: "Scarab of the Commander"},
-        {name: "Scarab of Evolution"},
-        {name: "Scarab of Wisps"},
-        {name: "Scarab of Bisection"},
-        {name: "Scarab of Unity"},
-        {name: "Scarab of Radiant Storms"},
-        {name: "Horned Scarab of Bloodlines"},
-        {name: "Horned Scarab of Nemeses"},
-        {name: "Horned Scarab of Preservation"},
-        {name: "Horned Scarab of Awakening"},
-        {name: "Horned Scarab of Tradition"},
-        {name: "Horned Scarab of Glittering"},
-        {name: "Horned Scarab of Pandemonium"},
-        {name: "The Maven's Writ"},
-        {name: "Cosmic Fragment"},
-        {name: "Decaying Fragment"},
-        {name: "Awakening Fragment"},
-        {name: "Synthesising Fragment"},
-        {name: "Reality Fragment"},
-        {name: "Devouring Fragment"},
-        {name: "Blazing Fragment"},
-        {name: "Sacred Blossom"},
-        {name: "An Audience With The King"}
+        {
+            dropLevel: 60,
+            name: "Sacrifice at Midnight"
+        },
+        {
+            dropLevel: 36,
+            name: "Sacrifice at Dawn"
+        },
+        {
+            dropLevel: 36,
+            name: "Sacrifice at Noon"
+        },
+        {
+            dropLevel: 36,
+            name: "Sacrifice at Dusk"
+        },
+        {
+            dropLevel: 68,
+            name: "Mortal Rage"
+        },
+        {
+            dropLevel: 68,
+            name: "Mortal Hope"
+        },
+        {
+            dropLevel: 68,
+            name: "Mortal Ignorance"
+        },
+        {
+            dropLevel: 68,
+            name: "Mortal Grief"
+        },
+        {
+            dropLevel: 60,
+            name: "Eber's Key"
+        },
+        {
+            dropLevel: 60,
+            name: "Yriel's Key"
+        },
+        {
+            dropLevel: 60,
+            name: "Inya's Key"
+        },
+        {
+            dropLevel: 60,
+            name: "Volkuur's Key"
+        },
+        {
+            dropLevel: 84,
+            name: "Fragment of the Phoenix"
+        },
+        {
+            dropLevel: 84,
+            name: "Fragment of the Minotaur"
+        },
+        {
+            dropLevel: 84,
+            name: "Fragment of the Chimera"
+        },
+        {
+            dropLevel: 84,
+            name: "Fragment of the Hydra"
+        },
+        {
+            dropLevel: 68,
+            name: "Divine Vessel"
+        },
+        {
+            dropLevel: 1,
+            name: "Sacrifice Set"
+        },
+        {
+            dropLevel: 1,
+            name: "Mortal Set"
+        },
+        {
+            dropLevel: 1,
+            name: "Pale Court Set"
+        },
+        {
+            dropLevel: 1,
+            name: "Key to the Crucible"
+        },
+        {
+            dropLevel: 80,
+            name: "Fragment of Enslavement"
+        },
+        {
+            dropLevel: 80,
+            name: "Fragment of Eradication"
+        },
+        {
+            dropLevel: 80,
+            name: "Fragment of Constriction"
+        },
+        {
+            dropLevel: 80,
+            name: "Fragment of Purification"
+        },
+        {
+            dropLevel: 1,
+            name: "Key to Decay"
+        },
+        {
+            dropLevel: 80,
+            name: "Fragment of Terror"
+        },
+        {
+            dropLevel: 80,
+            name: "Fragment of Emptiness"
+        },
+        {
+            dropLevel: 80,
+            name: "Fragment of Shape"
+        },
+        {
+            dropLevel: 80,
+            name: "Fragment of Knowledge"
+        },
+        {
+            dropLevel: 1,
+            name: "Maddening Object"
+        },
+        {
+            dropLevel: 80,
+            name: "Al-Hezmin's Crest"
+        },
+        {
+            dropLevel: 80,
+            name: "Baran's Crest"
+        },
+        {
+            dropLevel: 80,
+            name: "Drox's Crest"
+        },
+        {
+            dropLevel: 80,
+            name: "Veritania's Crest"
+        },
+        {
+            dropLevel: 1,
+            name: "Crest of the Elderslayers"
+        },
+        {
+            dropLevel: 75,
+            name: "Timeless Karui Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Timeless Maraketh Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Timeless Eternal Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Timeless Templar Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Timeless Vaal Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Unrelenting Timeless Karui Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Unrelenting Timeless Maraketh Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Unrelenting Timeless Eternal Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Unrelenting Timeless Templar Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Unrelenting Timeless Vaal Emblem"
+        },
+        {
+            dropLevel: 75,
+            name: "Simulacrum"
+        },
+        {
+            dropLevel: 1,
+            name: "Offering to the Goddess"
+        },
+        {
+            dropLevel: 1,
+            name: "Tribute to the Goddess"
+        },
+        {
+            dropLevel: 1,
+            name: "Gift to the Goddess"
+        },
+        {
+            dropLevel: 1,
+            name: "Dedication to the Goddess"
+        },
+        {
+            dropLevel: 1,
+            name: "An Audience with the King"
+        },
+        {
+            dropLevel: 1,
+            name: "Blood-filled Vessel"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Breach Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Breach Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Breach Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Breach Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Cartography Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Cartography Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Cartography Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Cartography Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Reliquary Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Reliquary Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Reliquary Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Reliquary Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Bestiary Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Bestiary Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Bestiary Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Bestiary Scarab"
+        },
+        {
+            dropLevel: 1,
+            name: "Farric Lure"
+        },
+        {
+            dropLevel: 1,
+            name: "Saqawine Lure"
+        },
+        {
+            dropLevel: 1,
+            name: "Fenumal Lure"
+        },
+        {
+            dropLevel: 1,
+            name: "Craicic Lure"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Shaper Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Shaper Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Shaper Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Shaper Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Elder Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Elder Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Elder Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Elder Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Sulphite Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Sulphite Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Sulphite Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Sulphite Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Divination Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Divination Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Divination Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Divination Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Torment Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Torment Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Torment Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Torment Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Ambush Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Ambush Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Ambush Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Ambush Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Harbinger Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Harbinger Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Harbinger Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Harbinger Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Expedition Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Expedition Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Expedition Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Expedition Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Legion Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Legion Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Legion Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Legion Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Metamorph Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Metamorph Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Metamorph Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Metamorph Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Blight Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Blight Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Blight Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Blight Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Rusted Abyss Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Polished Abyss Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Gilded Abyss Scarab"
+        },
+        {
+            dropLevel: 68,
+            name: "Winged Abyss Scarab"
+        },
+        {
+            dropLevel: 83,
+            name: "The Maven's Writ"
+        },
+        {
+            dropLevel: 1,
+            name: "Sacred Blossom"
+        },
+        {
+            dropLevel: 1,
+            name: "Cowardly Fate"
+        },
+        {
+            dropLevel: 1,
+            name: "Deadly Fate"
+        },
+        {
+            dropLevel: 1,
+            name: "Victorious Fate"
+        }
     ],
-    ["Expedition Logbooks"]: [{name: "Expedition Logbook"}],
+    ["Expedition Logbooks"]: [{
+        dropLevel: 65,
+        name: "Expedition Logbook"
+    }],
     Blueprints: [
-        {name: "Blueprint: Bunker"},
-        {name: "Blueprint: Smuggler's Den"},
-        {name: "Blueprint: Laboratory"},
-        {name: "Blueprint: Repository"},
-        {name: "Blueprint: Prohibited Library"},
-        {name: "Blueprint: Tunnels"},
-        {name: "Blueprint: Underbelly"},
-        {name: "Blueprint: Records Office"},
-        {name: "Blueprint: Mansion"}
+        {
+            dropLevel: 50,
+            name: "Blueprint: Bunker"
+        },
+        {
+            dropLevel: 50,
+            name: "Blueprint: Smuggler's Den"
+        },
+        {
+            dropLevel: 60,
+            name: "Blueprint: Laboratory"
+        },
+        {
+            dropLevel: 55,
+            name: "Blueprint: Repository"
+        },
+        {
+            dropLevel: 60,
+            name: "Blueprint: Prohibited Library"
+        },
+        {
+            dropLevel: 55,
+            name: "Blueprint: Tunnels"
+        },
+        {
+            dropLevel: 50,
+            name: "Blueprint: Underbelly"
+        },
+        {
+            dropLevel: 50,
+            name: "Blueprint: Records Office"
+        },
+        {
+            dropLevel: 50,
+            name: "Blueprint: Mansion"
+        }
     ],
     ["Support Gems"]: [
-        {name: "Added Fire Damage Support"},
-        {name: "Faster Attacks Support"},
-        {name: "Greater Multiple Projectiles Support"},
-        {name: "Lesser Multiple Projectiles Support"},
-        {name: "Greater Volley Support"},
-        {name: "Faster Projectiles Support"},
-        {name: "Added Cold Damage Support"},
-        {name: "Additional Accuracy Support"},
-        {name: "Increased Area of Effect Support"},
-        {name: "Added Lightning Damage Support"},
-        {name: "Inspiration Support"},
-        {name: "Increased Critical Strikes Support"},
-        {name: "Increased Critical Damage Support"},
-        {name: "Knockback Support"},
-        {name: "Life Leech Support"},
-        {name: "Mana Leech Support"},
-        {name: "Added Chaos Damage Support"},
-        {name: "Stun Support"},
-        {name: "Pierce Support"},
-        {name: "Trap Support"},
-        {name: "Melee Physical Damage Support"},
-        {name: "Item Quantity Support"},
-        {name: "Item Rarity Support"},
-        {name: "Faster Casting Support"},
-        {name: "Concentrated Effect Support"},
-        {name: "Minion Damage Support"},
-        {name: "More Duration Support"},
-        {name: "Cold to Fire Support"},
-        {name: "Combustion Support"},
-        {name: "Minion Speed Support"},
-        {name: "Minion Life Support"},
-        {name: "Elemental Damage with Attacks Support"},
-        {name: "Bloodlust Support"},
-        {name: "Life Gain on Hit Support"},
-        {name: "Elemental Proliferation Support"},
-        {name: "Arrogance Support"},
-        {name: "WIP Support"},
-        {name: "Culling Strike Support"},
-        {name: "Point Blank Support"},
-        {name: "Iron Grip Support"},
-        {name: "Iron Will Support"},
-        {name: "Damage on Full Life Support"},
-        {name: "Spell Totem Support"},
-        {name: "Blastchain Mine Support"},
-        {name: "Chance to Flee Support"},
-        {name: "Blind Support"},
-        {name: "Ballista Totem Support"},
-        {name: "Fire Penetration Support"},
-        {name: "Cold Penetration Support"},
-        {name: "Lightning Penetration Support"},
-        {name: "Elemental Penetration Support"},
-        {name: "Chain Support"},
-        {name: "Split Projectiles Support"},
-        {name: "Fork Support"},
-        {name: "Returning Projectiles Support"},
-        {name: "Multistrike Support"},
-        {name: "Spell Echo Support"},
-        {name: "Melee Splash Support"},
-        {name: "Power Charge On Critical Support"},
-        {name: "Burning Damage Support"},
-        {name: "Elemental Army Support"},
-        {name: "Hextouch Support"},
-        {name: "Cast On Critical Strike Support"},
-        {name: "Cast on Melee Kill Support"},
-        {name: "Multiple Traps Support"},
-        {name: "Empower Support"},
-        {name: "Endurance Charge on Melee Stun Support"},
-        {name: "Slower Projectiles Support"},
-        {name: "Less Duration Support"},
-        {name: "Cast on Death Support"},
-        {name: "Cast when Damage Taken Support"},
-        {name: "Cast when Stunned Support"},
-        {name: "Enhance Support"},
-        {name: "Vicious Projectiles Support"},
-        {name: "Enlighten Support"},
-        {name: "Block Chance Reduction Support"},
-        {name: "Generosity Support"},
-        {name: "Physical to Lightning Support"},
-        {name: "Blasphemy Support"},
-        {name: "Fortify Support"},
-        {name: "Ice Bite Support"},
-        {name: "Hypothermia Support"},
-        {name: "Innervate Support"},
-        {name: "Trap and Mine Damage Support"},
-        {name: "Critical Strike Affliction Support"},
-        {name: "Void Manipulation Support"},
-        {name: "Controlled Destruction Support"},
-        {name: "Swift Affliction Support"},
-        {name: "Cluster Traps Support"},
-        {name: "Elemental Focus Support"},
-        {name: "Minefield Support"},
-        {name: "Advanced Traps Support"},
-        {name: "Cast while Channelling Support"},
-        {name: "Vaal Soul Harvesting"},
-        {name: "Ignite Proliferation Support"},
-        {name: "Chance to Bleed Support"},
-        {name: "Chance to Poison Support"},
-        {name: "Deadly Ailments Support"},
-        {name: "Lesser Reduced Mana Cost Support"},
-        {name: "Decay Support"},
-        {name: "Efficacy Support"},
-        {name: "Vile Toxins Support"},
-        {name: "Maim Support"},
-        {name: "Immolate Support"},
-        {name: "Unbound Ailments Support"},
-        {name: "Brutality Support"},
-        {name: "Ruthless Support"},
-        {name: "Momentum Support"},
-        {name: "Arcane Surge Support"},
-        {name: "Infused Channelling Support"},
-        {name: "Volley Support"},
-        {name: "Spell Cascade Support"},
-        {name: "Ancestral Call Support"},
-        {name: "Summon Phantasm Support"},
-        {name: "Mirage Archer Support"},
-        {name: "Charged Traps Support"},
-        {name: "Charged Mines Support"},
-        {name: "Withering Touch Support"},
-        {name: "Bonechill Support"},
-        {name: "Multiple Totems Support"},
-        {name: "Energy Leech Support"},
-        {name: "[UNUSED] Handcast Rapid Fire"},
-        {name: "Intensify Support"},
-        {name: "Unleash Support"},
-        {name: "Close Combat Support"},
-        {name: "Shockwave Support"},
-        {name: "Impale Support"},
-        {name: "Pulverise Support"},
-        {name: "Rage Support"},
-        {name: "Feeding Frenzy Support"},
-        {name: "Predator Support"},
-        {name: "Nightblade Support"},
-        {name: "Meat Shield Support"},
-        {name: "High-Impact Mine Support"},
-        {name: "Swift Assembly Support"},
-        {name: "Arrow Nova Support"},
-        {name: "Barrage Support"},
-        {name: "Awakened Added Fire Damage Support"},
-        {name: "Awakened Ancestral Call Support"},
-        {name: "Awakened Brutality Support"},
-        {name: "Awakened Burning Damage Support"},
-        {name: "Awakened Elemental Damage with Attacks Support"},
-        {name: "Awakened Fire Penetration Support"},
-        {name: "Awakened Generosity Support"},
-        {name: "Awakened Melee Physical Damage Support"},
-        {name: "Awakened Melee Splash Support"},
-        {name: "Awakened Multistrike Support"},
-        {name: "Awakened Added Cold Damage Support"},
-        {name: "Awakened Arrow Nova Support"},
-        {name: "Awakened Cast On Critical Strike Support"},
-        {name: "Awakened Chain Support"},
-        {name: "Awakened Cold Penetration Support"},
-        {name: "Awakened Deadly Ailments Support"},
-        {name: "Awakened Fork Support"},
-        {name: "Awakened Greater Multiple Projectiles Support"},
-        {name: "Awakened Swift Affliction Support"},
-        {name: "Awakened Void Manipulation Support"},
-        {name: "Awakened Vicious Projectiles Support"},
-        {name: "Awakened Added Chaos Damage Support"},
-        {name: "Awakened Added Lightning Damage Support"},
-        {name: "Awakened Blasphemy Support"},
-        {name: "Awakened Cast While Channelling Support"},
-        {name: "Awakened Controlled Destruction Support"},
-        {name: "Awakened Hextouch Support"},
-        {name: "Awakened Elemental Focus Support"},
-        {name: "Awakened Increased Area of Effect Support"},
-        {name: "Awakened Lightning Penetration Support"},
-        {name: "Awakened Minion Damage Support"},
-        {name: "Awakened Spell Cascade Support"},
-        {name: "Awakened Spell Echo Support"},
-        {name: "Awakened Unbound Ailments Support"},
-        {name: "Awakened Unleash Support"},
-        {name: "Awakened Empower Support"},
-        {name: "Awakened Enlighten Support"},
-        {name: "Awakened Enhance Support"},
-        {name: "Infernal Legion Support"},
-        {name: "Archmage Support"},
-        {name: "Second Wind Support"},
-        {name: "Fist of War Support"},
-        {name: "Swiftbrand Support"},
-        {name: "Urgent Orders Support"},
-        {name: "Impending Doom Support"},
-        {name: "Pinpoint Support"},
-        {name: "Trinity Support"},
-        {name: "Bloodthirst Support"},
-        {name: "Cruelty Support"},
-        {name: "Lifetap Support"},
-        {name: "Earthbreaker Support"},
-        {name: "Focused Ballista Support"},
-        {name: "Behead Support"},
-        {name: "Divine Blessing Support"},
-        {name: "Mark On Hit Support"},
-        {name: "Eternal Blessing Support"},
-        {name: "Overcharge Support"},
-        {name: "Cursed Ground Support"},
-        {name: "Hex Bloom Support"},
-        {name: "Multistrike Support"},
-        {name: "Spell Cascade Support"},
-        {name: "Unleash Support"},
-        {name: "Multiple Totems Support"},
-        {name: "Added Cold Damage Support"},
-        {name: "Added Lightning Damage Support"},
-        {name: "Rage Support"},
-        {name: "Faster Attacks Support"},
-        {name: "Faster Casting Support"},
-        {name: "Ballista Totem Support"},
-        {name: "Spell Totem Support"},
-        {name: "Trap Support"},
-        {name: "Advanced Traps Support"},
-        {name: "Lesser Multiple Projectiles Support"},
-        {name: "Volley Support"},
-        {name: "Increased Area of Effect Support"},
-        {name: "Blind Support"},
-        {name: "Lifetap Support"},
-        {name: "Increased Duration Support"},
-        {name: "Less Duration Support"},
-        {name: "Cast while Channelling Support"},
-        {name: "Impending Doom Support"},
-        {name: "Ancestral Call Support"},
-        {name: "Arrow Nova Support"},
-        {name: "Blasphemy Support"},
-        {name: "Cast on Death Support"},
-        {name: "Fist of War Support"},
-        {name: "Fortify Support"},
-        {name: "Second Wind Support"},
-        {name: "Spell Echo Support"},
-        {name: "Summon Phantasm Support"},
-        {name: "Faster Projectiles Support"},
-        {name: "Point Blank Support"},
-        {name: "Chance to Bleed Support"},
-        {name: "Knockback Support"},
-        {name: "Maim Support"},
-        {name: "Stun Support"},
-        {name: "Concentrated Effect Support"},
-        {name: "Increased Critical Strikes Support"},
-        {name: "Melee Splash Support"},
-        {name: "Manaforged Arrows Support"},
-        {name: "Prismatic Burst Support"},
-        {name: "Trauma Support"},
-        {name: "Spellblade Support"},
-        {name: "Devour Support"},
-        {name: "Fresh Meat Support"},
-        {name: "Flamewood Support"},
-        {name: "Corrupting Cry Support"},
-        {name: "[UNUSED] Conflagration Support"},
-        {name: "Guardian's Blessing Support"},
-        {name: "Sacrifice Support"},
-        {name: "Frigid Bond Support"},
-        {name: "Locus Mine Support"},
-        {name: "Sadism Support"},
-        {name: "Controlled Blaze Support"},
-        {name: "Volatility Support"},
-        {name: "Sacred Wisps Support"},
-        {name: "Overexertion Support"},
-        {name: "Expert Retaliation Support"},
-        {name: "Rupture Support"}
+        {
+            dropLevel: 18,
+            name: "Close Combat"
+        },
+        {
+            dropLevel: 5,
+            name: "Enervation"
+        },
+        {
+            dropLevel: 1,
+            name: "Chance to Freeze"
+        },
+        {
+            dropLevel: 5,
+            name: "Essence Harvest"
+        },
+        {
+            dropLevel: 18,
+            name: "Invocation"
+        },
+        {
+            dropLevel: 1,
+            name: "Coming Soon"
+        },
+        {
+            dropLevel: 20,
+            name: "Spreading Frost"
+        },
+        {
+            dropLevel: 15,
+            name: "Pinpoint Critical"
+        },
+        {
+            dropLevel: 1,
+            name: "Ignition"
+        },
+        {
+            dropLevel: 1,
+            name: "Ruthless"
+        },
+        {
+            dropLevel: 1,
+            name: "Unbreakable"
+        },
+        {
+            dropLevel: 1,
+            name: "Lacerate"
+        },
+        {
+            dropLevel: 1,
+            name: "Bludgeon"
+        },
+        {
+            dropLevel: 1,
+            name: "Overpower"
+        },
+        {
+            dropLevel: 1,
+            name: "Persistence"
+        },
+        {
+            dropLevel: 1,
+            name: "Fast Forward"
+        },
+        {
+            dropLevel: 1,
+            name: "Rage"
+        },
+        {
+            dropLevel: 1,
+            name: "Lifetap"
+        },
+        {
+            dropLevel: 1,
+            name: "Execute"
+        },
+        {
+            dropLevel: 1,
+            name: "Searing Flame"
+        },
+        {
+            dropLevel: 1,
+            name: "Behead"
+        },
+        {
+            dropLevel: 1,
+            name: "Jagged Ground"
+        },
+        {
+            dropLevel: 1,
+            name: "Exploit Weakness"
+        },
+        {
+            dropLevel: 1,
+            name: "Impact Shockwave"
+        },
+        {
+            dropLevel: 1,
+            name: "Fire Penetration"
+        },
+        {
+            dropLevel: 1,
+            name: "Fire Exposure"
+        },
+        {
+            dropLevel: 1,
+            name: "Enraged Warcry"
+        },
+        {
+            dropLevel: 1,
+            name: "Fist of War"
+        },
+        {
+            dropLevel: 1,
+            name: "Devastate"
+        },
+        {
+            dropLevel: 1,
+            name: "Heavy Swing"
+        },
+        {
+            dropLevel: 1,
+            name: "Life Thief"
+        },
+        {
+            dropLevel: 1,
+            name: "Brutality"
+        },
+        {
+            dropLevel: 1,
+            name: "Bloodlust"
+        },
+        {
+            dropLevel: 1,
+            name: "Meat Shield"
+        },
+        {
+            dropLevel: 1,
+            name: "Break Endurance"
+        },
+        {
+            dropLevel: 1,
+            name: "Eternal Flame"
+        },
+        {
+            dropLevel: 1,
+            name: "Infernal Legion"
+        },
+        {
+            dropLevel: 1,
+            name: "Fire Infusion"
+        },
+        {
+            dropLevel: 1,
+            name: "Inspiration"
+        },
+        {
+            dropLevel: 1,
+            name: "Immolate"
+        },
+        {
+            dropLevel: 1,
+            name: "Premeditation"
+        },
+        {
+            dropLevel: 1,
+            name: "Raging Cry"
+        },
+        {
+            dropLevel: 1,
+            name: "Demolisher"
+        },
+        {
+            dropLevel: 1,
+            name: "Rageforged"
+        },
+        {
+            dropLevel: 1,
+            name: "Armour Explosion"
+        },
+        {
+            dropLevel: 1,
+            name: "Stomping Ground"
+        },
+        {
+            dropLevel: 1,
+            name: "Corrupting Cry"
+        },
+        {
+            dropLevel: 1,
+            name: "Deep Cuts"
+        },
+        {
+            dropLevel: 1,
+            name: "Splinter"
+        },
+        {
+            dropLevel: 1,
+            name: "Rupture"
+        },
+        {
+            dropLevel: 1,
+            name: "Dazing Cry"
+        },
+        {
+            dropLevel: 1,
+            name: "Primal Armament"
+        },
+        {
+            dropLevel: 1,
+            name: "Vitality"
+        },
+        {
+            dropLevel: 1,
+            name: "Herbalism"
+        },
+        {
+            dropLevel: 1,
+            name: "Cannibalism"
+        },
+        {
+            dropLevel: 1,
+            name: "Aftershock"
+        },
+        {
+            dropLevel: 1,
+            name: "Conduction"
+        },
+        {
+            dropLevel: 1,
+            name: "Pierce"
+        },
+        {
+            dropLevel: 1,
+            name: "Scattershot"
+        },
+        {
+            dropLevel: 1,
+            name: "Wind Wave"
+        },
+        {
+            dropLevel: 1,
+            name: "Envenom"
+        },
+        {
+            dropLevel: 1,
+            name: "Maim"
+        },
+        {
+            dropLevel: 1,
+            name: "Blind"
+        },
+        {
+            dropLevel: 1,
+            name: "Acceleration"
+        },
+        {
+            dropLevel: 1,
+            name: "Deceleration"
+        },
+        {
+            dropLevel: 1,
+            name: "Electrocute"
+        },
+        {
+            dropLevel: 1,
+            name: "Overabundance"
+        },
+        {
+            dropLevel: 1,
+            name: "Mobility"
+        },
+        {
+            dropLevel: 1,
+            name: "Overcharge"
+        },
+        {
+            dropLevel: 1,
+            name: "Perpetual Charge"
+        },
+        {
+            dropLevel: 1,
+            name: "Pin"
+        },
+        {
+            dropLevel: 1,
+            name: "Chain"
+        },
+        {
+            dropLevel: 1,
+            name: "Lightning Penetration"
+        },
+        {
+            dropLevel: 1,
+            name: "Lightning Exposure"
+        },
+        {
+            dropLevel: 1,
+            name: "Second Wind"
+        },
+        {
+            dropLevel: 1,
+            name: "Neural Overload"
+        },
+        {
+            dropLevel: 1,
+            name: "Bursting Plague"
+        },
+        {
+            dropLevel: 1,
+            name: "Deadly Herald"
+        },
+        {
+            dropLevel: 1,
+            name: "Corrosion"
+        },
+        {
+            dropLevel: 1,
+            name: "Infusion"
+        },
+        {
+            dropLevel: 1,
+            name: "Lockdown"
+        },
+        {
+            dropLevel: 1,
+            name: "Fork"
+        },
+        {
+            dropLevel: 1,
+            name: "Mana Bounty"
+        },
+        {
+            dropLevel: 1,
+            name: "Life Bounty"
+        },
+        {
+            dropLevel: 1,
+            name: "Lasting Shock"
+        },
+        {
+            dropLevel: 1,
+            name: "Lightning Infusion"
+        },
+        {
+            dropLevel: 1,
+            name: "Life Drain"
+        },
+        {
+            dropLevel: 1,
+            name: "Soul Drain"
+        },
+        {
+            dropLevel: 1,
+            name: "Martial Tempo"
+        },
+        {
+            dropLevel: 1,
+            name: "Bullseye"
+        },
+        {
+            dropLevel: 1,
+            name: "Innervate"
+        },
+        {
+            dropLevel: 1,
+            name: "Profusion"
+        },
+        {
+            dropLevel: 1,
+            name: "Comorbidity"
+        },
+        {
+            dropLevel: 1,
+            name: "Murderous Intent"
+        },
+        {
+            dropLevel: 5,
+            name: "Momentum"
+        },
+        {
+            dropLevel: 1,
+            name: "Crescendo"
+        },
+        {
+            dropLevel: 1,
+            name: "Deadly Poison"
+        },
+        {
+            dropLevel: 1,
+            name: "Window of Opportunity"
+        },
+        {
+            dropLevel: 1,
+            name: "Swift Affliction"
+        },
+        {
+            dropLevel: 1,
+            name: "Fusillade"
+        },
+        {
+            dropLevel: 1,
+            name: "Combo Finisher"
+        },
+        {
+            dropLevel: 1,
+            name: "Encumbrance"
+        },
+        {
+            dropLevel: 1,
+            name: "Longshot"
+        },
+        {
+            dropLevel: 1,
+            name: "Culling Strike"
+        },
+        {
+            dropLevel: 1,
+            name: "Discombobulate"
+        },
+        {
+            dropLevel: 1,
+            name: "Break Posture"
+        },
+        {
+            dropLevel: 1,
+            name: "Ingenuity"
+        },
+        {
+            dropLevel: 1,
+            name: "Precision"
+        },
+        {
+            dropLevel: 1,
+            name: "Glaciation"
+        },
+        {
+            dropLevel: 1,
+            name: "Energy Barrier"
+        },
+        {
+            dropLevel: 1,
+            name: "Wildfire"
+        },
+        {
+            dropLevel: 1,
+            name: "Frost Nexus"
+        },
+        {
+            dropLevel: 1,
+            name: "Coursing Current"
+        },
+        {
+            dropLevel: 1,
+            name: "Magnified Effect"
+        },
+        {
+            dropLevel: 1,
+            name: "Concentrated Effect"
+        },
+        {
+            dropLevel: 1,
+            name: "Spell Echo"
+        },
+        {
+            dropLevel: 1,
+            name: "Unleash"
+        },
+        {
+            dropLevel: 1,
+            name: "Ambush"
+        },
+        {
+            dropLevel: 1,
+            name: "Biting Frost"
+        },
+        {
+            dropLevel: 1,
+            name: "Withering Touch"
+        },
+        {
+            dropLevel: 1,
+            name: "Hourglass"
+        },
+        {
+            dropLevel: 1,
+            name: "Fortress"
+        },
+        {
+            dropLevel: 1,
+            name: "Cold Penetration"
+        },
+        {
+            dropLevel: 1,
+            name: "Cold Exposure"
+        },
+        {
+            dropLevel: 1,
+            name: "Fiery Death"
+        },
+        {
+            dropLevel: 1,
+            name: "Frozen Vortex"
+        },
+        {
+            dropLevel: 1,
+            name: "Shock Siphon"
+        },
+        {
+            dropLevel: 1,
+            name: "Frostfire"
+        },
+        {
+            dropLevel: 1,
+            name: "Stormfire"
+        },
+        {
+            dropLevel: 1,
+            name: "Inevitable Critical"
+        },
+        {
+            dropLevel: 1,
+            name: "Elemental Discharge"
+        },
+        {
+            dropLevel: 1,
+            name: "Mana Flare"
+        },
+        {
+            dropLevel: 1,
+            name: "Hex Bloom"
+        },
+        {
+            dropLevel: 1,
+            name: "Soul Thief"
+        },
+        {
+            dropLevel: 1,
+            name: "Elemental Focus"
+        },
+        {
+            dropLevel: 1,
+            name: "Elemental Army"
+        },
+        {
+            dropLevel: 1,
+            name: "Minion Instability"
+        },
+        {
+            dropLevel: 1,
+            name: "Deep Freeze"
+        },
+        {
+            dropLevel: 1,
+            name: "Feeding Frenzy"
+        },
+        {
+            dropLevel: 1,
+            name: "Arcane Surge"
+        },
+        {
+            dropLevel: 1,
+            name: "Heightened Curse"
+        },
+        {
+            dropLevel: 1,
+            name: "Corpse Conservation"
+        },
+        {
+            dropLevel: 1,
+            name: "Cold Infusion"
+        },
+        {
+            dropLevel: 1,
+            name: "Arcane Tempo"
+        },
+        {
+            dropLevel: 1,
+            name: "Decaying Hex"
+        },
+        {
+            dropLevel: 1,
+            name: "Focused Curse"
+        },
+        {
+            dropLevel: 1,
+            name: "Ritualistic Curse"
+        },
+        {
+            dropLevel: 1,
+            name: "Minion Pact"
+        },
+        {
+            dropLevel: 1,
+            name: "Last Gasp"
+        },
+        {
+            dropLevel: 1,
+            name: "Controlled Destruction"
+        },
+        {
+            dropLevel: 1,
+            name: "Impending Doom"
+        },
+        {
+            dropLevel: 1,
+            name: "Supercritical"
+        },
+        {
+            dropLevel: 1,
+            name: "Ice Bite"
+        },
+        {
+            dropLevel: 1,
+            name: "Chaos Infusion"
+        },
+        {
+            dropLevel: 1,
+            name: "Fire Mastery"
+        },
+        {
+            dropLevel: 1,
+            name: "Cold Mastery"
+        },
+        {
+            dropLevel: 1,
+            name: "Lightning Mastery"
+        },
+        {
+            dropLevel: 1,
+            name: "Chaos Mastery"
+        },
+        {
+            dropLevel: 1,
+            name: "Physical Mastery"
+        },
+        {
+            dropLevel: 1,
+            name: "Minion Mastery"
+        },
+        {
+            dropLevel: 1,
+            name: "Chaotic Freeze"
+        },
+        {
+            dropLevel: 1,
+            name: "Intense Agony"
+        },
+        {
+            dropLevel: 1,
+            name: "Drain Ailments"
+        },
+        {
+            dropLevel: 1,
+            name: "Hinder"
+        },
+        {
+            dropLevel: 1,
+            name: "Spell Cascade"
+        },
+        {
+            dropLevel: 1,
+            name: "Soulbreaker"
+        },
+        {
+            dropLevel: 1,
+            name: "Cursed Ground"
+        },
+        {
+            dropLevel: 1,
+            name: "Clarity"
+        },
+        {
+            dropLevel: 1,
+            name: "Font of Blood"
+        },
+        {
+            dropLevel: 1,
+            name: "Font of Mana"
+        },
+        {
+            dropLevel: 1,
+            name: "Font of Rage"
+        },
+        {
+            dropLevel: 1,
+            name: "Holy Descent"
+        },
+        {
+            dropLevel: 1,
+            name: "Burning Inscription"
+        },
+        {
+            dropLevel: 1,
+            name: "Double Barrel"
+        },
+        {
+            dropLevel: 1,
+            name: "Auto Reload"
+        },
+        {
+            dropLevel: 1,
+            name: "Ammo Conservation"
+        },
+        {
+            dropLevel: 1,
+            name: "Nimble Reload"
+        },
+        {
+            dropLevel: 1,
+            name: "Fresh Clip"
+        },
+        {
+            dropLevel: 1,
+            name: "Sacrificial Lamb"
+        },
+        {
+            dropLevel: 1,
+            name: "Upheaval"
+        },
+        {
+            dropLevel: 1,
+            name: "Despoiler"
+        },
+        {
+            dropLevel: 1,
+            name: "Ricochet"
+        },
+        {
+            dropLevel: 1,
+            name: "Ancestral Urgency"
+        },
+        {
+            dropLevel: 1,
+            name: "Long Fuse"
+        },
+        {
+            dropLevel: 1,
+            name: "Payload"
+        },
+        {
+            dropLevel: 1,
+            name: "Strip Away"
+        },
+        {
+            dropLevel: 1,
+            name: "Ironwood"
+        },
+        {
+            dropLevel: 1,
+            name: "Considered Casting"
+        },
+        {
+            dropLevel: 1,
+            name: "Wildshards"
+        },
+        {
+            dropLevel: 1,
+            name: "Icicle"
+        },
+        {
+            dropLevel: 1,
+            name: "Glacier"
+        },
+        {
+            dropLevel: 1,
+            name: "Heft"
+        },
+        {
+            dropLevel: 1,
+            name: "Rising Tempest"
+        },
+        {
+            dropLevel: 1,
+            name: "Extraction"
+        },
+        {
+            dropLevel: 1,
+            name: "Astral Projection"
+        },
+        {
+            dropLevel: 1,
+            name: "Practiced Combo"
+        },
+        {
+            dropLevel: 1,
+            name: "Leverage"
+        },
+        {
+            dropLevel: 1,
+            name: "Culmination"
+        },
+        {
+            dropLevel: 1,
+            name: "Potential"
+        },
+        {
+            dropLevel: 1,
+            name: "Expanse"
+        },
+        {
+            dropLevel: 1,
+            name: "Excise"
+        },
+        {
+            dropLevel: 1,
+            name: "Execrate"
+        },
+        {
+            dropLevel: 1,
+            name: "Energy Retention"
+        },
+        {
+            dropLevel: 1,
+            name: "Ferocity"
+        },
+        {
+            dropLevel: 1,
+            name: "Ablation"
+        },
+        {
+            dropLevel: 1,
+            name: "Danse Macabre"
+        },
+        {
+            dropLevel: 1,
+            name: "Capacitor"
+        },
+        {
+            dropLevel: 1,
+            name: "Impetus"
+        },
+        {
+            dropLevel: 1,
+            name: "Expanding Ground"
+        }
     ],
-    Trinkets: [{name: "Thief's Trinket"}],
-    ["Labyrinth Items"]: [
-        {name: "Golden Key"},
-        {name: "Silver Key"},
-        {name: "Treasure Key"}
+    Crossbows: [
+        {
+            dropLevel: 1,
+            name: "Makeshift Crossbow"
+        },
+        {
+            dropLevel: 4,
+            name: "Tense Crossbow"
+        },
+        {
+            dropLevel: 10,
+            name: "Sturdy Crossbow"
+        },
+        {
+            dropLevel: 16,
+            name: "Varnished Crossbow"
+        },
+        {
+            dropLevel: 20,
+            name: "Dyad Crossbow"
+        },
+        {
+            dropLevel: 26,
+            name: "Alloy Crossbow"
+        },
+        {
+            dropLevel: 33,
+            name: "Bombard Crossbow"
+        },
+        {
+            dropLevel: 38,
+            name: "Construct Crossbow"
+        },
+        {
+            dropLevel: 45,
+            name: "Blackfire Crossbow"
+        },
+        {
+            dropLevel: 48,
+            name: "Piercing Crossbow"
+        },
+        {
+            dropLevel: 52,
+            name: "Cumbrous Crossbow"
+        },
+        {
+            dropLevel: 56,
+            name: "Dedalian Crossbow"
+        },
+        {
+            dropLevel: 65,
+            name: "Esoteric Crossbow"
+        },
+        {
+            dropLevel: 45,
+            name: "Advanced Tense Crossbow"
+        },
+        {
+            dropLevel: 48,
+            name: "Advanced Sturdy Crossbow"
+        },
+        {
+            dropLevel: 51,
+            name: "Advanced Varnished Crossbow"
+        },
+        {
+            dropLevel: 55,
+            name: "Advanced Dyad Crossbow"
+        },
+        {
+            dropLevel: 59,
+            name: "Advanced Bombard Crossbow"
+        },
+        {
+            dropLevel: 62,
+            name: "Advanced Forlorn Crossbow"
+        },
+        {
+            dropLevel: 67,
+            name: "Expert Sturdy Crossbow"
+        },
+        {
+            dropLevel: 72,
+            name: "Expert Varnished Crossbow"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Tense Crossbow"
+        },
+        {
+            dropLevel: 78,
+            name: "Expert Dyad Crossbow"
+        },
+        {
+            dropLevel: 79,
+            name: "Expert Bombard Crossbow"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Forlorn Crossbow"
+        }
     ],
     Sentinels: [
-        {name: "Rusted Stalker Sentinel"},
-        {name: "Bronze Stalker Sentinel"},
-        {name: "Cobalt Stalker Sentinel"},
-        {name: "Brimstone Stalker Sentinel"},
-        {name: "Emberstone Stalker Sentinel"},
-        {name: "Obsidian Stalker Sentinel"},
-        {name: "Cryptic Stalker Sentinel"},
-        {name: "Primeval Stalker Sentinel"},
-        {name: "Ancient Stalker Sentinel"},
-        {name: "Bronze Pandemonium Sentinel"},
-        {name: "Cobalt Pandemonium Sentinel"},
-        {name: "Brimstone Pandemonium Sentinel"},
-        {name: "Emberstone Pandemonium Sentinel"},
-        {name: "Obsidian Pandemonium Sentinel"},
-        {name: "Cryptic Pandemonium Sentinel"},
-        {name: "Primeval Pandemonium Sentinel"},
-        {name: "Ancient Pandemonium Sentinel"},
-        {name: "Bronze Apex Sentinel"},
-        {name: "Cobalt Apex Sentinel"},
-        {name: "Brimstone Apex Sentinel"},
-        {name: "Emberstone Apex Sentinel"},
-        {name: "Obsidian Apex Sentinel"},
-        {name: "Cryptic Apex Sentinel"},
-        {name: "Primeval Apex Sentinel"},
-        {name: "Ancient Apex Sentinel"},
-        {name: "Cosmic Apex Sentinel"}
+        {
+            dropLevel: 2,
+            name: "Rusted Stalker Sentinel"
+        },
+        {
+            dropLevel: 5,
+            name: "Bronze Stalker Sentinel"
+        },
+        {
+            dropLevel: 18,
+            name: "Cobalt Stalker Sentinel"
+        },
+        {
+            dropLevel: 38,
+            name: "Brimstone Stalker Sentinel"
+        },
+        {
+            dropLevel: 58,
+            name: "Emberstone Stalker Sentinel"
+        },
+        {
+            dropLevel: 67,
+            name: "Obsidian Stalker Sentinel"
+        },
+        {
+            dropLevel: 2,
+            name: "Cryptic Stalker Sentinel"
+        },
+        {
+            dropLevel: 68,
+            name: "Primeval Stalker Sentinel"
+        },
+        {
+            dropLevel: 80,
+            name: "Ancient Stalker Sentinel"
+        },
+        {
+            dropLevel: 40,
+            name: "Bronze Pandemonium Sentinel"
+        },
+        {
+            dropLevel: 46,
+            name: "Cobalt Pandemonium Sentinel"
+        },
+        {
+            dropLevel: 54,
+            name: "Brimstone Pandemonium Sentinel"
+        },
+        {
+            dropLevel: 62,
+            name: "Emberstone Pandemonium Sentinel"
+        },
+        {
+            dropLevel: 68,
+            name: "Obsidian Pandemonium Sentinel"
+        },
+        {
+            dropLevel: 40,
+            name: "Cryptic Pandemonium Sentinel"
+        },
+        {
+            dropLevel: 68,
+            name: "Primeval Pandemonium Sentinel"
+        },
+        {
+            dropLevel: 80,
+            name: "Ancient Pandemonium Sentinel"
+        },
+        {
+            dropLevel: 24,
+            name: "Bronze Apex Sentinel"
+        },
+        {
+            dropLevel: 36,
+            name: "Cobalt Apex Sentinel"
+        },
+        {
+            dropLevel: 48,
+            name: "Brimstone Apex Sentinel"
+        },
+        {
+            dropLevel: 58,
+            name: "Emberstone Apex Sentinel"
+        },
+        {
+            dropLevel: 66,
+            name: "Obsidian Apex Sentinel"
+        },
+        {
+            dropLevel: 24,
+            name: "Cryptic Apex Sentinel"
+        },
+        {
+            dropLevel: 68,
+            name: "Primeval Apex Sentinel"
+        },
+        {
+            dropLevel: 80,
+            name: "Ancient Apex Sentinel"
+        },
+        {
+            dropLevel: 75,
+            name: "Cosmic Apex Sentinel"
+        }
     ],
     ["One Hand Maces"]: [
-        {name: "Driftwood Club"},
-        {name: "Tribal Club"},
-        {name: "Spiked Club"},
-        {name: "Stone Hammer"},
-        {name: "War Hammer"},
-        {name: "Bladed Mace"},
-        {name: "Ceremonial Mace"},
-        {name: "Dream Mace"},
-        {name: "Wyrm Mace"},
-        {name: "Petrified Club"},
-        {name: "Barbed Club"},
-        {name: "Rock Breaker"},
-        {name: "Battle Hammer"},
-        {name: "Flanged Mace"},
-        {name: "Ornate Mace"},
-        {name: "Phantom Mace"},
-        {name: "Dragon Mace"},
-        {name: "Ancestral Club"},
-        {name: "Tenderizer"},
-        {name: "Gavel"},
-        {name: "Legion Hammer"},
-        {name: "Pernach"},
-        {name: "Auric Mace"},
-        {name: "Nightmare Mace"},
-        {name: "Behemoth Mace"},
-        {name: "Flare Mace"},
-        {name: "Crack Mace"},
-        {name: "Boom Mace"}
+        {
+            dropLevel: 1,
+            name: "Wooden Club"
+        },
+        {
+            dropLevel: 4,
+            name: "Smithing Hammer"
+        },
+        {
+            dropLevel: 10,
+            name: "Slim Mace"
+        },
+        {
+            dropLevel: 16,
+            name: "Spiked Club"
+        },
+        {
+            dropLevel: 22,
+            name: "Warpick"
+        },
+        {
+            dropLevel: 26,
+            name: "Plated Mace"
+        },
+        {
+            dropLevel: 33,
+            name: "Brigand Mace"
+        },
+        {
+            dropLevel: 36,
+            name: "Construct Hammer"
+        },
+        {
+            dropLevel: 45,
+            name: "Morning Star"
+        },
+        {
+            dropLevel: 48,
+            name: "Jade Club"
+        },
+        {
+            dropLevel: 52,
+            name: "Lumen Mace"
+        },
+        {
+            dropLevel: 55,
+            name: "Execratus Hammer"
+        },
+        {
+            dropLevel: 65,
+            name: "Torment Club"
+        },
+        {
+            dropLevel: 45,
+            name: "Advanced Smithing Hammer"
+        },
+        {
+            dropLevel: 48,
+            name: "Advanced Slim Mace"
+        },
+        {
+            dropLevel: 51,
+            name: "Advanced Warpick"
+        },
+        {
+            dropLevel: 55,
+            name: "Advanced Plated Mace"
+        },
+        {
+            dropLevel: 59,
+            name: "Advanced Brigand Mace"
+        },
+        {
+            dropLevel: 62,
+            name: "Advanced Construct Hammer"
+        },
+        {
+            dropLevel: 67,
+            name: "Expert Slim Mace"
+        },
+        {
+            dropLevel: 72,
+            name: "Expert Plated Mace"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Smithing Hammer"
+        },
+        {
+            dropLevel: 78,
+            name: "Expert Warpick"
+        },
+        {
+            dropLevel: 79,
+            name: "Expert Construct Hammer"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Brigand Mace"
+        }
     ],
     ["Body Armours"]: [
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 19,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 27,
-                ward_max: 0
-            },
-            name: "Plate Vest"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 68,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 89,
-                ward_max: 0
-            },
-            name: "Chestplate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 176,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 221,
-                ward_max: 0
-            },
-            name: "Copper Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 216,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 248,
-                ward_max: 0
-            },
-            name: "War Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 284,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 319,
-                ward_max: 0
-            },
-            name: "Full Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 324,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 389,
-                ward_max: 0
-            },
-            name: "Arena Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 353,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 417,
-                ward_max: 0
-            },
-            name: "Lordly Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 373,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 429,
-                ward_max: 0
-            },
-            name: "Bronze Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 412,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 474,
-                ward_max: 0
-            },
-            name: "Battle Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 451,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 506,
-                ward_max: 0
-            },
-            name: "Sun Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 491,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 589,
-                ward_max: 0
-            },
-            name: "Colosseum Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 530,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 625,
-                ward_max: 0
-            },
-            name: "Majestic Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 559,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 643,
-                ward_max: 0
-            },
-            name: "Golden Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 601,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 691,
-                ward_max: 0
-            },
-            name: "Crusader Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 711,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 782,
-                ward_max: 0
-            },
-            name: "Astral Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 738,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 848,
-                ward_max: 0
-            },
-            name: "Gladiator Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 776,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 892,
-                ward_max: 0
-            },
-            name: "Glorious Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 877,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 1009,
-                ward_max: 0
-            },
-            name: "Titan Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 1018,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 1171,
-                ward_max: 0
-            },
-            name: "Legion Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 1183,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 1360,
-                ward_max: 0
-            },
-            name: "Royal Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 23,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 23,
-                ward_max: 0
-            },
-            name: "Kaom's Plate"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 29,
-                ms: -3,
-                evasion_max: 41,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Shabby Jerkin"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 98,
-                ms: -3,
-                evasion_max: 127,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Strapped Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 176,
-                ms: -3,
-                evasion_max: 221,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Buckskin Tunic"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 255,
-                ms: -3,
-                evasion_max: 306,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Wild Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 284,
-                ms: -3,
-                evasion_max: 327,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Full Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 324,
-                ms: -3,
-                evasion_max: 382,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sun Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 353,
-                ms: -3,
-                evasion_max: 396,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Thief's Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 373,
-                ms: -3,
-                evasion_max: 429,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Eelskin Tunic"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 412,
-                ms: -3,
-                evasion_max: 495,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Frontier Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 451,
-                ms: -3,
-                evasion_max: 519,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Glorious Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 491,
-                ms: -3,
-                evasion_max: 579,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Coronal Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 530,
-                ms: -3,
-                evasion_max: 594,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Cutthroat's Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 559,
-                ms: -3,
-                evasion_max: 643,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sharkskin Tunic"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 601,
-                ms: -3,
-                evasion_max: 721,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Destiny Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 704,
-                ms: -3,
-                evasion_max: 810,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Exquisite Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 854,
-                ms: -3,
-                evasion_max: 982,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Zodiac Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 737,
-                ms: 0,
-                evasion_max: 811,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Assassin's Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 894,
-                ms: -3,
-                evasion_max: 1028,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Supreme Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 1037,
-                ms: -3,
-                evasion_max: 1193,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Astral Leather"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 1205,
-                ms: -3,
-                evasion_max: 1386,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Syndicate's Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 14,
-                energy_shield_max: 20,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Simple Robe"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 30,
-                energy_shield_max: 38,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Silken Vest"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 43,
-                energy_shield_max: 53,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Scholar's Robe"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 56,
-                energy_shield_max: 64,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Silken Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 62,
-                energy_shield_max: 69,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Mage's Vestment"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 69,
-                energy_shield_max: 80,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Silk Robe"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 75,
-                energy_shield_max: 88,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Cabalist Regalia"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 79,
-                energy_shield_max: 90,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sage's Robe"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 86,
-                energy_shield_max: 104,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Silken Wrap"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 94,
-                energy_shield_max: 105,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Conjurer's Vestment"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 101,
-                energy_shield_max: 117,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Spidersilk Robe"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 109,
-                energy_shield_max: 129,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Destroyer Regalia"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 115,
-                energy_shield_max: 132,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Savant's Robe"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 123,
-                energy_shield_max: 147,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Necromancer Silks"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 137,
-                energy_shield_max: 151,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Occultist's Vestment"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 157,
-                energy_shield_max: 181,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Widowsilk Robe"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 171,
-                energy_shield_max: 197,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Vaal Regalia"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 196,
-                energy_shield_max: 225,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Arcane Vestment"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 227,
-                energy_shield_max: 260,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Nightweave Robe"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -3,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 262,
-                energy_shield_max: 302,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Twilight Regalia"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 27,
-                ms: -3,
-                evasion_max: 38,
-                armour_min: 27,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 38,
-                ward_max: 0
-            },
-            name: "Scale Vest"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 48,
-                ms: -3,
-                evasion_max: 63,
-                armour_min: 48,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 63,
-                ward_max: 0
-            },
-            name: "Light Brigandine"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 97,
-                ms: -3,
-                evasion_max: 121,
-                armour_min: 97,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 121,
-                ward_max: 0
-            },
-            name: "Scale Doublet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 119,
-                ms: -3,
-                evasion_max: 142,
-                armour_min: 119,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 142,
-                ward_max: 0
-            },
-            name: "Infantry Brigandine"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 156,
-                ms: -3,
-                evasion_max: 180,
-                armour_min: 156,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 180,
-                ward_max: 0
-            },
-            name: "Full Scale Armour"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 178,
-                ms: -3,
-                evasion_max: 210,
-                armour_min: 178,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 210,
-                ward_max: 0
-            },
-            name: "Soldier's Brigandine"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 194,
-                ms: -3,
-                evasion_max: 223,
-                armour_min: 194,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 223,
-                ward_max: 0
-            },
-            name: "Field Lamellar"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 210,
-                ms: -3,
-                evasion_max: 236,
-                armour_min: 210,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 236,
-                ward_max: 0
-            },
-            name: "Wyrmscale Doublet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 232,
-                ms: -3,
-                evasion_max: 278,
-                armour_min: 232,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 278,
-                ward_max: 0
-            },
-            name: "Hussar Brigandine"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 254,
-                ms: -3,
-                evasion_max: 292,
-                armour_min: 254,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 292,
-                ward_max: 0
-            },
-            name: "Full Wyrmscale"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 275,
-                ms: -3,
-                evasion_max: 325,
-                armour_min: 275,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 325,
-                ward_max: 0
-            },
-            name: "Commander's Brigandine"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 297,
-                ms: -3,
-                evasion_max: 341,
-                armour_min: 297,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 341,
-                ward_max: 0
-            },
-            name: "Battle Lamellar"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 313,
-                ms: -3,
-                evasion_max: 351,
-                armour_min: 313,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 351,
-                ward_max: 0
-            },
-            name: "Dragonscale Doublet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 376,
-                ms: -3,
-                evasion_max: 451,
-                armour_min: 376,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 451,
-                ward_max: 0
-            },
-            name: "Desert Brigandine"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 373,
-                ms: -3,
-                evasion_max: 429,
-                armour_min: 470,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 541,
-                ward_max: 0
-            },
-            name: "Full Dragonscale"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 415,
-                ms: -3,
-                evasion_max: 465,
-                armour_min: 415,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 465,
-                ward_max: 0
-            },
-            name: "General's Brigandine"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 477,
-                ms: -3,
-                evasion_max: 549,
-                armour_min: 380,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 437,
-                ward_max: 0
-            },
-            name: "Triumphant Lamellar"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 545,
-                ms: -3,
-                evasion_max: 627,
-                armour_min: 545,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 627,
-                ward_max: 0
-            },
-            name: "Full Wyvernscale"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 627,
-                ms: -3,
-                evasion_max: 721,
-                armour_min: 627,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 721,
-                ward_max: 0
-            },
-            name: "Marshall's Brigandine"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 723,
-                ms: -3,
-                evasion_max: 831,
-                armour_min: 723,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 831,
-                ward_max: 0
-            },
-            name: "Conquest Lamellar"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 27,
-                energy_shield_min: 9,
-                energy_shield_max: 13,
-                armour_max: 38,
-                ward_max: 0
-            },
-            name: "Chainmail Vest"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 48,
-                energy_shield_min: 13,
-                energy_shield_max: 17,
-                armour_max: 63,
-                ward_max: 0
-            },
-            name: "Chainmail Tunic"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 97,
-                energy_shield_min: 22,
-                energy_shield_max: 28,
-                armour_max: 121,
-                ward_max: 0
-            },
-            name: "Ringmail Coat"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 119,
-                energy_shield_min: 27,
-                energy_shield_max: 31,
-                armour_max: 140,
-                ward_max: 0
-            },
-            name: "Chainmail Doublet"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 156,
-                energy_shield_min: 34,
-                energy_shield_max: 39,
-                armour_max: 180,
-                ward_max: 0
-            },
-            name: "Full Ringmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 178,
-                energy_shield_min: 38,
-                energy_shield_max: 43,
-                armour_max: 199,
-                ward_max: 0
-            },
-            name: "Full Chainmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 194,
-                energy_shield_min: 41,
-                energy_shield_max: 49,
-                armour_max: 233,
-                ward_max: 0
-            },
-            name: "Holy Chainmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 216,
-                energy_shield_min: 45,
-                energy_shield_max: 52,
-                armour_max: 248,
-                ward_max: 0
-            },
-            name: "Latticed Ringmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 237,
-                energy_shield_min: 50,
-                energy_shield_max: 55,
-                armour_max: 266,
-                ward_max: 0
-            },
-            name: "Crusader Chainmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 259,
-                energy_shield_min: 54,
-                energy_shield_max: 62,
-                armour_max: 298,
-                ward_max: 0
-            },
-            name: "Ornate Ringmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 281,
-                energy_shield_min: 58,
-                energy_shield_max: 65,
-                armour_max: 314,
-                ward_max: 0
-            },
-            name: "Chain Hauberk"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 302,
-                energy_shield_min: 62,
-                energy_shield_max: 74,
-                armour_max: 363,
-                ward_max: 0
-            },
-            name: "Devout Chainmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 325,
-                energy_shield_min: 66,
-                energy_shield_max: 76,
-                armour_max: 374,
-                ward_max: 0
-            },
-            name: "Loricated Ringmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 387,
-                energy_shield_min: 79,
-                energy_shield_max: 91,
-                armour_max: 445,
-                ward_max: 0
-            },
-            name: "Conquest Chainmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 377,
-                energy_shield_min: 92,
-                energy_shield_max: 105,
-                armour_max: 433,
-                ward_max: 0
-            },
-            name: "Elegant Ringmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 443,
-                energy_shield_min: 76,
-                energy_shield_max: 85,
-                armour_max: 496,
-                ward_max: 0
-            },
-            name: "Saint's Hauberk"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 401,
-                energy_shield_min: 96,
-                energy_shield_max: 110,
-                armour_max: 461,
-                ward_max: 0
-            },
-            name: "Saintly Chainmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 545,
-                energy_shield_min: 110,
-                energy_shield_max: 127,
-                armour_max: 627,
-                ward_max: 0
-            },
-            name: "Grand Ringmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 627,
-                energy_shield_min: 126,
-                energy_shield_max: 145,
-                armour_max: 721,
-                ward_max: 0
-            },
-            name: "Paladin's Hauberk"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: -5,
-                evasion_max: 0,
-                armour_min: 723,
-                energy_shield_min: 145,
-                energy_shield_max: 167,
-                armour_max: 831,
-                ward_max: 0
-            },
-            name: "Sacred Chainmail"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 27,
-                ms: -3,
-                evasion_max: 38,
-                armour_min: 0,
-                energy_shield_min: 9,
-                energy_shield_max: 13,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Padded Vest"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 54,
-                ms: -3,
-                evasion_max: 70,
-                armour_min: 0,
-                energy_shield_min: 14,
-                energy_shield_max: 18,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Oiled Vest"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 102,
-                ms: -3,
-                evasion_max: 128,
-                armour_min: 0,
-                energy_shield_min: 24,
-                energy_shield_max: 29,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Padded Jacket"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 124,
-                ms: -3,
-                evasion_max: 146,
-                armour_min: 0,
-                energy_shield_min: 28,
-                energy_shield_max: 33,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Oiled Coat"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 156,
-                ms: -3,
-                evasion_max: 180,
-                armour_min: 0,
-                energy_shield_min: 34,
-                energy_shield_max: 39,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Scarlet Raiment"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 178,
-                ms: -3,
-                evasion_max: 205,
-                armour_min: 0,
-                energy_shield_min: 38,
-                energy_shield_max: 44,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Waxed Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 194,
-                ms: -3,
-                evasion_max: 233,
-                armour_min: 0,
-                energy_shield_min: 41,
-                energy_shield_max: 49,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Bone Armour"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 221,
-                ms: -3,
-                evasion_max: 248,
-                armour_min: 0,
-                energy_shield_min: 46,
-                energy_shield_max: 52,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Quilted Jacket"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 243,
-                ms: -3,
-                evasion_max: 287,
-                armour_min: 0,
-                energy_shield_min: 51,
-                energy_shield_max: 60,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sleek Coat"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 264,
-                ms: -3,
-                evasion_max: 304,
-                armour_min: 0,
-                energy_shield_min: 55,
-                energy_shield_max: 63,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Crimson Raiment"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 286,
-                ms: -3,
-                evasion_max: 329,
-                armour_min: 0,
-                energy_shield_min: 59,
-                energy_shield_max: 68,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Lacquered Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 308,
-                ms: -3,
-                evasion_max: 369,
-                armour_min: 0,
-                energy_shield_min: 63,
-                energy_shield_max: 76,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Crypt Armour"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 330,
-                ms: -3,
-                evasion_max: 370,
-                armour_min: 0,
-                energy_shield_min: 67,
-                energy_shield_max: 76,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sentinel Jacket"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 387,
-                ms: -3,
-                evasion_max: 434,
-                armour_min: 0,
-                energy_shield_min: 79,
-                energy_shield_max: 89,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Varnished Coat"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 436,
-                ms: -3,
-                evasion_max: 501,
-                armour_min: 0,
-                energy_shield_min: 73,
-                energy_shield_max: 84,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Blood Raiment"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 427,
-                ms: -3,
-                evasion_max: 491,
-                armour_min: 0,
-                energy_shield_min: 93,
-                energy_shield_max: 107,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sadist Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 353,
-                ms: -3,
-                evasion_max: 388,
-                armour_min: 0,
-                energy_shield_min: 103,
-                energy_shield_max: 113,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Carnal Armour"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 545,
-                ms: -3,
-                evasion_max: 627,
-                armour_min: 0,
-                energy_shield_min: 110,
-                energy_shield_max: 127,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sanguine Raiment"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 627,
-                ms: -3,
-                evasion_max: 721,
-                armour_min: 0,
-                energy_shield_min: 126,
-                energy_shield_max: 145,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Torturer Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 723,
-                ms: -3,
-                evasion_max: 831,
-                armour_min: 0,
-                energy_shield_min: 145,
-                energy_shield_max: 167,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Necrotic Armour"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 329,
-                ms: -3,
-                evasion_max: 378,
-                armour_min: 329,
-                energy_shield_min: 67,
-                energy_shield_max: 77,
-                armour_max: 378,
-                ward_max: 0
-            },
-            name: "Sacrificial Garb"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 75,
-                ms: 0,
-                evasion_max: 86,
-                armour_min: 75,
-                energy_shield_min: 17,
-                energy_shield_max: 19,
-                armour_max: 86,
-                ward_max: 0
-            },
+                evasion_min: 44,
+                armour_min: 51,
+                energy_shield_min: 21
+            },
+            dropLevel: 20,
             name: "Golden Mantle"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 217,
-                ms: -3,
-                evasion_max: 250,
-                armour_min: 217,
-                energy_shield_min: 44,
-                energy_shield_max: 51,
-                armour_max: 250,
-                ward_max: 0
+                evasion_min: 0,
+                armour_min: 45,
+                energy_shield_min: 0
             },
-            name: "Grasping Mail"
+            dropLevel: 1,
+            name: "Rusted Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 60,
+                energy_shield_min: 0
+            },
+            dropLevel: 4,
+            name: "Fur Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 96,
+                energy_shield_min: 0
+            },
+            dropLevel: 11,
+            name: "Iron Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 121,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Raider Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 141,
+                energy_shield_min: 0
+            },
+            dropLevel: 20,
+            name: "Maraketh Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 177,
+                energy_shield_min: 0
+            },
+            dropLevel: 27,
+            name: "Steel Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 208,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Full Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 228,
+                energy_shield_min: 0
+            },
+            dropLevel: 37,
+            name: "Vaal Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 269,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Juggernaut Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 294,
+                energy_shield_min: 0
+            },
+            dropLevel: 50,
+            name: "Chieftain Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 304,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Colosseum Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 335,
+                energy_shield_min: 0
+            },
+            dropLevel: 58,
+            name: "Champion Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 534,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Glorious Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 445,
+                energy_shield_min: 0
+            },
+            dropLevel: 68,
+            name: "Conqueror Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 445,
+                energy_shield_min: 0
+            },
+            dropLevel: 73,
+            name: "Abyssal Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 30,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 1,
+            name: "Leather Vest"
+        },
+        {
+            stats: {
+                evasion_min: 44,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 4,
+            name: "Quilted Vest"
+        },
+        {
+            stats: {
+                evasion_min: 78,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 11,
+            name: "Pathfinder Coat"
+        },
+        {
+            stats: {
+                evasion_min: 102,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Shrouded Vest"
+        },
+        {
+            stats: {
+                evasion_min: 131,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 22,
+            name: "Rhoahide Coat"
+        },
+        {
+            stats: {
+                evasion_min: 150,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 26,
+            name: "Studded Vest"
+        },
+        {
+            stats: {
+                evasion_min: 184,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Scout's Vest"
+        },
+        {
+            stats: {
+                evasion_min: 198,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 36,
+            name: "Serpentscale Coat"
+        },
+        {
+            stats: {
+                evasion_min: 242,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Corsair Vest"
+        },
+        {
+            stats: {
+                evasion_min: 256,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Smuggler Coat"
+        },
+        {
+            stats: {
+                evasion_min: 275,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Strider Vest"
+        },
+        {
+            stats: {
+                evasion_min: 295,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 56,
+            name: "Hardleather Coat"
+        },
+        {
+            stats: {
+                evasion_min: 487,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Exquisite Vest"
+        },
+        {
+            stats: {
+                evasion_min: 406,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 68,
+            name: "Mail Coat"
+        },
+        {
+            stats: {
+                evasion_min: 406,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 73,
+            name: "Armoured Vest"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 28
+            },
+            dropLevel: 1,
+            name: "Tattered Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 35
+            },
+            dropLevel: 5,
+            name: "Feathered Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 44
+            },
+            dropLevel: 11,
+            name: "Hexer's Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 52
+            },
+            dropLevel: 16,
+            name: "Bone Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 61
+            },
+            dropLevel: 22,
+            name: "Silk Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 70
+            },
+            dropLevel: 28,
+            name: "Keth Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 78
+            },
+            dropLevel: 33,
+            name: "Votive Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 89
+            },
+            dropLevel: 40,
+            name: "Altar Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 97
+            },
+            dropLevel: 45,
+            name: "Elementalist Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 100
+            },
+            dropLevel: 47,
+            name: "Mystic Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 108
+            },
+            dropLevel: 52,
+            name: "Imperial Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 117
+            },
+            dropLevel: 58,
+            name: "Plated Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 184
+            },
+            dropLevel: 65,
+            name: "Havoc Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 153
+            },
+            dropLevel: 68,
+            name: "Enlightened Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 153
+            },
+            dropLevel: 73,
+            name: "Arcane Robe"
+        },
+        {
+            stats: {
+                evasion_min: 16,
+                armour_min: 25,
+                energy_shield_min: 0
+            },
+            dropLevel: 1,
+            name: "Chain Mail"
+        },
+        {
+            stats: {
+                evasion_min: 43,
+                armour_min: 53,
+                energy_shield_min: 0
+            },
+            dropLevel: 11,
+            name: "Rogue Armour"
+        },
+        {
+            stats: {
+                evasion_min: 56,
+                armour_min: 67,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Vagabond Armour"
+        },
+        {
+            stats: {
+                evasion_min: 83,
+                armour_min: 95,
+                energy_shield_min: 0
+            },
+            dropLevel: 26,
+            name: "Cloaked Mail"
+        },
+        {
+            stats: {
+                evasion_min: 101,
+                armour_min: 114,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Explorer Armour"
+        },
+        {
+            stats: {
+                evasion_min: 112,
+                armour_min: 125,
+                energy_shield_min: 0
+            },
+            dropLevel: 37,
+            name: "Scale Mail"
+        },
+        {
+            stats: {
+                evasion_min: 133,
+                armour_min: 148,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Knight Armour"
+        },
+        {
+            stats: {
+                evasion_min: 146,
+                armour_min: 162,
+                energy_shield_min: 0
+            },
+            dropLevel: 50,
+            name: "Ancestral Mail"
+        },
+        {
+            stats: {
+                evasion_min: 151,
+                armour_min: 167,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Lamellar Mail"
+        },
+        {
+            stats: {
+                evasion_min: 167,
+                armour_min: 184,
+                energy_shield_min: 0
+            },
+            dropLevel: 58,
+            name: "Gladiator Armour"
+        },
+        {
+            stats: {
+                evasion_min: 223,
+                armour_min: 245,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Heroic Armour"
+        },
+        {
+            stats: {
+                evasion_min: 223,
+                armour_min: 245,
+                energy_shield_min: 0
+            },
+            dropLevel: 68,
+            name: "Tournament Mail"
+        },
+        {
+            stats: {
+                evasion_min: 268,
+                armour_min: 294,
+                energy_shield_min: 0
+            },
+            dropLevel: 73,
+            name: "Slayer Armour"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 25,
+                energy_shield_min: 16
+            },
+            dropLevel: 1,
+            name: "Pilgrim Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 50,
+                energy_shield_min: 23
+            },
+            dropLevel: 10,
+            name: "Pelt Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 67,
+                energy_shield_min: 28
+            },
+            dropLevel: 16,
+            name: "Mail Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 100,
+                energy_shield_min: 39
+            },
+            dropLevel: 28,
+            name: "Shaman Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 114,
+                energy_shield_min: 43
+            },
+            dropLevel: 33,
+            name: "Ironclad Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 123,
+                energy_shield_min: 46
+            },
+            dropLevel: 36,
+            name: "Sacrificial Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 148,
+                energy_shield_min: 53
+            },
+            dropLevel: 45,
+            name: "Cleric Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 165,
+                energy_shield_min: 58
+            },
+            dropLevel: 51,
+            name: "Tideseer Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 167,
+                energy_shield_min: 59
+            },
+            dropLevel: 52,
+            name: "Gilded Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 173,
+                energy_shield_min: 61
+            },
+            dropLevel: 54,
+            name: "Venerated Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 245,
+                energy_shield_min: 84
+            },
+            dropLevel: 65,
+            name: "Revered Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 245,
+                energy_shield_min: 84
+            },
+            dropLevel: 68,
+            name: "Corvus Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 294,
+                energy_shield_min: 101
+            },
+            dropLevel: 73,
+            name: "Zenith Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 16,
+                armour_min: 0,
+                energy_shield_min: 16
+            },
+            dropLevel: 1,
+            name: "Hermit Garb"
+        },
+        {
+            stats: {
+                evasion_min: 43,
+                armour_min: 0,
+                energy_shield_min: 24
+            },
+            dropLevel: 11,
+            name: "Waxed Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 56,
+                armour_min: 0,
+                energy_shield_min: 28
+            },
+            dropLevel: 16,
+            name: "Marabout Garb"
+        },
+        {
+            stats: {
+                evasion_min: 88,
+                armour_min: 0,
+                energy_shield_min: 39
+            },
+            dropLevel: 28,
+            name: "Wayfarer Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 101,
+                armour_min: 0,
+                energy_shield_min: 43
+            },
+            dropLevel: 33,
+            name: "Anchorite Garb"
+        },
+        {
+            stats: {
+                evasion_min: 117,
+                armour_min: 0,
+                energy_shield_min: 48
+            },
+            dropLevel: 39,
+            name: "Scalper's Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 133,
+                armour_min: 0,
+                energy_shield_min: 53
+            },
+            dropLevel: 45,
+            name: "Scoundrel Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 149,
+                armour_min: 0,
+                energy_shield_min: 58
+            },
+            dropLevel: 51,
+            name: "Ascetic Garb"
+        },
+        {
+            stats: {
+                evasion_min: 151,
+                armour_min: 0,
+                energy_shield_min: 59
+            },
+            dropLevel: 52,
+            name: "Clandestine Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 162,
+                armour_min: 0,
+                energy_shield_min: 63
+            },
+            dropLevel: 56,
+            name: "Monastic Garb"
+        },
+        {
+            stats: {
+                evasion_min: 268,
+                armour_min: 0,
+                energy_shield_min: 101
+            },
+            dropLevel: 65,
+            name: "Torment Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 223,
+                armour_min: 0,
+                energy_shield_min: 84
+            },
+            dropLevel: 68,
+            name: "Devout Garb"
+        },
+        {
+            stats: {
+                evasion_min: 223,
+                armour_min: 0,
+                energy_shield_min: 84
+            },
+            dropLevel: 73,
+            name: "Assassin Garb"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 1,
+            name: "Garment"
+        },
+        {
+            stats: {
+                evasion_min: 123,
+                armour_min: 135,
+                energy_shield_min: 46
+            },
+            dropLevel: 65,
+            name: "Grand Regalia"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 269,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Fur Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 284,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Iron Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 299,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Maraketh Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 320,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Steel Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 340,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Full Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 355,
+                energy_shield_min: 0
+            },
+            dropLevel: 62,
+            name: "Advanced Vaal Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 242,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Quilted Vest"
+        },
+        {
+            stats: {
+                evasion_min: 256,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Pathfinder Coat"
+        },
+        {
+            stats: {
+                evasion_min: 271,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Rhoahide Coat"
+        },
+        {
+            stats: {
+                evasion_min: 290,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Studded Vest"
+        },
+        {
+            stats: {
+                evasion_min: 309,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Scout's Vest"
+        },
+        {
+            stats: {
+                evasion_min: 324,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 62,
+            name: "Advanced Serpentscale Coat"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 97
+            },
+            dropLevel: 45,
+            name: "Advanced Feathered Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 101
+            },
+            dropLevel: 48,
+            name: "Advanced Hexer's Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 106
+            },
+            dropLevel: 51,
+            name: "Advanced Silk Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 112
+            },
+            dropLevel: 55,
+            name: "Advanced Keth Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 119
+            },
+            dropLevel: 59,
+            name: "Advanced Votive Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 123
+            },
+            dropLevel: 62,
+            name: "Advanced Altar Robe"
+        },
+        {
+            stats: {
+                evasion_min: 133,
+                armour_min: 148,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Chain Mail"
+        },
+        {
+            stats: {
+                evasion_min: 141,
+                armour_min: 156,
+                energy_shield_min: 0
+            },
+            dropLevel: 48,
+            name: "Advanced Rogue Armour"
+        },
+        {
+            stats: {
+                evasion_min: 149,
+                armour_min: 165,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Vagabond Armour"
+        },
+        {
+            stats: {
+                evasion_min: 159,
+                armour_min: 176,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Cloaked Mail"
+        },
+        {
+            stats: {
+                evasion_min: 170,
+                armour_min: 187,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Explorer Armour"
+        },
+        {
+            stats: {
+                evasion_min: 178,
+                armour_min: 195,
+                energy_shield_min: 0
+            },
+            dropLevel: 62,
+            name: "Advanced Scale Mail"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 148,
+                energy_shield_min: 53
+            },
+            dropLevel: 45,
+            name: "Advanced Pilgrim Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 156,
+                energy_shield_min: 56
+            },
+            dropLevel: 48,
+            name: "Advanced Pelt Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 165,
+                energy_shield_min: 58
+            },
+            dropLevel: 51,
+            name: "Advanced Mail Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 176,
+                energy_shield_min: 62
+            },
+            dropLevel: 55,
+            name: "Advanced Shaman Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 187,
+                energy_shield_min: 65
+            },
+            dropLevel: 59,
+            name: "Advanced Ironclad Vestments"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 195,
+                energy_shield_min: 68
+            },
+            dropLevel: 62,
+            name: "Advanced Sacrificial Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 133,
+                armour_min: 0,
+                energy_shield_min: 53
+            },
+            dropLevel: 45,
+            name: "Advanced Hermit Garb"
+        },
+        {
+            stats: {
+                evasion_min: 141,
+                armour_min: 0,
+                energy_shield_min: 56
+            },
+            dropLevel: 48,
+            name: "Advanced Waxed Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 149,
+                armour_min: 0,
+                energy_shield_min: 58
+            },
+            dropLevel: 51,
+            name: "Advanced Marabout Garb"
+        },
+        {
+            stats: {
+                evasion_min: 159,
+                armour_min: 0,
+                energy_shield_min: 62
+            },
+            dropLevel: 55,
+            name: "Advanced Wayfarer Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 170,
+                armour_min: 0,
+                energy_shield_min: 65
+            },
+            dropLevel: 59,
+            name: "Advanced Anchorite Garb"
+        },
+        {
+            stats: {
+                evasion_min: 178,
+                armour_min: 0,
+                energy_shield_min: 68
+            },
+            dropLevel: 62,
+            name: "Advanced Scalper's Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 534,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Iron Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 445,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Steel Plate"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 445,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Vaal Cuirass"
+        },
+        {
+            stats: {
+                evasion_min: 406,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Pathfinder Coat"
+        },
+        {
+            stats: {
+                evasion_min: 487,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Studded Vest"
+        },
+        {
+            stats: {
+                evasion_min: 406,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Serpentscale Coat"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 184
+            },
+            dropLevel: 65,
+            name: "Expert Hexer's Robe"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 153
+            },
+            dropLevel: 70,
+            name: "Expert Keth Raiment"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 153
+            },
+            dropLevel: 75,
+            name: "Expert Altar Robe"
+        },
+        {
+            stats: {
+                evasion_min: 223,
+                armour_min: 245,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Rogue Armour"
+        },
+        {
+            stats: {
+                evasion_min: 223,
+                armour_min: 245,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Cloaked Mail"
+        },
+        {
+            stats: {
+                evasion_min: 268,
+                armour_min: 294,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Scale Mail"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 294,
+                energy_shield_min: 101
+            },
+            dropLevel: 65,
+            name: "Expert Pelt Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 245,
+                energy_shield_min: 84
+            },
+            dropLevel: 70,
+            name: "Expert Shaman Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 245,
+                energy_shield_min: 84
+            },
+            dropLevel: 75,
+            name: "Expert Sacrificial Mantle"
+        },
+        {
+            stats: {
+                evasion_min: 268,
+                armour_min: 0,
+                energy_shield_min: 101
+            },
+            dropLevel: 65,
+            name: "Expert Waxed Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 223,
+                armour_min: 0,
+                energy_shield_min: 84
+            },
+            dropLevel: 70,
+            name: "Expert Wayfarer Jacket"
+        },
+        {
+            stats: {
+                evasion_min: 223,
+                armour_min: 0,
+                energy_shield_min: 84
+            },
+            dropLevel: 75,
+            name: "Expert Scalper's Jacket"
         }
     ],
-    ["Divination Cards"]: [
-        {name: "Three Faces in the Dark"},
-        {name: "The Doctor"},
-        {name: "The Hermit"},
-        {name: "Lantador's Lost Love"},
-        {name: "The Metalsmith's Gift"},
-        {name: "The Battle Born"},
-        {name: "The Gladiator"},
-        {name: "The Scholar"},
-        {name: "The Brittle Emperor"},
-        {name: "The Poet"},
-        {name: "The Carrion Crow"},
-        {name: "Hope"},
-        {name: "The Fiend"},
-        {name: "Birth of the Three"},
-        {name: "Vinia's Token"},
-        {name: "The Summoner"},
-        {name: "The Cataclysm"},
-        {name: "The Hunger"},
-        {name: "The Hoarder"},
-        {name: "The Drunken Aristocrat"},
-        {name: "The Sun"},
-        {name: "The Warden"},
-        {name: "The Scarred Meadow"},
-        {name: "The Dark Mage"},
-        {name: "The Gemcutter"},
-        {name: "The Gambler"},
-        {name: "The Lover"},
-        {name: "Chaotic Disposition"},
-        {name: "The Road to Power"},
-        {name: "The Avenger"},
-        {name: "Emperor's Luck"},
-        {name: "Time-Lost Relic"},
-        {name: "Lucky Connections"},
-        {name: "The Feast"},
-        {name: "Rain of Chaos"},
-        {name: "The Watcher"},
-        {name: "The Incantation"},
-        {name: "Coveted Possession"},
-        {name: "The King's Heart"},
-        {name: "Abandoned Wealth"},
-        {name: "The Wind"},
-        {name: "The Pact"},
-        {name: "Gemcutter's Promise"},
-        {name: "The Celestial Justicar"},
-        {name: "The Chains that Bind"},
-        {name: "The Artist"},
-        {name: "The Inventor"},
-        {name: "The Pack Leader"},
-        {name: "Jack in the Box"},
-        {name: "The Union"},
-        {name: "The Queen"},
-        {name: "Humility"},
-        {name: "The Explorer"},
-        {name: "The Spoiled Prince"},
-        {name: "The Betrayal"},
-        {name: "The Flora's Gift"},
-        {name: "The Siren"},
-        {name: "The One With All"},
-        {name: "The Last One Standing"},
-        {name: "Doedre's Madness"},
-        {name: "The Encroaching Darkness"},
-        {name: "The Wrath"},
-        {name: "The King's Blade"},
-        {name: "The Trial"},
-        {name: "The Gentleman"},
-        {name: "House of Mirrors"},
-        {name: "Wealth and Power"},
-        {name: "The Catalyst"},
-        {name: "The Vast"},
-        {name: "Gift of the Gemling Queen"},
-        {name: "The Dragon's Heart"},
-        {name: "The Fox"},
-        {name: "The Doppelganger"},
-        {name: "The Survivalist"},
-        {name: "Death"},
-        {name: "Grave Knowledge"},
-        {name: "The Jester"},
-        {name: "The Mercenary"},
-        {name: "The Inoculated"},
-        {name: "Loyalty"},
-        {name: "Pride Before the Fall"},
-        {name: "Audacity"},
-        {name: "Assassin's Favour"},
-        {name: "Hunter's Resolve"},
-        {name: "Scholar of the Seas"},
-        {name: "The Conduit"},
-        {name: "The Tower"},
-        {name: "The Twins"},
-        {name: "Anarchy's Price"},
-        {name: "The Lich"},
-        {name: "The Thaumaturgist"},
-        {name: "The Aesthete"},
-        {name: "The Enlightened"},
-        {name: "Hunter's Reward"},
-        {name: "The Fletcher"},
-        {name: "The Surveyor"},
-        {name: "Bowyer's Dream"},
-        {name: "The Surgeon"},
-        {name: "Volatile Power"},
-        {name: "Last Hope"},
-        {name: "Hubris"},
-        {name: "Blind Venture"},
-        {name: "Merciless Armament"},
-        {name: "The Cartographer"},
-        {name: "The Warlord"},
-        {name: "The Demoness"},
-        {name: "The Traitor"},
-        {name: "The Offering"},
-        {name: "Lost Worlds"},
-        {name: "The Lord in Black"},
-        {name: "A Mother's Parting Gift"},
-        {name: "The Body"},
-        {name: "Turn the Other Cheek"},
-        {name: "Glimmer of Hope"},
-        {name: "The Ethereal"},
-        {name: "Prosperity"},
-        {name: "The Sigil"},
-        {name: "The Dapper Prodigy"},
-        {name: "The Rabid Rhoa"},
-        {name: "The Soul"},
-        {name: "The Lion"},
-        {name: "The Dragon"},
-        {name: "Rats"},
-        {name: "The Risk"},
-        {name: "Tranquillity"},
-        {name: "Her Mask"},
-        {name: "Treasure Hunter"},
-        {name: "Earth Drinker"},
-        {name: "The Wolf's Shadow"},
-        {name: "The Arena Champion"},
-        {name: "The Sephirot"},
-        {name: "The Visionary"},
-        {name: "Thunderous Skies"},
-        {name: "Dying Anguish"},
-        {name: "The Immortal"},
-        {name: "The Throne"},
-        {name: "Boundless Realms"},
-        {name: "The Devastator"},
-        {name: "Destined to Crumble"},
-        {name: "Shard of Fate"},
-        {name: "Heterochromia"},
-        {name: "Rain Tempter"},
-        {name: "The Void"},
-        {name: "The Tyrant"},
-        {name: "The Web"},
-        {name: "The Harvester"},
-        {name: "The Lunaris Priestess"},
-        {name: "Emperor of Purity"},
-        {name: "The Cursed King"},
-        {name: "The Stormcaller"},
-        {name: "Lysah's Respite"},
-        {name: "Cartographer's Delight"},
-        {name: "Lucky Deck"},
-        {name: "Light and Truth"},
-        {name: "Luck of the Vaal"},
-        {name: "The Endurance"},
-        {name: "The Penitent"},
-        {name: "The Wolf"},
-        {name: "Dialla's Subjugation"},
-        {name: "The Calling"},
-        {name: "The Valkyrie"},
-        {name: "The Formless Sea"},
-        {name: "The Oath"},
-        {name: "The Scavenger"},
-        {name: "Mawr Blaidd"},
-        {name: "The Porcupine"},
-        {name: "The Coming Storm"},
-        {name: "The Polymath"},
-        {name: "The Wolverine"},
-        {name: "Mitts"},
-        {name: "The Wretched"},
-        {name: "The Wolven King's Bite"},
-        {name: "The Standoff"},
-        {name: "The Forsaken"},
-        {name: "The Garish Power"},
-        {name: "Lingering Remnants"},
-        {name: "The Spark and the Flame"},
-        {name: "The Saint's Treasure"},
-        {name: "Call to the First Ones"},
-        {name: "The Valley of Steel Boxes"},
-        {name: "Might is Right"},
-        {name: "The Opulent"},
-        {name: "Struck by Lightning"},
-        {name: "Atziri's Arsenal"},
-        {name: "The Ruthless Ceinture"},
-        {name: "No Traces"},
-        {name: "The Realm"},
-        {name: "The Eye of the Dragon"},
-        {name: "The Blazing Fire"},
-        {name: "Left to Fate"},
-        {name: "Rebirth"},
-        {name: "The Insatiable"},
-        {name: "The Obscured"},
-        {name: "The Rusted Bard"},
-        {name: "Forbidden Power"},
-        {name: "The Breach"},
-        {name: "The Dreamer"},
-        {name: "The World Eater"},
-        {name: "The Deceiver"},
-        {name: "Blessing of God"},
-        {name: "The Puzzle"},
-        {name: "The Witch"},
-        {name: "Immortal Resolve"},
-        {name: "The Jeweller's Boon"},
-        {name: "The Darkest Dream"},
-        {name: "The Master"},
-        {name: "The Fathomless Depths"},
-        {name: "The Undaunted"},
-        {name: "The Admirer"},
-        {name: "The Sword King's Salute"},
-        {name: "The Army of Blood"},
-        {name: "The Celestial Stone"},
-        {name: "Perfection"},
-        {name: "The Dreamland"},
-        {name: "Harmony of Souls"},
-        {name: "The Samurai's Eye"},
-        {name: "The Hale Heart"},
-        {name: "The Mayor"},
-        {name: "The Undisputed"},
-        {name: "The Rite of Elements"},
-        {name: "Three Voices"},
-        {name: "The Professor"},
-        {name: "The Beast"},
-        {name: "The Innocent"},
-        {name: "The Wilted Rose"},
-        {name: "The Endless Darkness"},
-        {name: "Beauty Through Death"},
-        {name: "The Price of Protection"},
-        {name: "Boon of the First Ones"},
-        {name: "The Twilight Moon"},
-        {name: "The Cacophony"},
-        {name: "The Sacrifice"},
-        {name: "A Dab of Ink"},
-        {name: "The Nurse"},
-        {name: "The Master Artisan"},
-        {name: "The Life Thief"},
-        {name: "The Seeker"},
-        {name: "The Messenger"},
-        {name: "The Mad King"},
-        {name: "Boon of Justice"},
-        {name: "The Journey"},
-        {name: "Arrogance of the Vaal"},
-        {name: "The Landing"},
-        {name: "The Mountain"},
-        {name: "Seven Years Bad Luck"},
-        {name: "The Golden Era"},
-        {name: "Monochrome"},
-        {name: "Dark Temptation"},
-        {name: "Alone in the Darkness"},
-        {name: "Sambodhi's Vow"},
-        {name: "The Lord of Celebration"},
-        {name: "Vanity"},
-        {name: "Imperial Legacy"},
-        {name: "Burning Blood"},
-        {name: "The Primordial"},
-        {name: "Echoes of Love"},
-        {name: "Thirst for Knowledge"},
-        {name: "Alluring Bounty"},
-        {name: "The Fool"},
-        {name: "Pride of the First Ones"},
-        {name: "The Deep Ones"},
-        {name: "The Archmage's Right Hand"},
-        {name: "Dark Dreams"},
-        {name: "Buried Treasure"},
-        {name: "Demigod's Wager"},
-        {name: "The Old Man"},
-        {name: "Nook's Crown"},
-        {name: "The Side Quest"},
-        {name: "The Price of Loyalty"},
-        {name: "The Heroic Shot"},
-        {name: "Remembrance"},
-        {name: "More is Never Enough"},
-        {name: "Vile Power"},
-        {name: "The Bargain"},
-        {name: "Azyran's Reward"},
-        {name: "The Skeleton"},
-        {name: "The Eye of Terror"},
-        {name: "The Demon"},
-        {name: "Akil's Prophecy"},
-        {name: "The Damned"},
-        {name: "Void of the Elements"},
-        {name: "The Deal"},
-        {name: "The Wolf's Legacy"},
-        {name: "Baited Expectations"},
-        {name: "Succor of the Sinless"},
-        {name: "Underground Forest"},
-        {name: "The Escape"},
-        {name: "Deathly Designs"},
-        {name: "The Chosen"},
-        {name: "Cameria's Cut"},
-        {name: "Divine Justice"},
-        {name: "The Fishmonger"},
-        {name: "The Bones"},
-        {name: "Friendship"},
-        {name: "The Craving"},
-        {name: "Etched in Blood"},
-        {name: "Squandered Prosperity"},
-        {name: "The Strategist"},
-        {name: "The Cheater"},
-        {name: "The Tinkerer's Table"},
-        {name: "The Easy Stroll"},
-        {name: "The Progeny of Lunaris"},
-        {name: "The Eldritch Decay"},
-        {name: "Council of Cats"},
-        {name: "The Tumbleweed"},
-        {name: "The Hive of Knowledge"},
-        {name: "Gift of Asenath"},
-        {name: "A Note in the Wind"},
-        {name: "The Greatest Intentions"},
-        {name: "The White Knight"},
-        {name: "Prometheus' Armoury"},
-        {name: "The Sustenance"},
-        {name: "Peaceful Moments"},
-        {name: "The Awakened"},
-        {name: "A Familiar Call"},
-        {name: "The Long Con"},
-        {name: "The Gulf"},
-        {name: "The Bitter Blossom"},
-        {name: "Triskaidekaphobia"},
-        {name: "Unrequited Love"},
-        {name: "The Cache"},
-        {name: "The Academic"},
-        {name: "Desecrated Virtue"},
-        {name: "Brother's Stash"},
-        {name: "Unchained"},
-        {name: "The Unexpected Prize"},
-        {name: "Cursed Words"},
-        {name: "The Journalist"},
-        {name: "Haunting Shadows"},
-        {name: "Acclimatisation"},
-        {name: "The Whiteout"},
-        {name: "Society's Remorse"},
-        {name: "Dying Light"},
-        {name: "Fateful Meeting"},
-        {name: "The Astromancer"},
-        {name: "Keeper's Corruption"},
-        {name: "Reckless Ambition"},
-        {name: "Love Through Ice"},
-        {name: "Draped in Dreams"},
-        {name: "The Patient"},
-        {name: "The Long Watch"},
-        {name: "The Bear Woman"},
-        {name: "Brotherhood in Exile"},
-        {name: "Winter's Embrace"},
-        {name: "Sambodhi's Wisdom"},
-        {name: "The Enthusiasts"},
-        {name: "Broken Promises"},
-        {name: "Brush, Paint and Palette"},
-        {name: "Deadly Joy"},
-        {name: "The Adventuring Spirit"},
-        {name: "The Eternal War"},
-        {name: "Prejudice"},
-        {name: "The Shortcut"},
-        {name: "The Card Sharp"},
-        {name: "A Modest Request"},
-        {name: "Luminous Trove"},
-        {name: "The Hook"},
-        {name: "The Last Supper"},
-        {name: "The Emptiness"},
-        {name: "A Sea of Blue"},
-        {name: "The Offspring"},
-        {name: "The Price of Prescience"},
-        {name: "The Mind's Eyes"},
-        {name: "Terrible Secret of Space"},
-        {name: "The Blessing of Moosh"},
-        {name: "Costly Curio"},
-        {name: "Lachrymal Necrosis"},
-        {name: "Dementophobia"},
-        {name: "Ambitious Obsession"},
-        {name: "Desperate Crusade"},
-        {name: "A Stone Perfected"},
-        {name: "Treasures of the Vaal"},
-        {name: "The Rabbit's Foot"},
-        {name: "Chasing Risk"},
-        {name: "The Prince of Darkness"},
-        {name: "The Catch"},
-        {name: "Eternal Bonds"},
-        {name: "Disdain"},
-        {name: "The Scout"},
-        {name: "Guardian's Challenge"},
-        {name: "The Forgotten Treasure"},
-        {name: "The Fox in the Brambles"},
-        {name: "The Aspirant"},
-        {name: "Judging Voices"},
-        {name: "Bijoux"},
-        {name: "Silence and Frost"},
-        {name: "Misery in Darkness"},
-        {name: "The Tireless Extractor"},
-        {name: "Justified Ambition"},
-        {name: "Parasitic Passengers"},
-        {name: "Duality"},
-        {name: "The One That Got Away"},
-        {name: "The Transformation"},
-        {name: "Magnum Opus"},
-        {name: "Imperfect Memories"},
-        {name: "The Magma Crab"},
-        {name: "Altered Perception"},
-        {name: "Further Invention"},
-        {name: "The Brawny Battle Mage"},
-        {name: "A Fate Worse Than Death"},
-        {name: "The Destination"},
-        {name: "Rebirth and Renewal"},
-        {name: "The Forward Gaze"},
-        {name: "The Apothecary"},
-        {name: "Home"},
-        {name: "The Dungeon Master"},
-        {name: "From Bone to Ashes"},
-        {name: "Darker Half"},
-        {name: "Broken Truce"},
-        {name: "Doryani's Epiphany"},
-        {name: "Endless Night"},
-        {name: "The Shieldbearer"},
-        {name: "Choking Guilt"},
-        {name: "The Enforcer"},
-        {name: "The Shepherd's Sandals"},
-        {name: "Azure Rage"},
-        {name: "The Leviathan"},
-        {name: "The Price of Devotion"},
-        {name: "Astral Protection"},
-        {name: "Gemcutter's Mercy"},
-        {name: "Checkmate"},
-        {name: "Lethean Temptation"},
-        {name: "Something Dark"},
-        {name: "Man With Bear"},
-        {name: "Alivia's Grace"},
-        {name: "Auspicious Ambitions"},
-        {name: "Divine Beauty"},
-        {name: "The Wedding Gift"},
-        {name: "The Insane Cat"},
-        {name: "Ever-Changing"},
-        {name: "A Dusty Memory"},
-        {name: "The Return of the Rat"},
-        {name: "The Finishing Touch"},
-        {name: "Brother's Gift"},
-        {name: "Soul Quenched"},
-        {name: "Poisoned Faith"},
-        {name: "A Chilling Wind"},
-        {name: "Matryoshka"},
-        {name: "The Fortunate"},
-        {name: "Fire Of Unknown Origin"},
-        {name: "Father's Love"},
-        {name: "Who Asked"},
-        {name: "Eldritch Perfection"},
-        {name: "Assassin's Gift"},
-        {name: "I See Brothers"},
-        {name: "Avian Pursuit"},
-        {name: "Temperance"},
-        {name: "Lonely Warrior"},
-        {name: "Toxic Tidings"}
-    ],
     ["Two Hand Maces"]: [
-        {name: "Driftwood Maul"},
-        {name: "Tribal Maul"},
-        {name: "Mallet"},
-        {name: "Sledgehammer"},
-        {name: "Jagged Maul"},
-        {name: "Brass Maul"},
-        {name: "Fright Maul"},
-        {name: "Morning Star"},
-        {name: "Totemic Maul"},
-        {name: "Great Mallet"},
-        {name: "Steelhead"},
-        {name: "Spiny Maul"},
-        {name: "Plated Maul"},
-        {name: "Dread Maul"},
-        {name: "Solar Maul"},
-        {name: "Karui Maul"},
-        {name: "Colossus Mallet"},
-        {name: "Piledriver"},
-        {name: "Meatgrinder"},
-        {name: "Imperial Maul"},
-        {name: "Terror Maul"},
-        {name: "Coronal Maul"},
-        {name: "Blunt Force Condenser"},
-        {name: "Crushing Force Magnifier"},
-        {name: "Impact Force Propagator"}
+        {
+            dropLevel: 1,
+            name: "Felled Greatclub"
+        },
+        {
+            dropLevel: 4,
+            name: "Oak Greathammer"
+        },
+        {
+            dropLevel: 11,
+            name: "Forge Maul"
+        },
+        {
+            dropLevel: 16,
+            name: "Studded Greatclub"
+        },
+        {
+            dropLevel: 22,
+            name: "Cultist Greathammer"
+        },
+        {
+            dropLevel: 28,
+            name: "Temple Maul"
+        },
+        {
+            dropLevel: 33,
+            name: "Leaden Greathammer"
+        },
+        {
+            dropLevel: 38,
+            name: "Crumbling Maul"
+        },
+        {
+            dropLevel: 45,
+            name: "Pointed Maul"
+        },
+        {
+            dropLevel: 50,
+            name: "Totemic Greatclub"
+        },
+        {
+            dropLevel: 52,
+            name: "Greatmace"
+        },
+        {
+            dropLevel: 54,
+            name: "Precise Greathammer"
+        },
+        {
+            dropLevel: 65,
+            name: "Giant Maul"
+        },
+        {
+            dropLevel: 45,
+            name: "Advanced Oak Greathammer"
+        },
+        {
+            dropLevel: 48,
+            name: "Advanced Forge Maul"
+        },
+        {
+            dropLevel: 51,
+            name: "Advanced Cultist Greathammer"
+        },
+        {
+            dropLevel: 55,
+            name: "Advanced Temple Maul"
+        },
+        {
+            dropLevel: 59,
+            name: "Advanced Leaden Greathammer"
+        },
+        {
+            dropLevel: 62,
+            name: "Advanced Crumbling Maul"
+        },
+        {
+            dropLevel: 67,
+            name: "Expert Forge Maul"
+        },
+        {
+            dropLevel: 72,
+            name: "Expert Temple Maul"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Oak Greathammer"
+        },
+        {
+            dropLevel: 78,
+            name: "Expert Cultist Greathammer"
+        },
+        {
+            dropLevel: 79,
+            name: "Expert Crumbling Maul"
+        },
+        {
+            dropLevel: 77,
+            name: "Expert Leaden Greathammer"
+        }
     ],
-    Leaguestones: [
-        {name: "Breach Leaguestone"},
-        {name: "Prophecy Leaguestone"},
-        {name: "Perandus Leaguestone"},
-        {name: "Essence Leaguestone"},
-        {name: "Tempest Leaguestone"},
-        {name: "Talisman Leaguestone"},
-        {name: "Anarchy Leaguestone"},
-        {name: "Domination Leaguestone"},
-        {name: "Warbands Leaguestone"},
-        {name: "Rampage Leaguestone"},
-        {name: "Bloodlines Leaguestone"},
-        {name: "Torment Leaguestone"},
-        {name: "Beyond Leaguestone"},
-        {name: "Onslaught Leaguestone"},
-        {name: "Nemesis Leaguestone"},
-        {name: "Invasion Leaguestone"},
-        {name: "Ambush Leaguestone"}
+    Socketable: [
+        {
+            dropLevel: 5,
+            name: "Desert Rune"
+        },
+        {
+            dropLevel: 5,
+            name: "Glacial Rune"
+        },
+        {
+            dropLevel: 5,
+            name: "Storm Rune"
+        },
+        {
+            dropLevel: 5,
+            name: "Iron Rune"
+        },
+        {
+            dropLevel: 16,
+            name: "Body Rune"
+        },
+        {
+            dropLevel: 16,
+            name: "Mind Rune"
+        },
+        {
+            dropLevel: 30,
+            name: "Rebirth Rune"
+        },
+        {
+            dropLevel: 30,
+            name: "Inspiration Rune"
+        },
+        {
+            dropLevel: 21,
+            name: "Stone Rune"
+        },
+        {
+            dropLevel: 33,
+            name: "Vision Rune"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Tacati"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Opiloti"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Jiquani"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Zalatl"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Citaqualotl"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Puhuarte"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Tzamoto"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Xopec"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Azcapa"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Topotante"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Quipolatl"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Ticaba"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Atmohua"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Cholotl"
+        },
+        {
+            dropLevel: 35,
+            name: "Soul Core of Zantipi"
+        }
     ],
-    ["Sanctum Research"]: [
-        {name: "Forbidden Tome"},
-        {name: "Sanctum Archives Research"},
-        {name: "Sanctum Vaults Research"},
-        {name: "Sanctum Cathedral Research"},
-        {name: "Sanctum Necropolis Research"}
+    ["#ConventionTreasure"]: [{
+        dropLevel: 1,
+        name: "Convention Treasure"
+    }],
+    Tablet: [
+        {
+            dropLevel: 65,
+            name: "Breach Precursor Tablet"
+        },
+        {
+            dropLevel: 65,
+            name: "Expedition Precursor Tablet"
+        },
+        {
+            dropLevel: 65,
+            name: "Delirium Precursor Tablet"
+        },
+        {
+            dropLevel: 65,
+            name: "Ritual Precursor Tablet"
+        },
+        {
+            dropLevel: 65,
+            name: "Precursor Tablet"
+        }
     ],
     Contracts: [
-        {name: "Contract: Bunker"},
-        {name: "Contract: Smuggler's Den"},
-        {name: "Contract: Laboratory"},
-        {name: "Contract: Repository"},
-        {name: "Contract: Prohibited Library"},
-        {name: "Contract: Tunnels"},
-        {name: "Contract: Underbelly"},
-        {name: "Contract: Records Office"},
-        {name: "Contract: Mansion"},
-        {name: "Forbidden Contract"},
-        {name: "Preventative Contract"},
-        {name: "Familial Contract"},
-        {name: "Vigilante Contract"},
-        {name: "Naval Contract"},
-        {name: "Vengeful Contract"}
+        {
+            dropLevel: 48,
+            name: "Contract: Bunker"
+        },
+        {
+            dropLevel: 50,
+            name: "Contract: Smuggler's Den"
+        },
+        {
+            dropLevel: 60,
+            name: "Contract: Laboratory"
+        },
+        {
+            dropLevel: 55,
+            name: "Contract: Repository"
+        },
+        {
+            dropLevel: 60,
+            name: "Contract: Prohibited Library"
+        },
+        {
+            dropLevel: 55,
+            name: "Contract: Tunnels"
+        },
+        {
+            dropLevel: 48,
+            name: "Contract: Underbelly"
+        },
+        {
+            dropLevel: 50,
+            name: "Contract: Records Office"
+        },
+        {
+            dropLevel: 50,
+            name: "Contract: Mansion"
+        },
+        {
+            dropLevel: 81,
+            name: "Forbidden Contract"
+        },
+        {
+            dropLevel: 80,
+            name: "Preventative Contract"
+        },
+        {
+            dropLevel: 81,
+            name: "Familial Contract"
+        },
+        {
+            dropLevel: 80,
+            name: "Vigilante Contract"
+        },
+        {
+            dropLevel: 82,
+            name: "Naval Contract"
+        },
+        {
+            dropLevel: 83,
+            name: "Vengeful Contract"
+        }
     ],
     ["Heist Brooches"]: [
-        {name: "[UNUSED] Heist Test Reward Equipment"},
-        {name: "Silver Brooch"},
-        {name: "Golden Brooch"},
-        {name: "Enamel Brooch"},
-        {name: "Foliate Brooch"}
+        {
+            dropLevel: 1,
+            name: "[UNUSED] Heist Test Reward Equipment"
+        },
+        {
+            dropLevel: 60,
+            name: "Silver Brooch"
+        },
+        {
+            dropLevel: 75,
+            name: "Golden Brooch"
+        },
+        {
+            dropLevel: 80,
+            name: "Enamel Brooch"
+        },
+        {
+            dropLevel: 83,
+            name: "Foliate Brooch"
+        }
     ],
+    ["#UncutReservationGem"]: [{
+        dropLevel: 12,
+        name: "Uncut Spirit Gem"
+    }],
     ["Heist Gear"]: [
-        {name: "[UNUSED] Heist Test Weapon"},
-        {name: "Rough Sharpening Stone"},
-        {name: "Standard Sharpening Stone"},
-        {name: "Fine Sharpening Stone"},
-        {name: "Obsidian Sharpening Stone"},
-        {name: "Flanged Arrowhead"},
-        {name: "Fragmenting Arrowhead"},
-        {name: "Hollowpoint Arrowhead"},
-        {name: "Precise Arrowhead"},
-        {name: "Focal Stone"},
-        {name: "Conduit Line"},
-        {name: "Aggregator Charm"},
-        {name: "Burst Band"}
+        {
+            dropLevel: 1,
+            name: "[UNUSED] Heist Test Weapon"
+        },
+        {
+            dropLevel: 60,
+            name: "Rough Sharpening Stone"
+        },
+        {
+            dropLevel: 75,
+            name: "Standard Sharpening Stone"
+        },
+        {
+            dropLevel: 80,
+            name: "Fine Sharpening Stone"
+        },
+        {
+            dropLevel: 83,
+            name: "Obsidian Sharpening Stone"
+        },
+        {
+            dropLevel: 60,
+            name: "Flanged Arrowhead"
+        },
+        {
+            dropLevel: 75,
+            name: "Fragmenting Arrowhead"
+        },
+        {
+            dropLevel: 80,
+            name: "Hollowpoint Arrowhead"
+        },
+        {
+            dropLevel: 83,
+            name: "Precise Arrowhead"
+        },
+        {
+            dropLevel: 60,
+            name: "Focal Stone"
+        },
+        {
+            dropLevel: 75,
+            name: "Conduit Line"
+        },
+        {
+            dropLevel: 80,
+            name: "Aggregator Charm"
+        },
+        {
+            dropLevel: 83,
+            name: "Burst Band"
+        }
     ],
     ["Heist Targets"]: [
-        {name: "Urn of Farud"},
-        {name: "Box of Tripyxis"},
-        {name: "Incense of Keth"},
-        {name: "Crest of Ezomyr"},
-        {name: "Ez Myrae Tome"},
-        {name: "Hand of Arimor"},
-        {name: "Abberathine Horns"},
-        {name: "Admiral Proclar's Pipe"},
-        {name: "Alchemical Chalice"},
-        {name: "Ogham Candelabra"},
-        {name: "Tusked Hominid Skull"},
-        {name: "Celestial Stone"},
-        {name: "Urn of the Original Ashes"},
-        {name: "Heart Coil"},
-        {name: "Enigmatic Assembly A4"},
-        {name: "Enigmatic Assembly B2"},
-        {name: "Enigmatic Assembly C5"},
-        {name: "Enigmatic Assembly D1"},
-        {name: "Mirror of Teklatipitzi"},
-        {name: "Bust of Emperor Caspiro"},
-        {name: "Golden Hetzapal Idol"},
-        {name: "Flask of Welakath"},
-        {name: "Forbidden Lamp"},
-        {name: "The Goddess of Water"},
-        {name: "The Golden Ibis"},
-        {name: "Impossible Crystal"},
-        {name: "Living Ice"},
-        {name: "Seal of Lunaris"},
-        {name: "Golden Matatl Idol"},
-        {name: "The Sea Pearl Heirloom"},
-        {name: "Seal of Solaris"},
-        {name: "Golden Napuatzi Idol"},
-        {name: "Essence Burner"},
-        {name: "Ancient Seal"},
-        {name: "Blood of Innocence"},
-        {name: "Dekhara's Resolve"},
-        {name: "Orbala's Fifth Adventure"},
-        {name: "Staff of the First Sin Eater"},
-        {name: "Sword of the Inverse Relic"},
-        {name: "Golden Slave Idol"},
-        {name: "Golden Xoplotli Idol"},
-        {name: "Ceremonial Goblet"},
-        {name: "Crested Golden Idol"},
-        {name: "Golden Ceremonial Mask"},
-        {name: "Golden Prayer Idol"},
-        {name: "Golden Grotesque"},
-        {name: "Golden Sacrificial Glyph"}
+        {
+            dropLevel: 1,
+            name: "Urn of Farud"
+        },
+        {
+            dropLevel: 1,
+            name: "Box of Tripyxis"
+        },
+        {
+            dropLevel: 1,
+            name: "Incense of Keth"
+        },
+        {
+            dropLevel: 1,
+            name: "Crest of Ezomyr"
+        },
+        {
+            dropLevel: 1,
+            name: "Ez Myrae Tome"
+        },
+        {
+            dropLevel: 1,
+            name: "Hand of Arimor"
+        },
+        {
+            dropLevel: 1,
+            name: "Abberathine Horns"
+        },
+        {
+            dropLevel: 1,
+            name: "Admiral Proclar's Pipe"
+        },
+        {
+            dropLevel: 1,
+            name: "Alchemical Chalice"
+        },
+        {
+            dropLevel: 1,
+            name: "Ogham Candelabra"
+        },
+        {
+            dropLevel: 1,
+            name: "Tusked Hominid Skull"
+        },
+        {
+            dropLevel: 1,
+            name: "Celestial Stone"
+        },
+        {
+            dropLevel: 1,
+            name: "Urn of the Original Ashes"
+        },
+        {
+            dropLevel: 1,
+            name: "Heart Coil"
+        },
+        {
+            dropLevel: 1,
+            name: "Enigmatic Assembly A4"
+        },
+        {
+            dropLevel: 1,
+            name: "Enigmatic Assembly B2"
+        },
+        {
+            dropLevel: 1,
+            name: "Enigmatic Assembly C5"
+        },
+        {
+            dropLevel: 1,
+            name: "Enigmatic Assembly D1"
+        },
+        {
+            dropLevel: 1,
+            name: "Mirror of Teklatipitzi"
+        },
+        {
+            dropLevel: 1,
+            name: "Bust of Emperor Caspiro"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Hetzapal Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Flask of Welakath"
+        },
+        {
+            dropLevel: 1,
+            name: "Forbidden Lamp"
+        },
+        {
+            dropLevel: 1,
+            name: "The Goddess of Water"
+        },
+        {
+            dropLevel: 1,
+            name: "The Golden Ibis"
+        },
+        {
+            dropLevel: 1,
+            name: "Impossible Crystal"
+        },
+        {
+            dropLevel: 1,
+            name: "Living Ice"
+        },
+        {
+            dropLevel: 1,
+            name: "Seal of Lunaris"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Matatl Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "The Sea Pearl Heirloom"
+        },
+        {
+            dropLevel: 1,
+            name: "Seal of Solaris"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Napuatzi Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Essence Burner"
+        },
+        {
+            dropLevel: 1,
+            name: "Ancient Seal"
+        },
+        {
+            dropLevel: 1,
+            name: "Blood of Innocence"
+        },
+        {
+            dropLevel: 1,
+            name: "Dekhara's Resolve"
+        },
+        {
+            dropLevel: 1,
+            name: "Orbala's Fifth Adventure"
+        },
+        {
+            dropLevel: 1,
+            name: "Staff of the First Sin Eater"
+        },
+        {
+            dropLevel: 1,
+            name: "Sword of the Inverse Relic"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Slave Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Xoplotli Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Ceremonial Goblet"
+        },
+        {
+            dropLevel: 1,
+            name: "Crested Golden Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Ceremonial Mask"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Prayer Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Grotesque"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Sacrificial Glyph"
+        }
     ],
     ["Mana Flasks"]: [
-        {name: "Small Mana Flask"},
-        {name: "Medium Mana Flask"},
-        {name: "Large Mana Flask"},
-        {name: "Greater Mana Flask"},
-        {name: "Grand Mana Flask"},
-        {name: "Giant Mana Flask"},
-        {name: "Colossal Mana Flask"},
-        {name: "Sacred Mana Flask"},
-        {name: "Hallowed Mana Flask"},
-        {name: "Sanctified Mana Flask"},
-        {name: "Divine Mana Flask"},
-        {name: "Eternal Mana Flask"}
-    ],
-    ["Rune Daggers"]: [
-        {name: "Carving Knife"},
-        {name: "Boot Knife"},
-        {name: "Copper Kris"},
-        {name: "Skean"},
-        {name: "Imp Dagger"},
-        {name: "Butcher Knife"},
-        {name: "Boot Blade"},
-        {name: "Golden Kris"},
-        {name: "Royal Skean"},
-        {name: "Fiend Dagger"},
-        {name: "Slaughter Knife"},
-        {name: "Ezomyte Dagger"},
-        {name: "Platinum Kris"},
-        {name: "Imperial Skean"},
-        {name: "Demon Dagger"},
-        {name: "Flickerflame Blade"},
-        {name: "Flashfire Blade"},
-        {name: "Infernal Blade"}
+        {
+            dropLevel: 1,
+            name: "Lesser Mana Flask"
+        },
+        {
+            dropLevel: 4,
+            name: "Medium Mana Flask"
+        },
+        {
+            dropLevel: 10,
+            name: "Greater Mana Flask"
+        },
+        {
+            dropLevel: 16,
+            name: "Grand Mana Flask"
+        },
+        {
+            dropLevel: 23,
+            name: "Giant Mana Flask"
+        },
+        {
+            dropLevel: 30,
+            name: "Colossal Mana Flask"
+        },
+        {
+            dropLevel: 40,
+            name: "Gargantuan Mana Flask"
+        },
+        {
+            dropLevel: 50,
+            name: "Transcendent Mana Flask"
+        },
+        {
+            dropLevel: 60,
+            name: "Ultimate Mana Flask"
+        }
     ],
     ["Heist Tools"]: [
-        {name: "[UNUSED] Heist Test Tool"},
-        {name: "Simple Lockpick"},
-        {name: "Standard Lockpick"},
-        {name: "Fine Lockpick"},
-        {name: "Master Lockpick"},
-        {name: "Leather Bracers"},
-        {name: "Studded Bracers"},
-        {name: "Runed Bracers"},
-        {name: "Steel Bracers"},
-        {name: "Crude Sensing Charm"},
-        {name: "Fine Sensing Charm"},
-        {name: "Polished Sensing Charm"},
-        {name: "Thaumaturgical Sensing Charm"},
-        {name: "Voltaxic Flashpowder"},
-        {name: "Trarthan Flashpowder"},
-        {name: "Azurite Flashpowder"},
-        {name: "Thaumetic Flashpowder"},
-        {name: "Crude Ward"},
-        {name: "Lustrous Ward"},
-        {name: "Shining Ward"},
-        {name: "Thaumaturgical Ward"},
-        {name: "Essential Keyring"},
-        {name: "Versatile Keyring"},
-        {name: "Skeleton Keyring"},
-        {name: "Grandmaster Keyring"},
-        {name: "Eelskin Sole"},
-        {name: "Foxhide Sole"},
-        {name: "Winged Sole"},
-        {name: "Silkweave Sole"},
-        {name: "Basic Disguise Kit"},
-        {name: "Theatre Disguise Kit"},
-        {name: "Espionage Disguise Kit"},
-        {name: "Regicide Disguise Kit"},
-        {name: "Steel Drill"},
-        {name: "Flanged Drill"},
-        {name: "Sulphur Blowtorch"},
-        {name: "Thaumetic Blowtorch"}
+        {
+            dropLevel: 1,
+            name: "[UNUSED] Heist Test Tool"
+        },
+        {
+            dropLevel: 60,
+            name: "Simple Lockpick"
+        },
+        {
+            dropLevel: 75,
+            name: "Standard Lockpick"
+        },
+        {
+            dropLevel: 80,
+            name: "Fine Lockpick"
+        },
+        {
+            dropLevel: 83,
+            name: "Master Lockpick"
+        },
+        {
+            dropLevel: 60,
+            name: "Leather Bracers"
+        },
+        {
+            dropLevel: 75,
+            name: "Studded Bracers"
+        },
+        {
+            dropLevel: 80,
+            name: "Runed Bracers"
+        },
+        {
+            dropLevel: 83,
+            name: "Steel Bracers"
+        },
+        {
+            dropLevel: 60,
+            name: "Crude Sensing Charm"
+        },
+        {
+            dropLevel: 75,
+            name: "Fine Sensing Charm"
+        },
+        {
+            dropLevel: 80,
+            name: "Polished Sensing Charm"
+        },
+        {
+            dropLevel: 83,
+            name: "Thaumaturgical Sensing Charm"
+        },
+        {
+            dropLevel: 60,
+            name: "Voltaxic Flashpowder"
+        },
+        {
+            dropLevel: 75,
+            name: "Trarthan Flashpowder"
+        },
+        {
+            dropLevel: 80,
+            name: "Azurite Flashpowder"
+        },
+        {
+            dropLevel: 83,
+            name: "Thaumetic Flashpowder"
+        },
+        {
+            dropLevel: 60,
+            name: "Crude Ward"
+        },
+        {
+            dropLevel: 75,
+            name: "Lustrous Ward"
+        },
+        {
+            dropLevel: 80,
+            name: "Shining Ward"
+        },
+        {
+            dropLevel: 83,
+            name: "Thaumaturgical Ward"
+        },
+        {
+            dropLevel: 60,
+            name: "Essential Keyring"
+        },
+        {
+            dropLevel: 75,
+            name: "Versatile Keyring"
+        },
+        {
+            dropLevel: 80,
+            name: "Skeleton Keyring"
+        },
+        {
+            dropLevel: 83,
+            name: "Grandmaster Keyring"
+        },
+        {
+            dropLevel: 60,
+            name: "Eelskin Sole"
+        },
+        {
+            dropLevel: 75,
+            name: "Foxhide Sole"
+        },
+        {
+            dropLevel: 80,
+            name: "Winged Sole"
+        },
+        {
+            dropLevel: 83,
+            name: "Silkweave Sole"
+        },
+        {
+            dropLevel: 60,
+            name: "Basic Disguise Kit"
+        },
+        {
+            dropLevel: 75,
+            name: "Theatre Disguise Kit"
+        },
+        {
+            dropLevel: 80,
+            name: "Espionage Disguise Kit"
+        },
+        {
+            dropLevel: 83,
+            name: "Regicide Disguise Kit"
+        },
+        {
+            dropLevel: 60,
+            name: "Steel Drill"
+        },
+        {
+            dropLevel: 75,
+            name: "Flanged Drill"
+        },
+        {
+            dropLevel: 80,
+            name: "Sulphur Blowtorch"
+        },
+        {
+            dropLevel: 83,
+            name: "Thaumetic Blowtorch"
+        }
     ],
     ["One Hand Axes"]: [
-        {name: "Rusted Hatchet"},
-        {name: "Jade Hatchet"},
-        {name: "Boarding Axe"},
-        {name: "Cleaver"},
-        {name: "Broad Axe"},
-        {name: "Arming Axe"},
-        {name: "Decorative Axe"},
-        {name: "Spectral Axe"},
-        {name: "Etched Hatchet"},
-        {name: "Jasper Axe"},
-        {name: "Tomahawk"},
-        {name: "Wrist Chopper"},
-        {name: "War Axe"},
-        {name: "Chest Splitter"},
-        {name: "Ceremonial Axe"},
-        {name: "Wraith Axe"},
-        {name: "Engraved Hatchet"},
-        {name: "Karui Axe"},
-        {name: "Siege Axe"},
-        {name: "Reaver Axe"},
-        {name: "Butcher Axe"},
-        {name: "Vaal Hatchet"},
-        {name: "Royal Axe"},
-        {name: "Infernal Axe"},
-        {name: "Runic Hatchet"},
-        {name: "Maltreatment Axe"},
-        {name: "Disapprobation Axe"},
-        {name: "Psychotic Axe"}
+        {
+            dropLevel: 1,
+            name: "Dull Hatchet"
+        },
+        {
+            dropLevel: 4,
+            name: "Hook Axe"
+        },
+        {
+            dropLevel: 10,
+            name: "Bearded Axe"
+        },
+        {
+            dropLevel: 16,
+            name: "Extended Cleaver"
+        },
+        {
+            dropLevel: 20,
+            name: "Bandit Hatchet"
+        },
+        {
+            dropLevel: 26,
+            name: "Crescent Axe"
+        },
+        {
+            dropLevel: 33,
+            name: "Carving Hatchet"
+        },
+        {
+            dropLevel: 37,
+            name: "Sacrificial Axe"
+        },
+        {
+            dropLevel: 45,
+            name: "Boarding Hatchet"
+        },
+        {
+            dropLevel: 48,
+            name: "Fury Cleaver"
+        },
+        {
+            dropLevel: 52,
+            name: "Battle Axe"
+        },
+        {
+            dropLevel: 54,
+            name: "Profane Cleaver"
+        },
+        {
+            dropLevel: 65,
+            name: "Dread Hatchet"
+        }
     ],
-    Corpses: [
-        {name: "Imperfect Hydra"},
-        {name: "Hydra"},
-        {name: "Perfect Hydra"},
-        {name: "Imperfect Frozen Cannibal"},
-        {name: "Frozen Cannibal"},
-        {name: "Perfect Frozen Cannibal"},
-        {name: "Imperfect Fiery Cannibal"},
-        {name: "Fiery Cannibal"},
-        {name: "Perfect Fiery Cannibal"},
-        {name: "Imperfect Dark Marionette"},
-        {name: "Dark Marionette"},
-        {name: "Perfect Dark Marionette"},
-        {name: "Imperfect Naval Officer"},
-        {name: "Naval Officer"},
-        {name: "Perfect Naval Officer"},
-        {name: "Imperfect Dancing Sword"},
-        {name: "Dancing Sword"},
-        {name: "Perfect Dancing Sword"},
-        {name: "Imperfect Needle Horror"},
-        {name: "Needle Horror"},
-        {name: "Perfect Needle Horror"},
-        {name: "Imperfect Serpent Warrior"},
-        {name: "Serpent Warrior"},
-        {name: "Perfect Serpent Warrior"},
-        {name: "Imperfect Pain Artist"},
-        {name: "Pain Artist"},
-        {name: "Perfect Pain Artist"},
-        {name: "Imperfect Sawblade Horror"},
-        {name: "Sawblade Horror"},
-        {name: "Perfect Sawblade Horror"},
-        {name: "Imperfect Restless Knight"},
-        {name: "Restless Knight"},
-        {name: "Perfect Restless Knight"},
-        {name: "Imperfect Blood Demon"},
-        {name: "Blood Demon"},
-        {name: "Perfect Blood Demon"},
-        {name: "Imperfect Slashing Horror"},
-        {name: "Slashing Horror"},
-        {name: "Perfect Slashing Horror"},
-        {name: "Imperfect Riftcaster"},
-        {name: "Riftcaster"},
-        {name: "Perfect Riftcaster"},
-        {name: "Imperfect Druidic Alchemist"},
-        {name: "Druidic Alchemist"},
-        {name: "Perfect Druidic Alchemist"},
-        {name: "Imperfect Escaped Prototype"},
-        {name: "Escaped Prototype"},
-        {name: "Perfect Escaped Prototype"},
-        {name: "Imperfect Blasphemer"},
-        {name: "Blasphemer"},
-        {name: "Perfect Blasphemer"},
-        {name: "Imperfect Judgemental Spirit"},
-        {name: "Judgemental Spirit"},
-        {name: "Perfect Judgemental Spirit"},
-        {name: "Imperfect Primal Thunderbird"},
-        {name: "Primal Thunderbird"},
-        {name: "Perfect Primal Thunderbird"},
-        {name: "Imperfect Spirit of Fortune"},
-        {name: "Spirit of Fortune"},
-        {name: "Perfect Spirit of Fortune"},
-        {name: "Imperfect Primal Demiurge"},
-        {name: "Primal Demiurge"},
-        {name: "Perfect Primal Demiurge"},
-        {name: "Imperfect Runic Skeleton"},
-        {name: "Runic Skeleton"},
-        {name: "Perfect Runic Skeleton"},
-        {name: "Imperfect Warlord"},
-        {name: "Warlord"},
-        {name: "Perfect Warlord"},
-        {name: "Imperfect Dark Reaper"},
-        {name: "Dark Reaper"},
-        {name: "Perfect Dark Reaper"},
-        {name: "Imperfect Hulking Miscreation"},
-        {name: "Hulking Miscreation"},
-        {name: "Perfect Hulking Miscreation"},
-        {name: "Imperfect Sanguimancer Demon"},
-        {name: "Sanguimancer Demon"},
-        {name: "Perfect Sanguimancer Demon"},
-        {name: "Imperfect Shadow Berserker"},
-        {name: "Shadow Berserker"},
-        {name: "Perfect Shadow Berserker"},
-        {name: "Imperfect Spider Matriarch"},
-        {name: "Spider Matriarch"},
-        {name: "Perfect Spider Matriarch"},
-        {name: "Imperfect Half-remembered Goliath"},
-        {name: "Half-remembered Goliath"},
-        {name: "Perfect Half-remembered Goliath"},
-        {name: "Imperfect Meatsack"},
-        {name: "Meatsack"},
-        {name: "Perfect Meatsack"},
-        {name: "Imperfect Eldritch Eye"},
-        {name: "Eldritch Eye"},
-        {name: "Perfect Eldritch Eye"},
-        {name: "Imperfect Forest Tiger"},
-        {name: "Forest Tiger"},
-        {name: "Perfect Forest Tiger"},
-        {name: "Imperfect Guardian Turtle"},
-        {name: "Guardian Turtle"},
-        {name: "Perfect Guardian Turtle"},
-        {name: "Imperfect Shadow Construct"},
-        {name: "Shadow Construct"},
-        {name: "Perfect Shadow Construct"},
-        {name: "Imperfect Forest Warrior"},
-        {name: "Forest Warrior"},
-        {name: "Perfect Forest Warrior"}
-    ],
-    Tinctures: [
-        {name: "Ironwood Tincture"},
-        {name: "Ashbark Tincture"},
-        {name: "Fulgurite Tincture"},
-        {name: "Poisonberry Tincture"},
-        {name: "Rosethorn Tincture"},
-        {name: "Oakbranch Tincture"},
-        {name: "Borealwood Tincture"},
-        {name: "Blood Sap Tincture"},
-        {name: "Prismatic Tincture"},
-        {name: "Rosethorn Tincture"},
-        {name: "Ironwood Tincture"},
-        {name: "Ashbark Tincture"},
-        {name: "Borealwood Tincture"},
-        {name: "Fulgurite Tincture"},
-        {name: "Poisonberry Tincture"},
-        {name: "Blood Sap Tincture"},
-        {name: "Oakbranch Tincture"},
-        {name: "Sporebloom Tincture"}
-    ],
-    ["Archnemesis Mods"]: [{name: "Archnemesis Mod"}],
+    ["Archnemesis Mods"]: [{
+        dropLevel: 1,
+        name: "Archnemesis Mod"
+    }],
     Boots: [
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 6,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 9,
-                ward_max: 0
-            },
-            name: "Iron Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 32,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 42,
-                ward_max: 0
-            },
-            name: "Steel Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 77,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 96,
-                ward_max: 0
-            },
-            name: "Plated Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 109,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 120,
-                ward_max: 0
-            },
-            name: "Reinforced Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 122,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 144,
-                ward_max: 0
-            },
-            name: "Antique Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 151,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 174,
-                ward_max: 0
-            },
-            name: "Ancient Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 177,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 209,
-                ward_max: 0
-            },
-            name: "Goliath Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 220,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 253,
-                ward_max: 0
-            },
-            name: "Vaal Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 241,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 278,
-                ward_max: 0
-            },
-            name: "Titan Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 307,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 353,
-                ward_max: 0
-            },
-            name: "Precursor Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 359,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 413,
-                ward_max: 0
-            },
-            name: "Leviathan Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 68,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 78,
-                ward_max: 0
-            },
-            name: "Basemetal Treads"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 164,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 189,
-                ward_max: 0
-            },
-            name: "Darksteel Treads"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 236,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 271,
-                ward_max: 0
-            },
-            name: "Brimstone Treads"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 8,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 8,
-                ward_max: 0
-            },
-            name: "Kaom's Greaves"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 13,
-                ms: 0,
-                evasion_max: 18,
                 armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
+                energy_shield_min: 0
             },
-            name: "Rawhide Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 42,
-                ms: 0,
-                evasion_max: 54,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Goathide Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 74,
-                ms: 0,
-                evasion_max: 92,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Deerskin Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 113,
-                ms: 0,
-                evasion_max: 126,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Nubuck Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 129,
-                ms: 0,
-                evasion_max: 148,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Eelskin Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 145,
-                ms: 0,
-                evasion_max: 171,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sharkskin Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 180,
-                ms: 0,
-                evasion_max: 216,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Shagreen Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 220,
-                ms: 0,
-                evasion_max: 253,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Stealth Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 246,
-                ms: 0,
-                evasion_max: 283,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Slink Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 307,
-                ms: 0,
-                evasion_max: 353,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Harpyskin Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 359,
-                ms: 0,
-                evasion_max: 413,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Velour Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 68,
-                ms: 0,
-                evasion_max: 78,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Cloudwhisper Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 164,
-                ms: 0,
-                evasion_max: 189,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Windbreak Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 236,
-                ms: 0,
-                evasion_max: 271,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Stormrider Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 5,
-                energy_shield_max: 7,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Wool Shoes"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 8,
-                energy_shield_max: 11,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Velvet Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 17,
-                energy_shield_max: 21,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Silk Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 23,
-                energy_shield_max: 25,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Scholar Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 26,
-                energy_shield_max: 30,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Satin Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 30,
-                energy_shield_max: 35,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Samite Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 36,
-                energy_shield_max: 42,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Conjurer Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 47,
-                energy_shield_max: 55,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Arcanist Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 51,
-                energy_shield_max: 59,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sorcerer Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 62,
-                energy_shield_max: 71,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Sage Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 72,
-                energy_shield_max: 83,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Warlock Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 15,
-                energy_shield_max: 18,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Duskwalk Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 34,
-                energy_shield_max: 39,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Nightwind Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 50,
-                energy_shield_max: 57,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Dreamquest Slippers"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 12,
-                ms: 0,
-                evasion_max: 17,
-                armour_min: 12,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 17,
-                ward_max: 0
-            },
-            name: "Leatherscale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 34,
-                ms: 0,
-                evasion_max: 44,
-                armour_min: 34,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 44,
-                ward_max: 0
-            },
-            name: "Ironscale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 55,
-                ms: 0,
-                evasion_max: 63,
-                armour_min: 55,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 63,
-                ward_max: 0
-            },
-            name: "Bronzescale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 65,
-                ms: 0,
-                evasion_max: 75,
-                armour_min: 65,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 75,
-                ward_max: 0
-            },
-            name: "Steelscale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 76,
-                ms: 0,
-                evasion_max: 90,
-                armour_min: 76,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 90,
-                ward_max: 0
-            },
-            name: "Serpentscale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 92,
-                ms: 0,
-                evasion_max: 103,
-                armour_min: 92,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 103,
-                ward_max: 0
-            },
-            name: "Wyrmscale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 106,
-                ms: 0,
-                evasion_max: 122,
-                armour_min: 106,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 122,
-                ward_max: 0
-            },
-            name: "Hydrascale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 121,
-                ms: 0,
-                evasion_max: 139,
-                armour_min: 121,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 139,
-                ward_max: 0
-            },
-            name: "Dragonscale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 176,
-                ms: 0,
-                evasion_max: 203,
-                armour_min: 176,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 203,
-                ward_max: 0
-            },
-            name: "Chimerascale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 205,
-                ms: 0,
-                evasion_max: 236,
-                armour_min: 205,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 236,
-                ward_max: 0
-            },
-            name: "Wyvernscale Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 11,
-                energy_shield_min: 3,
-                energy_shield_max: 5,
-                armour_max: 15,
-                ward_max: 0
-            },
-            name: "Chain Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 25,
-                energy_shield_min: 6,
-                energy_shield_max: 8,
-                armour_max: 32,
-                ward_max: 0
-            },
-            name: "Ringmail Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 51,
-                energy_shield_min: 11,
-                energy_shield_max: 14,
-                armour_max: 64,
-                ward_max: 0
-            },
-            name: "Mesh Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 65,
-                energy_shield_min: 14,
-                energy_shield_max: 15,
-                armour_max: 71,
-                ward_max: 0
-            },
-            name: "Riveted Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 73,
-                energy_shield_min: 15,
-                energy_shield_max: 18,
-                armour_max: 87,
-                ward_max: 0
-            },
-            name: "Zealot Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 88,
-                energy_shield_min: 18,
-                energy_shield_max: 20,
-                armour_max: 99,
-                ward_max: 0
-            },
-            name: "Soldier Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 104,
-                energy_shield_min: 21,
-                energy_shield_max: 25,
-                armour_max: 120,
-                ward_max: 0
-            },
-            name: "Legion Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 121,
-                energy_shield_min: 25,
-                energy_shield_max: 28,
-                armour_max: 139,
-                ward_max: 0
-            },
-            name: "Crusader Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 176,
-                energy_shield_min: 35,
-                energy_shield_max: 41,
-                armour_max: 203,
-                ward_max: 0
-            },
-            name: "Martyr Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 205,
-                energy_shield_min: 41,
-                energy_shield_max: 47,
-                armour_max: 236,
-                ward_max: 0
-            },
-            name: "Paladin Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 12,
-                ms: 0,
-                evasion_max: 17,
-                armour_min: 0,
-                energy_shield_min: 4,
-                energy_shield_max: 5,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Wrapped Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 30,
-                ms: 0,
-                evasion_max: 39,
-                armour_min: 0,
-                energy_shield_min: 7,
-                energy_shield_max: 9,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Strapped Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 50,
-                ms: 0,
-                evasion_max: 57,
-                armour_min: 0,
-                energy_shield_min: 11,
-                energy_shield_max: 12,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Clasped Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 62,
-                ms: 0,
-                evasion_max: 71,
-                armour_min: 0,
-                energy_shield_min: 13,
-                energy_shield_max: 15,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Shackled Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 74,
-                ms: 0,
-                evasion_max: 85,
-                armour_min: 0,
-                energy_shield_min: 16,
-                energy_shield_max: 18,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Trapper Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 85,
-                ms: 0,
-                evasion_max: 95,
-                armour_min: 0,
-                energy_shield_min: 18,
-                energy_shield_max: 20,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Ambush Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 99,
-                ms: 0,
-                evasion_max: 117,
-                armour_min: 0,
-                energy_shield_min: 20,
-                energy_shield_max: 24,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Carnal Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 121,
-                ms: 0,
-                evasion_max: 139,
-                armour_min: 0,
-                energy_shield_min: 25,
-                energy_shield_max: 28,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Assassin's Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 185,
-                ms: 0,
-                evasion_max: 213,
-                armour_min: 0,
-                energy_shield_min: 18,
-                energy_shield_max: 21,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Murder Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 176,
-                ms: 0,
-                evasion_max: 203,
-                armour_min: 0,
-                energy_shield_min: 35,
-                energy_shield_max: 41,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Infiltrator Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 205,
-                ms: 0,
-                evasion_max: 236,
-                armour_min: 0,
-                energy_shield_min: 41,
-                energy_shield_max: 47,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Phantom Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
-            },
+            dropLevel: 12,
             name: "Golden Caligae"
         },
         {
             stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 0
+                armour_min: 22,
+                energy_shield_min: 0
             },
-            name: "Avian Slippers"
+            dropLevel: 1,
+            name: "Rough Greaves"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 126,
-                ms: 0,
-                evasion_max: 145,
-                armour_min: 0,
-                energy_shield_min: 26,
-                energy_shield_max: 30,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Two-Toned Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
-                evasion_min: 126,
-                ms: 0,
-                evasion_max: 145,
-                armour_min: 126,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 145,
-                ward_max: 0
-            },
-            name: "Two-Toned Boots"
-        },
-        {
-            stats: {
-                ward_min: 0,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 126,
-                energy_shield_min: 26,
-                energy_shield_max: 30,
-                armour_max: 145,
-                ward_max: 0
+                armour_min: 47,
+                energy_shield_min: 0
             },
-            name: "Two-Toned Boots"
+            dropLevel: 11,
+            name: "Iron Greaves"
         },
         {
             stats: {
-                ward_min: 0,
-                evasion_min: 112,
-                ms: 0,
-                evasion_max: 129,
-                armour_min: 0,
-                energy_shield_min: 32,
-                energy_shield_max: 37,
-                armour_max: 0,
-                ward_max: 0
-            },
-            name: "Fugitive Boots"
-        },
-        {
-            stats: {
-                ward_min: 24,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 28
+                armour_min: 60,
+                energy_shield_min: 0
             },
-            name: "Runic Greaves"
+            dropLevel: 16,
+            name: "Bronze Greaves"
         },
         {
             stats: {
-                ward_min: 62,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 71
+                armour_min: 87,
+                energy_shield_min: 0
             },
-            name: "Runic Sollerets"
+            dropLevel: 27,
+            name: "Trimmed Greaves"
         },
         {
             stats: {
-                ward_min: 102,
                 evasion_min: 0,
-                ms: 0,
-                evasion_max: 0,
-                armour_min: 0,
-                energy_shield_min: 0,
-                energy_shield_max: 0,
-                armour_max: 0,
-                ward_max: 117
+                armour_min: 102,
+                energy_shield_min: 0
             },
-            name: "Runic Sabatons"
+            dropLevel: 33,
+            name: "Stone Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 132,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Reefsteel Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 150,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Monument Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 182,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Totemic Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 15,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 1,
+            name: "Rawhide Boots"
+        },
+        {
+            stats: {
+                evasion_min: 38,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 11,
+            name: "Laced Boots"
+        },
+        {
+            stats: {
+                evasion_min: 50,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Embossed Boots"
+        },
+        {
+            stats: {
+                evasion_min: 79,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 28,
+            name: "Steeltoe Boots"
+        },
+        {
+            stats: {
+                evasion_min: 90,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Lizardscale Boots"
+        },
+        {
+            stats: {
+                evasion_min: 119,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Flared Boots"
+        },
+        {
+            stats: {
+                evasion_min: 135,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Leatherplate Boots"
+        },
+        {
+            stats: {
+                evasion_min: 166,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Embroidered Boots"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 14
+            },
+            dropLevel: 1,
+            name: "Straw Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 22
+            },
+            dropLevel: 11,
+            name: "Wrapped Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 25
+            },
+            dropLevel: 16,
+            name: "Lattice Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 34
+            },
+            dropLevel: 27,
+            name: "Silk Slippers"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 38
+            },
+            dropLevel: 33,
+            name: "Feathered Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 48
+            },
+            dropLevel: 45,
+            name: "Flax Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 53
+            },
+            dropLevel: 52,
+            name: "Studded Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 63
+            },
+            dropLevel: 65,
+            name: "Elaborate Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 15,
+                armour_min: 19,
+                energy_shield_min: 0
+            },
+            dropLevel: 6,
+            name: "Mail Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 28,
+                armour_min: 33,
+                energy_shield_min: 0
+            },
+            dropLevel: 16,
+            name: "Braced Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 50,
+                armour_min: 56,
+                energy_shield_min: 0
+            },
+            dropLevel: 33,
+            name: "Stacked Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 65,
+                armour_min: 73,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Covered Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 74,
+                armour_min: 82,
+                energy_shield_min: 0
+            },
+            dropLevel: 52,
+            name: "Flexile Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 91,
+                armour_min: 100,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Bold Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 18,
+                energy_shield_min: 9
+            },
+            dropLevel: 5,
+            name: "Padded Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 33,
+                energy_shield_min: 14
+            },
+            dropLevel: 16,
+            name: "Secured Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 56,
+                energy_shield_min: 21
+            },
+            dropLevel: 33,
+            name: "Pelt Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 73,
+                energy_shield_min: 26
+            },
+            dropLevel: 45,
+            name: "Weaver Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 82,
+                energy_shield_min: 29
+            },
+            dropLevel: 52,
+            name: "Gilt Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 100,
+                energy_shield_min: 35
+            },
+            dropLevel: 65,
+            name: "Pious Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 13,
+                armour_min: 0,
+                energy_shield_min: 9
+            },
+            dropLevel: 5,
+            name: "Frayed Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 28,
+                armour_min: 0,
+                energy_shield_min: 14
+            },
+            dropLevel: 16,
+            name: "Threaded Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 50,
+                armour_min: 0,
+                energy_shield_min: 21
+            },
+            dropLevel: 33,
+            name: "Hunting Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 65,
+                armour_min: 0,
+                energy_shield_min: 26
+            },
+            dropLevel: 45,
+            name: "Steelpoint Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 74,
+                armour_min: 0,
+                energy_shield_min: 29
+            },
+            dropLevel: 52,
+            name: "Velour Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 91,
+                armour_min: 0,
+                energy_shield_min: 35
+            },
+            dropLevel: 65,
+            name: "Bladed Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 60,
+                armour_min: 66,
+                energy_shield_min: 23
+            },
+            dropLevel: 65,
+            name: "Grand Cuisses"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 132,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Iron Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 147,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Bronze Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 157,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Trimmed Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 167,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Stone Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 119,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Laced Boots"
+        },
+        {
+            stats: {
+                evasion_min: 133,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Embossed Boots"
+        },
+        {
+            stats: {
+                evasion_min: 143,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 55,
+            name: "Advanced Steeltoe Boots"
+        },
+        {
+            stats: {
+                evasion_min: 152,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Lizardscale Boots"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 48
+            },
+            dropLevel: 45,
+            name: "Advanced Wrapped Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 52
+            },
+            dropLevel: 51,
+            name: "Advanced Lattice Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 55
+            },
+            dropLevel: 55,
+            name: "Advanced Silk Slippers"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 58
+            },
+            dropLevel: 59,
+            name: "Advanced Feathered Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 65,
+                armour_min: 73,
+                energy_shield_min: 0
+            },
+            dropLevel: 45,
+            name: "Advanced Mail Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 73,
+                armour_min: 81,
+                energy_shield_min: 0
+            },
+            dropLevel: 51,
+            name: "Advanced Braced Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 84,
+                armour_min: 92,
+                energy_shield_min: 0
+            },
+            dropLevel: 59,
+            name: "Advanced Stacked Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 73,
+                energy_shield_min: 26
+            },
+            dropLevel: 45,
+            name: "Advanced Padded Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 81,
+                energy_shield_min: 29
+            },
+            dropLevel: 51,
+            name: "Advanced Secured Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 92,
+                energy_shield_min: 32
+            },
+            dropLevel: 59,
+            name: "Advanced Pelt Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 65,
+                armour_min: 0,
+                energy_shield_min: 26
+            },
+            dropLevel: 45,
+            name: "Advanced Frayed Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 73,
+                armour_min: 0,
+                energy_shield_min: 29
+            },
+            dropLevel: 51,
+            name: "Advanced Threaded Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 84,
+                armour_min: 0,
+                energy_shield_min: 32
+            },
+            dropLevel: 59,
+            name: "Advanced Hunting Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 182,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Iron Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 200,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Trimmed Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 219,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Stone Greaves"
+        },
+        {
+            stats: {
+                evasion_min: 166,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Laced Boots"
+        },
+        {
+            stats: {
+                evasion_min: 183,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Steeltoe Boots"
+        },
+        {
+            stats: {
+                evasion_min: 200,
+                armour_min: 0,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Lizardscale Boots"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 63
+            },
+            dropLevel: 65,
+            name: "Expert Wrapped Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 69
+            },
+            dropLevel: 70,
+            name: "Expert Silk Slippers"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 0,
+                energy_shield_min: 75
+            },
+            dropLevel: 75,
+            name: "Expert Feathered Sandals"
+        },
+        {
+            stats: {
+                evasion_min: 91,
+                armour_min: 100,
+                energy_shield_min: 0
+            },
+            dropLevel: 65,
+            name: "Expert Mail Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 101,
+                armour_min: 110,
+                energy_shield_min: 0
+            },
+            dropLevel: 70,
+            name: "Expert Braced Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 110,
+                armour_min: 120,
+                energy_shield_min: 0
+            },
+            dropLevel: 75,
+            name: "Expert Stacked Sabatons"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 100,
+                energy_shield_min: 35
+            },
+            dropLevel: 65,
+            name: "Expert Padded Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 110,
+                energy_shield_min: 38
+            },
+            dropLevel: 70,
+            name: "Expert Secured Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 0,
+                armour_min: 120,
+                energy_shield_min: 42
+            },
+            dropLevel: 75,
+            name: "Expert Pelt Leggings"
+        },
+        {
+            stats: {
+                evasion_min: 91,
+                armour_min: 0,
+                energy_shield_min: 35
+            },
+            dropLevel: 65,
+            name: "Expert Frayed Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 101,
+                armour_min: 0,
+                energy_shield_min: 38
+            },
+            dropLevel: 70,
+            name: "Expert Threaded Shoes"
+        },
+        {
+            stats: {
+                evasion_min: 110,
+                armour_min: 0,
+                energy_shield_min: 42
+            },
+            dropLevel: 75,
+            name: "Expert Hunting Shoes"
         }
     ],
-    ["Hybrid Flasks"]: [
-        {name: "Small Hybrid Flask"},
-        {name: "Medium Hybrid Flask"},
-        {name: "Large Hybrid Flask"},
-        {name: "Colossal Hybrid Flask"},
-        {name: "Sacred Hybrid Flask"},
-        {name: "Hallowed Hybrid Flask"}
-    ],
     Amulets: [
-        {name: "Paua Amulet"},
-        {name: "Coral Amulet"},
-        {name: "Amber Amulet"},
-        {name: "Jade Amulet"},
-        {name: "Lapis Amulet"},
-        {name: "Gold Amulet"},
-        {name: "Onyx Amulet"},
-        {name: "Turquoise Amulet"},
-        {name: "Agate Amulet"},
-        {name: "Citrine Amulet"},
-        {name: "Ruby Amulet"},
-        {name: "Unset Amulet"},
-        {name: "Astrolabe Amulet"},
-        {name: "Simplex Amulet"},
-        {name: "Focused Amulet"},
-        {name: "Jet Amulet"},
-        {name: "Blue Pearl Amulet"},
-        {name: "Marble Amulet"},
-        {name: "Seaglass Amulet"},
-        {name: "Onyx Amulet"},
-        {name: "Black Maw Talisman"},
-        {name: "Bonespire Talisman"},
-        {name: "Ashscale Talisman"},
-        {name: "Lone Antler Talisman"},
-        {name: "Deep One Talisman"},
-        {name: "Breakrib Talisman"},
-        {name: "Deadhand Talisman"},
-        {name: "Undying Flesh Talisman"},
-        {name: "Rot Head Talisman"},
-        {name: "Mandible Talisman"},
-        {name: "Chrysalis Talisman"},
-        {name: "Writhing Talisman"},
-        {name: "Hexclaw Talisman"},
-        {name: "Primal Skull Talisman"},
-        {name: "Wereclaw Talisman"},
-        {name: "Splitnewt Talisman"},
-        {name: "Clutching Talisman"},
-        {name: "Avian Twins Talisman"},
-        {name: "Avian Twins Talisman"},
-        {name: "Avian Twins Talisman"},
-        {name: "Avian Twins Talisman"},
-        {name: "Avian Twins Talisman"},
-        {name: "Avian Twins Talisman"},
-        {name: "Fangjaw Talisman"},
-        {name: "Horned Talisman"},
-        {name: "Spinefuse Talisman"},
-        {name: "Three Rat Talisman"},
-        {name: "Monkey Twins Talisman"},
-        {name: "Longtooth Talisman"},
-        {name: "Rotfeather Talisman"},
-        {name: "Monkey Paw Talisman"},
-        {name: "Monkey Paw Talisman"},
-        {name: "Monkey Paw Talisman"},
-        {name: "Three Hands Talisman"},
-        {name: "Greatwolf Talisman"}
+        {
+            dropLevel: 1,
+            name: "Crimson Amulet"
+        },
+        {
+            dropLevel: 1,
+            name: "Azure Amulet"
+        },
+        {
+            dropLevel: 8,
+            name: "Amber Amulet"
+        },
+        {
+            dropLevel: 8,
+            name: "Jade Amulet"
+        },
+        {
+            dropLevel: 8,
+            name: "Lapis Amulet"
+        },
+        {
+            dropLevel: 14,
+            name: "Lunar Amulet"
+        },
+        {
+            dropLevel: 18,
+            name: "Bloodstone Amulet"
+        },
+        {
+            dropLevel: 25,
+            name: "Stellar Amulet"
+        },
+        {
+            dropLevel: 30,
+            name: "Solar Amulet"
+        },
+        {
+            dropLevel: 35,
+            name: "Gold Amulet"
+        }
     ],
     Belts: [
-        {name: "Rustic Sash"},
-        {name: "Chain Belt"},
-        {name: "Leather Belt"},
-        {name: "Heavy Belt"},
-        {name: "Cloth Belt"},
-        {name: "Studded Belt"},
-        {name: "Micro-Distillery Belt"},
-        {name: "Mechalarm Belt"},
-        {name: "Mechanical Belt"},
-        {name: "Vanguard Belt"},
-        {name: "Crystal Belt"},
-        {name: "Golden Obi"},
-        {name: "Stygian Vise"},
-        {name: "Leather Belt"},
-        {name: "Heavy Belt"},
-        {name: "Cloth Belt"}
+        {
+            dropLevel: 12,
+            name: "Golden Obi"
+        },
+        {
+            dropLevel: 1,
+            name: "Rawhide Belt"
+        },
+        {
+            dropLevel: 1,
+            name: "Linen Belt"
+        },
+        {
+            dropLevel: 14,
+            name: "Wide Belt"
+        },
+        {
+            dropLevel: 20,
+            name: "Long Belt"
+        },
+        {
+            dropLevel: 25,
+            name: "Plate Belt"
+        },
+        {
+            dropLevel: 31,
+            name: "Ornate Belt"
+        },
+        {
+            dropLevel: 40,
+            name: "Mail Belt"
+        },
+        {
+            dropLevel: 44,
+            name: "Double Belt"
+        },
+        {
+            dropLevel: 50,
+            name: "Heavy Belt"
+        },
+        {
+            dropLevel: 55,
+            name: "Utility Belt"
+        },
+        {
+            dropLevel: 62,
+            name: "Fine Belt"
+        }
     ],
-    ["Metamorph Samples"]: [
-        {name: "Metamorph Brain"},
-        {name: "Metamorph Eye"},
-        {name: "Metamorph Liver"},
-        {name: "Metamorph Lung"},
-        {name: "Metamorph Heart"}
+    ["Trial Coins"]: [
+        {
+            dropLevel: 24,
+            name: "Djinn Barya"
+        },
+        {
+            dropLevel: 65,
+            name: "Test of Strength Barya"
+        },
+        {
+            dropLevel: 65,
+            name: "Test of Will Barya"
+        },
+        {
+            dropLevel: 65,
+            name: "Test of Cunning Barya"
+        },
+        {
+            dropLevel: 65,
+            name: "Test of Time Barya"
+        }
     ],
+    ["#GiftBox"]: [{
+        dropLevel: 1,
+        name: "Wrapped Gift"
+    }],
     ["Life Flasks"]: [
-        {name: "Small Life Flask"},
-        {name: "Medium Life Flask"},
-        {name: "Large Life Flask"},
-        {name: "Greater Life Flask"},
-        {name: "Grand Life Flask"},
-        {name: "Giant Life Flask"},
-        {name: "Colossal Life Flask"},
-        {name: "Sacred Life Flask"},
-        {name: "Hallowed Life Flask"},
-        {name: "Sanctified Life Flask"},
-        {name: "Divine Life Flask"},
-        {name: "Eternal Life Flask"},
-        {name: "Small Life Flask"},
-        {name: "Medium Life Flask"},
-        {name: "Large Life Flask"}
+        {
+            dropLevel: 1,
+            name: "Lesser Life Flask"
+        },
+        {
+            dropLevel: 4,
+            name: "Medium Life Flask"
+        },
+        {
+            dropLevel: 10,
+            name: "Greater Life Flask"
+        },
+        {
+            dropLevel: 16,
+            name: "Grand Life Flask"
+        },
+        {
+            dropLevel: 23,
+            name: "Giant Life Flask"
+        },
+        {
+            dropLevel: 30,
+            name: "Colossal Life Flask"
+        },
+        {
+            dropLevel: 40,
+            name: "Gargantuan Life Flask"
+        },
+        {
+            dropLevel: 50,
+            name: "Transcendent Life Flask"
+        },
+        {
+            dropLevel: 60,
+            name: "Ultimate Life Flask"
+        }
     ],
     ["Misc Map Items"]: [
-        {name: "Primeval Remnant"},
-        {name: "Primordial Remnant"},
-        {name: "Xoph's Breachstone"},
-        {name: "Tul's Breachstone"},
-        {name: "Esh's Breachstone"},
-        {name: "Uul-Netol's Breachstone"},
-        {name: "Chayula's Breachstone"},
-        {name: "Maven's Invitation: The Formed"},
-        {name: "Maven's Invitation: The Twisted"},
-        {name: "Maven's Invitation: The Forgotten"},
-        {name: "Maven's Invitation: The Hidden"},
-        {name: "Maven's Invitation: The Feared"},
-        {name: "Maven's Invitation: The Elderslayers"},
-        {name: "Maven's Invitation: The Formed"},
-        {name: "Maven's Invitation: The Twisted"},
-        {name: "Maven's Invitation: The Forgotten"},
-        {name: "Maven's Invitation: The Hidden"},
-        {name: "Maven's Invitation: The Feared"},
-        {name: "Maven's Invitation: The Elderslayers"},
-        {name: "Maven's Invitation: The Atlas"},
-        {name: "Maven's Invitation: The Atlas"},
-        {name: "Maven's Invitation: Haewark Hamlet"},
-        {name: "Maven's Invitation: Tirn's End"},
-        {name: "Maven's Invitation: Lex Proxima"},
-        {name: "Maven's Invitation: Lex Ejoris"},
-        {name: "Maven's Invitation: New Vastir"},
-        {name: "Maven's Invitation: Glennach Cairns"},
-        {name: "Maven's Invitation: Valdo's Rest"},
-        {name: "Maven's Invitation: Lira Arthain"},
-        {name: "Chronicle of Atzoatl"},
-        {name: "Inscribed Ultimatum"},
-        {name: "Writhing Invitation"},
-        {name: "Screaming Invitation"},
-        {name: "Polaric Invitation"},
-        {name: "Incandescent Invitation"},
-        {name: "Mirrored Tablet"}
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: The Formed"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: The Twisted"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: The Forgotten"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: The Hidden"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: The Feared"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: The Elderslayers"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: The Atlas"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Haewark Hamlet"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Tirn's End"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Lex Proxima"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Lex Ejoris"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: New Vastir"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Glennach Cairns"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Valdo's Rest"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Lira Arthain"
+        },
+        {
+            dropLevel: 1,
+            name: "Chronicle of Atzoatl"
+        },
+        {
+            dropLevel: 1,
+            name: "Inscribed Ultimatum"
+        },
+        {
+            dropLevel: 1,
+            name: "Writhing Invitation"
+        },
+        {
+            dropLevel: 1,
+            name: "Screaming Invitation"
+        },
+        {
+            dropLevel: 1,
+            name: "Polaric Invitation"
+        },
+        {
+            dropLevel: 1,
+            name: "Incandescent Invitation"
+        }
     ],
     ["Quest Items"]: [
-        {name: "Shaper's Orb (Tier 1)"},
-        {name: "Shaper's Orb (Tier 2)"},
-        {name: "Shaper's Orb (Tier 3)"},
-        {name: "Shaper's Orb (Tier 4)"},
-        {name: "Shaper's Orb (Tier 5)"},
-        {name: "Shaper's Orb (Tier 6)"},
-        {name: "Shaper's Orb (Tier 7)"},
-        {name: "Shaper's Orb (Tier 8)"},
-        {name: "Shaper's Orb (Tier 8)"},
-        {name: "Shaper's Orb (Tier 9)"},
-        {name: "Shaper's Orb (Tier 9)"},
-        {name: "Shaper's Orb (Tier 9)"},
-        {name: "Shaper's Orb (Tier 10)"},
-        {name: "Shaper's Orb (Tier 10)"},
-        {name: "Shaper's Orb (Tier 10)"},
-        {name: "Elder's Orb"},
-        {name: "The Shaper's Key"},
-        {name: "Memory Fragment I"},
-        {name: "Memory Fragment II"},
-        {name: "Memory Fragment III"},
-        {name: "Memory Fragment IV"},
-        {name: "Memory Fragment V"},
-        {name: "Memory Fragment VI"},
-        {name: "Memory Fragment VII"},
-        {name: "Memory Fragment VIII"},
-        {name: "Memory Fragment IX"},
-        {name: "Memory Fragment X"},
-        {name: "Memory Fragment XI"},
-        {name: "Memory Fragment XII"},
-        {name: "Memory Fragment XIII"},
-        {name: "Memory Fragment XIV"},
-        {name: "Memory Fragment XV"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Regrets"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Reform"},
-        {name: "Book of Reform"},
-        {name: "Book of Reform"},
-        {name: "Book of Reform"},
-        {name: "Book of Regression"},
-        {name: "Atlas Book of Skill"},
-        {name: "Atlas Book of Skill"},
-        {name: "Atlas Book of Skill"},
-        {name: "Atlas Book of Skill"},
-        {name: "Atlas Book of Skill"},
-        {name: "Atlas Book of Skill"},
-        {name: "Haliotis Glyph"},
-        {name: "Ammonite Glyph"},
-        {name: "Roseus Glyph"},
-        {name: "Medicine Chest"},
-        {name: "Allflame"},
-        {name: "Alira's Amulet"},
-        {name: "Kraityn's Amulet"},
-        {name: "Oak's Amulet"},
-        {name: "The Apex"},
-        {name: "Maligaro's Spike"},
-        {name: "Baleful Gem"},
-        {name: "Golden Hand"},
-        {name: "Thaumetic Sulphite"},
-        {name: "Tolman's Bracelet"},
-        {name: "Ribbon Spool"},
-        {name: "Tower Key"},
-        {name: "Sewer Keys"},
-        {name: "Infernal Talc"},
-        {name: "Bust of Hector Titucius"},
-        {name: "Bust of Gaius Sentari"},
-        {name: "Bust of Marceus Lioneye"},
-        {name: "Golden Page"},
-        {name: "Golden Page"},
-        {name: "Golden Page"},
-        {name: "Golden Page"},
-        {name: "Decanter Spiritus"},
-        {name: "Chitus' Plum"},
-        {name: "Thaumetic Emblem"},
-        {name: "Deshret's Banner"},
-        {name: "The Eye of Fury"},
-        {name: "The Eye of Desire"},
-        {name: "Malachai's Lungs"},
-        {name: "Malachai's Heart"},
-        {name: "Malachai's Entrails"},
-        {name: "Book of Skill"},
-        {name: "Miasmeter"},
-        {name: "Eyes of Zeal"},
-        {name: "Sign of Purity"},
-        {name: "Tukohama's Tooth"},
-        {name: "Hinekora's Hair"},
-        {name: "Valako's Jaw"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Eye of Conquest"},
-        {name: "Bestel's Manuscript"},
-        {name: "The Black Flag"},
-        {name: "Book of Skill"},
-        {name: "Book of Regrets"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Maligaro's Map"},
-        {name: "Obsidian Key"},
-        {name: "Kishara's Star"},
-        {name: "Silver Locket"},
-        {name: "Greust's Necklace"},
-        {name: "Black Venom"},
-        {name: "Firefly"},
-        {name: "Firefly"},
-        {name: "Firefly"},
-        {name: "Firefly"},
-        {name: "Firefly"},
-        {name: "Firefly"},
-        {name: "Firefly"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Sun Orb"},
-        {name: "Moon Orb"},
-        {name: "Ankh of Eternity"},
-        {name: "Wings of Vastiri"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Book of Skill"},
-        {name: "Sekhema Feather"},
-        {name: "Storm Blade"},
-        {name: "Trarthan Powder"},
-        {name: "Basilisk Acid"},
-        {name: "Calendar of Fortune"},
-        {name: "Bottled Storm"},
-        {name: "Book of Skill"},
-        {name: "Book of Regrets"},
-        {name: "Book of Skill"},
-        {name: "Elixir of Allure"},
-        {name: "The Teardrop"},
-        {name: "The Staff of Purity"},
-        {name: "Book of Skill"},
-        {name: "Book of Regrets"},
-        {name: "Book of Skill"},
-        {name: "Vault Key"},
-        {name: "Key of Devotion"},
-        {name: "Key of Strength"},
-        {name: "Blood Crucible"},
-        {name: "Dream Furnace"},
-        {name: "Viscera Cauldron"},
-        {name: "Sentinel Controller"},
-        {name: "Master Key"},
-        {name: "Contract: Trial Run"},
-        {name: "Contract: Stolen Lockpicks"},
-        {name: "Contract: Karst's Revenge"},
-        {name: "Contract: Credit Where Credit's Due"},
-        {name: "Contract: Finding Opal"},
-        {name: "Contract: Opal's Jewels"},
-        {name: "Contract: Enoch's Whereabouts"},
-        {name: "Contract: Enoch's Remains"},
-        {name: "Contract: Grocery List"},
-        {name: "Contract: The Vinderi Bomb"},
-        {name: "Contract: The Nameless Play"},
-        {name: "Contract: The Finest Costumes"},
-        {name: "Contract: The Wedding Dress"},
-        {name: "Contract: Disengagement"},
-        {name: "Contract: Rational Tools"},
-        {name: "Contract: A Mundane Sample"},
-        {name: "Contract: The Book of Jamanra"},
-        {name: "Contract: Isla's Prototypes"},
-        {name: "Contract: Isla's Designs"},
-        {name: "Contract: A Matter of Honour"},
-        {name: "Contract: Flying False Colours"},
-        {name: "Contract: Slaver's Revenge"},
-        {name: "Contract: Follow the Paper Trail"},
-        {name: "Contract: The Admiral's Records"},
-        {name: "Contract: Findings for Fidium"},
-        {name: "Contract: Hyrri's Gift"},
-        {name: "Contract: The Negotiation"},
-        {name: "Contract: The Rescue"},
-        {name: "Karst's Lockpicks"},
-        {name: "\"The Kiss Goodnight\""},
-        {name: "Poisoned Lockpick"},
-        {name: "Census Records"},
-        {name: "Tibbs' Wealth"},
-        {name: "Blackguard Personnel Files"},
-        {name: "Enoch's Tags"},
-        {name: "Alchemical Supplies"},
-        {name: "Fumarole Tar"},
-        {name: "\"The Nameless Play\""},
-        {name: "Templar Uniforms"},
-        {name: "Merveil's Wedding Dress"},
-        {name: "Tullina's Engagement Ring"},
-        {name: "The Thought Extractor"},
-        {name: "Viridi's Finger"},
-        {name: "The Book of Jamanra"},
-        {name: "Jamanra, the Legendary Warrior"},
-        {name: "Pile of Inexplicable Junk"},
-        {name: "Baffling Blueprints"},
-        {name: "The Unbreakable"},
-        {name: "Solerai's Spear"},
-        {name: "Nashta's War Journal"},
-        {name: "Confront Nashta"},
-        {name: "Hapihapi's Charm"},
-        {name: "Slaver's Records"},
-        {name: "The Blood Idol"},
-        {name: "Admiral Darnaw's Papers"},
-        {name: "Admiral Darnaw's Papers"},
-        {name: "Fleet Orders"},
-        {name: "Admiral Darnaw"},
-        {name: "\"O' Eternal\""},
-        {name: "Negotiate with the Client"},
-        {name: "Rescue Hana"},
-        {name: "The Vox Twins"},
-        {name: "The Maven's Beacon"},
-        {name: "Flesh Compass"},
-        {name: "Luminous Astrolabe"},
-        {name: "Maven's Invitation: The Atlas"},
-        {name: "Maven's Invitation: The Atlas"},
-        {name: "Maven's Invitation: The Atlas"},
-        {name: "Maven's Invitation: The Atlas"},
-        {name: "Maven's Invitation: Haewark Hamlet"},
-        {name: "Maven's Invitation: Haewark Hamlet"},
-        {name: "Maven's Invitation: Haewark Hamlet"},
-        {name: "Maven's Invitation: Haewark Hamlet"},
-        {name: "Maven's Invitation: Tirn's End"},
-        {name: "Maven's Invitation: Tirn's End"},
-        {name: "Maven's Invitation: Tirn's End"},
-        {name: "Maven's Invitation: Tirn's End"},
-        {name: "Maven's Invitation: Lex Proxima"},
-        {name: "Maven's Invitation: Lex Proxima"},
-        {name: "Maven's Invitation: Lex Proxima"},
-        {name: "Maven's Invitation: Lex Proxima"},
-        {name: "Maven's Invitation: Lex Ejoris"},
-        {name: "Maven's Invitation: Lex Ejoris"},
-        {name: "Maven's Invitation: Lex Ejoris"},
-        {name: "Maven's Invitation: Lex Ejoris"},
-        {name: "Maven's Invitation: New Vastir"},
-        {name: "Maven's Invitation: New Vastir"},
-        {name: "Maven's Invitation: New Vastir"},
-        {name: "Maven's Invitation: New Vastir"},
-        {name: "Maven's Invitation: Glennach Cairns"},
-        {name: "Maven's Invitation: Glennach Cairns"},
-        {name: "Maven's Invitation: Glennach Cairns"},
-        {name: "Maven's Invitation: Glennach Cairns"},
-        {name: "Maven's Invitation: Valdo's Rest"},
-        {name: "Maven's Invitation: Valdo's Rest"},
-        {name: "Maven's Invitation: Valdo's Rest"},
-        {name: "Maven's Invitation: Valdo's Rest"},
-        {name: "Maven's Invitation: Lira Arthain"},
-        {name: "Maven's Invitation: Lira Arthain"},
-        {name: "Maven's Invitation: Lira Arthain"},
-        {name: "Maven's Invitation: Lira Arthain"},
-        {name: "Writhing Invitation"},
-        {name: "Screaming Invitation"},
-        {name: "Polaric Invitation"},
-        {name: "Incandescent Invitation"},
-        {name: "The Mortinomicon Exitio Immortalis"}
+        {
+            dropLevel: 68,
+            name: "Shaper's Orb (Tier 1)"
+        },
+        {
+            dropLevel: 69,
+            name: "Shaper's Orb (Tier 2)"
+        },
+        {
+            dropLevel: 70,
+            name: "Shaper's Orb (Tier 3)"
+        },
+        {
+            dropLevel: 71,
+            name: "Shaper's Orb (Tier 4)"
+        },
+        {
+            dropLevel: 72,
+            name: "Shaper's Orb (Tier 5)"
+        },
+        {
+            dropLevel: 73,
+            name: "Shaper's Orb (Tier 6)"
+        },
+        {
+            dropLevel: 74,
+            name: "Shaper's Orb (Tier 7)"
+        },
+        {
+            dropLevel: 75,
+            name: "Shaper's Orb (Tier 8)"
+        },
+        {
+            dropLevel: 76,
+            name: "Shaper's Orb (Tier 9)"
+        },
+        {
+            dropLevel: 77,
+            name: "Shaper's Orb (Tier 10)"
+        },
+        {
+            dropLevel: 84,
+            name: "Elder's Orb"
+        },
+        {
+            dropLevel: 1,
+            name: "The Shaper's Key"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment I"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment II"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment III"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment IV"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment V"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment VI"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment VII"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment VIII"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment IX"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment X"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment XI"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment XII"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment XIII"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment XIV"
+        },
+        {
+            dropLevel: 1,
+            name: "Memory Fragment XV"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Skill"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Regrets"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Regression"
+        },
+        {
+            dropLevel: 1,
+            name: "Atlas Book of Skill"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge I"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge II"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge III"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge IV"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge V"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge VI"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge VII"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge VIII"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge IX"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge X"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge XI"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge XII"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge XIII"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge XIV"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Knowledge XV"
+        },
+        {
+            dropLevel: 1,
+            name: "Otherworldly Book of Knowledge I"
+        },
+        {
+            dropLevel: 1,
+            name: "Otherworldly Book of Knowledge II"
+        },
+        {
+            dropLevel: 1,
+            name: "Otherworldly Book of Knowledge III"
+        },
+        {
+            dropLevel: 1,
+            name: "Otherworldly Book of Knowledge IV"
+        },
+        {
+            dropLevel: 1,
+            name: "Ritualistic Book of Knowledge I"
+        },
+        {
+            dropLevel: 1,
+            name: "Ritualistic Book of Knowledge II"
+        },
+        {
+            dropLevel: 1,
+            name: "Ritualistic Book of Knowledge III"
+        },
+        {
+            dropLevel: 1,
+            name: "Ritualistic Book of Knowledge IV"
+        },
+        {
+            dropLevel: 1,
+            name: "Runic Book of Knowledge I"
+        },
+        {
+            dropLevel: 1,
+            name: "Runic Book of Knowledge II"
+        },
+        {
+            dropLevel: 1,
+            name: "Runic Book of Knowledge III"
+        },
+        {
+            dropLevel: 1,
+            name: "Runic Book of Knowledge IV"
+        },
+        {
+            dropLevel: 1,
+            name: "Deranging Book of Knowledge I"
+        },
+        {
+            dropLevel: 1,
+            name: "Deranging Book of Knowledge II"
+        },
+        {
+            dropLevel: 1,
+            name: "Deranging Book of Knowledge III"
+        },
+        {
+            dropLevel: 1,
+            name: "Deranging Book of Knowledge IV"
+        },
+        {
+            dropLevel: 1,
+            name: "Vanquisher's Book of Knowledge I"
+        },
+        {
+            dropLevel: 1,
+            name: "Vanquisher's Book of Knowledge II"
+        },
+        {
+            dropLevel: 1,
+            name: "Vanquisher's Book of Knowledge III"
+        },
+        {
+            dropLevel: 1,
+            name: "Vanquisher's Book of Knowledge IV"
+        },
+        {
+            dropLevel: 1,
+            name: "Vanquisher's Book of Knowledge V"
+        },
+        {
+            dropLevel: 1,
+            name: "Arbiter's Book of Knowledge I"
+        },
+        {
+            dropLevel: 1,
+            name: "Arbiter's Book of Knowledge II"
+        },
+        {
+            dropLevel: 1,
+            name: "Arbiter's Book of Knowledge III"
+        },
+        {
+            dropLevel: 1,
+            name: "Arbiter's Book of Knowledge IV"
+        },
+        {
+            dropLevel: 1,
+            name: "Vault Key"
+        },
+        {
+            dropLevel: 1,
+            name: "Blood Crucible"
+        },
+        {
+            dropLevel: 1,
+            name: "Dream Furnace"
+        },
+        {
+            dropLevel: 1,
+            name: "Viscera Cauldron"
+        },
+        {
+            dropLevel: 1,
+            name: "Sentinel Controller"
+        },
+        {
+            dropLevel: 1,
+            name: "Master Key"
+        },
+        {
+            dropLevel: 45,
+            name: "Contract: Trial Run"
+        },
+        {
+            dropLevel: 48,
+            name: "Contract: Stolen Lockpicks"
+        },
+        {
+            dropLevel: 55,
+            name: "Contract: Karst's Revenge"
+        },
+        {
+            dropLevel: 68,
+            name: "Contract: Credit Where Credit's Due"
+        },
+        {
+            dropLevel: 48,
+            name: "Contract: Finding Opal"
+        },
+        {
+            dropLevel: 55,
+            name: "Contract: Opal's Jewels"
+        },
+        {
+            dropLevel: 55,
+            name: "Contract: Enoch's Whereabouts"
+        },
+        {
+            dropLevel: 68,
+            name: "Contract: Enoch's Remains"
+        },
+        {
+            dropLevel: 60,
+            name: "Contract: Grocery List"
+        },
+        {
+            dropLevel: 78,
+            name: "Contract: The Vinderi Bomb"
+        },
+        {
+            dropLevel: 68,
+            name: "Contract: The Nameless Play"
+        },
+        {
+            dropLevel: 80,
+            name: "Contract: The Finest Costumes"
+        },
+        {
+            dropLevel: 55,
+            name: "Contract: The Wedding Dress"
+        },
+        {
+            dropLevel: 68,
+            name: "Contract: Disengagement"
+        },
+        {
+            dropLevel: 68,
+            name: "Contract: Rational Tools"
+        },
+        {
+            dropLevel: 75,
+            name: "Contract: A Mundane Sample"
+        },
+        {
+            dropLevel: 68,
+            name: "Contract: The Book of Jamanra"
+        },
+        {
+            dropLevel: 46,
+            name: "Contract: Isla's Prototypes"
+        },
+        {
+            dropLevel: 55,
+            name: "Contract: Isla's Designs"
+        },
+        {
+            dropLevel: 60,
+            name: "Contract: A Matter of Honour"
+        },
+        {
+            dropLevel: 75,
+            name: "Contract: Flying False Colours"
+        },
+        {
+            dropLevel: 60,
+            name: "Contract: Slaver's Revenge"
+        },
+        {
+            dropLevel: 75,
+            name: "Contract: Follow the Paper Trail"
+        },
+        {
+            dropLevel: 60,
+            name: "Contract: The Admiral's Records"
+        },
+        {
+            dropLevel: 75,
+            name: "Contract: Findings for Fidium"
+        },
+        {
+            dropLevel: 68,
+            name: "Contract: Hyrri's Gift"
+        },
+        {
+            dropLevel: 75,
+            name: "Contract: The Negotiation"
+        },
+        {
+            dropLevel: 75,
+            name: "Contract: The Rescue"
+        },
+        {
+            dropLevel: 1,
+            name: "Karst's Lockpicks"
+        },
+        {
+            dropLevel: 1,
+            name: "\"The Kiss Goodnight\""
+        },
+        {
+            dropLevel: 1,
+            name: "Poisoned Lockpick"
+        },
+        {
+            dropLevel: 1,
+            name: "Census Records"
+        },
+        {
+            dropLevel: 1,
+            name: "Tibbs' Wealth"
+        },
+        {
+            dropLevel: 1,
+            name: "Blackguard Personnel Files"
+        },
+        {
+            dropLevel: 1,
+            name: "Enoch's Tags"
+        },
+        {
+            dropLevel: 1,
+            name: "Alchemical Supplies"
+        },
+        {
+            dropLevel: 1,
+            name: "Fumarole Tar"
+        },
+        {
+            dropLevel: 1,
+            name: "\"The Nameless Play\""
+        },
+        {
+            dropLevel: 1,
+            name: "Templar Uniforms"
+        },
+        {
+            dropLevel: 1,
+            name: "Merveil's Wedding Dress"
+        },
+        {
+            dropLevel: 1,
+            name: "Tullina's Engagement Ring"
+        },
+        {
+            dropLevel: 1,
+            name: "The Thought Extractor"
+        },
+        {
+            dropLevel: 1,
+            name: "Viridi's Finger"
+        },
+        {
+            dropLevel: 1,
+            name: "The Book of Jamanra"
+        },
+        {
+            dropLevel: 1,
+            name: "Jamanra, the Legendary Warrior"
+        },
+        {
+            dropLevel: 1,
+            name: "Pile of Inexplicable Junk"
+        },
+        {
+            dropLevel: 1,
+            name: "Baffling Blueprints"
+        },
+        {
+            dropLevel: 1,
+            name: "The Unbreakable"
+        },
+        {
+            dropLevel: 1,
+            name: "Solerai's Spear"
+        },
+        {
+            dropLevel: 1,
+            name: "Nashta's War Journal"
+        },
+        {
+            dropLevel: 1,
+            name: "Confront Nashta"
+        },
+        {
+            dropLevel: 1,
+            name: "Hapihapi's Charm"
+        },
+        {
+            dropLevel: 1,
+            name: "Slaver's Records"
+        },
+        {
+            dropLevel: 1,
+            name: "The Blood Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Admiral Darnaw's Papers"
+        },
+        {
+            dropLevel: 1,
+            name: "Fleet Orders"
+        },
+        {
+            dropLevel: 1,
+            name: "Admiral Darnaw"
+        },
+        {
+            dropLevel: 1,
+            name: "\"O' Eternal\""
+        },
+        {
+            dropLevel: 1,
+            name: "Negotiate with the Client"
+        },
+        {
+            dropLevel: 1,
+            name: "Rescue Hana"
+        },
+        {
+            dropLevel: 1,
+            name: "The Vox Twins"
+        },
+        {
+            dropLevel: 1,
+            name: "The Maven's Beacon"
+        },
+        {
+            dropLevel: 1,
+            name: "Flesh Compass"
+        },
+        {
+            dropLevel: 1,
+            name: "Luminous Astrolabe"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: The Atlas"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Haewark Hamlet"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Tirn's End"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Lex Proxima"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Lex Ejoris"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: New Vastir"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Glennach Cairns"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Valdo's Rest"
+        },
+        {
+            dropLevel: 1,
+            name: "Maven's Invitation: Lira Arthain"
+        },
+        {
+            dropLevel: 1,
+            name: "Writhing Invitation"
+        },
+        {
+            dropLevel: 1,
+            name: "Screaming Invitation"
+        },
+        {
+            dropLevel: 1,
+            name: "Polaric Invitation"
+        },
+        {
+            dropLevel: 1,
+            name: "Incandescent Invitation"
+        },
+        {
+            dropLevel: 22,
+            name: "Balbala's Barya"
+        },
+        {
+            dropLevel: 1,
+            name: "Una's Lute"
+        },
+        {
+            dropLevel: 1,
+            name: "Runed Spikes"
+        },
+        {
+            dropLevel: 1,
+            name: "Head of the Winter Wolf"
+        },
+        {
+            dropLevel: 1,
+            name: "Candlemass' Essence"
+        },
+        {
+            dropLevel: 1,
+            name: "Vagrant's Brew"
+        },
+        {
+            dropLevel: 1,
+            name: "Runed Girdle"
+        },
+        {
+            dropLevel: 1,
+            name: "Runed Guard"
+        },
+        {
+            dropLevel: 1,
+            name: "Runed Skull Cap"
+        },
+        {
+            dropLevel: 1,
+            name: "Asinia's Memorial Key Piece"
+        },
+        {
+            dropLevel: 1,
+            name: "Draven's Memorial Key Piece"
+        },
+        {
+            dropLevel: 1,
+            name: "Count Lachlann's Ring"
+        },
+        {
+            dropLevel: 1,
+            name: "Ancestral Steel"
+        },
+        {
+            dropLevel: 1,
+            name: "Book of Specialisation"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Scarecrow Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "Gembloom Skull"
+        },
+        {
+            dropLevel: 1,
+            name: "Smithing Tools"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Guillotine Executioner Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Gargoyle Golem Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "The Horn of the Vastiri"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Bone Cultist Shield Boss Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "Mastodon Tusks"
+        },
+        {
+            dropLevel: 1,
+            name: "The Flame Ruby"
+        },
+        {
+            dropLevel: 1,
+            name: "The Essence of Water"
+        },
+        {
+            dropLevel: 1,
+            name: "Kabala Clan Relic"
+        },
+        {
+            dropLevel: 1,
+            name: "Sun Clan Relic"
+        },
+        {
+            dropLevel: 1,
+            name: "Sigil of the Third Pact"
+        },
+        {
+            dropLevel: 1,
+            name: "Maggot Husk"
+        },
+        {
+            dropLevel: 1,
+            name: "Stitched Bladder"
+        },
+        {
+            dropLevel: 1,
+            name: "Gas Filled Bladder"
+        },
+        {
+            dropLevel: 1,
+            name: "Burning Heart"
+        },
+        {
+            dropLevel: 1,
+            name: "Empty Decanter Djinnus"
+        },
+        {
+            dropLevel: 1,
+            name: "Full Decanter Djinnus"
+        },
+        {
+            dropLevel: 1,
+            name: "Final Letter"
+        },
+        {
+            dropLevel: 1,
+            name: "Gemrot Skull"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Dredge Fiend Shaman Boss Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Quadrilla Boss Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Viper Napuatzi Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "Venom Draught of Stone"
+        },
+        {
+            dropLevel: 1,
+            name: "Venom Draught of the Veil"
+        },
+        {
+            dropLevel: 1,
+            name: "Venom Draught of Clarity"
+        },
+        {
+            dropLevel: 1,
+            name: "Venom Draught of the Lost"
+        },
+        {
+            dropLevel: 1,
+            name: "Venom Draught of the Sky"
+        },
+        {
+            dropLevel: 1,
+            name: "Venom Draught of the Marshes"
+        },
+        {
+            dropLevel: 1,
+            name: "Corpse-snake Venom"
+        },
+        {
+            dropLevel: 1,
+            name: "Large Soul Core"
+        },
+        {
+            dropLevel: 1,
+            name: "The Flame Core"
+        },
+        {
+            dropLevel: 1,
+            name: "Temple Door Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Ignagduk's Ghastly Spear"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Eel Monster Boss Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "The Hammer of Kamasa"
+        },
+        {
+            dropLevel: 1,
+            name: "Golden Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Grand Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Glorious Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Exquisite Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Elegant Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Exceptional Idol"
+        },
+        {
+            dropLevel: 1,
+            name: "Sacrificial Dagger"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Vaal Sun Worshipper Boss Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "[DNT] Vaal Blood Priestess Boss Drop"
+        },
+        {
+            dropLevel: 1,
+            name: "Sacrificial Heart"
+        },
+        {
+            dropLevel: 1,
+            name: "Gemcrust Skull"
+        },
+        {
+            dropLevel: 1,
+            name: "Red Mushroom"
+        },
+        {
+            dropLevel: 1,
+            name: "Green Mushroom"
+        },
+        {
+            dropLevel: 1,
+            name: "Blue Mushroom"
+        },
+        {
+            dropLevel: 1,
+            name: "Chimeral Inscribed Ultimatum"
+        }
     ]
 } as const;
